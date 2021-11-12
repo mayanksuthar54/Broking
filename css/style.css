@@ -108,8 +108,8 @@ a.navbar-brand span {
 .dropdmenulist{padding: 0px;}
 .dropdmenulist .dropdown-item{padding: 15px 25px;font-size: 14px;}
 .dropdmenulist .dropdown-item img{height: 18px;margin-right: 10px;}
-.d-desktop-none{display: block;}
-.d-ipad-block{display: none;}
+.d-desktop{display: block;}
+.d-ipad{display: none;}
 .logo span {
   color: #6a4eee;
   margin-left: 8px;
@@ -402,7 +402,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .recentsearch{font-family: 'inter',sans-serif;}
 .recentsearch h4{font-weight: 500;font-size: 14px;}
 .recentsearch h4.pasthisto {padding: 0 25px 0px 30px;}
-.recentsearch {position: absolute;z-index: 1;display: none;width: 100%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;}
+.recentsearch {position: absolute;z-index: 1;display: none;width: 97.3%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;}
 .pasthistory{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding-bottom: 15px;}
 .eventsbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
 .trendingbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
@@ -544,7 +544,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   position: absolute;
   z-index: 1;
   display: none;
-  width: 100%;
+  width: 97.3%;
   margin: 13px 0 12px 0;
   max-height: 66vh;
   overflow: auto;
@@ -2278,7 +2278,7 @@ input[type="radio"][name="tabs"]:checked
 /*profile*/
 
 /*option chain*/
-.optionchain {color: #000000;background: #ffffff;border-left: 1px solid #d2d0e1;border-right: 1px solid #d2d0e1;border-bottom:1px solid #d2d0e1;;height: 68.5vh;overflow: auto;font-family: 'Inter', sans-serif;}
+.optionchain {color: #000000;background: #ffffff;border: 1px solid #d2d0e1;height: 68.5vh;overflow: auto;font-family: 'Inter', sans-serif;}
 .futurestock{padding-bottom: 15px;border-bottom: 1px solid #d2d0e1;vertical-align: middle;}
 .futurestock h3{margin: auto 0;padding-right: 10px;}
 .futurestock button{background: none;color: #6a4eee;height: 35px;padding: 8px 15px;font-size: 14px;font-weight:400;}
@@ -2293,6 +2293,7 @@ input[type="radio"][name="tabs"]:checked
 .futurebox::-webkit-scrollbar{display: none}
 .callputhead{padding: 15px 0px;}
 .callputhead h4{text-transform: uppercase;margin: 0;}
+.swiper{margin-left: 0!important;}
 .swiper-slide{width: unset!important;margin-right: 10px!important;}
 table#OptionChain{border-collapse: separate;border-spacing: 0;}
 table#OptionChain td{border-top: none;border-bottom: 1px solid #c9ccd7;}
@@ -2311,7 +2312,7 @@ table#OptionChain tbody tr td:nth-child(6n+0){background: #ffffff;text-align: ce
 table#OptionChain tr.psticky{position: sticky;top: 55px;bottom: 0;width: 100%;z-index: 1;}
 table#OptionChain tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
 table#OptionChain tr.psticky td.shortcover{background: #F5F3FF!important;height: 63px;}
-table#OptionChain tr.psticky td.shortcover span{text-transform: uppercase;}
+table#OptionChain tr.psticky td.shortcover span{text-transform: uppercase;display: block;}
 table#OptionChain tr.psticky td.shortcover.tbg-white{background: #ffffff!important;}
 table#OptionChain tr:hover div.watchlistbox {display: block;}
 table#OptionChain div.watchlistbox {display: none;position: absolute;right: 0;top: 15%;padding-right: 18px;}
@@ -2475,6 +2476,8 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   .login-box1 {
     z-index: 3;
   }
+  .d-desktop{display: none;}
+  .d-ipad{display: block;}
 }
 
 /* ----------- iPad Pro ----------- */
