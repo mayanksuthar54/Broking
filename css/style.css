@@ -1,0 +1,3190 @@
+body {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: initial;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 0.4rem;
+  line-height: 1.4rem;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a {
+  color: #6a4eee;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.border-bottom {
+  border-bottom: 1px solid #d2d0e1 !important;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+/*::-webkit-scrollbar-track {background-color: #efefef}*/
+::-webkit-scrollbar-thumb {
+  background-color: rgb(99 68 242 / 50%);
+  border-radius: 20px;
+}
+/*::-webkit-scrollbar-thumb:hover {background-color: #efefef;}*/
+
+input:disabled {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==)
+    repeat;
+}
+input:focus-visible {outline: none;}
+.table td, .table th{vertical-align: middle;}
+.icon-inside {
+  position: absolute;
+  right: 25px;
+  top: calc(46% - 12px);
+  pointer-events: none;
+  font-size: 16px;
+  font-size: 1.125rem;
+  color: #c4c3c3;
+  z-index: 3;
+}
+
+.navbar {
+  padding: 15px 0px;
+  box-shadow: none;
+  border-bottom: 1px solid #d2d0e1;
+  margin-bottom: 20px;
+  /*position: sticky;
+  top: 22px;
+  z-index: 2;
+  background: #fff;*/
+}
+.navbar-brand {
+  margin-right: 20px;
+}
+a.navbar-brand span {
+  color: #6a4eee;
+  margin-left: 8px;
+  vertical-align: middle;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.navbar-light .navbar-toggler {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.nav-justified .nav-item {
+  flex-basis: auto;
+}
+.dropdown-menu{box-shadow: 0px 1px 8px rgb(0 0 0 / 10%);border-radius: 6px;}
+.dropdmenu{cursor: pointer;}
+.dropdmenulist{padding: 0px;}
+.dropdmenulist .dropdown-item{padding: 15px 25px;font-size: 14px;}
+.dropdmenulist .dropdown-item img{height: 18px;margin-right: 10px;}
+.d-desktop-none{display: block;}
+.d-ipad-block{display: none;}
+.logo span {
+  color: #6a4eee;
+  margin-left: 8px;
+  vertical-align: middle;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
+.btn-primary {
+  background-color: #6a4eee;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  margin-right: 3px;
+  border: 1px solid #6a4eee;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn-primary:hover {
+  color: #6a4eee;
+  background-color: transparent;
+  border-radius: 3px;
+  border-color: #6a4eee;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #6a4eee;
+  border-color: #6a4eee;
+  box-shadow: none !important;
+}
+.btn-primary.focus, .btn-primary:focus{box-shadow: none;}
+#menutxt .nav-item a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #979797;
+  padding: 4px 20px;
+  text-transform: capitalize;
+}
+#menutxt .nav-item a.active {
+  font-weight: 700;
+  color: #6a4eee;
+  display: block;
+}
+#menutxt .nav-item .active:after {
+  content: " ";
+  display: block;
+  height: 4px;
+  background-color: #6a4eee;
+  border-radius: 10px;
+  color: #6a4eee;
+}
+
+.navbar .circle{width: 40px;height: 40px;margin-right: 5px;background-color: #EFECFF;border-radius: 50%;position: relative;}
+.navbar .circle span{width: 35px;height: 35px;background-color: #B9AAFD;border-radius: 50%;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);text-align: center;padding: 14% 0;}
+
+#mainbox {
+  margin-top: 20px;
+  padding: 0 30px;
+}
+
+.plate a {
+  text-decoration: underline;
+  color: #6a4eee;
+}
+.main-container {
+  margin: 1.6rem 0.8rem;
+}
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-gap: 1.1312rem;
+  grid-template-columns: repeat(auto-fit, 12.8rem);
+  grid-auto-rows: 12.8rem;
+  grid-auto-flow: dense;
+  justify-content: center;
+  max-width: 75em;
+}
+
+.c-blue {
+  color: #1964e4;
+}
+
+.c-purple {
+  color: #6a4eee;
+}
+.c-black {
+  color: #000000;
+}
+.c-orange {
+  color: #f54518;
+}
+.c-green {
+  color: #00c707;
+}
+.c-red {
+  color: #f1524e;
+}
+.c-sell {
+  color: #ff6872;
+}
+.c-buy {
+  color: #5762f7;
+}
+
+.c-red .progress-bar {
+  background-color: #f1524e !important;
+}
+
+.marketlive {
+  padding: 0px 30px;
+}
+.marketlive .nname {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.marketlive .pgreen {
+  color: #00c707;
+  margin: 0;
+  font-weight: 700;
+  text-align: end;
+}
+.marketlive .pred {
+  color: #ff0606;
+  margin: 0;
+  font-weight: 700;
+  text-align: end;
+}
+.marketlive2 .nname {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.marketlive2 .pgreen {
+  color: #00c707;
+  margin: 0;
+  font-weight: 700;
+  text-align: end;
+}
+.marketlive2 .pred {
+  color: #ff0606;
+  margin: 0;
+  font-weight: 700;
+  text-align: end;
+}
+.marketbox {
+  height: 74px;
+}
+.nsebse h6 {
+  font-weight: 400;
+}
+.nsebse .table-cell h6:nth-child(1) {
+  color: #a5a7a4;
+  margin-bottom: 0;
+}
+.nsebse .table-cell h6.mpercent {
+  color: #121212;
+  text-align: end;
+}
+.marketlive .mpercent {
+  font-weight: 400;
+  text-align: end;
+}
+.niftymain {
+  display: inline-flex;
+  color: #000000;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.sensexmain {
+  display: inline-flex;
+  color: #000000;
+  margin-left: 30px;
+}
+.companylogo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #8b72ff;
+  border-radius: 35px;
+  margin-right: 10px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+.companylogo img {
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  width: 90%;
+}
+.companylogo span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.companyname {
+  margin-right: 0px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.companyname h4 {
+  text-transform: uppercase;
+  word-break: break-word;
+  display: inline-block;
+  white-space: normal;
+}
+.companyname p {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #a5a7a4;
+  margin-bottom: 0;
+  padding-top: 2px;
+}
+
+.pagination > li > a {
+  border-radius: 4px !important;
+  margin: 0 5px;
+}
+.page-item.active .page-link {
+  background-color: #6a4eee;
+  color: #ffffff;
+}
+.page-item .page-link {
+  color: #000000;
+  border: 1px solid #d2d0e1 !important;
+}
+.page-item .page-link:hover {
+  color: #ffffff;
+  border: 1px solid #d2d0e1 !important;
+  background-color: #6a4eee;
+}
+.page-item .page-link:focus {
+  box-shadow: none;
+}
+.pagenum {
+  padding: 0px 30px;
+}
+.pagenum .dropdown-menu {
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);
+  border: none;
+  padding: 10px 12px;
+}
+.pagenum .dropdown-menu::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  right: 1em;
+  top: -6px;
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: #ffffff;
+}
+.pagenum .dropdown-menu p {
+  font-size: 12px;
+  color: #121212;
+}
+.pagenum .dropdown-menu button {
+  border: solid 0.5px #d2d0e1;
+  padding: 6px 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  width: 40px;
+  font-size: 10px;
+  color: #121212;
+}
+.pagenum .dropdown-menu button:hover {
+  background: #6a4eee;
+  color: #ffffff;
+}
+.pagenum .dropdown-menu .dropdown-item {
+  padding: 6px 0;
+  font-size: 12px;
+}
+.pagenum .dropdown-menu img {
+  margin: 0 10px;
+}
+
+/*recent search*/
+.recentsearch{font-family: 'inter',sans-serif;}
+.recentsearch h4{font-weight: 500;font-size: 14px;}
+.recentsearch h4.pasthisto {padding: 0 25px 0px 30px;}
+.recentsearch {position: absolute;z-index: 1;display: none;width: 100%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;}
+.pasthistory{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding-bottom: 15px;}
+.eventsbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
+.trendingbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
+
+.eventsbtn button{height: 30px;background: #efecff;border: 1px solid #6a4eee;border-radius: 3px;width: auto;font-size: 12px;font-weight: 400;text-transform: none;color: #6a4eee;margin: 0 10px 10px 0;}
+.tradingbtn button{height: 40px;background: #fafafa;border: 1px solid #d2d0e1;border-radius: 25px;width: auto;font-size: 12px;font-weight: 400;text-transform: uppercase;color: #121212;margin: 0 10px 10px 0;padding: 4px 15px 4px 6px;}
+.tradingbtn button:hover{height: 40px;background: #fafafa;border: 1px solid #d2d0e1;border-radius: 25px;width: auto;font-size: 12px;font-weight: 400;text-transform: uppercase;color: #121212;margin: 0 10px 10px 0;}
+.tradingbtn button .companylogo { width: 30px;height: 30px;border-radius: 35px;margin-right: 7px;overflow: hidden;display: inline-block;position: relative;border: 1px solid #d2d0e1;border-radius: 50%;}
+.tradingbtn button .companylogo img{height: 23px;width: 412px;}
+.tradingbtn button .companyname h4{display: inline;text-transform: uppercase;line-height: 2;}
+
+.tradingbtn button span {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
+.tradingbtn{margin-top: 10px;}
+/*recent search*/
+
+/*search*/
+#searchwatchlist {
+  /*height: 66vh;overflow: auto;*/
+  border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
+}
+#searchwatchlist h4 {
+  display: inline;
+  text-transform: uppercase;
+}
+#searchwatchlist tr {
+  border-bottom: 1px solid #eeeeee;
+}
+#searchwatchlist tr td:nth-child(1) {
+  padding: 13px 15px 13px 30px;
+}
+#searchwatchlist tr td:nth-child(2) {
+  padding: 6px 30px 6px 15px;
+}
+#searchwatchlist tr.watch-list td:nth-child(1) {
+  padding: 8px 15px 8px 30px;
+}
+#searchwatchlist tr.watch-list td:nth-child(2) {
+  padding: 6px 30px 6px 15px;
+}
+#searchwatchlist tbody tr td p {
+  text-transform: uppercase;
+  margin: 2px 0 0;
+  font-size: 14px;
+}
+.connectedSortable tr,
+.ui-sortable-helper {
+  cursor: move;
+}
+.connectedSortable tr:first-child {
+  cursor: default;
+}
+.search-box {
+  text-align: right;
+}
+.search-box p {
+  /*display: inline;*/
+  text-transform: uppercase;
+  white-space: pre-wrap;
+}
+.search-box .bse {
+  background: rgba(25, 100, 228, 0.3);
+  color: #1964e4;
+  padding: 0px 6px;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  display: inline;
+}
+.search-box .nse {
+  background: rgba(243, 24, 19, 0.3);
+  color: #f31813;
+  padding: 0px 6px;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  display: inline;
+}
+.search-box .nse-g {
+  background: rgba(165, 167, 164, 0.3);
+  color: #121212;
+  padding: 0px 6px;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  display: inline;
+}
+.watchlistadded h4 {
+  color: #9e9e9e;
+}
+.watchlistadded p {
+  color: #9e9e9e;
+}
+#searchwatchlist div.watchlistbox {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 28%;
+  padding-right: 30px;
+}
+#searchwatchlist tr:hover div.watchlistbox {
+  display: block;
+}
+#searchwatchlist tbody tr:hover {
+  background: #efefef;
+}
+
+#search {
+  border: transparent;
+  border-bottom: 1px solid #6a4eee;
+  padding: 20px 0 10px 0;
+  margin: 0px 18px 0px 30px;
+  display: -webkit-inline-box;
+  width: -webkit-fill-available;
+}
+#search span {
+  vertical-align: -webkit-baseline-middle;
+}
+#search input {
+  border: transparent;
+  padding: 8px 14px 0;
+  font-size: 16px;
+  font-weight: 400;
+  width: 84%;
+  background: transparent;
+  color: #121212;
+  display: block;
+  position: absolute;
+  margin-left: 14px;
+}
+#search ::placeholder {
+  color: #cacaca;
+}
+
+.search-results {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  margin: 13px 0 12px 0;
+  max-height: 66vh;
+  overflow: auto;
+}
+
+
+.search-results-modal {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 90.8%;
+  max-height: 45vh;
+  overflow: auto;
+}
+
+.search-results-modaladd {
+  position: relative;
+  z-index: 1;
+  display: none;
+  max-height: 45vh;
+  overflow: auto;
+}
+
+.search-results-modal #searchwatchlist .watchlistbox button {
+  padding: 0px;
+  z-index: 1;
+  border: none;
+  border-radius: 6px;
+  width: 40px;
+  height: 30px;
+}
+.search-results-modal #searchwatchlist tr td:nth-child(1) {
+  padding: 13px 15px 13px 0;
+}
+.search-results-modal #searchwatchlist tr td:nth-child(2) {
+  padding: 6px 0 6px 15px;
+}
+.search-results-modal #searchwatchlist tr.watch-list td:nth-child(1) {
+  padding: 8px 15px 8px 0;
+}
+.search-results-modal #searchwatchlist tr.watch-list td:nth-child(2) {
+  padding: 6px 0px 6px 15px;
+}
+.search-results-modal #searchwatchlist div.watchlistbox {
+  padding-right: 0px;
+}
+/*search*/
+
+.b-listing {
+  padding: 0 12px 0 0;
+  position: relative;
+}
+.b-listing #mainwatchlist {
+  margin: 12px 0 12px 0;
+  width: fit-content;
+  width: 100%;
+}
+.b-listing #mainwatchlist tbody {
+  width: 100%;
+  display: inline-table;
+}
+.b-listing #mainwatchlist tbody tr:hover {
+  background: #efefef;
+}
+.b-listing nav {
+  display: inline-block;
+  margin-right: 10px;
+}
+.b-listing #mainwatchlist tr td {
+  padding: 6px 0;
+}
+/*.b-listing #mainwatchlist tr img{width: 50px;height: 50px;border: 1px solid #8b72ff;border-radius: 35px;margin-right: 10px;object-fit: contain;}*/
+.b-listing #watchlistinner2 tr td:nth-child(1) {
+  color: #9a9a9a;
+}
+.b-listing #watchlistinner2 tr td:nth-child(2) {
+  color: #121212;
+  font-weight: 600;
+  text-align: right;
+}
+.b-listing #watchlistinner2 tr th {
+  padding: 6px 6px;
+}
+.b-listing #watchlistinner2 tr td {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+#watchlistinner-market h4 {
+  font-size: 14px;
+}
+.plate-2 #watchlistinner-market {
+  width: 49.4%;
+  display: inline-block;
+}
+.plate-2 #watchlistinner-market .table-cell {
+  width: 100%;
+}
+.plate-2 #watchlistinner-market.marketlive {
+  padding: 0px 20px 0px 30px;
+  border-right: 1px solid #d2d0e1;
+  margin-top: 15px;
+}
+.plate-2 #watchlistinner-market.marketlive2 {
+  padding: 0px 30px 0px 15px;
+}
+
+#mainwatchlist tr.collapse {
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+#watchlistinner .table-cell {
+  padding: 4px 2px;
+}
+#watchlistinner tr td {
+  padding: 6px 0;
+}
+#watchlistinner tbody tr td:nth-last-child(1) {
+}
+#watchlistinner.c-blue tbody tr a {
+  color: #1964e4;
+}
+#watchlistinner.c-red tbody tr a {
+  color: #f1524e;
+}
+#watchlistinner a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.table {
+  display: table;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
+.b-listing #watchlistinner .table-row .table-cell:nth-child(2) {
+  text-align: center;
+  width: 30%;
+}
+.b-listing #watchlistinner .table-row .table-cell:nth-child(3) {
+  text-align: center;
+  width: 35%;
+}
+
+.modal-body #watchlistinner .table-cell:nth-child(2) {
+  text-align: center;
+}
+.modal-body #watchlistinner .table-cell:nth-child(2) {
+  text-align: center;
+}
+.modal-body #watchlistinner .table-cell:nth-child(3) {
+  text-align: center;
+}
+.modal-body #watchlistinner {
+  padding: 20px 0;
+}
+.modal-body #watchlistinner2 {
+  padding: 20px 0;
+}
+.modal-body .btn3 {
+  padding: 20px 0;
+}
+.modal-body .bidtable {
+  border-bottom: 1px solid #eeeeee;
+}
+.modal-body .opentable {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.modal-body #watchlistinner .table-row .table-cell:nth-child(2) {
+  text-align: center;
+}
+.modal-body #watchlistinner .table-row .table-cell:nth-child(3) {
+  text-align: center;
+}
+
+.modal-body #watchlistinner2 .d-inline-block:nth-child(1) {
+  color: #9a9a9a;
+}
+
+.price-box {
+  text-align: right;
+}
+.price-box p {
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.price-box .text-green {
+  color: #00c707;
+}
+.price-box .text-red {
+  color: #ff0606;
+}
+.price-box .lprice {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.equitytxt {
+  color: #a5a7a4;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.equitytxt p {
+  color: #a5a7a4;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.equitytxt span {
+  color: #000000;
+  float: right;
+}
+.equitybtn a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6a4eee;
+}
+.equitybtn a img {
+  margin: 0 6px 0 0;
+}
+
+.equity-summary a {
+  text-decoration: none;
+}
+.equity-summary table tr th {
+  padding: 10px 20px 20px 0px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.toptxt p {
+  margin: 20px 0 !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+.equity-summary table tr td {
+  padding: 5px 10px 8px 2px;
+  font-size: 14px;
+  font-weight: 600; /*width: 100%;*/
+}
+
+.equitysummarymenu .active {
+  font-weight: 700;
+  background: none !important;
+}
+.equitysummarymenu .dropdown-item.active,
+.dropdown-item:active {
+  background-color: none !important;
+}
+.equitysummarymenu .dropdown-menu {
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);
+  border: none;
+  font-size: 12px;
+  top: 6px !important;
+}
+.equitysummarymenu .dropdown-menu .dropdown-item {
+  border-bottom: 1px solid #d2d0e1;
+  padding: 10px 12px;
+}
+.equitysummarymenu .dropdown-menu .dropdown-item::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  right: 1em;
+  top: -6px;
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: #ffffff;
+}
+.equitysummarymenu .dropdown-menu .dropdown-item:nth-last-child(1) {
+  border-bottom: none;
+}
+
+#port-holding h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+#port-holding .holdingleft p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contentbox {
+  color: #000000;
+  background: #f2efff;
+  padding: 18px;
+  border: 1px solid #d2d0e1;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.plate {
+  color: #000000;
+  background: #ffffff;
+  padding: 18px;
+  border: 1px solid #d2d0e1;
+  height: 40vh;
+  overflow: hidden;
+  margin-bottom: 17px;
+}
+
+.profile {
+  color: #000000;
+  background: #ffffff;
+  padding: 18px;
+  border: 1px solid #d2d0e1;
+  height: 79vh;
+  overflow: auto;
+  /*margin-bottom: 10px;*/
+  font-family: 'Inter', sans-serif;
+}
+
+
+.equityplate {
+  color: #000000;
+  background: #ffffff;
+  padding: 18px;
+  border: 1px solid #d2d0e1;
+  height: 79vh;
+  overflow: hidden;
+  /*margin-bottom: 10px;*/
+}
+.equityplate span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.equityplate .toptxt p {
+  font-size: 26px;
+}
+.equityplate table tr td {
+  padding: 5px 10px 12px 2px;
+}
+.portfolioplate {
+  color: #000000;
+  background: #ffffff;
+  padding: 18px;
+  border: 1px solid #d2d0e1;
+  height: 79vh;
+  overflow: auto;
+  /*margin-bottom: 10px;*/
+}
+
+#holdingbox {
+  height: 60vh;
+}
+#holdingbox a {
+  text-decoration: none;
+}
+#marketbox {
+  height: 60vh;
+}
+.plate-2 {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #d2d0e1;
+  position: fixed;
+  width: 23%;
+}
+.plate span {
+  font-size: 20px;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.plate h1 {
+  color: #6a4eee;
+  margin: 16px 0;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.positions p {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+#bar-graph {
+  overflow: auto;
+  height: 230px;
+}
+#bar-graph .col-md-6:nth-child(1) {
+  padding: 0 6px 2px 15px;
+}
+#bar-graph .col-md-6:nth-child(2) {
+  padding: 0 15px 0 6px;
+}
+#bar-graph .col-md-6 {
+  padding: 0 6px;
+}
+.positions .progress {
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin: 7px 0;
+}
+.positions .progress .progress-bar {
+  border-radius: 4px;
+  background-color: #307bfa;
+}
+
+.holdingleft h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.holdingleft span {
+  font-size: 14px;
+  margin: 0;
+}
+.holdingleft p {
+  color: #a5a7a4;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.holdingbtn span a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6a4eee;
+  float: right;
+}
+
+.listingnum {
+  display: inline-flex;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a5a7a4;
+  right: 0;
+  position: absolute;
+}
+
+.menu-bar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  height: 14px;
+  margin-left: -10px;
+}
+.bars {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  box-shadow: 0 5px 0 #333, 0 10px 0 #333;
+}
+.menu {
+  display: none;
+  width: 100%;
+  padding: 30px 10px 50px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+.menu ul {
+  margin-bottom: 0;
+}
+.menu a {
+  color: #333;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.menu a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+#livemarketmobile .plate-3 {
+  color: #000000;
+  background: #ffffff;
+  padding: 18px;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.slideInDown-element {
+  animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+.slideInLeft-element {
+  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+.fadeIn-element {
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.watchlistname {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 15px;
+}
+.watchlistname .col-md-6 {
+  display: inline-block;
+  padding: 0;
+}
+.watchlistname .col-md-6:nth-last-child(1) {
+  float: right;
+}
+.watchlistname h3 {
+  display: inline;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.watchlistname h6 {
+  display: inline;
+  text-transform: none;
+}
+.watchlistname p {
+  display: inline;
+}
+.watchlistname span {
+  margin-left: 10px;
+  color: #a5a7a4;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #6a4eee;
+}
+
+td {
+  position: relative;
+}
+div.watchlistbox {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  padding-right: 18px;
+  width: max-content;
+}
+div.watchlistbox .dropdown-menu.show {
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);
+  border: none;
+  padding: 0;
+}
+div.watchlistbox .dropdown-menu {
+  top: 10px !important;
+  left: -14px !important;
+}
+div.watchlistbox .btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+div.watchlistbox .wbuy {
+  background-color: #1964e4;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+}
+div.watchlistbox .wsell {
+  background-color: #f31813;
+  border-radius: 6px;
+}
+div.watchlistbox .wmarketdepth {
+  background: url(http://img.tecxlabs.com/images/watchlist/market-depth.svg) center center no-repeat
+    #ffffff;
+  border: 1px solid #a5a7a4;
+}
+div.watchlistbox .wmarketdepth:hover {
+  background: url(http://img.tecxlabs.com/images/watchlist/market-depth-w.svg) center center
+    no-repeat #6a4eee;
+}
+div.watchlistbox .wchart {
+  background: url(http://img.tecxlabs.com/images/watchlist/chart.svg) center center no-repeat #ffffff;
+  border: 1px solid #a5a7a4;
+}
+div.watchlistbox .woption-chain {
+  background: url(http://img.tecxlabs.com/images/watchlist/option-chain.svg) center center no-repeat
+    #ffffff;
+  border: 1px solid #a5a7a4;
+}
+div.watchlistbox .woption-chain:hover {
+  background: url(http://img.tecxlabs.com/images/watchlist/option-chain.svg) center center no-repeat
+    #ffffff;
+  border: 1px solid #a5a7a4;
+}
+div.watchlistbox .wchart:hover {
+  background: url(http://img.tecxlabs.com/images/watchlist/chart-w.svg) center center no-repeat
+    #6a4eee;
+}
+div.watchlistbox .searchadd {
+  background: url(http://img.tecxlabs.com/images/add.svg) center center no-repeat #ffffff;
+  border: 1px solid #a5a7a4;
+  background-color: #00c707;
+}
+div.watchlistbox .searchadded {
+  background: url(http://img.tecxlabs.com/images/tick.svg) center center no-repeat #ffffff;
+  border: 1px solid #a5a7a4;
+  background-color: #9e9e9e;
+}
+
+div.watchlistbox .wdelete {
+  background: url(http://img.tecxlabs.com/images/watchlist/delete.svg) center center no-repeat
+    #ffffff;
+  border: 1px solid #a5a7a4;
+}
+div.watchlistbox .wdelete:hover {
+  background: url(http://img.tecxlabs.com/images/watchlist/delete-r.svg) center center no-repeat
+    #ffffff;
+}
+div.watchlistbox .wmore {
+  background: url(http://img.tecxlabs.com/images/watchlist/more.svg) center center no-repeat #ffffff;
+  border: 1px solid #a5a7a4;
+}
+div.watchlistbox .wmore:hover {
+  background: url(http://img.tecxlabs.com/images/watchlist/more-w.svg) center center no-repeat
+    #6a4eee;
+}
+
+
+div.watchlistbox .btn-primary.dropdown-toggle:not(:disabled):not(.disabled):active,
+div.watchlistbox .btn-primary:not(:disabled):not(.disabled).active,
+div.watchlistbox .show > .btn-primary.dropdown-toggle {
+  background-color: #6a4eee;
+  border-color: #6a4eee;
+  background: url(http://img.tecxlabs.com/images/watchlist/more-w.svg) center center no-repeat
+    #6a4eee;
+}
+
+div.watchlistbox button.bg-white:hover {
+  background-color: #6a4eee;
+}
+tr:hover div.watchlistbox {
+  display: block;
+}
+
+#SChartModal #watchlistinner2 tr td:nth-child(1) {
+  color: #9a9a9a;
+}
+#SChartModal #watchlistinner2 tr td:nth-child(2) {
+  color: #121212;
+  font-weight: 600;
+  text-align: right;
+}
+#SChartModal #watchlistinner2 tr th {
+  padding: 6px 6px;
+}
+#SChartModal #watchlistinner2 tr td {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+.modal-buy {
+  background: #5762f7;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.modal-sell {
+  background: #ff6872;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.modal-gtt {
+  background: #6a4eee;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.watchlistbox button {
+  padding: 0px;
+  z-index: 1;
+  border: none;
+  border-radius: 6px;
+  width: 40px;
+  height: 30px;
+}
+#mainwatchlist tr td .watchlistbox img {
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin: 0 10px;
+}
+.watchlistbox button.dropdown-toggle::after {
+  display: none;
+}
+.watchlistbox .dropdown-menu a {
+  font-size: 12px;
+  padding: 9px 0px;
+  border-bottom: 0.5px solid #d2d0e1;
+}
+.watchlistbox .dropdown-menu a::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  right: 1em;
+  top: -6px;
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: #ffffff;
+}
+.watchlistbox .dropdown-menu.show a:nth-last-child(1) {
+  border-bottom: none;
+}
+.watchlistbox .dropdown-menu a img {
+  margin: 0 10px;
+}
+
+.top-botmline {
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+}
+
+.form {
+  position: relative;
+  width: 20rem;
+  height: 3rem;
+  height: 60px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.form.textarea{height: 112px!important;}
+.form textarea{height: 112px;}
+.form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #d2d0e1;
+  border-radius: 6px;
+  font-family: "Open Sans", sans-serif;
+  font-size: inherit;
+  /* color: ; */
+  outline: none;
+  padding: 1.25rem;
+  background: none; /* Change border when input focus*/
+}
+.form__input:hover {
+  border-color: #d2d0e1;
+  color: #222222;
+}
+.form__input:focus {
+  border-color: #6a4eee;
+}
+.form__input:focus:after {
+  color: #6a4eee;
+  border: 2px solid #312f3c;
+}
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 1.2rem;
+  padding: 0 0.5rem;
+  color: #d2d0e1;
+  cursor: text;
+  /*transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;*/
+  transition: 85ms ease-in-out;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+#ChangePassword .form__input:focus ~ .form__label,
+#ChangePassword .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+#AuthoriseTable .form__input:focus ~ .form__label,
+#AuthoriseTable .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+#Authorisationpopupbox .modal-dialog{width: 400px;}
+#Authorisationpopupbox .modal-header{border-bottom: 1px solid #d2d0e1;margin: 0 25px;padding: 25px 0px 20px;}
+#Authorisationpopupbox .modal-body{padding: 20px 25px 25px;}
+#Authorisationpopupbox .modal-body .mb-20{margin-bottom: 20px;}
+#Authorisationpopupbox .modal-body hr{margin-bottom: 20px;margin-top: 20px;}
+#Authorisationpopupbox .modal-body button{width: 160px;}
+#Authorisationpopupbox .modal-body button.submitbtn-no{border-color: #d9d9d9;float: right;}
+#Authorisationpopupbox .modal-body button.submitbtn-no:hover{background: #d9d9d9;color: #ffffff;}
+#Authorisationpopupboxsell .modal-dialog{max-width: 700px;}
+#Authorisationpopupboxsell h2{font-family: 'inter', sans-serif;font-weight: 400;}
+#Authorisationpopupboxsell p{font-family: 'inter', sans-serif;font-weight: 400;}
+#Authorisationpopupboxsell .modal-body .authorisesellt aside{color: #a5a7a4;}
+#Authorisationpopupboxsell .dmenu {padding-left: 15px;border-left: 1px solid #d2d0e1;margin-left: 15px;}
+#Authorisationpopupboxsell .dmenu .circle{width: 40px;height: 40px;margin-right: 5px;background-color: #EFECFF;border-radius: 50%;position: relative;}
+#Authorisationpopupboxsell .dmenu .circle span{width: 35px;height: 35px;background-color: #B9AAFD;border-radius: 50%;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);text-align: center;padding: 14% 0;}
+#Authorisationpopupboxsell .dmenu .usernamep{display: inline-block;margin: 7% 0;}
+#Authorisationpopupboxsell .selllink{display: inline-block;margin: 2% 0;}
+#Authorisationpopupboxsell .selllink a{margin: 0 10px;}
+.authorisesellt button{font-size: 16px;text-transform: none;font-weight: 500;}
+
+
+/* select starting stylings ------------------------------*/
+.select-text {position: relative;font-family: inherit;background-color: transparent;width: 100%;height: 60px;padding: 10px 10px 10px 10px;font-size: 18px;border-radius: 4px;border: 2px solid #d2d0e1;}
+/* Remove focus */
+.select-text:focus {outline: none;border: 2px solid #6a4eee;}
+/* Use custom arrow */
+.select .select-text {appearance: none;-webkit-appearance:none;color: gray;}
+.select:after {position: absolute;top: 18px;right: 10px;/* Styling the down arrow */width: 0;height: 0;padding: 0;content: '';border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 6px solid #d2d0e1;pointer-events: none;}
+/* LABEL ======================================= */
+.select-label {color: #d2d0e1;background: white;font-size: 18px;font-weight: normal;position: absolute;pointer-events: none;padding: 0 5px;left: 1rem;top: 1.2rem;transition: 0.2s ease all;}
+/* active state */
+.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {color: #6a4eee;top: -8px;transition: 0.2s ease all;font-size: 14px;}
+.select-text:valid:not(focus) ~ .select-label {color: #121212;}
+.select-text:valid:focus ~ .select-label {color: #6a4eee;}
+
+
+
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  color: #000000;
+}
+.form__input:focus ~ .icon-inside svg path {
+  fill: #6a4eee;
+  stroke: #6a4eee;
+}
+.form__input:not(:placeholder-shown).form__input:not(:focus)
+  ~ .icon-inside
+  svg
+  path {
+  fill: #000000;
+  stroke: #000000;
+}
+
+.form__input:focus ~ .icon-inside i.fa-eye-slash {
+  color: #6a4eee;
+}
+.form__input:focus ~ .icon-inside i.fa-eye{
+  color: #6a4eee;
+}
+.icon-inside .fa-eye-slash:hover {
+  color: #6a4eee;
+}
+.icon-inside .fa-eye:hover {
+  color: #6a4eee;
+}
+
+/*input:focus, input:not(:placeholder-shown), input:-webkit-autofill{border: 2px solid #000000;}*/
+.form__input:focus ~ .form__label {
+  color: #6a4eee;
+}
+
+input[type="number"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  border: 2px solid #d2d0e1;
+  border-radius: 0.5rem !important;
+  font-family: inherit;
+  font-size: inherit;
+  /* color: ; */
+  outline: none;
+  padding: 1.25rem !important;
+  background: none !important;
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.modal .modal-dialog {
+  /*margin-top: 10%;*/
+}
+.modal button.btn-primary {
+  /*background: #6a4eee;*/
+  border-radius: 7px; /*height: 60px;*/
+  font-size: 18px;
+}
+.modal #search {
+  padding: 0 0 10px;
+  margin: 0;
+}
+.modal #search input {
+  width: 100%;
+}
+.modal .submitbtn {
+  margin-bottom: 10px;
+}
+.modal .submitbtn-no {
+  background: #d9d9d9 !important;
+  border-color: #d9d9d9;
+  vertical-align: top;
+}
+.modal-header {
+  border-bottom: none;
+  padding: 25px 25px 10px;
+}
+.modal-body {
+  padding: 10px 25px 25px;
+}
+.modal-body .form {
+  height: 3rem;
+}
+.modal-content {
+  border-radius: 10px;
+  border: none;
+}
+.close {
+  opacity: 10;
+}
+#DeleteCModal .modal-dialog {
+  max-width: 260px !important;
+}
+#DeleteCModal .modal-body {
+  padding: 0px 25px 25px;
+}
+#EditWModal .modal-dialog {
+  max-width: 400px !important;
+}
+#ConvertModal .modal-dialog {
+  max-width: 400px !important;
+}
+
+.modal-header .form {
+  margin-bottom: 0px;
+}
+
+.convertbox p {
+  color: #a5a7a4;
+  font-weight: 400;
+}
+.convertbox {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+.convertbox span {
+  font-size: 12px;
+  color: #a5a7a4;
+}
+.convertbox .form {
+  margin-bottom: 4px;
+}
+
+#InfoModal .nbox p {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 2px;
+  color: #ffffff;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+#InfoModal .nbox {
+  max-width: fit-content;
+  min-width: 60px;
+  height: 25px;
+  text-align: center;
+  background: #fc8b00;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 6px;
+}
+#InfoModal .openbtn {
+  max-width: fit-content;
+  min-width: 60px;
+  height: 25px;
+  text-align: center;
+  background: #00c707;
+  border-radius: 2px;
+}
+#InfoModal .openbtn span {
+  margin: 0;
+  color: #ffffff;
+}
+#InfoModal #watchlistinner .table-row .table-cell:nth-child(1) {
+  color: #a5a7a4;
+}
+#InfoModal #watchlistinner .table-row .table-cell:nth-child(2) {
+  text-align: right;
+}
+#InfoModal #watchlistinner {
+  padding: 0;
+}
+#InfoModal .submitbtn {
+  width: 24%;
+  margin: 0 6px 0 0;
+}
+
+/*tab*/
+.tabline {
+  border-bottom: 1px solid #eeeeee;
+}
+#Portfolio .tab-wrap {
+  width: 25%; /*margin-left: 20%;*/ /*position: relative;*/
+  display: flex; /*top: -106px;*/
+}
+#Portfolio input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -2;
+}
+#Portfolio input[type="radio"][name="tabs"]:checked + .tab-label-content label {
+  color: #121212;
+}
+#Portfolio
+  input[type="radio"][name="tabs"]:checked
+  + .tab-label-content
+  .tab-content {
+  display: block;
+}
+#Portfolio input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide {
+  left: calc((48% / 4) * 0);
+}
+#Portfolio input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide {
+  left: calc((48% / 4) * 1);
+}
+#Portfolio input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide {
+  left: calc((100% / 4) * 2);
+}
+#Portfolio input[type="radio"][name="tabs"]:nth-of-type(4):checked ~ .slide {
+  left: calc((100% / 4) * 3);
+}
+#Portfolio input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
+  left: 0;
+}
+#Portfolio label {
+  cursor: pointer;
+  color: #a5a7a4;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 36px;
+  transition: color 0.2s ease; /*width: 100%;*/
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px 12px 10px 12px;
+}
+#Portfolio .slide {
+  background: #6a4eee;
+  width: calc(22% / 2);
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 4px);
+  transition: left 0.3s ease-out;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+#Portfolio .tab-label-content {
+  width: 100%;
+}
+#Portfolio .tab-label-content .tab-content {
+  width: 93%;
+  position: absolute;
+  top: 100px;
+  left: 34px;
+  line-height: 130%;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #Portfolio .tab-wrap {
+    width: 80%;
+    margin-left: 10%;
+    top: -106px;
+  }
+  #ChangePassword .tab-wrap {
+    width: 80%;
+    margin-left: 10%;
+    top: -106px;
+  }
+}
+
+#popupbox .modal-body p {
+  font-size: 12px;
+  /*text-align: justify;*/
+}
+#Portfolio #search {
+  width: 40%;
+  padding: 0 0 10px;
+}
+#Portfolio #searhnbtn .btnalign {
+  display: inline-block;
+  padding-top: 8px;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+#Portfolio #searhnbtn #search input {
+  padding: 8px 8px;
+}
+
+#AuthoriseTable{max-height: 35vh;
+    display: table;
+    overflow: auto;
+    margin-bottom: 20px;border: 1px solid #eeeeee;border-radius: 6px;}
+#AuthoriseTable thead tr th {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5a7a4;
+  padding: 14px 15px;
+}
+#AuthoriseTable thead tr:nth-child(1) label {
+  border: 1px solid #d2d0e1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 0px;
+}
+#AuthoriseTable tbody td:nth-child(1) label {
+  border: 1px solid #d2d0e1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 0px;
+}
+#AuthoriseTable .regular-checkbox {
+  display: none;
+}
+#AuthoriseTable .regular-checkbox:checked + label {
+  background-color: #6a4eee;
+  border: 1px solid #6a4eee;
+  color: #ffffff;
+}
+#AuthoriseTable .regular-checkbox:checked + label:after {
+  content: url(http://img.tecxlabs.com/images/positions/checkbox-tick.svg);
+  font-size: 10px;
+  position: absolute; /*top: 28px;left: 18px;*/
+  color: #ffffff;
+  margin: -3px -4px;
+}
+#AuthoriseTable tr td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 18px;
+  /*height: 68px;*/
+  vertical-align: middle;
+}
+#AuthoriseTable tr td .form {
+  margin-bottom: 0;
+  height: auto;
+}
+#AuthoriseTable tr {
+  border-bottom: 1px solid #eeeeee;
+}
+#AuthoriseTable thead th {
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+}
+#AuthoriseTable input[type="number"] {
+  width: 100%;
+  height: 78%;
+  padding: 4px 10px!important;
+  background:#ffffff!important;
+}
+#popupbox button.btn-primary {
+  font-size: 14px !important;
+}
+#AuthoriseTable .form__label {
+  top: 0.5rem;
+    left: 0.2rem;
+    font-size: 12px;  
+}
+
+table#PortfolioTable {
+  width: 100%;
+}
+#PortfolioTable tbody td .nbox {
+  max-width: fit-content;
+  min-width: 70px;
+  height: 25px;
+  text-align: center;
+}
+#PortfolioTable tbody td p {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 2px;
+  color: #ffffff;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+#PortfolioTable thead tr th {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a5a7a4;
+  padding: 14px 15px;
+}
+#PortfolioTable .orange {
+  background: #fc8b00;
+}
+#PortfolioTable .purple {
+  background: #d554fd;
+}
+#PortfolioTable .blue {
+  background: #30dbf9;
+}
+#PortfolioTable h3 {
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1px;
+}
+#PortfolioTable h3 span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5a7a4;
+}
+#PortfolioTable .regular-checkbox {
+  display: none;
+}
+#PortfolioTable thead {
+  border-top: 1px solid #d2d0e1;
+}
+#PortfolioTable thead tr label {
+  border: 1px solid #d2d0e1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 0px;
+}
+#PortfolioTable tbody td label {
+  border: 1px solid #d2d0e1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 0px;
+}
+#PortfolioTable .regular-checkbox:checked + label {
+  background-color: #6a4eee;
+  border: 1px solid #6a4eee;
+  color: #ffffff;
+}
+#PortfolioTable .regular-checkbox:checked + label:after {
+  content: url(http://img.tecxlabs.com/images/positions/checkbox-tick.svg);
+  font-size: 10px;
+  position: absolute; /*top: 28px;left: 18px;*/
+  color: #ffffff;
+  margin: -3px -12px;
+}
+#PortfolioTable tr td .watchlistbox img {
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin: 0 10px;
+}
+#PortfolioTable tr td .watchlistbox .dropdown-item span {
+  color: #e0d8d5;
+}
+#PortfolioTable tr td {
+  padding: 18px 15px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 18px;
+  height: 68px;
+  vertical-align: middle;
+}
+#PortfolioTable tr {
+  border-bottom: 1px solid #eeeeee;
+}
+#PortfolioTable thead th {
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+}
+#PortfolioTable tfoot tr td {
+  padding: 12px 10px;
+}
+#PortfolioTable tfoot {
+  border-bottom: 1px solid #eeeeee;
+}
+#PortfolioTable div.watchlistbox {
+  margin-left: 8%;
+  position: unset;
+}
+#PortfolioTable tr:hover div.watchlistbox {
+  display: inline-block;
+}
+
+#Portfolio .positions .progress {
+  width: 80%;
+  display: inline;
+}
+#Portfolio .positions span {
+  float: right;
+  position: absolute;
+  margin-left: 10px;
+}
+#Portfolio #bar-graph {
+  height: auto;
+  margin-bottom: 38px;
+}
+#Portfolio .positions .progress .progress-bar {
+  height: 8px;
+  display: inline-block;
+}
+tr[disabled] td::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+tr[disabled] {
+  pointer-events: none;
+}
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc:hover::after {
+  content: url(http://img.tecxlabs.com/images/orders/up-arrow-grey.svg);
+}
+.table-sortable .th-sort-desc:hover::after {
+  content: url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg);
+}
+.table-sortable .th-sort-asc::after,
+.table-sortable th.th-sort-desc::after {
+  margin-left: 5px;
+  float: right;
+}
+.table-sortable .th-sort-asc:hover,
+.table-sortable .th-sort-desc:hover {
+  background: #f5f5f5;
+}
+.table-sortable th:hover {
+  background: #f5f5f5;
+}
+.table-sortable th:hover::after {
+  content: url(http://img.tecxlabs.com/images/orders/up-arrow-grey.svg);
+  /*float: right;*/
+}
+
+#PortfolioTable .exitbtn {
+  background: url(http://img.tecxlabs.com/images/positions/exit.svg) center center no-repeat #ffffff;
+  border: 1px solid #a5a7a4;
+  padding: 10px 20px;
+  height: auto;
+}
+.nbox .bsell {
+  background: #ff6872;
+  color: #ffffff;
+}
+.nbox .bbuy {
+  background: #5762f7;
+  color: #ffffff;
+}
+.nbox .btn-complete {
+  background: #00c707;
+  color: #ffffff;
+  padding: 2px 10px;
+}
+.nbox .btn-reject {
+  background: #ff0606;
+  color: #ffffff;
+  padding: 2px 10px;
+}
+
+.btntrades {
+  cursor: pointer;
+}
+.btntrades::after {
+  content: url(http://img.tecxlabs.com/images/orders/up-arrow-black.svg);
+}
+.btntrades.collapsed::after {
+  content: url(http://img.tecxlabs.com/images/orders/down-arrow-black.svg);
+}
+/*tab*/
+
+/*funds*/
+.funds-equity {
+  padding: 20px 50px;
+  border-right: 1px solid #d2d0e1;
+}
+.funds-equity #box1 .table-cell {
+  padding: 12px 0;
+}
+.funds-equity #box2 .table-cell {
+  padding: 8px 0;
+  color: #a5a7a4;
+}
+.funds-equity #box2 .table-cell.text-right h6 {
+  color: #000000;
+}
+.funds-equity #box3 .table-cell {
+  padding: 8px 0;
+  color: #a5a7a4;
+}
+.funds-equity #box3 .table-cell.text-right h6 {
+  color: #000000;
+}
+.funds-equity #box1 .table-cell h3 {
+  font-weight: 400;
+  color: #a5a7a4;
+  text-transform: inherit;
+}
+.funds-equity #box1 .table-cell span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.dfundshead {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 18px;
+  display: block;
+}
+.funds-deposit p {
+  color: #121212;
+  border-bottom: 1px solid #d2d0e1;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.dfundsbox {
+  padding: 0 30px;
+}
+.dfundsbox form {
+  padding-top: 20px;
+}
+.dfundsbox form button {
+  text-transform: none;
+}
+.dfundsbox form button.addfund-btn {
+  font-size: 18px;
+  padding: 15px 0;
+}
+.dfundsbox form button.withdfund-btn {
+  border-color: #ff6872;
+  background: #ff6872;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px 0;
+}
+.fund-equityplate {
+  color: #000000;
+  background: #ffffff;
+  padding: 18px;
+  border: 1px solid #d2d0e1;
+  height: 79vh;
+  overflow: hidden;
+  /*margin-bottom: 10px;*/
+}
+/*funds*/
+
+/*.funds-deposit form .form {
+  height: 3rem;
+}*/
+
+/*footer*/
+.footer-logo {
+  display: inline-block;
+}
+.footer-bottom {
+  /*position: absolute;*/
+  bottom: 0;
+  background: #ffffff;
+  width: 100%;
+  border-left: 1px solid #d2d0e1;
+  border-right: 1px solid #d2d0e1;
+  border-bottom: 1px solid #d2d0e1;
+  padding: 12px 30px;
+  left: 18px;
+}
+.name-logo {
+  display: inline-block;
+  margin-right: 12px;
+}
+.footer-bottom h6 {
+  font-weight: 400;
+  margin: 12px 10px;
+  display: inline-block;
+}
+.footer-content {
+  display: inline;
+  float: right;
+}
+.footer-content h6 {
+  margin: 12px 5px;
+}
+.footer-content h6:nth-child(2) {
+  width: 120px;
+}
+.footer-content .d-inline-block img {
+  width: 27px;
+}
+.fname {
+  display: inline;
+  padding: 0 10px;
+}
+.fname h6 {
+  display: inline-block;
+}
+.border-right {
+  border-right: 1px solid #d2d0e1;
+}
+.color-grey {
+  color: #a5a7a4;
+}
+/*footer*/
+
+/*login*/
+.login-box1 {
+  background-color: #f8fbff;
+  height: 100vh; /*width: 30%*/
+  z-index: 1;
+}
+.login-box1 .login-content {
+  position: fixed;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+}
+.login-box1 .login-content .navbar-brand {
+  margin: 40px 0 0 50px;
+}
+.login-box1 h1 {
+  font-size: 50px;
+  color: #121212;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.login-box1 .login-section1 {
+  width: 66%;
+  margin: 30% auto 30% auto;
+}
+.login-box1 .login-section1 p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #121212;
+}
+.login-box1 .forgot-section1 p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #121212;
+}
+.login-box1 .login-section1 .forgotbtn {
+  position: relative;
+  margin-bottom: 10px;
+}
+.login-box1 .login-section1 .forgotbtn a {
+  font-size: 13px;
+  font-weight: 600;
+}
+.login-box1 .login-section1 .forgotbtn a div button {
+  color: #6a4eee;
+}
+.login-box1 .login-section1 .registertxt {
+  position: relative;
+  margin-bottom: 10px;
+}
+.login-box1 .login-section1 .registertxt h4 {
+  color: #d4d4df;
+}
+.login-box1 .login-section1 .registertxt h4 a {
+  color: #6a4eee;
+  text-decoration: underline;
+}
+.login-box1 .signtxt {
+  width: 42%;
+  margin: auto;
+}
+.login-box1 .signtxt h4 {
+  color: #d4d4df;
+}
+.login-box1 .signtxt h4 a {
+  text-decoration: underline;
+}
+.login-box1 .form__label {
+  background-color: #f8fbff;
+}
+
+.login-box2 {
+  padding: 0;
+  position: unset;
+  float: right;
+  height: 100vh;
+}
+.login-box2 .phone-image {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+  width: 72%;
+  overflow: hidden;
+  bottom: 0;
+}
+/*.login-box2 .phone-image img{position: absolute;right: 0;height: -webkit-fill-available;z-index: 2;}*/
+.login-box2 .phone-image img {
+  width: 100%;
+}
+.login-box1 .forgot-section1 {
+  width: 66%;
+  margin: 22% auto 18% auto;
+}
+.error {
+  color: #fb4242 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+/*login*/
+
+/*profile*/
+.usernamep{display: inline-block;margin: 6% 0;}
+#leftbox .personal{position: fixed;}
+#leftbox .account{position: fixed;}
+.profile hr{margin: 30px 0;}
+.profile p{font-size: 12px;font-weight: 400;font-family: 'Inter', sans-serif;color: #121212;margin-bottom: 10px;}
+.profile a:hover p{color: #6a4eee;}
+.personal-content {padding-left: 16px;width: 100%;}
+.personalbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
+.personalbox .personal-content aside{font-size: 16px;font-weight: 400;font-family: "Inter", sans-serif;margin-bottom: 10px;color: #121212;}
+
+.accountbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
+.accountbox .personal-content aside{font-size: 16px;font-weight: 400;font-family: "Inter", sans-serif;color: #121212;margin-bottom: 10px;}
+.personal-content a.active aside{color: #6a4eee;}
+
+#rightbox {height: 65vh;}
+#rightbox .basicinfo{font-family: 'Inter', sans-serif;color: #121212;padding-top: 15px;}
+#rightbox .basicinfo aside{font-size: 14px;margin-bottom: 20px;}
+#rightbox .basicinfo p{color: #a5a7a4;}
+#rightbox .basicinfo span{font-size: 12px;color: #121212;}
+
+#rightbox .contactinfo {margin: 10px 0 10px 0;padding-top: 15px;}
+#rightbox .contactinfo form .form{height: 50px;margin-bottom: 30px!important;}
+#rightbox .contactinfo form .form .form__label{}
+#rightbox .contactinfo aside{font-size: 14px;margin: 12px 0;padding: 0;}
+
+#rightbox .dematdetails aside{font-size: 14px;margin-bottom: 10px;}
+#rightbox .dematdetails {padding-bottom: 30px;padding-top: 15px;}
+#rightbox .dematdetails p{color: #a5a7a4;}
+#rightbox .dematdetails span{font-size: 12px;color: #121212;display: block;}
+.derivatives-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;}
+.derivatives{padding: 12px;}
+.derivatives span{display: block;}
+.derivatives button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;margin-top: 8px;cursor: default;}
+.derivatives button:hover{background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;}
+.derivatives button:active{background-color: #F1F6FA!important;color: #000000!important;border: 1px solid #D2D0E1!important;}
+.activatederive{background: #6a4eee;border-radius: 0px 0px 6px 6px;padding: 8px 12px;}
+.activatederive p{font-size: 10px;font-weight: 500;color: #ffffff!important;display: inline-block;margin: 0;}
+.activatederive img{margin: 4px 0;}
+
+.commodities-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;margin-left: 2%}
+.commodities{padding: 12px;}
+.commodities span{display: block;}
+.commodities button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;margin-top: 8px;cursor: default;}
+.commodities button:hover{background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;}
+.commodities button:active{background-color: #F1F6FA!important;color: #000000!important;border: 1px solid #D2D0E1!important;}
+.equitiesbtn{margin-top: 10px;}
+.equitiesbtn button{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;padding: 8px 10px;height: 31px;font-size: 12px;font-weight: 400;cursor: default;}
+.equitiesbtn button:hover{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;}
+.equitiesbtn button:active{color: #00B123!important;background: rgba(0, 177, 35, 0.05)!important;border: 1px solid #00B123!important;}
+.equitiesbtn button img{margin-right: 5px;}
+.prighttxt{font-weight: 500;color: #6a4eee;}
+.cdsl p{color: #A5A7A4;}
+.cdsl span{color: #000000;}
+#Nominee small{color: #A5A7A4;font-size: 12px;font-weight: 400;}
+#Nominee img{display: block;margin:0 auto; }
+#Nominee button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
+#PowerAttorney button.newpin{height: 40px;padding: 12px 53px;text-transform: none;font-weight: 500;margin-top: 15px; }
+#PowerAttorney button.poa{height: 40px;padding: 12px 28px;text-transform: none;font-weight: 500;margin-top: 15px; }
+#AccountClosure button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
+
+.active-box{border: 1px solid #d2d0e1;border-radius: 6px;width: 42%;display: inline-block;}
+.basicplan{background: linear-gradient(180deg, #6A4EEE 17.07%, #211075 100%);padding: 10px;color: #ffffff;border-radius:6px 6px 0 0;}
+.basicplan span{display: inline-block;font-weight: 500;font-size: 40px;}
+.basicplan aside{display: inline-block;vertical-align: middle;float: right;padding: 12px;}
+.basicplan small{display: block;padding: 5px 10px;font-size: 10px;}
+.basicplan .rupee{display: inline-block;vertical-align: top;}
+.basic-content{border-radius: 0px 0px 6px 6px;padding: 8px 20px;}
+.basic-content small{font-size: 10px;}
+.bankacc{display: flex;}
+.bank-details {margin-top: 15px;}
+.bank-details p{width: 25%;}
+.bankname img{margin-right: 5px;}
+#BankDetails .bankname p{display: inline;color: #000000;}
+.bankpribtn{text-align: right;}
+.bankpribtn .primarybtn{border-radius: 15px;font-size: 10px;font-weight: 500;padding: 5px 11px;height: 22px;background: #6a4eee;color: #ffffff;width: 56px;display: inline-block;}
+#ChangePassword form .form{height: 50px;width: 300px;}
+#ChangePassword button{height: 40px;text-transform: none;background: #D2D0E1;font-weight: 500;border:1px solid #D2D0E1;padding: 12px 70px;width: 100%;}
+#ChangePassword button:hover{height: 40px;text-transform: none;background: #6A4EEE;font-weight: 500;border:1px solid #D2D0E1;color: #ffffff;}
+#AccountClosure aside{color: #FF0606;}
+#AccountClosure button{background: none;border-color: #FF0606;color: #FF0606;}
+#AccountClosure button:hover{background: #FF0606;color: #ffffff;}
+.prighttxt img{margin-left: 10px;}
+#ChangePassword{height: 380px;}
+
+/* radio */
+#ChangePassword input[type="radio"] {display: none;}
+#ChangePassword input[type="radio"] + *::before {content: "";display: inline-block;/*vertical-align: bottom;*/width: 1rem;height: 1rem;margin-top: 0.3rem;border-radius: 50%;border-style: solid;border-width: 0.1rem;border-color: #6a4eee;}
+#ChangePassword input[type="radio"]:checked + * {color: #6a4eee;}
+#ChangePassword input[type="radio"]:checked + *::before {background: radial-gradient(#6a4eee 0%, #6a4eee 40%, transparent 50%, transparent);border-color: #6a4eee;}
+#ChangePassword input[type="radio"] + * {display: flex;padding: 0.5rem 0rem;}
+
+#ChangePassword .tab-wrap {width: 25%; /*margin-left: 20%;*/ /*position: relative;*/display: flex; /*top: -106px;*/}
+#ChangePassword input[type="radio"][name="tabs"] {/*position: absolute;z-index: -2;*/margin: 4% 0px;}
+#ChangePassword input[type="radio"][name="tabs"]:checked + .tab-label-content label {/*color: #121212;*/}
+#ChangePassword .form__label {top: 1rem;}
+#ChangePassword
+input[type="radio"][name="tabs"]:checked
++ .tab-label-content
+.tab-content {display: block;}
+#ChangePassword input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide {left: calc((48% / 4) * 0);}
+#ChangePassword input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide {left: calc((48% / 4) * 1);}
+#ChangePassword input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide {left: calc((100% / 4) * 2);}
+#ChangePassword input[type="radio"][name="tabs"]:nth-of-type(4):checked ~ .slide {left: calc((100% / 4) * 3);}
+#ChangePassword input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {left: 0;}
+#ChangePassword .tab-wrap .tab-label-content label:nth-child(1) {cursor: pointer;color: #a5a7a4;background-color: #ffffff;box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;text-align: center;height: 36px;transition: color 0.2s ease; /*width: 100%;*/font-size: 14px;font-weight: 400;padding: 0px 12px 10px 12px;}
+#ChangePassword .tab-label-content {width: 100%;}
+#ChangePassword .tab-label-content .tab-content {width: 98%;position: absolute;top: 60px;;line-height: 130%;left: 30px;display: none;}
+/*profile*/
+
+/*option chain*/
+.optionchain {color: #000000;background: #ffffff;border-left: 1px solid #d2d0e1;border-right: 1px solid #d2d0e1;border-bottom:1px solid #d2d0e1;;height: 68.5vh;overflow: auto;font-family: 'Inter', sans-serif;}
+.futurestock{padding-bottom: 15px;border-bottom: 1px solid #d2d0e1;vertical-align: middle;}
+.futurestock h3{margin: auto 0;padding-right: 10px;}
+.futurestock button{background: none;color: #6a4eee;height: 35px;padding: 8px 15px;font-size: 14px;font-weight:400;}
+.futurestock button:hover{background: #6a4eee;color: #ffffff;}
+.futurestock button.active{background: #6a4eee;font-weight:600;}
+.futurename {font-family: 'Inter', sans-serif;font-weight: 300;font-size: 14px;text-transform: uppercase;color: #121212;margin: auto;padding:0 10px 0 10px;height: min-content;}
+.futureprice {font-family: 'Inter', sans-serif;font-weight: 500;font-size: 18px;text-transform: uppercase;padding-right: 5px;margin: auto;min-width: 90px;height: min-content;}
+.updownper {font-family: 'Inter', sans-serif;font-weight: 400;font-size: 16px;padding-right: 10px;border-right: 1px solid #d2d0e1;min-width: 140px;height: min-content;margin: auto;text-align: center;}
+/*.updownper:nth-last-child(1){border:none;}*/
+.future1{}
+.futurebox{display: flex;position: relative;width: 100%;overflow-x: scroll;overflow-y: hidden;white-space: nowrap;}
+.futurebox::-webkit-scrollbar{display: none}
+.callputhead{padding: 15px 0px;}
+.callputhead h4{text-transform: uppercase;margin: 0;}
+.swiper-slide{width: unset!important;margin-right: 10px!important;}
+table#OptionChain{border-collapse: separate;border-spacing: 0;}
+table#OptionChain td{border-top: none;border-bottom: 1px solid #c9ccd7;}
+table#OptionChain thead{position: sticky;top: 0;width: 100%;z-index: 2;background: #ffffff;}
+table#OptionChain thead tr th{white-space:normal;font-size: 12px;font-weight: 400;line-height: 1.4;color: #A5A7A4;vertical-align: middle;padding: 10px 10px;min-height: 58px;border-bottom: 1px solid #dee2e6;}
+/*table#OptionChain tbody tr td{white-space:normal;}*/
+table#OptionChain tbody td{font-size: 12px;padding:10px 10px;color: #121212;}
+table#OptionChain tbody tr td a{color: #121212;}
+table#OptionChain tbody tr td a:hover{text-decoration: underline;}
+table#OptionChain tbody tr:nth-child(odd) td:nth-child(-n+5){background: #F5F3FF; }
+table#OptionChain tbody tr:nth-child(even) td:nth-child(-n+5){background: #FAF9FF; }
+table#OptionChain tbody tr:nth-child(odd) td:nth-child(n+7){background: #FAFBFF; }
+table#OptionChain tbody tr:nth-child(even) td:nth-child(n+7){background: #ffffff; }
+table#OptionChain thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
+table#OptionChain tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 500;width: 10%;border-bottom: none;}
+table#OptionChain tr.psticky{position: sticky;top: 55px;bottom: 0;width: 100%;z-index: 1;}
+table#OptionChain tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
+table#OptionChain tr.psticky td.shortcover{background: #F5F3FF!important;height: 63px;}
+table#OptionChain tr.psticky td.shortcover span{text-transform: uppercase;}
+table#OptionChain tr.psticky td.shortcover.tbg-white{background: #ffffff!important;}
+table#OptionChain tr:hover div.watchlistbox {display: block;}
+table#OptionChain div.watchlistbox {display: none;position: absolute;right: 0;top: 15%;padding-right: 18px;}
+table#OptionChain div.watchlistbox .wbuy {background-color: #1964e4;color: #ffffff;border: none;}
+table#OptionChain div.watchlistbox .wsell {background-color: #f31813;}
+table#OptionChain div.watchlistbox .wsell:hover {color: #ffffff;}
+table#OptionChain div.watchlistbox .chart {background-color: #ffffff;border:1px solid #A5A7A4; }
+table#OptionChain div.watchlistbox .add {background-color: #ffffff;border:1px solid #A5A7A4;color: #121212;font-weight: 300;font-size: 20px;line-height: 1;}
+table#OptionChain .watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 50%;width: 25px;height: 25px;font-weight: 500;}
+
+table#OptionChain2{border-collapse: separate;border-spacing: 0;}
+table#OptionChain2 td{border-top: none;border-bottom: 1px solid #c9ccd7;}
+table#OptionChain2 thead{position: sticky;top: 0;width: 100%;z-index: 2;background: #ffffff;}
+table#OptionChain2 thead tr th{white-space:normal;font-size: 12px;font-weight: 400;line-height: 1.4;color: #A5A7A4;vertical-align: middle;padding: 10px 10px;min-height: 58px;border-bottom: 1px solid #dee2e6;}
+table#OptionChain2 thead tr th:nth-child(1){padding-left: 15px;}
+table#OptionChain2 tbody td{font-size: 12px;padding:10px 10px;color: #121212;}
+table#OptionChain2 thead th:nth-last-child(1){text-align: right;padding-right: 25px;}
+table#OptionChain2 tbody td:nth-last-child(1){text-align: right;padding-right: 25px;}
+table#OptionChain2 tbody tr td a{color: #121212;}
+table#OptionChain2 tbody tr td a:hover{text-decoration: underline;}
+table#OptionChain2 tbody tr td:nth-child(1){padding-left: 25px;}
+table#OptionChain2 tbody tr:nth-child(odd) td:nth-child(-n+5){background: #F5F3FF; }
+table#OptionChain2 tbody tr:nth-child(even) td:nth-child(-n+5){background: #FAF9FF; }
+table#OptionChain2 tbody tr:nth-child(odd) td:nth-child(n+7){background: #FAFBFF; }
+table#OptionChain2 tbody tr:nth-child(even) td:nth-child(n+7){background: #ffffff; }
+table#OptionChain2 thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
+table#OptionChain2 tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 600;width: 10%;border-bottom: none;}
+table#OptionChain2 tr.psticky{position: sticky;top: 55px;bottom: 0;width: 100%;z-index: 1;height: 63px;}
+table#OptionChain2 tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
+table#OptionChain2 tr.psticky td.shortcover{background: #F5F3FF!important;}
+table#OptionChain2 tr.psticky td.shortcover.tbg-white{background: #ffffff!important;}
+table#OptionChain2 tr:hover div.watchlistbox {display: block;}
+table#OptionChain2 div.watchlistbox {display: none;position: absolute;left: 0;top: 15%;padding-right: 18px;z-index: 1;}
+table#OptionChain2 div.watchlistbox .wbuy {background-color: #1964e4;color: #ffffff;border: none;}
+table#OptionChain2 div.watchlistbox .wsell {background-color: #f31813;}
+table#OptionChain2 div.watchlistbox .wsell:hover {color: #ffffff;}
+table#OptionChain2 div.watchlistbox .chart {background-color: #ffffff;border:1px solid #A5A7A4; }
+table#OptionChain2 div.watchlistbox .add {background-color: #ffffff;border:1px solid #A5A7A4;color: #121212;font-weight: 300;font-size: 20px;line-height: 1;}
+table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 50%;width: 25px;height: 25px;font-weight: 500;}
+
+.shortcoverp {display: inline-flex;}
+.shortcoverp span:nth-child(1){width: 60px;display: inline-block;font-weight: 600;}
+.shortcoverp span:nth-child(2){width: 120px;display: inline-block;font-size: 12px;font-weight: 500;}
+/*option chain*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .b-listing #mainwatchlist tr td {
+    padding: 10px 20px;
+  }
+  .plate-2 {
+    position: inherit;
+    width: 100%;
+  }
+  .login-box2 {
+    display: none;
+  }
+  .login-box1 .login-section1 {
+    width: 90%;
+    margin: 10% auto 20% auto;
+  }
+  .login-box1 .signtxt {
+    width: 80%;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .plate-2 {
+    position: inherit;
+    width: 100%;
+  }
+  .b-listing #mainwatchlist tr td {
+    padding: 10px 20px;
+  }
+  .login-box2 {
+    display: none;
+  }
+  .login-box1 .signtxt {
+    width: 60%;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .b-listing #mainwatchlist tr td {
+    padding: 10px 20px;
+  }
+  .plate-2 {
+    position: unset;
+    width: 100%;
+  }
+  .login-box2 .phone-image img {
+    width: 50%;
+  }
+  .login-box1 {
+    height: auto;
+  }
+  .login-box1 .login-section1 {
+    width: 80%;
+    margin: 10% auto 20% auto;
+  }
+  .login-box1 .signtxt {
+    width: 80%;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .plate {
+    height: auto;
+  }
+  .plate-2 {
+    height: auto;position: unset;width: auto;
+  }
+  .b-listing #mainwatchlist tr td {
+    padding: 6px 16px 6px 16px;
+  }
+  #holdingbox {
+    height: auto;
+  }
+  #marketbox {
+    height: auto;
+  }
+  #search input {
+    width: 78%;
+  }
+  .login-box1 .login-section1 {
+    width: 80%;
+    margin: 12% auto 18% auto;
+  }
+  .login-box1 .forgot-section1 {
+    width: 80%;
+    margin: 8% auto 8% auto;
+  }
+  .login-box1 .login-content .navbar-brand {
+    margin: 40px 0 0 50px;
+  }
+  .login-box1 h1 {
+    font-size: 25px;
+  }
+  .form {
+    height: 44px;
+  }
+  .form__label {
+    top: 0.7rem;
+  }
+  .btn-primary {
+    height: 44px;
+    font-size: 14px;
+  }
+  .login-box1 .login-section1 p {
+    font-size: 16px;
+  }
+  .login-box1 .forgot-section1 p {
+    font-size: 16px;
+  }
+  .login-box1 .signtxt {
+    width: 80%;
+  }
+  .login-box1 {
+    z-index: 3;
+  }
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .login-box2 .phone-image img {
+    object-fit: fill;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .login-box2 .phone-image img {
+    object-fit: fill;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .login-box2 .phone-image img {
+    object-fit: fill;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1365.98px) {
+  h1 {
+    font-size: 37px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  #mainbox {
+    padding: 0;
+  }
+  .plate {
+    height: 47vh;
+    padding: 20px;
+  }
+  .plate-2 {
+    position: fixed;
+    height: 95vh;
+  }
+  /*.navbar{padding:0px 28px;}*/
+  .marketlive {
+    /* height: 40px; */
+    padding: 0px 20px;
+  }
+  .niftymain {
+    margin: 6px 0;
+  }
+  .b-listing #mainwatchlist {
+    margin: 8px 0 8px 0;
+    height: 63vh;
+    overflow: auto; /*padding:0 12px 0 0;*/
+    display: block;
+  }
+  .b-listing #mainwatchlist tr span {
+    max-width: 70%;
+  }
+  .b-listing #mainwatchlist tr img {
+    width: 35px;
+    height: 35px;
+    margin-right: 6px;
+  }
+  .b-listing #mainwatchlist tr td {
+    /*width:65%;*/
+    padding: 10px 10px 5px 15px;
+  }
+  #watchlistinner .table-cell {
+    font-size: 12px;
+  }
+  #mainwatchlist tr.collapse td {
+    display: grid;
+  }
+  div.watchlistbox {
+    padding-right: 5px;
+  }
+  #search {
+    margin: 0px 2px 0px 15px;
+  }
+  #searchwatchlist {
+  }
+  #searchwatchlist tr td:nth-child(1) {
+    padding: 6px 15px 6px 20px;
+  }
+  #searchwatchlist tr td:nth-child(2) {
+    padding: 6px 20px 6px 15px;
+  }
+  .pagenum {
+    padding: 0px 10px 0px 20px;
+  }
+  .positions p {
+    font-size: 14px;
+  }
+  #bar-graph {
+    height: 204px;
+  }
+  .price-box .lprice {
+    /*margin-bottom: 2px;*/
+  }
+  #chart img {
+    margin-top: 16px;
+  }
+  .holdingbtn span a {
+    font-size: 16px;
+  }
+  .equitytxt p {
+    font-size: 16px;
+  }
+  .equitybtn a {
+    font-size: 16px;
+  }
+  .plate-2 #watchlistinner-market.marketlive {
+    padding: 0px 5px 0px 15px;
+  }
+  .plate-2 #watchlistinner-market.marketlive2 {
+    padding: 0px 15px 0px 5px;
+  }
+  .plate-2 #watchlistinner-market {
+    width: 49%;
+  }
+  .fund-equityplate {
+    height: 70vh;
+    overflow: auto;
+  }
+  #BuyWModal {
+    width: 36%;
+  }
+  .portfolioplate {
+    height: 70vh;
+  }
+  .equityplate {
+    height: 70vh;
+  }
+  .profile {
+    height: 70vh;
+  }
+  .footer-bottom {
+    padding: 12px 15px;
+  }
+  .footer-bottom .footer-logo .name-logo img {
+    width: 20px;
+  }
+  .name-logo:nth-last-child(1) {
+    margin-right: 0;
+  }
+  .footer-content h6:nth-child(2) {
+    width: 76px;
+  }
+  .dfundsbox form button.addfund-btn {
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+  .dfundsbox form button.withdfund-btn {
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+  .login-box1 .login-section1 {
+    margin: 12% auto 12% auto;
+  }
+  .login-box1 .forgot-section1 {
+    margin: 6% auto 6% auto;
+  }
+  .login-box1 .login-content .navbar-brand {
+    margin: 40px 0 0 50px;
+  }
+  .login-box1 h1 {
+    font-size: 25px;
+  }
+  .form {
+    height: 44px;
+  }
+  .form__label {
+    top: 0.7rem;
+  }
+  .btn-primary {
+    height: 44px;
+    font-size: 14px;
+  }
+  .login-box1 .login-section1 p {
+    font-size: 16px;
+  }
+  .login-box1 .forgot-section1 p {
+    font-size: 16px;
+  }
+  .login-box1 .signtxt {
+    width: 60%;
+  }
+  #watchlistinner-market h4 {
+    font-size: 12px;
+  }
+  table#OptionChain tbody td{padding: 10px 0;font-size: 11px;}
+  table#OptionChain2 tbody td{padding: 10px 0;font-size: 11px;}
+}
+
+@media (min-width: 1366px) and (max-width: 1399.98px) {
+  h1 {
+    font-size: 37px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  #mainbox {
+    padding: 0;
+  }
+  .plate {
+    height: 47vh;
+    padding: 20px;
+  }
+  .plate-2 {
+    position: fixed;
+    height: 95vh;
+  }
+  /*.navbar{padding:0px 28px;}*/
+  .marketlive {
+    height: 40px;
+    padding: 0px 20px;
+  }
+  .niftymain {
+    margin: 6px 0;
+  }
+  .b-listing #mainwatchlist {
+    margin: 8px 0 8px 0;
+    height: 63vh;
+    overflow: auto; /*padding:0 12px 0 0;*/
+    display: block;
+  }
+  .b-listing #mainwatchlist tr span {
+    max-width: 70%;
+  }
+  .b-listing #mainwatchlist tr img {
+    width: 35px;
+    height: 35px;
+    margin-right: 6px;
+  }
+  .b-listing #mainwatchlist tr td {
+    /*width:65%;*/
+    padding: 10px 10px 5px 15px;
+  }
+  #watchlistinner .table-cell {
+    font-size: 12px;
+  }
+  #mainwatchlist tr.collapse td {
+    /*display: grid;*/
+  }
+  div.watchlistbox {
+    padding-right: 5px;
+  }
+  #search {
+    margin: 0px 2px 0px 15px;
+  }
+  #searchwatchlist {
+  }
+  #searchwatchlist tr td:nth-child(1) {
+    padding: 6px 15px 6px 20px;
+  }
+  #searchwatchlist tr td:nth-child(2) {
+    padding: 6px 20px 6px 15px;
+  }
+  .pagenum {
+    padding: 0px 10px 0px 20px;
+  }
+  .positions p {
+    font-size: 14px;
+  }
+  #bar-graph {
+    height: 204px;
+  }
+  .price-box .lprice {
+    /*margin-bottom: 2px;*/
+  }
+  #chart img {
+    margin-top: 16px;
+  }
+  .holdingbtn span a {
+    font-size: 16px;
+  }
+  .equitytxt p {
+    font-size: 16px;
+  }
+  .equitybtn a {
+    font-size: 16px;
+  }
+  .plate-2 #watchlistinner-market.marketlive {
+    padding: 0px 5px 0px 15px;
+  }
+  .plate-2 #watchlistinner-market.marketlive2 {
+    padding: 0px 15px 0px 5px;
+    height: 40px;
+  }
+  .plate-2 #watchlistinner-market {
+    width: 49%;
+  }
+  .fund-equityplate {
+    height: 70vh;
+    overflow: auto;
+  }
+  #BuyWModal {
+    width: 36%;
+  }
+  .portfolioplate {
+    height: 70vh;
+  }
+  .equityplate {
+    height: 70vh;
+  }
+  .profile {
+    height: 70vh;
+  }
+  .footer-bottom {
+    padding: 12px 15px;
+  }
+  .footer-bottom .footer-logo .name-logo img {
+    width: 20px;
+  }
+  .name-logo:nth-last-child(1) {
+    margin-right: 0;
+  }
+  .footer-content h6:nth-child(2) {
+    width: 76px;
+  }
+  .dfundsbox form button.addfund-btn {
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+  .dfundsbox form button.withdfund-btn {
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+  .login-box1 .login-section1 {
+    margin: 12% auto 12% auto;
+  }
+  .login-box1 .forgot-section1 {
+    margin: 6% auto 6% auto;
+  }
+  .login-box1 .login-content .navbar-brand {
+    margin: 40px 0 0 50px;
+  }
+  .login-box1 h1 {
+    font-size: 25px;
+  }
+  .form {
+    height: 44px;
+  }
+  .form__label {
+    top: 0.7rem;
+  }
+  .btn-primary {
+    height: 44px;
+    font-size: 14px;
+  }
+  .login-box1 .login-section1 p {
+    font-size: 16px;
+  }
+  .login-box1 .forgot-section1 p {
+    font-size: 16px;
+  }
+  .login-box1 .signtxt {
+    width: 60%;
+  }
+  #watchlistinner-market h4 {
+    font-size: 13px;
+  }
+  .shortcoverp{display: block;}
+  table#OptionChain2 tbody td{padding: 10px 0;}
+}
+
+@media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
+  #watchlistinner-market h4 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1499.98px) {
+  table#OptionChain tbody td{padding: 10px 0;}
+  table#OptionChain2 tbody td{padding: 10px 0;}
+}
+
+@media (min-width: 1500px) and (max-width: 1599.98px) {
+  .plate {
+    height: 33vh;
+    padding: 30px;
+  }
+  .plate-2 {
+    height: 88vh;
+  }
+  .b-listing #mainwatchlist {
+    height: 68vh;
+    overflow: auto; /*padding:0 12px 0 0;*/
+    display: block;
+  }
+  .b-listing #mainwatchlist tr td {
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .b-listing #mainwatchlist tr span {
+    font-size: 16px;
+  }
+  .pagenum {
+    padding: 0px 30px;
+  }
+  .price-box .lprice {
+    font-size: 18px;
+  }
+  .price-box p {
+    font-size: 12px;
+  }
+  .plate h1 {
+    font-size: 50px;
+  }
+  .equitytxt p {
+    font-size: 20px;
+  }
+  .equitybtn a {
+    font-size: 20px;
+  }
+  .positions p {
+    font-size: 16px;
+    margin: 5px 0px;
+  }
+  .positions .progress {
+    margin: 10px 0;
+    height: 10px;
+  }
+  .equity-summary table tr th {
+    font-size: 16px;
+  }
+  .equity-summary table tr td {
+    font-size: 14px;
+  }
+  .holdingleft h3 {
+    font-size: 40px;
+  }
+  .holdingleft p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #marketbox {
+    height: 52vh;
+  }
+  #holdingbox {
+    height: 52vh;
+  }
+  #chart img {
+    margin-top: 20px;
+  }
+  .holdingbtn span a {
+    font-size: 20px;
+  }
+  .niftymain {
+    margin: 10px 0;
+  }
+  #watchlistinner-market h4 {
+    font-size: 12px;
+  }
+  table#OptionChain tbody td{padding: 10px 0;}
+  table#OptionChain2 tbody td{padding: 10px 0;}
+}
+
+@media (min-width: 1500px) and (-webkit-device-pixel-ratio: 1.25) {
+  .plate {
+    height: 50vh;
+    padding: 30px;
+  }
+  .plate-2 {
+    position: fixed;
+    height: 96vh;
+  }
+  .b-listing #mainwatchlist {
+    margin: 10px 0 10px 0;
+    height: 69vh;
+    overflow: auto; /*padding:0 12px 0 0;*/
+    display: block;
+  }
+  .b-listing #mainwatchlist tr td {
+    width: 100%;
+    padding: 10px 25px;
+  }
+  .b-listing #mainwatchlist tr span {
+    font-size: 16px;
+  }
+  #search {
+    margin: 0px 25px;
+  }
+  .pagenum {
+    padding: 0px 30px;
+  }
+  .price-box .lprice {
+    font-size: 18px;
+  }
+  .price-box p {
+    font-size: 12px;
+  }
+  .plate h1 {
+    font-size: 50px;
+  }
+  .equitytxt p {
+    font-size: 20px;
+  }
+  .equitybtn a {
+    font-size: 20px;
+  }
+  .positions p {
+    font-size: 16px;
+    margin: 5px 0px;
+  }
+  .positions .progress {
+    margin: 10px 0;
+    height: 10px;
+  }
+  .equity-summary table tr th {
+    font-size: 16px;
+    padding: 10px 10px 20px 0px;
+  }
+  .equity-summary table tr td {
+    font-size: 14px;
+  }
+  .holdingleft h3 {
+    font-size: 40px;
+  }
+  .holdingleft p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #marketbox {
+    height: 68vh;
+  }
+  #holdingbox {
+    height: 68vh;
+  }
+  #chart img {
+    margin-top: 20px;
+  }
+  .holdingbtn span a {
+    font-size: 20px;
+  }
+  #menutxt .nav-item a {
+    padding: 4px 14px;
+  }
+  #watchlistinner-market h4 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .plate {
+    height: 38vh;
+    padding: 30px;
+  }
+  .plate-2 {
+    height: 96vh;
+  }
+  .profile {
+    padding: 30px;
+  }
+  .equityplate {
+    padding: 30px;
+  }
+  .equityplate span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .portfolioplate {
+    padding: 30px;
+  }
+  .b-listing #mainwatchlist {
+    height: 74vh;
+    overflow: auto; /*padding:0 12px 0 0;*/
+    display: block;
+  }
+  .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 8px 18px 8px 30px;}
+  .b-listing #watchlistinner tr th {padding: 6px 6px;}
+  .b-listing #watchlistinner tr td {
+    width: 100%;
+    padding: 3px 6px;
+    font-size: 14px;
+  }
+  .b-listing #watchlistinner2 tr th {
+    padding: 6px 6px;
+  }
+  .b-listing #watchlistinner2 tr td {
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 12px;
+  }
+  .b-listing #watchlistinner2 tr td:nth-child(1) {
+    color: #9a9a9a;
+  }
+  .b-listing #watchlistinner2 tr td:nth-child(2) {
+    color: #121212;
+    font-weight: 600;
+    text-align: right;
+  }
+  #mainwatchlist tr.collapse td:nth-child(1) {
+    padding-right: 4px;
+  }
+  #mainwatchlist tr.collapse td:nth-child(2) {
+    padding-left: 4px;
+  }
+  #mainwatchlist tr.collapse td #watchlistinner tr th {
+    padding: 3px 16px 6px 6px;
+  }
+  .search-results {
+    max-height: 74vh;
+  }
+  .recentsearch {
+    height: 74vh;
+  }
+  table#equitytable {
+    height: 66vh;
+    overflow: auto;
+    display: block;
+  }
+  .pagenum {
+    padding: 0px 30px;
+  }
+  .price-box .lprice {
+    font-size: 18px;
+  }
+  .price-box p {
+    font-size: 12px;
+  }
+  .plate h1 {
+    font-size: 50px;
+  }
+  .equitytxt p {
+    font-size: 20px;
+  }
+  .equitybtn a {
+    font-size: 20px;
+  }
+  .positions p {
+    font-size: 16px;
+    margin: 5px 0px;
+  }
+  .positions .progress {
+    margin: 10px 0;
+    height: 10px;
+  }
+  .equity-summary table tr th {
+    font-size: 20px;
+    padding: 10px 20px 20px 0px;
+    width: 1%;
+  }
+  .equity-summary table tr td {
+    font-size: 18px;
+  }
+  .holdingleft h3 {
+    font-size: 40px;
+  }
+  .holdingleft p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #marketbox {
+    height: 52vh;
+  }
+  #holdingbox {
+    height: 52vh;
+  }
+  #chart img {
+    margin-top: 20px;
+  }
+  .holdingbtn span a {
+    font-size: 20px;
+  }
+  .niftymain {
+    margin: 10px 0;
+  }
+}

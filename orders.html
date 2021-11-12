@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nuvester Admin</title>
+  
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/extra.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="images/logo.svg" />
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="mainbox">
+      <div class="row">
+        <!-- 1 -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="plate-2 fadeIn-element">
+            <div class="marketbox border-bottom">
+              <div id="watchlistinner-market" class="table marketlive">
+                <div class="table-cell"><h4 class="nname">Nifty 50</h4></div>
+                <div class="table-cell"><h4 class="pgreen">10121.40</h4></div>
+                <div class="table-row nsebse" href="#">
+                  <div class="table-cell"><h6>NSE INDEX</h6></div>
+                  <div class="table-cell"><h6 class="mpercent">0.27%</h6></div>
+                </div>
+              </div>
+              <div id="watchlistinner-market" class="table marketlive2">
+                <div class="table-cell"><h4 class="nname">Sensex</h4></div>
+                <div class="table-cell"><h4 class="pred">32998.65</h4></div>
+                <div class="table-row nsebse" href="#">
+                  <div class="table-cell"><h6>NSE INDEX</h6></div>
+                  <div class="table-cell"><h6 class="mpercent">0.27%</h6></div>
+                </div>
+              </div>
+            </div>
+            <div class="b-listing">
+              <div class="input-group slideInDown-element" id="search">
+                <div>
+                  <span>
+                    <img src="images/search.svg">
+                  </span>
+                </div>
+                <input type="text" placeholder="Search & Add" id="awesome-input" />
+                <div class="listingnum">
+                  <span>15</span>/<span>50</span>
+                </div>
+              </div>
+
+              <!-- search data -->
+              <div class="search-results">
+                <table id="searchwatchlist" class="table table-borderless">
+                  <tbody>
+                    <tr>
+                      <td style="width: 50%;">
+                        <h4>HINDUNILVR</h4>
+                        <p>lorem ipsum ipsum</p>
+                      </td>
+                      <td style="width: 50%;" class="search-box">
+                        <p class="bse">BSE</p>
+                        <div class="watchlistbox">
+                          <button type="button" class="btn btn-primary wbuy" data-toggle="modal" data-target="#BuyWModal">B</button>
+                          <button type="button" class="btn btn-primary wsell">S</button>
+                          <button type="button" class="btn btn-primary wmarketdepth" data-toggle="modal" data-target="#SMarketModal"></button>
+                          <button type="button" class="btn btn-primary wchart"></button>
+                          <button type="button" class="btn btn-primary searchadd"></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4>Hdfc</h4>
+                        <p>lorem ipsum</p>
+                      </td>
+                      <td class="search-box">
+                        <p class="nse">NSE</p>
+                        <div class="watchlistbox">
+                          <button type="button" class="btn btn-primary wbuy" data-toggle="modal" data-target="#BuyWModal">B</button>
+                          <button type="button" class="btn btn-primary wsell">S</button>
+                          <button type="button" class="btn btn-primary wmarketdepth"></button>
+                          <button type="button" class="btn btn-primary wchart"></button>
+                          <button type="button" class="btn btn-primary searchadd"></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="watchlistadded">
+                      <td>
+                        <h4>Hdfc 2</h4>
+                        <p>lorem ipsum</p>
+                      </td>
+                      <td class="search-box">
+                        <p class="nse">NSE</p>
+                        <div class="watchlistbox">
+                          <button type="button" class="btn btn-primary wbuy">B</button>
+                          <button type="button" class="btn btn-primary wsell">S</button>
+                          <button type="button" class="btn btn-primary wmarketdepth"></button>
+                          <button type="button" class="btn btn-primary wchart"></button>
+                          <button type="button" class="btn btn-primary searchadded"></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td>
+                        <h4>ACC SEPT 1280 CE</h4>
+                      </td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC SEPT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1223 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1254 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1256 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1275 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1280 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC NOV 1230 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1280 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <!-- <tr>
+                      <td><h4>ACC OCT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC NOV 1230 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1256 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1275 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1280 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC NOV 1230 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1280 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC NOV 1230 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr> -->
+                  </tbody>
+                </table>
+              </div>
+              <!-- search data -->
+
+              <!-- data -->
+              <table id="mainwatchlist" class="table table-borderless">
+                <tbody>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>HDFC</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="watchlistbox">
+                        <button type="button" class="btn btn-primary wbuy" data-toggle="tooltip" data-placement="top" title="Buy" onclick="Alert.render('You look very pretty today.')">B</button>
+                        <button type="button" class="btn btn-primary wsell" data-toggle="tooltip" data-placement="top" title="Sell">S</button>
+                          <div class="d-inline-block" id="accordionExample">
+                            <div id="headingOne">
+                              <button class="btn btn-primary wmarketdepth" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                            </div>
+                          </div>
+                        <!-- <button type="button" class="btn btn-primary wmarketdepth"></button> -->
+                        <button type="button" class="btn btn-primary woption-chain" data-toggle="tooltip" data-placement="top" title="Option chain"></button>
+                        <button type="button" class="btn btn-primary wmore dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/pin.svg"> Pin</a>
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/create-gtt.svg"> Create GTT</a>
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/chart.svg"> Chart</a>
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/delete.svg"> delete</a>
+                          <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Fundamentals</a>
+                          <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Technicals</a>
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/alert.svg"> Set Alerts</a>
+                        </div>
+                      </div>
+                      <div class="lprice text-green">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                    <tr id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <td>
+                        <div id="watchlistinner" class="table">
+                          <div class="table-cell c-blue"><h6>Bid</h6></div>
+                          <div class="table-cell c-blue"><h6>Orders</h6></div>
+                          <div class="table-cell c-blue"><h6>Qty</h6></div>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">Total</div>
+                              <div class="table-cell"></div>
+                              <div class="table-cell">0</div>
+                          </a>
+                        </div>
+                      </td>
+                      <td>
+                        <div id="watchlistinner" class="table">
+                          <div class="table-cell c-red"><h6>Bid</h6></div>
+                          <div class="table-cell c-red"><h6>Orders</h6></div>
+                          <div class="table-cell c-red"><h6>Qty</h6></div>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">Total</div>
+                              <div class="table-cell"></div>
+                              <div class="table-cell">0</div>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <td>
+                        <table id="watchlistinner2" class="c-blue table table-responsive table-borderless">
+                          <tbody>
+                            <tr>
+                                <td>Open</td>
+                                <td>113.20</td>
+                            </tr>
+                            <tr>
+                                <td>Low</td>
+                                <td>111.85</td>
+                            </tr>
+                            <tr>
+                                <td>Volume</td>
+                                <td>2,01,207</td>
+                            </tr>
+                            <tr>
+                                <td>LTQ</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Lower Circuit</td>
+                                <td>131.70</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td>
+                        <table id="watchlistinner2" class="c-red table table-responsive table-borderless">
+                          <tbody>
+                            <tr>
+                                <td>High</td>
+                                <td>115.55</td>
+                            </tr>
+                            <tr>
+                                <td>Prev. close</td>
+                                <td>111.85</td>
+                            </tr>
+                            <tr>
+                                <td>Avg. price</td>
+                                <td>143.46</td>
+                            </tr>
+                            <tr>
+                                <td>LTT</td>
+                                <td>2021-08-30 15:29:57</td>
+                            </tr>
+                            <tr>
+                                <td>Upper Circuit</td>
+                                <td>160.90</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tr>
+
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <span>H</span>
+                      </div>
+                      <div class="companyname">
+                        <h4>HINDUNILVR</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>INFY</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>ONGC</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-green">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>TCS</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-green">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>hdfc</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>HINDUNILVR</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>infy</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>ongc</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>tcs</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-green">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>tcs</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>infy</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>ongc</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="saa">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="pagenum">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item active" data-toggle="tooltip" data-placement="top" title="watchlist 1">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item" data-toggle="tooltip" data-placement="top" title="Add Watchlist">
+                            <a class="page-link" data-toggle="modal" data-target="#AddModal" href="">+</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="pagenum">
+                      <a class="float-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img data-toggle="tooltip" data-placement="top" title="Marketwatch Settings" class=" my-1" src="images/settings.svg">
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <p class="mb-1">Sort By:</p>
+                        <div class="my-2">
+                          <button>A-Z</button>
+                          <button>%</button>
+                          <button>LTP</button>
+                          <button>EXH</button>
+                        </div>
+                        <a class="dropdown-item top-botmline" href="#" data-toggle="modal" data-target="#EditWModal">
+                          <img src="images/watchlist/edit-watchlist.svg"> Edit watchlist name
+                        </a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#DeleteCModal">
+                          <img src="images/watchlist/delete.svg"> Delete watchlist
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- 1 -->
+
+        <!-- 2 -->
+        <div class="col-md-6 col-lg-8 col-xl-9">
+          <nav class="navbar navbar-dark navbar-expand justify-content-center">
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/><span>NUVESTER</span></a>
+            <div class="container-fluid">
+              <ul class="navbar-nav nav-justified text-center" id="menutxt">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link d-flex flex-column">
+                    <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                    <span class="d-none d-sm-inline">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="portfolio.html" class="nav-link d-flex flex-column">
+                      <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                      <span class="d-none d-sm-inline">portfolio</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a href="orders.html" class="active nav-link d-flex flex-column">
+                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                        <span class="d-none d-sm-inline">orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="funds.html" class="nav-link d-flex flex-column">
+                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                        <span class="d-none d-sm-inline">funds</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link d-flex flex-column">
+                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                        <span class="d-none d-sm-inline">account</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link text-center d-flex flex-column" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-bell fa-lg"></span>
+                        <span class="d-none d-sm-inline px-1 mt-1">menu <small>▼</small></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+        	<!-- <div class="row">
+	          	<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	        		<div class="contentbox fadeIn-element">
+	        			<p>The final stage of the peak margin rules is effective from today, September 1, 2021. This means that you will need full SPAN + Exposure margin for F&O and at least 20% of trade value (or VaR+ELM) for intraday (MIs & CO) equity trades.</p>
+	        			<a href="#">Read more</a>
+	        		</div>
+	        	</div>
+	        </div> -->
+        	
+        	<div class="row">
+	            <!-- tab -->
+	            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Portfolio">
+	              <div class="portfolioplate fadeIn-element">
+                  <div>
+	                <div class="row slideInDown-element">
+	                  <div class="col-md-12 tabline">
+	                    
+                      <div class="tab-wrap">
+                        <input type="radio" name="tabs" id="tab1" checked>
+                        <div class="tab-label-content" id="tab1-content">
+                          <label for="tab1">Orders</label>
+                          <div class="tab-content">
+
+                            <div class="row mb-4">
+                              <div class="col-md-4">
+                                <h2>Executed Orders (<span>2</span>)</h2>
+                              </div>
+                              <div class="col-md-8 text-right" id="searhnbtn">
+                                <div class="input-group slideInDown-element m-0" id="search">
+                                  <div>
+                                    <span>
+                                      <img src="images/search.svg">
+                                    </span>
+                                  </div>
+                                  <input type="text" placeholder="Search E.g. INFY" />
+                                </div>
+                                <div class="btnalign">
+                                  <a href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> View History</a>
+                                </div>
+                                <div class="btnalign">
+                                  <a href="#"><img src="images/positions/download.svg"> Download</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <table class="datatable table table-hover table-sortable" id="PortfolioTable">
+                                  <thead>
+                                    <tr>
+                                      <th style="width: 10%">Time</th>
+                                      <th style="width: 10%">Type</th>
+                                      <th style="width: 40%">Instrument</th>
+                                      <th style="width: 10%">Product</th>
+                                      <th style="width: 10%">Qty.</th>
+                                      <th style="width: 10%">Avg. price</th>
+                                      <th style="width: 10%">Status</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="odd_col">
+                                      <td>12:16:20</td>
+                                      <td><div class="nbox"><p class="bsell">sell</p></div></td>
+                                      <td>
+                                        <h3>IDEA <span>NSE</span></h3>
+                                        <div class="watchlistbox">
+                                          <button type="button" class="btn btn-primary wmore dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#"><img src="images/positions/add.svg"> Buy</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/exit.svg"> Sell</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/convert.svg"> Repeat</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/info.svg"> Info</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/create-gtt.svg"> Create GTT <span>/ GTC</span></a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/market-depth.svg"> Market depth</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/chart.svg"> Chart</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/watchlist.svg"> Add to marketwatch</a>
+                                            <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Fundamentals</a>
+                                            <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Technicals</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/alert.svg"> Set Alerts</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>CNC</td>
+                                      <td>1/1</td>
+                                      <td>8.80</td>
+                                      <td><div class="nbox"><p class="btn-complete">Complete</p></div></td>
+                                    </tr>
+                                    <tr class="even_col">
+                                      <td>12:15:34</td>
+                                      <td><div class="nbox"><p class="bbuy">Buy</p></div></td>
+                                      <td><h3>HINDUNILVR <span>NSE</span></h3></td>
+                                      <td>cnc</td>
+                                      <td>0/1</td>
+                                      <td>0.00</td>
+                                      <td><div class="nbox"><p class="btn-reject">Rejected</p></div></td>
+                                    </tr>
+                                    
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                            <div class="row my-4">
+                              <div class="col-md-4">
+                                <h2 class="btntrades" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Trades (<span>1</span>) </h2>
+                              </div>
+                              <div class="col-md-8 text-right" id="searhnbtn">
+                                <div class="input-group slideInDown-element m-0" id="search">
+                                  <div>
+                                    <span>
+                                      <img src="images/search.svg">
+                                    </span>
+                                  </div>
+                                  <input type="text" placeholder="Search E.g. INFY" />
+                                </div>
+                                <div class="btnalign">
+                                  <a href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> View History</a>
+                                </div>
+                                <div class="btnalign">
+                                  <a href="#"><img src="images/positions/download.svg"> Download</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row collapse show mb-5" id="collapseExample">
+                              <div class="col-md-12">
+                                <table class="datatable table table-hover table-sortable" id="PortfolioTable">
+                                  <thead>
+                                    <tr>
+                                      <th style="width: 10%">Trade ID</th>
+                                      <th style="width: 10%">Time</th>
+                                      <th style="width: 10%">Type</th>
+                                      <th style="width: 40%">Instrument</th>
+                                      <th style="width: 10%">Product</th>
+                                      <th style="width: 10%">Qty.</th>
+                                      <th style="width: 10%">Avg. Price</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="odd_col">
+                                      <td>51563656</td>
+                                      <td>12:16:20</td>
+                                      <td><div class="nbox"><p class="bsell">sell</p></div></td>
+                                      <td>
+                                        <h3>IDEA <span>NSE</span></h3>
+                                        <div class="watchlistbox">
+                                          <button type="button" class="btn btn-primary wmore dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#"><img src="images/positions/exit.svg"> Buy</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/add.svg"> Sell</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/create-gtt.svg"> Create GTT <span>/ GTC</span></a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/market-depth.svg"> Market depth</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/chart.svg"> Chart</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/watchlist.svg"> Add to marketwatch</a>
+                                            <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Fundamentals</a>
+                                            <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Technicals</a>
+                                            <a class="dropdown-item" href="#"><img src="images/positions/alert.svg"> Set Alerts</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>cnc</td>
+                                      <td>1</td>
+                                      <td>8.85</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="slide"></div>
+
+                      </div>
+
+	                  </div>
+	                </div>
+                  </div>
+	              </div>
+                <div class="row fadeIn-element">
+                  <div class="col-md-12">
+                    <div class="footer-bottom">
+                      <div class="footer-logo">
+                        <div class="name-logo">
+                          <img src="images/footer/sensibull.svg">
+                          <h6>Sensibull</h6>
+                        </div>
+                        <div class="name-logo">
+                          <img src="images/footer/smallcase.svg">
+                          <h6>Smallcase</h6>
+                        </div>
+                        <div class="name-logo">
+                          <img src="images/footer/vested.svg">
+                          <h6>Vested</h6>
+                        </div>
+                        <div class="name-logo">
+                          <img src="images/footer/streak.svg">
+                          <h6>Streak</h6>
+                        </div>
+                        <div class="name-logo">
+                          <img src="images/footer/smart-store.svg">
+                          <h6>Smart Store</h6>
+                        </div>
+                      </div>
+                      <div class="footer-content">
+                        <div class="fname border-right">
+                          <h6 class="color-grey">Holdings M2M</h6>
+                          <h6>375.95</h6>
+                        </div>
+                        <div class="fname">
+                          <h6 class="color-grey">Positions M2M</h6>
+                          <h6>388.25</h6>
+                        </div>
+                        <div class="d-inline-block">
+                          <a href="#"><img src="images/footer/alert.svg"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+	            </div>
+	            <!-- tab -->
+        	</div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- container-scroller -->
+
+  <!-- Custom js for this page-->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- End custom js for this page-->
+
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+</body>
+</html>
+
+<script type="text/javascript">
+  /**
+ * Sorts a HTML table.
+ * 
+ * @param {HTMLTableElement} table The table to sort
+ * @param {number} column The index of the column to sort
+ * @param {boolean} asc Determines if the sorting will be in ascending
+ */
+  function sortTableByColumn(table, column, asc = true) {
+      const dirModifier = asc ? 1 : -1;
+      const tBody = table.tBodies[0];
+      const rows = Array.from(tBody.querySelectorAll("tr"));
+
+      // Sort each row
+      const sortedRows = rows.sort((a, b) => {
+          const aColText = a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+          const bColText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+
+          return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+      });
+
+      // Remove all existing TRs from the table
+      while (tBody.firstChild) {
+          tBody.removeChild(tBody.firstChild);
+      }
+
+      // Re-add the newly sorted rows
+      tBody.append(...sortedRows);
+
+      // Remember how the column is currently sorted
+      table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"));
+      table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-asc", asc);
+      table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-desc", !asc);
+  }
+
+  document.querySelectorAll(".table-sortable th").forEach(headerCell => {
+      headerCell.addEventListener("click", () => {
+          const tableElement = headerCell.parentElement.parentElement.parentElement;
+          const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+          const currentIsAscending = headerCell.classList.contains("th-sort-asc");
+
+          sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+      });
+  });
+</script>

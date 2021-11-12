@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nuvester Admin</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="shortcut icon" href="images/logo.svg" />
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="mainbox">
+    	<div class="row" id="livemarketmobile">
+    		<div class="col-md-12">
+	    		<ul class="navbar-nav">
+  					<li class="nav-item nav-search d-lg-block d-xl-none ml-0">
+  						<div class="plate-3 marketlive">
+  							<div class="niftymain">
+  								<div class="nname">Nifty 50</div>
+  								<div class="pgreen">10121.40</div>
+  								<div class="mpercent">100.27%</div>
+  							</div>
+  							<div class="sensexmain">
+  								<div class="nname">Sensex</div>
+  								<div class="pred">32998.65</div>
+  								<div class="mpercent">100.23%</div>
+  							</div>
+  						</div>
+  					</li>
+				  </ul>
+		    </div>
+    	</div>
+
+      <div class="row">
+        <!-- 1 -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="plate-2 fadeIn-element">
+            <div class="marketbox border-bottom">
+              <div id="watchlistinner-market" class="table marketlive">
+                <div class="table-cell"><h4 class="nname">Nifty 50</h4></div>
+                <div class="table-cell"><h4 class="pgreen">10121.40</h4></div>
+                <div class="table-row nsebse" href="#">
+                  <div class="table-cell"><h6>NSE INDEX</h6></div>
+                  <div class="table-cell"><h6 class="mpercent">0.27%</h6></div>
+                </div>
+              </div>
+              <div id="watchlistinner-market" class="table marketlive2">
+                <div class="table-cell"><h4 class="nname">Sensex</h4></div>
+                <div class="table-cell"><h4 class="pred">32998.65</h4></div>
+                <div class="table-row nsebse" href="#">
+                  <div class="table-cell"><h6>NSE INDEX</h6></div>
+                  <div class="table-cell"><h6 class="mpercent">0.27%</h6></div>
+                </div>
+              </div>
+            </div>
+            <div class="b-listing">
+              <div class="input-group slideInDown-element" id="search">
+                <div>
+                  <span>
+                    <img src="images/search.svg">
+                  </span>
+                </div>
+                <input type="text" placeholder="Search & Add" id="awesome-input" />
+                <div class="listingnum">
+                  <span>15</span>/<span>50</span>
+                </div>
+              </div>
+
+              <!-- search data -->
+              <div class="search-results">
+                <table id="searchwatchlist" class="table table-borderless">
+                  <tbody>
+                    <tr>
+                      <td style="width: 50%;">
+                        <h4>HINDUNILVR</h4>
+                        <p>lorem ipsum ipsum</p>
+                      </td>
+                      <td style="width: 50%;" class="search-box">
+                        <p class="bse">BSE</p>
+                        <div class="watchlistbox">
+                          <button type="button" class="btn btn-primary wbuy" data-toggle="modal" data-target="#BuyWModal">B</button>
+                          <button type="button" class="btn btn-primary wsell">S</button>
+                          <button type="button" class="btn btn-primary wmarketdepth" data-toggle="modal" data-target="#SMarketModal"></button>
+                          <button type="button" class="btn btn-primary wchart"></button>
+                          <button type="button" class="btn btn-primary searchadd"></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4>Hdfc</h4>
+                        <p>lorem ipsum</p>
+                      </td>
+                      <td class="search-box">
+                        <p class="nse">NSE</p>
+                        <div class="watchlistbox">
+                          <button type="button" class="btn btn-primary wbuy" data-toggle="modal" data-target="#BuyWModal">B</button>
+                          <button type="button" class="btn btn-primary wsell">S</button>
+                          <button type="button" class="btn btn-primary wmarketdepth"></button>
+                          <button type="button" class="btn btn-primary wchart"></button>
+                          <button type="button" class="btn btn-primary searchadd"></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="watchlistadded">
+                      <td>
+                        <h4>Hdfc 2</h4>
+                        <p>lorem ipsum</p>
+                      </td>
+                      <td class="search-box">
+                        <p class="nse">NSE</p>
+                        <div class="watchlistbox">
+                          <button type="button" class="btn btn-primary wbuy">B</button>
+                          <button type="button" class="btn btn-primary wsell">S</button>
+                          <button type="button" class="btn btn-primary wmarketdepth"></button>
+                          <button type="button" class="btn btn-primary wchart"></button>
+                          <button type="button" class="btn btn-primary searchadded"></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td>
+                        <h4>ACC SEPT 1280 CE</h4>
+                      </td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC SEPT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1223 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1254 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1256 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1275 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1280 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC NOV 1230 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr class="watch-list">
+                      <td><h4>ACC OCT 1280 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <!-- <tr>
+                      <td><h4>ACC OCT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC NOV 1230 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1256 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1275 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1280 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC NOV 1230 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1280 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC OCT 1290 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr>
+                    <tr>
+                      <td><h4>ACC NOV 1230 CE</h4></td>
+                      <td class="search-box"><p class="nse-g">NSE</p></td>
+                    </tr> -->
+                  </tbody>
+                </table>
+              </div>
+              <!-- search data -->
+
+              <!-- data -->
+              <table id="mainwatchlist" class="table table-borderless">
+                <tbody>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>HDFC</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="watchlistbox">
+                        <button type="button" class="btn btn-primary wbuy" data-toggle="tooltip" data-placement="top" title="Buy" onclick="Alert.render('You look very pretty today.')">B</button>
+                        <button type="button" class="btn btn-primary wsell" data-toggle="tooltip" data-placement="top" title="Sell">S</button>
+                          <div class="d-inline-block" id="accordionExample">
+                            <div id="headingOne">
+                              <button class="btn btn-primary wmarketdepth" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                            </div>
+                          </div>
+                        <!-- <button type="button" class="btn btn-primary wmarketdepth"></button> -->
+                        <button type="button" class="btn btn-primary woption-chain" data-toggle="tooltip" data-placement="top" title="Option chain"></button>
+                        <button type="button" class="btn btn-primary wmore dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/pin.svg"> Pin</a>
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/create-gtt.svg"> Create GTT</a>
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/chart.svg"> Chart</a>
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/delete.svg"> delete</a>
+                          <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Fundamentals</a>
+                          <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Technicals</a>
+                          <a class="dropdown-item" href="#"><img src="images/watchlist/alert.svg"> Set Alerts</a>
+                        </div>
+                      </div>
+                      <div class="lprice text-green">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                    <tr id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <td>
+                        <div id="watchlistinner" class="table">
+                          <div class="table-cell c-blue"><h6>Bid</h6></div>
+                          <div class="table-cell c-blue"><h6>Orders</h6></div>
+                          <div class="table-cell c-blue"><h6>Qty</h6></div>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-blue" href="#">
+                              <div class="table-cell">Total</div>
+                              <div class="table-cell"></div>
+                              <div class="table-cell">0</div>
+                          </a>
+                        </div>
+                      </td>
+                      <td>
+                        <div id="watchlistinner" class="table">
+                          <div class="table-cell c-red"><h6>Bid</h6></div>
+                          <div class="table-cell c-red"><h6>Orders</h6></div>
+                          <div class="table-cell c-red"><h6>Qty</h6></div>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">0.00</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                          </a>
+                          <a class="table-row c-red" href="#">
+                              <div class="table-cell">Total</div>
+                              <div class="table-cell"></div>
+                              <div class="table-cell">0</div>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <td>
+                        <table id="watchlistinner2" class="c-blue table table-responsive table-borderless">
+                          <tbody>
+                            <tr>
+                                <td>Open</td>
+                                <td>113.20</td>
+                            </tr>
+                            <tr>
+                                <td>Low</td>
+                                <td>111.85</td>
+                            </tr>
+                            <tr>
+                                <td>Volume</td>
+                                <td>2,01,207</td>
+                            </tr>
+                            <tr>
+                                <td>LTQ</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Lower Circuit</td>
+                                <td>131.70</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td>
+                        <table id="watchlistinner2" class="c-red table table-responsive table-borderless">
+                          <tbody>
+                            <tr>
+                                <td>High</td>
+                                <td>115.55</td>
+                            </tr>
+                            <tr>
+                                <td>Prev. close</td>
+                                <td>111.85</td>
+                            </tr>
+                            <tr>
+                                <td>Avg. price</td>
+                                <td>143.46</td>
+                            </tr>
+                            <tr>
+                                <td>LTT</td>
+                                <td>2021-08-30 15:29:57</td>
+                            </tr>
+                            <tr>
+                                <td>Upper Circuit</td>
+                                <td>160.90</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tr>
+
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <span>H</span>
+                      </div>
+                      <div class="companyname">
+                        <h4>HINDUNILVR</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>INFY</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>ONGC</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-green">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>TCS</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-green">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>hdfc</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>HINDUNILVR</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>infy</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>ongc</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>tcs</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-green">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>tcs</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>infy</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                  <tr class="slideInDown-element">
+                    <td>
+                      <div class="companylogo">
+                        <img src="images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>ongc</h4>
+                        <p>nse</p>
+                      </div>
+                    </td>
+                    <td class="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="saa">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="pagenum">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item active" data-toggle="tooltip" data-placement="top" title="watchlist 1">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item" data-toggle="tooltip" data-placement="top" title="Add Watchlist">
+                            <a class="page-link" data-toggle="modal" data-target="#AddModal" href="">+</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="pagenum">
+                      <a class="float-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img data-toggle="tooltip" data-placement="top" title="Marketwatch Settings" class=" my-1" src="images/settings.svg">
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <p class="mb-1">Sort By:</p>
+                        <div class="my-2">
+                          <button>A-Z</button>
+                          <button>%</button>
+                          <button>LTP</button>
+                          <button>EXH</button>
+                        </div>
+                        <a class="dropdown-item top-botmline" href="#" data-toggle="modal" data-target="#EditWModal">
+                          <img src="images/watchlist/edit-watchlist.svg"> Edit watchlist name
+                        </a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#DeleteCModal">
+                          <img src="images/watchlist/delete.svg"> Delete watchlist
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- 1 -->
+
+        <!-- 2 -->
+        <div class="col-md-6 col-lg-8 col-xl-9">
+          <nav class="navbar navbar-dark navbar-expand justify-content-center">
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/><span>NUVESTER</span></a>
+            <div class="container-fluid">
+              <ul class="navbar-nav nav-justified text-center" id="menutxt">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link d-flex flex-column">
+                    <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                    <span class="d-none d-sm-inline">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="portfolio.html" class="nav-link d-flex flex-column">
+                      <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                      <span class="d-none d-sm-inline">portfolio</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a href="orders.html" class="nav-link d-flex flex-column">
+                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                        <span class="d-none d-sm-inline">orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="active nav-link d-flex flex-column">
+                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                        <span class="d-none d-sm-inline">funds</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link d-flex flex-column">
+                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
+                        <span class="d-none d-sm-inline">account</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link text-center d-flex flex-column" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-bell fa-lg"></span>
+                        <span class="d-none d-sm-inline px-1 mt-1">menu <small>▼</small></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+        	<!-- <div class="row">
+	          	<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	        		<div class="contentbox fadeIn-element">
+	        			<p>The final stage of the peak margin rules is effective from today, September 1, 2021. This means that you will need full SPAN + Exposure margin for F&O and at least 20% of trade value (or VaR+ELM) for intraday (MIs & CO) equity trades.</p>
+	        			<a href="#">Read more</a>
+	        		</div>
+	        	</div>
+	        </div> -->
+        	
+        	<div class="row">
+	            <!-- Equity Summary -->
+	            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	              <div class="fund-equityplate fadeIn-element">
+	                <div class="row slideInDown-element">
+	                  <div class="col-md-12 equitysummarymenu">
+	                    <img src="images/equity.svg"> <span>Equity</span>
+                      <div class="float-right">
+                        <div class="btnalign">
+                          <a href="#" class="mx-2"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> View Statement</a>
+                          <a href="#"><img src="images/positions/info.svg"> Help</a>
+                        </div>
+                      </div>
+	                  </div>
+                  </div>
+                  <div class="row slideInDown-element">
+	                  <div class="col-md-5 my-4">
+	                    <div class="funds-equity">
+                        <div id="box1" class="table border-bottom">
+                          <div class="table-cell"><h3>Available margin</h3></div>
+                          <div class="table-cell text-right"><span>0.00</span></div>
+                          <div class="table-row">
+                            <div class="table-cell"><h3>Used margin</h3></div>
+                            <div class="table-cell text-right"><span>0.00</span></div>
+                          </div>
+                          <div class="table-row">
+                            <div class="table-cell"><h3>Available cash</h3></div>
+                            <div class="table-cell text-right"><span>0.00</span></div>
+                          </div>
+                        </div>
+                        <div id="box2" class="table mt-4 border-bottom">
+                          <div class="table-cell"><h6>Opening balance</h6></div>
+                          <div class="table-cell text-right"><h6>0.00</h6></div>
+                          <div class="table-row">
+                            <div class="table-cell"><h6>Payin</h6></div>
+                            <div class="table-cell text-right"><h6>0.00</h6></div>
+                          </div>
+                          <div class="table-row">
+                            <div class="table-cell"><h6>SPAN<a data-toggle="tooltip" data-placement="right" title="SPAN Margin is the minimum requisite margins blocked for futures and option writing positions as per the exchange’s mandate." href=""><img class="ml-2" src="images/info.svg"></a></h6></div>
+                            <div class="table-cell text-right"><h6>0.00</h6></div>
+                          </div>
+                          <div class="table-row">
+                            <div class="table-cell"><h6>Delivery margin<a data-toggle="tooltip" data-placement="right" title="The delivery margin is blocked when you sell securities (20% of the value of stocks sold) from your demat or T1 holdings. As per SEBI's new peak margin norms, only 80% of credit from selling your holdings will be available for new trades. The funds blocked under this field will be available from the next trading day." href="#"><img class="ml-2" src="images/info.svg"></a></h6></div>
+                            <div class="table-cell text-right"><h6>0.00</h6></div>
+                          </div>
+                          <div class="table-row">
+                            <div class="table-cell"><h6>Exposure<a data-toggle="tooltip" data-placement="right" title="The ‘Exposure Margin’ is the margin blocked over and above the SPAN to cushion for any MTM losses. Both the SPAN and Exposure margins are specified by the exchange. So at the time of initiating a futures  trade, the client has to adhere to the initial margin requirement. The entire initial margin (SPAN + Exposure) is blocked by the exchange." href="#"><img class="ml-2" src="images/info.svg"></a></h6></div>
+                            <div class="table-cell text-right"><h6>0.00</h6></div>
+                          </div>
+                          <div class="table-row">
+                            <div class="table-cell"><h6>Options premium<a data-toggle="tooltip" data-placement="right" title="The total premium received from shorting/writing options. The Cash margin available is inclusive of this amount, but the breakdown is provided as option premium here." href="#"><img class="ml-2" src="images/info.svg"></a></h6></div>
+                            <div class="table-cell text-right"><h6>0.00</h6></div>
+                          </div>
+                        </div>
+                        <div id="box3" class="table mt-4">
+                          <div class="table-cell"><h6>Collateral (Liquid funds)<a data-toggle="tooltip" data-placement="right" title="Total collateral is the sum of the collateral amount received from pledging liquid funds. Collateral from liquid funds is considered as 100% cash when used to take any positions." href="#"><img class="ml-2" src="images/info.svg"></a></h6></div>
+                          <div class="table-cell text-right"><h6>0.00</h6></div>
+                          <div class="table-row">
+                            <div class="table-cell"><h6>Collateral (Equity)<a data-toggle="tooltip" data-placement="right" title="Total collateral is the sum of the collateral amount received from pledging equity holdings." href="#"><img class="ml-2" src="images/info.svg"></a></h6></div>
+                            <div class="table-cell text-right"><h6>0.00</h6></div>
+                          </div>
+                          <div class="table-row">
+                            <div class="table-cell"><h6>Total Collateral</h6></div>
+                            <div class="table-cell text-right"><h6>0.00</h6></div>
+                          </div>
+                        </div>
+	                    </div>
+	                  </div>
+                    <div class="col-md-6 col-xl-4">
+                      <div class="funds-deposit">
+                        <div class="text-center">
+                          <span class="dfundshead">Deposit funds</span>
+                        </div>
+                        <div class="dfundsbox">
+                          <p class="text-left">Mangesh Shivram Parab</p>
+                          <form>
+                            <div class="form mb-4">
+                              <input type="text" id="Amount" class="form__input" autocomplete="off" placeholder=" " required>
+                              <label for="userid" class="form__label">Amount</label>
+                            </div>
+                            <div class="form">
+                              <select class="select-text" required>
+                                <option value="" selected></option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                              </select>
+                              <label class="select-label">Select</label>
+                            </div>
+                            <div class="form">
+                              <div class="row">
+                                <div class="col-md-6 py-0">
+                                  <button type="submit" class="btn btn-primary w-100 addfund-btn"><img src="images/add.svg" height="15" alt="image" /> Add Funds</button>
+                                </div>
+                                <div class="col-md-6 pl-0">
+                                  <button type="submit" class="btn btn-primary w-100 withdfund-btn"><img src="images/withdraw.svg" height="15" alt="image" /> Withdraw</button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+	                </div>
+	              </div>
+                <div class="row fadeIn-element">
+                  <div class="col-md-12">
+                    <div class="footer-bottom">
+                      <div class="footer-logo">
+                        <div class="name-logo">
+                          <img src="images/footer/sensibull.svg">
+                          <h6>Sensibull</h6>
+                        </div>
+                        <div class="name-logo">
+                          <img src="images/footer/smallcase.svg">
+                          <h6>Smallcase</h6>
+                        </div>
+                        <div class="name-logo">
+                          <img src="images/footer/vested.svg">
+                          <h6>Vested</h6>
+                        </div>
+                        <div class="name-logo">
+                          <img src="images/footer/streak.svg">
+                          <h6>Streak</h6>
+                        </div>
+                        <div class="name-logo">
+                          <img src="images/footer/smart-store.svg">
+                          <h6>Smart Store</h6>
+                        </div>
+                      </div>
+                      <div class="footer-content">
+                        <div class="fname">
+                          <h6 class="color-grey">Holdings M2M</h6>
+                          <h6>375.95</h6>
+                        </div>
+                        <div class="fname">
+                          <h6 class="color-grey">Positions M2M</h6>
+                          <h6>388.25</h6>
+                        </div>
+                        <div class="d-inline-block">
+                          <a href="#"><img src="images/footer/alert.svg"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+	            </div>
+	            <!-- Equity Summary -->
+        	</div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- container-scroller -->
+
+  <!-- Custom js for this page-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- End custom js for this page-->
+
+  <script> 
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script> 
+</body>
+</html>
