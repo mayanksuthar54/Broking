@@ -33,12 +33,40 @@ input:disabled {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA
 .c-buy {color: #5762f7;}
 .login {width: 95px;height: 47px;margin: 20px 15px 20px;font-family: 'Open Sans', sans-serif;font-size: 40px;font-weight: 700;font-stretch: normal;font-style: normal;line-height: 1.43;letter-spacing: normal;text-align: left;color: #6a4eee;}
 
+.mobilemenu{border-bottom: 1px solid #d2d0e1;background: #ffffff;}
+.mobilemenu .navbar-brand{color:#6344f2;}
+.mobilemenu #navbarCollapse{background-color:#ffffff;border: 1px solid #d2d0e1;}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+}
+
 /*form*/
 /*   color variables */
 /*   border radius */
-*,
-*::before,
-*::after {box-sizing: border-box;margin: 0;padding: 0;}
 .form {position: relative;width: 20rem;height: 3rem;margin-bottom: 10px;width: 100%}
 .form__input {position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 2px solid #d2d0e1;border-radius: 0.5rem;font-family: inherit;font-size: inherit;color: ;outline: none;padding: 1.25rem;background: none;/* Change border when input focus*/}
 .form__input:hover {border-color: #6a4eee;color: #6a4eee;}
@@ -97,9 +125,9 @@ reduce the size of the label and move upwards
 .usernamep{display: inline-block;margin: 6% 0;}
 #leftbox .personal{position: fixed;}
 #leftbox .account{position: fixed;}
-.profile hr{margin: 30px 0;}
-.profile p{font-size: 12px;font-weight: 400;font-family: 'Inter', sans-serif;color: #121212;margin-bottom: 10px;}
-.profile a:hover p{color: #6a4eee;}
+.profile-mobile hr{margin: 30px 0;}
+.profile-mobile p{font-size: 12px;font-weight: 400;font-family: 'Inter', sans-serif;color: #121212;margin-bottom: 10px;}
+.profile-mobile a:hover p{color: #6a4eee;}
 .personal-content {padding-left: 16px;width: 100%;}
 .personalbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
 .personalbox .personal-content aside{font-size: 16px;font-weight: 400;font-family: "Inter", sans-serif;margin-bottom: 10px;color: #121212;}
@@ -123,7 +151,7 @@ reduce the size of the label and move upwards
 #rightbox .dematdetails {padding-bottom: 30px;padding-top: 15px;}
 #rightbox .dematdetails p{color: #a5a7a4;}
 #rightbox .dematdetails span{font-size: 12px;color: #121212;display: block;}
-.derivatives-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;}
+.derivatives-box{border: 1px solid #d2d0e1;border-radius: 6px;min-width:25%;display: inline-block;margin-bottom: 15px;}
 .derivatives{padding: 12px;}
 .derivatives span{display: block;}
 .derivatives button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;margin-top: 8px;cursor: default;}
@@ -133,7 +161,7 @@ reduce the size of the label and move upwards
 .activatederive p{font-size: 10px;font-weight: 500;color: #ffffff!important;display: inline-block;margin: 0;}
 .activatederive img{margin: 4px 0;}
 
-.commodities-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;margin-left: 2%}
+.commodities-box{border: 1px solid #d2d0e1;border-radius: 6px;min-width: 25%;width:auto;display: inline-block;}
 .commodities{padding: 12px;}
 .commodities span{display: block;}
 .commodities button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;margin-top: 8px;cursor: default;}
@@ -154,7 +182,7 @@ reduce the size of the label and move upwards
 #PowerAttorney button.poa{height: 40px;padding: 12px 28px;text-transform: none;font-weight: 500;margin-top: 15px; }
 #AccountClosure button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
 
-.active-box{border: 1px solid #d2d0e1;border-radius: 6px;width: 42%;display: inline-block;}
+.active-box{border: 1px solid #d2d0e1;border-radius: 6px;width: auto;display: inline-block;}
 .basicplan{background: linear-gradient(180deg, #6A4EEE 17.07%, #211075 100%);padding: 10px;color: #ffffff;border-radius:6px 6px 0 0;}
 .basicplan span{display: inline-block;font-weight: 500;font-size: 40px;}
 .basicplan aside{display: inline-block;vertical-align: middle;float: right;padding: 12px;}
