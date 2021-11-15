@@ -58,7 +58,7 @@ a:hover {
   border-radius: 20px;
 }
 /*::-webkit-scrollbar-thumb:hover {background-color: #efefef;}*/
-
+button:focus{outline: none;}
 input:disabled {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==)
     repeat;
@@ -2298,9 +2298,9 @@ input[type="radio"][name="tabs"]:checked
 table#OptionChain{border-collapse: separate;border-spacing: 0;}
 table#OptionChain td{border-top: none;border-bottom: 1px solid #c9ccd7;}
 table#OptionChain thead{position: sticky;top: 0;width: 100%;z-index: 2;background: #ffffff;}
-table#OptionChain thead tr th{white-space:normal;font-size: 12px;font-weight: 400;line-height: 1.4;color: #A5A7A4;vertical-align: middle;padding: 10px 10px;min-height: 58px;border-bottom: 1px solid #dee2e6;}
+table#OptionChain thead tr th{white-space:normal;font-size: 12px;font-weight: 400;line-height: 1.4;color: #909093;vertical-align: middle;padding: 10px 10px;min-height: 58px;border-bottom: 1px solid #dee2e6;}
 /*table#OptionChain tbody tr td{white-space:normal;}*/
-table#OptionChain tbody td{font-size: 12px;padding:10px 10px;color: #121212;}
+table#OptionChain tbody td{font-size: 12px;padding:10px 10px;color: #121212;font-weight: 500;}
 table#OptionChain tbody tr td a{color: #121212;}
 table#OptionChain tbody tr td a:hover{text-decoration: underline;}
 table#OptionChain tbody tr:nth-child(odd) td:nth-child(-n+5){background: #F5F3FF; }
@@ -2308,10 +2308,11 @@ table#OptionChain tbody tr:nth-child(even) td:nth-child(-n+5){background: #FAF9F
 table#OptionChain tbody tr:nth-child(odd) td:nth-child(n+7){background: #FAFBFF; }
 table#OptionChain tbody tr:nth-child(even) td:nth-child(n+7){background: #ffffff; }
 table#OptionChain thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
-table#OptionChain tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 500;width: 10%;border-bottom: none;}
-table#OptionChain tr.psticky{position: sticky;top: 55px;bottom: 0;width: 100%;z-index: 1;}
+table#OptionChain tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 600;width: 10%;border-bottom: none;}
+table#OptionChain tr.psticky{position: sticky;top: 55px;bottom: 0;width: 100%;z-index: 2;}
+table#OptionChain tr.psticky td .shortcoverbox{min-width: 200px;display: inline-block;background: #F5F3FF!important;padding: 10px;float: right;position: absolute;top: 4px;right: -50px;}
 table#OptionChain tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
-table#OptionChain tr.psticky td.shortcover{background: #F5F3FF!important;height: 63px;}
+table#OptionChain tr.psticky td.shortcover{/*background: #F5F3FF!important;*/height: 63px;}
 table#OptionChain tr.psticky td.shortcover span{text-transform: uppercase;display: block;}
 table#OptionChain tr.psticky td.shortcover.tbg-white{background: #ffffff!important;}
 table#OptionChain tr:hover div.watchlistbox {display: block;}
@@ -2326,16 +2327,16 @@ table#OptionChain .watchlistbox button {padding: 0px;z-index: 1;border: none;bor
 table#OptionChain2{border-collapse: separate;border-spacing: 0;}
 table#OptionChain2 td{border-top: none;border-bottom: 1px solid #c9ccd7;}
 table#OptionChain2 thead{position: sticky;top: 0;width: 100%;z-index: 2;background: #ffffff;}
-table#OptionChain2 thead tr th{white-space:normal;font-size: 12px;font-weight: 400;line-height: 1.4;color: #A5A7A4;vertical-align: middle;padding: 10px 10px;min-height: 58px;border-bottom: 1px solid #dee2e6;}
-table#OptionChain2 thead tr th:nth-child(1){padding-left: 15px;}
-table#OptionChain2 tbody td{font-size: 12px;padding:10px 10px;color: #121212;}
-table#OptionChain2 thead th:nth-last-child(1){text-align: right;padding-right: 25px;}
-table#OptionChain2 tbody td:nth-last-child(1){text-align: right;padding-right: 25px;}
+table#OptionChain2 thead tr th{white-space:normal;font-size: 12px;font-weight: 400;line-height: 1.4;color: #909093;vertical-align: middle;padding: 10px 10px;min-height: 58px;border-bottom: 1px solid #dee2e6;}
+table#OptionChain2 thead tr th:nth-child(1){padding-left: 25px;}
+table#OptionChain2 tbody td{font-size: 12px;padding:10px 10px;color: #121212;font-weight: 500;}
+table#OptionChain2 thead th:nth-last-child(1){text-align: right;padding-right: 15px;white-space: break-spaces;}
+table#OptionChain2 tbody td:nth-last-child(1){text-align: right;padding-right: 15px;}
 table#OptionChain2 tbody tr td a{color: #121212;}
 table#OptionChain2 tbody tr td a:hover{text-decoration: underline;}
 table#OptionChain2 tbody tr td:nth-child(1){padding-left: 25px;}
-table#OptionChain2 tbody tr:nth-child(odd) td:nth-child(-n+5){background: #F5F3FF; }
-table#OptionChain2 tbody tr:nth-child(even) td:nth-child(-n+5){background: #FAF9FF; }
+table#OptionChain2 tbody tr:nth-child(odd) td:nth-child(-n+5){background: #FAFBFF; white-space: nowrap;}
+table#OptionChain2 tbody tr:nth-child(even) td:nth-child(-n+5){background: #ffffff; }
 table#OptionChain2 tbody tr:nth-child(odd) td:nth-child(n+7){background: #FAFBFF; }
 table#OptionChain2 tbody tr:nth-child(even) td:nth-child(n+7){background: #ffffff; }
 table#OptionChain2 thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
@@ -2691,8 +2692,8 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   #watchlistinner-market h4 {
     font-size: 12px;
   }
-  table#OptionChain tbody td{padding: 10px 0;font-size: 11px;}
-  table#OptionChain2 tbody td{padding: 10px 0;font-size: 11px;}
+  table#OptionChain tbody td{padding: 10px;font-size: 11px;}
+  table#OptionChain2 tbody td{padding: 10px;font-size: 11px;}
 }
 
 @media (min-width: 1366px) and (max-width: 1399.98px) {
@@ -2884,8 +2885,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   #watchlistinner-market h4 {
     font-size: 13px;
   }
-  .shortcoverp{display: block;}
-  table#OptionChain2 tbody td{padding: 10px 0;}
+  table#OptionChain2 tbody td{padding: 10px;}
 }
 
 @media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
@@ -2895,8 +2895,8 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
 }
 
 @media (min-width: 1400px) and (max-width: 1499.98px) {
-  table#OptionChain tbody td{padding: 10px 0;}
-  table#OptionChain2 tbody td{padding: 10px 0;}
+  table#OptionChain tbody td{padding: 10px;}
+  table#OptionChain2 tbody td{padding: 10px;}
 }
 
 @media (min-width: 1500px) and (max-width: 1599.98px) {
@@ -2976,8 +2976,8 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   #watchlistinner-market h4 {
     font-size: 12px;
   }
-  table#OptionChain tbody td{padding: 10px 0;}
-  table#OptionChain2 tbody td{padding: 10px 0;}
+  table#OptionChain tbody td{padding: 10px;}
+  table#OptionChain2 tbody td{padding: 10px;}
 }
 
 @media (min-width: 1500px) and (-webkit-device-pixel-ratio: 1.25) {
