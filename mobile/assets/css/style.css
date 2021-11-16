@@ -33,35 +33,17 @@ input:disabled {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA
 .c-buy {color: #5762f7;}
 .login {width: 95px;height: 47px;margin: 20px 15px 20px;font-family: 'Open Sans', sans-serif;font-size: 40px;font-weight: 700;font-stretch: normal;font-style: normal;line-height: 1.43;letter-spacing: normal;text-align: left;color: #6a4eee;}
 
+.mobilebox{margin-top: 40px;}
+
 .mobilemenu{border-bottom: 1px solid #d2d0e1;background: #ffffff;}
 .mobilemenu .navbar-brand{color:#6344f2;}
 .mobilemenu #navbarCollapse{background-color:#ffffff;border: 1px solid #d2d0e1;}
 
-@media (max-width: 992px) {
-    .navbar-collapse {
-        position: fixed;
-        top: 50px;
-        left: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 75%;
-        height: 100%;
-    }
-
-    .navbar-collapse.collapsing {
-        left: -75%;
-        transition: height 0s ease;
-    }
-
-    .navbar-collapse.show {
-        left: 0;
-        transition: left 300ms ease-in-out;
-    }
-
-    .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 500ms ease-in-out;
-    }
+@media (max-width: 1024px) {
+    .navbar-collapse {position: fixed;top: 50px;left: 0;padding-left: 15px;padding-right: 15px;padding-bottom: 15px;width: 75%;height: 100%;}
+    .navbar-collapse.collapsing {left: -75%;transition: height 0s ease;}
+    .navbar-collapse.show {left: 0;transition: left 300ms ease-in-out;}
+    .navbar-toggler.collapsed ~ .navbar-collapse {transition: left 500ms ease-in-out;}
 }
 
 /*form*/
@@ -122,6 +104,14 @@ reduce the size of the label and move upwards
 .price-box p {font-weight: 400;font-size: 12px;margin-bottom: 0;}
 
 /*profile*/
+#Segments{border: 1px solid #d2d0e1;padding: 15px;}
+#TradingPlan{border: 1px solid #d2d0e1;padding: 15px;}
+#BankDetails{border: 1px solid #d2d0e1;padding: 15px;margin-bottom: 15px;}
+#ChangePassword{border: 1px solid #d2d0e1;padding: 15px;margin-bottom: 15px;}
+#Nominee{border: 1px solid #d2d0e1;padding: 15px;margin-bottom: 15px;}
+#PowerAttorney{border: 1px solid #d2d0e1;padding: 15px;margin-bottom: 15px;}
+#AccountClosure{border: 1px solid #d2d0e1;padding: 15px;margin-bottom: 15px;}
+
 .usernamep{display: inline-block;margin: 6% 0;}
 #leftbox .personal{position: fixed;}
 #leftbox .account{position: fixed;}
@@ -136,7 +126,6 @@ reduce the size of the label and move upwards
 .accountbox .personal-content aside{font-size: 16px;font-weight: 400;font-family: "Inter", sans-serif;color: #121212;margin-bottom: 10px;}
 .personal-content a.active aside{color: #6a4eee;}
 
-#rightbox {height: 65vh;}
 #rightbox .basicinfo{font-family: 'Inter', sans-serif;color: #121212;padding-top: 15px;}
 #rightbox .basicinfo aside{font-size: 14px;margin-bottom: 20px;}
 #rightbox .basicinfo p{color: #a5a7a4;}
@@ -177,10 +166,10 @@ reduce the size of the label and move upwards
 .cdsl span{color: #000000;}
 #Nominee small{color: #A5A7A4;font-size: 12px;font-weight: 400;}
 #Nominee img{display: block;margin:0 auto; }
-#Nominee button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
-#PowerAttorney button.newpin{height: 40px;padding: 12px 53px;text-transform: none;font-weight: 500;margin-top: 15px; }
-#PowerAttorney button.poa{height: 40px;padding: 12px 28px;text-transform: none;font-weight: 500;margin-top: 15px; }
-#AccountClosure button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
+#Nominee button{height: 40px;padding: 0px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
+#PowerAttorney button.newpin{height: 40px;padding: 0px 53px;text-transform: none;font-weight: 500;margin-top: 15px; }
+#PowerAttorney button.poa{height: 40px;padding: 0px 28px;text-transform: none;font-weight: 500;margin-top: 15px; }
+#AccountClosure button{height: 40px;padding: 0px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
 
 .active-box{border: 1px solid #d2d0e1;border-radius: 6px;width: auto;display: inline-block;}
 .basicplan{background: linear-gradient(180deg, #6A4EEE 17.07%, #211075 100%);padding: 10px;color: #ffffff;border-radius:6px 6px 0 0;}
@@ -196,9 +185,9 @@ reduce the size of the label and move upwards
 .bankname img{margin-right: 5px;}
 #BankDetails .bankname p{display: inline;color: #000000;}
 .bankpribtn{text-align: right;}
-.bankpribtn .primarybtn{border-radius: 15px;font-size: 10px;font-weight: 500;padding: 5px 11px;height: 22px;background: #6a4eee;color: #ffffff;width: 56px;display: inline-block;}
+.bankpribtn .primarybtn{border-radius: 15px;font-size: 10px;font-weight: 500;padding: 0px 11px;height: 22px;background: #6a4eee;color: #ffffff;width: 56px;display: inline-block;}
 #ChangePassword form .form{height: 50px;width: 300px;}
-#ChangePassword button{height: 40px;text-transform: none;background: #D2D0E1;font-weight: 500;border:1px solid #D2D0E1;padding: 12px 70px;width: 100%;}
+#ChangePassword button{height: 40px;text-transform: none;background: #D2D0E1;font-weight: 500;border:1px solid #D2D0E1;padding: 0px 70px;width: 100%;}
 #ChangePassword button:hover{height: 40px;text-transform: none;background: #6A4EEE;font-weight: 500;border:1px solid #D2D0E1;color: #ffffff;}
 #AccountClosure aside{color: #FF0606;}
 #AccountClosure button{background: none;border-color: #FF0606;color: #FF0606;}
@@ -228,4 +217,4 @@ input[type="radio"][name="tabs"]:checked
 #ChangePassword input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {left: 0;}
 #ChangePassword .tab-wrap .tab-label-content label:nth-child(1) {cursor: pointer;color: #a5a7a4;background-color: #ffffff;box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;text-align: center;height: 36px;transition: color 0.2s ease; /*width: 100%;*/font-size: 14px;font-weight: 400;padding: 0px 12px 10px 12px;}
 #ChangePassword .tab-label-content {width: 100%;}
-#ChangePassword .tab-label-content .tab-content {width: 98%;position: absolute;top: 60px;;line-height: 130%;left: 30px;display: none;}
+#ChangePassword .tab-label-content .tab-content {width: 100%;position: absolute;top: 60px;;line-height: 130%;left: 30px;display: none;}
