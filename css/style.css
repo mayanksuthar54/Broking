@@ -134,7 +134,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .btn-primary:hover {
   color: #6a4eee;
   background-color: transparent;
-  border-radius: 3px;
+  border-radius: 6px;
   border-color: #6a4eee;
 }
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -318,6 +318,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   display: inline-block;
   position: relative;
   vertical-align: top;
+  width: 70%;
 }
 .companyname h4 {
   text-transform: uppercase;
@@ -399,10 +400,9 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 }
 
 /*recent search*/
-.recentsearch{font-family: 'inter',sans-serif;}
 .recentsearch h4{font-weight: 500;font-size: 14px;}
 .recentsearch h4.pasthisto {padding: 0 25px 0px 30px;}
-.recentsearch {position: absolute;z-index: 1;display: none;width: 97.3%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;}
+.recentsearch {font-family: 'inter',sans-serif;z-index: 1;width: 100%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;}
 .pasthistory{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding-bottom: 15px;}
 .eventsbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
 .trendingbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
@@ -544,7 +544,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   position: absolute;
   z-index: 1;
   display: none;
-  width: 97.3%;
+  width: 100%;
   margin: 13px 0 12px 0;
   max-height: 66vh;
   overflow: auto;
@@ -614,7 +614,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   margin-right: 10px;
 }
 .b-listing #mainwatchlist tr td {
-  padding: 6px 0;
+  padding: 6px 0;white-space: nowrap;
 }
 /*.b-listing #mainwatchlist tr img{width: 50px;height: 50px;border: 1px solid #8b72ff;border-radius: 35px;margin-right: 10px;object-fit: contain;}*/
 .b-listing #watchlistinner2 tr td:nth-child(1) {
@@ -644,12 +644,12 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   width: 100%;
 }
 .plate-2 #watchlistinner-market.marketlive {
-  padding: 0px 20px 0px 30px;
+  padding: 0px 20px 0px 20px;
   border-right: 1px solid #d2d0e1;
   margin-top: 15px;
 }
 .plate-2 #watchlistinner-market.marketlive2 {
-  padding: 0px 30px 0px 15px;
+  padding: 0px 20px 0px 15px;
 }
 
 #mainwatchlist tr.collapse {
@@ -1111,6 +1111,7 @@ div.watchlistbox .wbuy {
 div.watchlistbox .wsell {
   background-color: #f31813;
   border-radius: 6px;
+  color: #ffffff;
 }
 div.watchlistbox .wmarketdepth {
   background: url(http://img.tecxlabs.com/images/watchlist/market-depth.svg) center center no-repeat
@@ -1977,6 +1978,12 @@ tr[disabled] {
   padding-bottom: 20px;
   margin: 0;
 }
+.funds-deposit span {
+  color: #121212;
+  padding-bottom: 20px;
+  margin: 0;
+  display: block;
+}
 .dfundsbox {
   padding: 0 30px;
 }
@@ -2168,7 +2175,7 @@ tr[disabled] {
 /*login*/
 
 /*profile*/
-.usernamep{display: inline-block;margin: 6% 0;}
+.usernamep{display: inline-block;margin: auto;}
 #leftbox .personal{position: fixed;}
 #leftbox .account{position: fixed;}
 .profile hr{margin: 30px 0;}
@@ -2311,7 +2318,7 @@ table#OptionChain tbody tr:nth-child(even) td:nth-child(n+7){background: #ffffff
 table#OptionChain thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
 table#OptionChain tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 600;width: 10%;border-bottom: none;}
 table#OptionChain tr.psticky{position: sticky;top: 55px;bottom: 0;width: 100%;z-index: 2;}
-table#OptionChain tr.psticky td .shortcoverbox{min-width: 200px;display: inline-block;background: #F5F3FF!important;padding: 10px;float: right;position: absolute;top: 4px;right: -2%;}
+table#OptionChain tr.psticky td .shortcoverbox{min-width: 200px;display: inline-block;background: #F5F3FF!important;padding: 10px;float: right;position: absolute;top: 4px;right: -5%;}
 table#OptionChain tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
 table#OptionChain tr.psticky td.shortcover{/*background: #F5F3FF!important;*/height: 63px;}
 table#OptionChain tr.psticky td.shortcover span{text-transform: uppercase;display: block;}
@@ -2695,6 +2702,9 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   }
   table#OptionChain tbody td{padding: 10px;font-size: 11px;}
   table#OptionChain2 tbody td{padding: 10px;font-size: 11px;}
+  table#OptionChain tr.psticky td .shortcoverbox{right: -10%;}
+  table#OptionChain thead tr th{height: 72px;}
+  table#OptionChain2 thead tr th{height: 72px;}
 }
 
 @media (min-width: 1366px) and (max-width: 1399.98px) {
@@ -2887,17 +2897,19 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     font-size: 13px;
   }
   table#OptionChain2 tbody td{padding: 10px;}
+  table#OptionChain tr.psticky td .shortcoverbox{right: -10%;}
 }
 
 @media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
-  #watchlistinner-market h4 {
-    font-size: 12px;
-  }
+  #watchlistinner-market h4 {font-size: 12px;}
+  table#OptionChain thead tr th{height: 72px;}
+  table#OptionChain2 thead tr th{height: 72px;}
 }
 
 @media (min-width: 1400px) and (max-width: 1499.98px) {
   table#OptionChain tbody td{padding: 10px;}
   table#OptionChain2 tbody td{padding: 10px;}
+  table#OptionChain tr.psticky td .shortcoverbox{right: -9%;}
 }
 
 @media (min-width: 1500px) and (max-width: 1599.98px) {
@@ -3064,6 +3076,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   #watchlistinner-market h4 {
     font-size: 12px;
   }
+  table#OptionChain tr.psticky td .shortcoverbox{right: -8%;}
 }
 
 @media (min-width: 1600px) {
@@ -3162,12 +3175,12 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     height: 10px;
   }
   .equity-summary table tr th {
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px 20px 20px 0px;
     width: 1%;
   }
   .equity-summary table tr td {
-    font-size: 18px;
+    font-size: 14px;
   }
   .holdingleft h3 {
     font-size: 40px;
