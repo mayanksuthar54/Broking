@@ -131,6 +131,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 0;
 }
 .btn-primary:hover {
   color: #6a4eee;
@@ -2181,33 +2182,32 @@ tr[disabled] {
 /*login*/
 
 /*profile*/
+.border1-padding15{border: 1px solid #d2d0e1;padding: 30px;margin-bottom: 20px;}
 .usernamep{display: inline-block;margin: auto;}
 #leftbox .personal{position: fixed;}
 #leftbox .account{position: fixed;}
 .profile hr{margin: 30px 0;}
-.profile p{font-size: 12px;font-weight: 400;font-family: 'Inter', sans-serif;color: #121212;margin-bottom: 10px;}
+.profile p{font-size: 12px;font-weight: 400;color: #121212;margin-bottom: 10px;}
 .profile a:hover p{color: #6a4eee;}
 .personal-content {padding-left: 16px;width: 100%;}
 .personalbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
-.personalbox .personal-content aside{font-size: 16px;font-weight: 400;font-family: "Inter", sans-serif;margin-bottom: 10px;color: #121212;}
+.personalbox .personal-content aside{font-size: 16px;font-weight: 400;margin-bottom: 10px;color: #121212;}
 
 .accountbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
-.accountbox .personal-content aside{font-size: 16px;font-weight: 400;font-family: "Inter", sans-serif;color: #121212;margin-bottom: 10px;}
+.accountbox .personal-content aside{font-size: 16px;font-weight: 400;color: #121212;margin-bottom: 10px;}
 .personal-content a.active aside{color: #6a4eee;}
 
-#rightbox {height: 65vh;}
-#rightbox .basicinfo{font-family: 'Inter', sans-serif;color: #121212;padding-top: 15px;}
+#rightbox {/*height: 65vh;*/}
+#rightbox .basicinfo{color: #121212;}
 #rightbox .basicinfo aside{font-size: 14px;margin-bottom: 20px;}
 #rightbox .basicinfo p{color: #a5a7a4;}
 #rightbox .basicinfo span{font-size: 12px;color: #121212;}
 
-#rightbox .contactinfo {margin: 10px 0 10px 0;padding-top: 15px;}
 #rightbox .contactinfo form .form{height: 50px;margin-bottom: 30px!important;}
 #rightbox .contactinfo form .form .form__label{}
 #rightbox .contactinfo aside{font-size: 14px;margin: 12px 0;padding: 0;}
 
 #rightbox .dematdetails aside{font-size: 14px;margin-bottom: 10px;}
-#rightbox .dematdetails {padding-bottom: 30px;padding-top: 15px;}
 #rightbox .dematdetails p{color: #a5a7a4;}
 #rightbox .dematdetails span{font-size: 12px;color: #121212;display: block;}
 .derivatives-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;}
@@ -2255,7 +2255,7 @@ tr[disabled] {
 .bankname img{margin-right: 5px;}
 #BankDetails .bankname p{display: inline;color: #000000;}
 .bankpribtn{text-align: right;}
-.bankpribtn .primarybtn{border-radius: 15px;font-size: 10px;font-weight: 500;padding: 5px 11px;height: 22px;background: #6a4eee;color: #ffffff;width: 56px;display: inline-block;}
+.bankpribtn .primarybtn{border-radius: 15px;font-size: 10px;font-weight: 500;padding: 5px 11px;height: 22px;background: #6a4eee;color: #ffffff;width: 60px;display: inline-block;}
 #ChangePassword form .form{height: 50px;width: 300px;}
 #ChangePassword button{height: 40px;text-transform: none;background: #D2D0E1;font-weight: 500;border:1px solid #D2D0E1;padding: 12px 70px;width: 100%;}
 #ChangePassword button:hover{height: 40px;text-transform: none;background: #6A4EEE;font-weight: 500;border:1px solid #D2D0E1;color: #ffffff;}
@@ -2263,14 +2263,14 @@ tr[disabled] {
 #AccountClosure button{background: none;border-color: #FF0606;color: #FF0606;}
 #AccountClosure button:hover{background: #FF0606;color: #ffffff;}
 .prighttxt img{margin-left: 10px;}
-#ChangePassword{height: 380px;}
+#ChangePassword{height: 400px;}
 
 /* radio */
-#ChangePassword input[type="radio"] {display: none;}
-#ChangePassword input[type="radio"] + *::before {content: "";display: inline-block;/*vertical-align: bottom;*/width: 1rem;height: 1rem;margin-top: 0.3rem;border-radius: 50%;border-style: solid;border-width: 0.1rem;border-color: #6a4eee;}
+#ChangePassword input[type="radio"] {/*display: none;*/}
+#ChangePassword input[type="radio"] + *::before {/*content: "";display: inline-block;width: 1rem;height: 1rem;margin-top: 0.3rem;border-radius: 50%;border-style: solid;border-width: 0.1rem;border-color: #6a4eee;*/}
 #ChangePassword input[type="radio"]:checked + * {color: #6a4eee;}
 #ChangePassword input[type="radio"]:checked + *::before {background: radial-gradient(#6a4eee 0%, #6a4eee 40%, transparent 50%, transparent);border-color: #6a4eee;}
-#ChangePassword input[type="radio"] + * {display: flex;padding: 0.5rem 0rem;}
+#ChangePassword input[type="radio"] + * {display: flex;/*padding: 0.5rem 0rem;*/}
 
 #ChangePassword .tab-wrap {width: 25%; /*margin-left: 20%;*/ /*position: relative;*/display: flex; /*top: -106px;*/}
 #ChangePassword input[type="radio"][name="tabs"] {/*position: absolute;z-index: -2;*/margin: 4% 0px;}
@@ -2287,7 +2287,7 @@ input[type="radio"][name="tabs"]:checked
 #ChangePassword input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {left: 0;}
 #ChangePassword .tab-wrap .tab-label-content label:nth-child(1) {cursor: pointer;color: #a5a7a4;background-color: #ffffff;box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;text-align: center;height: 36px;transition: color 0.2s ease; /*width: 100%;*/font-size: 14px;font-weight: 400;padding: 0px 12px 10px 12px;}
 #ChangePassword .tab-label-content {width: 100%;}
-#ChangePassword .tab-label-content .tab-content {width: 98%;position: absolute;top: 60px;;line-height: 130%;left: 30px;display: none;}
+#ChangePassword .tab-label-content .tab-content {width: 100%;position: absolute;top: 30px;;line-height: 1;left: 30px;display: none;}
 /*profile*/
 
 /*option chain*/
