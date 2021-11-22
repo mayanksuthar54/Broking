@@ -149,7 +149,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .btn-primary.focus, .btn-primary:focus{
   color: #6a4eee;
   background-color: transparent;
-  border-radius: 3px;
+  border-radius: 6px;
   border-color: #6a4eee;
 }
 #menutxt .nav-item a {
@@ -409,7 +409,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 /*recent search*/
 .recentsearch h4{font-weight: 500;font-size: 14px;}
 .recentsearch h4.pasthisto {padding: 0 25px 0px 30px;}
-.recentsearch {font-family: 'inter',sans-serif;z-index: 1;width: 100%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;}
+.recentsearch {font-family: 'inter',sans-serif;z-index: 1;width: 100%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;position: absolute;top: 59px;}
 .pasthistory{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding-bottom: 15px;}
 .eventsbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
 .trendingbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
@@ -2101,7 +2101,7 @@ tr[disabled] {
 }
 .login-box1 .login-section1 {
   width: 66%;
-  margin: 30% auto 30% auto;
+  margin: 22% auto 14% auto;
 }
 .login-box1 .login-section1 p {
   font-size: 20px;
@@ -2128,21 +2128,30 @@ tr[disabled] {
 }
 .login-box1 .login-section1 .registertxt {
   position: relative;
-  margin-bottom: 10px;
+  margin: 25px 0px;
 }
 .login-box1 .login-section1 .registertxt h4 {
-  color: #d4d4df;
+  color: #a5a7a4;
+}
+.login-box1 .forgot-section1 .registertxt h4 {
+  color: #a5a7a4;
 }
 .login-box1 .login-section1 .registertxt h4 a {
   color: #6a4eee;
   text-decoration: underline;
 }
+.login-box1 .forgot-section1 .registertxt h4 a {
+  color: #6a4eee;
+  text-decoration: underline;
+}
 .login-box1 .signtxt {
-  width: 42%;
+  width: 62%;
   margin: auto;
 }
-.login-box1 .signtxt h4 {
-  color: #d4d4df;
+.login-box1 .signtxt p {
+  color: #A5A7A4;
+  font-size: 12px;
+  line-height: 18px;
 }
 .login-box1 .signtxt h4 a {
   text-decoration: underline;
@@ -2172,7 +2181,7 @@ tr[disabled] {
 }
 .login-box1 .forgot-section1 {
   width: 66%;
-  margin: 22% auto 18% auto;
+  margin: 14% auto 10% auto;
 }
 .error {
   color: #fb4242 !important;
@@ -2187,43 +2196,40 @@ tr[disabled] {
 #leftbox .personal{position: fixed;}
 #leftbox .account{position: fixed;}
 .profile hr{margin: 30px 0;}
-.profile p{font-size: 12px;font-weight: 400;color: #121212;margin-bottom: 10px;}
+.profile p{font-size: 16px;font-weight: 400;color: #121212;margin-bottom: 10px;}
 .profile a:hover p{color: #6a4eee;}
 .personal-content {padding-left: 16px;width: 100%;}
 .personalbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
-.personalbox .personal-content aside{font-size: 16px;font-weight: 400;margin-bottom: 10px;color: #121212;}
+.personalbox .personal-content aside{font-size: 18px;margin-bottom: 10px;color: #121212;}
 
 .accountbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
-.accountbox .personal-content aside{font-size: 16px;font-weight: 400;color: #121212;margin-bottom: 10px;}
-.personal-content a.active aside{color: #6a4eee;}
+.accountbox .personal-content aside{font-size: 18px;font-weight: 400;color: #121212;margin-bottom: 10px;}
+.personal-content a.active aside{color: #6a4eee;font-size: 20px;font-weight: 500;}
 
-#rightbox {/*height: 65vh;*/}
+
 #rightbox .basicinfo{color: #121212;}
-#rightbox .basicinfo aside{font-size: 14px;margin-bottom: 20px;}
-#rightbox .basicinfo p{color: #a5a7a4;}
-#rightbox .basicinfo span{font-size: 12px;color: #121212;}
+#rightbox p{font-size: 14px;color: #a5a7a4;}
+#rightbox span{font-size: 14px;color: #121212;}
+#rightbox aside{font-size: 16px;margin-bottom: 20px;}
 
 #rightbox .contactinfo form .form{height: 50px;margin-bottom: 30px!important;}
 #rightbox .contactinfo form .form .form__label{}
-#rightbox .contactinfo aside{font-size: 14px;margin: 12px 0;padding: 0;}
 
-#rightbox .dematdetails aside{font-size: 14px;margin-bottom: 10px;}
-#rightbox .dematdetails p{color: #a5a7a4;}
-#rightbox .dematdetails span{font-size: 12px;color: #121212;display: block;}
+#Segments .segmentname{font-size: 12px;font-weight: 400;margin-bottom: 10px;} 
 .derivatives-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;}
 .derivatives{padding: 12px;}
-.derivatives span{display: block;}
-.derivatives button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;margin-top: 8px;cursor: default;}
+.derivatives span{display: block;font-size: 12px;}
+.derivatives button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;cursor: default;}
 .derivatives button:hover{background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;}
 .derivatives button:active{background-color: #F1F6FA!important;color: #000000!important;border: 1px solid #D2D0E1!important;}
 .activatederive{background: #6a4eee;border-radius: 0px 0px 6px 6px;padding: 8px 12px;}
-.activatederive p{font-size: 10px;font-weight: 500;color: #ffffff!important;display: inline-block;margin: 0;}
+.activatederive p{font-size: 10px!important;font-weight: 500;color: #ffffff!important;display: inline-block;margin: 0;}
 .activatederive img{margin: 4px 0;}
 
 .commodities-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;margin-left: 2%}
 .commodities{padding: 12px;}
 .commodities span{display: block;}
-.commodities button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;margin-top: 8px;cursor: default;}
+.commodities button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;cursor: default;}
 .commodities button:hover{background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;}
 .commodities button:active{background-color: #F1F6FA!important;color: #000000!important;border: 1px solid #D2D0E1!important;}
 .equitiesbtn{margin-top: 10px;}
@@ -2231,7 +2237,7 @@ tr[disabled] {
 .equitiesbtn button:hover{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;}
 .equitiesbtn button:active{color: #00B123!important;background: rgba(0, 177, 35, 0.05)!important;border: 1px solid #00B123!important;}
 .equitiesbtn button img{margin-right: 5px;}
-.prighttxt{font-weight: 500;color: #6a4eee;}
+.prighttxt a{font-size: 12px;font-weight: 500;color: #6a4eee;}
 .cdsl p{color: #A5A7A4;}
 .cdsl span{color: #000000;}
 #Nominee small{color: #A5A7A4;font-size: 12px;font-weight: 400;}
@@ -2250,12 +2256,14 @@ tr[disabled] {
 .basic-content{border-radius: 0px 0px 6px 6px;padding: 8px 20px;}
 .basic-content small{font-size: 10px;}
 .bankacc{display: flex;}
+.bankacc span{font-size: 12px!important;}
 .bank-details {margin-top: 15px;}
-.bank-details p{width: 25%;}
+.bank-details p{width: 20%;font-size: 12px!important;}
 .bankname img{margin-right: 5px;}
-#BankDetails .bankname p{display: inline;color: #000000;}
-.bankpribtn{text-align: right;}
+#BankDetails .bankname p{font-size: 12px;display: inline;color: #000000;}
+.bankpribtn{display: inline-block;margin-left: 40px;}
 .bankpribtn .primarybtn{border-radius: 15px;font-size: 10px;font-weight: 500;padding: 5px 11px;height: 22px;background: #6a4eee;color: #ffffff;width: 60px;display: inline-block;}
+.addbtn{font-size: 20px!important;font-family: "Open Sans", sans-serif;color: #6A4EEE!important;margin: 0 auto;}
 #ChangePassword form .form{height: 50px;width: 300px;}
 #ChangePassword button{height: 40px;text-transform: none;background: #D2D0E1;font-weight: 500;border:1px solid #D2D0E1;padding: 12px 70px;width: 100%;}
 #ChangePassword button:hover{height: 40px;text-transform: none;background: #6A4EEE;font-weight: 500;border:1px solid #D2D0E1;color: #ffffff;}
@@ -2264,8 +2272,11 @@ tr[disabled] {
 #AccountClosure button:hover{background: #FF0606;color: #ffffff;}
 .prighttxt img{margin-left: 10px;}
 #ChangePassword{height: 400px;}
+#PowerAttorney p{font-size: 12px;color: #000000;text-align: justify;}
 
 /* radio */
+#ChangePassword .form__input{background: #F8F7FF;}
+#ChangePassword .form__label{background: #F8F7FF;color: #909093;}
 #ChangePassword input[type="radio"] {/*display: none;*/}
 #ChangePassword input[type="radio"] + *::before {/*content: "";display: inline-block;width: 1rem;height: 1rem;margin-top: 0.3rem;border-radius: 50%;border-style: solid;border-width: 0.1rem;border-color: #6a4eee;*/}
 #ChangePassword input[type="radio"]:checked + * {color: #6a4eee;}
@@ -2275,6 +2286,7 @@ tr[disabled] {
 #ChangePassword .tab-wrap {width: 25%; /*margin-left: 20%;*/ /*position: relative;*/display: flex; /*top: -106px;*/}
 #ChangePassword input[type="radio"][name="tabs"] {/*position: absolute;z-index: -2;*/margin: 4% 0px;}
 #ChangePassword input[type="radio"][name="tabs"]:checked + .tab-label-content label {/*color: #121212;*/}
+#tab1-content label {color: #121212;}
 #ChangePassword .form__label {top: 1rem;}
 #ChangePassword
 input[type="radio"][name="tabs"]:checked
@@ -2285,7 +2297,7 @@ input[type="radio"][name="tabs"]:checked
 #ChangePassword input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide {left: calc((100% / 4) * 2);}
 #ChangePassword input[type="radio"][name="tabs"]:nth-of-type(4):checked ~ .slide {left: calc((100% / 4) * 3);}
 #ChangePassword input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {left: 0;}
-#ChangePassword .tab-wrap .tab-label-content label:nth-child(1) {cursor: pointer;color: #a5a7a4;background-color: #ffffff;box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;text-align: center;height: 36px;transition: color 0.2s ease; /*width: 100%;*/font-size: 14px;font-weight: 400;padding: 0px 12px 10px 12px;}
+#ChangePassword .tab-wrap .tab-label-content label:nth-child(1) {cursor: pointer;color: #121212;background-color: #ffffff;box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;text-align: center;height: 36px;transition: color 0.2s ease; /*width: 100%;*/font-size: 14px;font-weight: 400;padding: 0px 12px 10px 12px;}
 #ChangePassword .tab-label-content {width: 100%;}
 #ChangePassword .tab-label-content .tab-content {width: 100%;position: absolute;top: 30px;;line-height: 1;left: 30px;display: none;}
 /*profile*/
@@ -2673,13 +2685,13 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     padding: 12px 10px;
   }
   .login-box1 .login-section1 {
-    margin: 12% auto 12% auto;
+    margin: 6% auto 6% auto;
   }
   .login-box1 .forgot-section1 {
     margin: 6% auto 6% auto;
   }
   .login-box1 .login-content .navbar-brand {
-    margin: 40px 0 0 50px;
+    margin: 22px 0 0 50px;
   }
   .login-box1 h1 {
     font-size: 25px;
@@ -2701,7 +2713,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     font-size: 16px;
   }
   .login-box1 .signtxt {
-    width: 60%;
+    width: 80%;
   }
   #watchlistinner-market h4 {
     font-size: 12px;
@@ -2869,13 +2881,13 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     padding: 12px 10px;
   }
   .login-box1 .login-section1 {
-    margin: 12% auto 12% auto;
+    margin: 6% auto 6% auto;
   }
   .login-box1 .forgot-section1 {
     margin: 6% auto 6% auto;
   }
   .login-box1 .login-content .navbar-brand {
-    margin: 40px 0 0 50px;
+    margin: 30px 0 0 50px;
   }
   .login-box1 h1 {
     font-size: 25px;
@@ -2897,19 +2909,21 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     font-size: 16px;
   }
   .login-box1 .signtxt {
-    width: 60%;
+    width: 80%;
   }
   #watchlistinner-market h4 {
     font-size: 13px;
   }
   table#OptionChain2 tbody td{padding: 10px;}
   table#OptionChain tr.psticky td .shortcoverbox{right: -10%;}
+  .btn-primary.padding-top18 {padding-top: 10px;}
 }
 
 @media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
   #watchlistinner-market h4 {font-size: 12px;}
   table#OptionChain thead tr th{height: 72px;}
   table#OptionChain2 thead tr th{height: 72px;}
+  .login-box1 .login-section1 {margin: 10% auto 10% auto;}
 }
 
 @media (min-width: 1400px) and (max-width: 1499.98px) {

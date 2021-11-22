@@ -604,7 +604,7 @@
         <!-- 2 -->
         <div class="col-md-6 col-lg-8 col-xl-9">
           <nav class="navbar navbar-dark navbar-expand justify-content-center">
-            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/><span>NUVESTER</span></a>
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/></a>
             <div class="container-fluid">
               <ul class="navbar-nav nav-justified text-center" id="menutxt">
                 <li class="nav-item">
@@ -708,7 +708,7 @@
                               <div class="col-md-12 col-xl-6 mb-4">
                                 <div class="derivatives-box">
                                   <div class="derivatives">
-                                    <span>Derivatives</span>
+                                    <div class="segmentname">Derivatives</div>
                                     <button class="btn btn-primary">nse cur</button>
                                     <button class="btn btn-primary">nse fo</button>
                                   </div>
@@ -719,7 +719,7 @@
 
                                 <div class="commodities-box">
                                   <div class="commodities">
-                                    <span>Commodities</span>
+                                    <div class="segmentname">Commodities</div>
                                     <button class="btn btn-primary">mcx</button>
                                   </div>
                                   <div class="activatederive">
@@ -760,7 +760,7 @@
                             <p>Demat details</p>
                           </div>
                           <div class="col-md-12 col-xl-9 cdsl">
-                            <p>CDSL:<span>1208689635863486</span></p>
+                            <p>CDSL: <span>1208689635863486</span></p>
                           </div>
                         </div>
                         <div class="row">
@@ -790,15 +790,20 @@
                         <div class="row">
                           <div class="col-md-12 col-xl-12">
                             <aside class="d-inline-block">Bank Details</aside>
-                            <aside class="prighttxt float-right"><img src="images/profile/edit.svg" alt="image" /><a href="#">Add New Bank<img src="images/profile/money-bag.svg"/></a></aside>
+                            <aside class="prighttxt float-right">
+                              <a href="#/"><img src="images/profile/edit.svg" alt="image" />Modify Accounts</a> | <a href="#/"><span class="addbtn">+</span> Add New Bank</a>
+                            </aside>
                             <div class="row mt-3">
                               <div class="col-md-12 col-xl-3">
                                 <p>Bank 1</p>
                               </div>
-                              <div class="col-md-12 col-xl-7">
+                              <div class="col-md-12 col-xl-9">
                                 <span class="bankname">
                                   <img src="http://img.tecxlabs.com/images/profile/bank-icon.svg"/><p>STATE BANK OF INDIA</p>
                                 </span>
+                                <div class="bankpribtn">
+                                  <div class="primarybtn">Primary</div>
+                                </div>
                                 <div class="bank-details">
                                   <div class="bankacc">
                                     <p>Account No:</p>
@@ -814,16 +819,12 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-md-2 col-xl-2 bankpribtn">
-                                  <!-- <a href="#"><img src="images/profile/edit.svg"/></a> -->
-                                  <div class="primarybtn">Primary</div>
-                                </div>
                             </div>
                             <div class="row mt-3">
                               <div class="col-md-12 col-xl-3">
                                 <p>Bank 2</p>
                               </div>
-                              <div class="col-md-12 col-xl-7">
+                              <div class="col-md-12 col-xl-9">
                                 <span class="bankname">
                                   <img src="http://img.tecxlabs.com/images/profile/bank-icon.svg"/><p>STATE BANK OF INDIA</p>
                                 </span>
@@ -847,7 +848,7 @@
                               <div class="col-md-12 col-xl-3">
                                 <p>Bank 3</p>
                               </div>
-                              <div class="col-md-12 col-xl-7">
+                              <div class="col-md-12 col-xl-9">
                                 <span class="bankname">
                                   <img src="http://img.tecxlabs.com/images/profile/bank-icon.svg"/><p>STATE BANK OF INDIA</p>
                                 </span>
@@ -873,7 +874,6 @@
 
                       <div class="dematdetails border1-padding15" id="ChangePassword">
                         <aside>Change Password & PIN</aside>
-                        <small>*Note: You need to change both Password & Pin at the same time.</small>
                         <div class="row mt-4">
                           <div class="col-md-12 col-xl-10">
                             <div class="tab-wrap">
@@ -951,18 +951,18 @@
                       <div class="dematdetails border1-padding15" id="PowerAttorney">
                         <aside>Power of Attorney (PoA)</aside>
                         <div class="row">
-                          <div class="col-md-4 col-xl-4">
+                          <div class="col-md-4 col-xl-3">
                             <p>Approval via PIN</p>
                           </div>
-                          <div class="col-md-8 col-xl-6">
-                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                          <div class="col-md-8 col-xl-9">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             <button class="btn btn-primary newpin">Get New PIN</button>
                           </div>
 
-                          <div class="col-md-4 col-xl-4 mt-4">
+                          <div class="col-md-4 col-xl-3 mt-4">
                             <p>Permanent Approval</p>
                           </div>
-                          <div class="col-md-8 col-xl-6 mt-4">
+                          <div class="col-md-8 col-xl-9 mt-4">
                             <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
                             <button class="btn btn-primary poa">Download PoA Form</button>
                           </div>
@@ -984,8 +984,10 @@
                       </div>
                     </div>
 
-                    <div class="col-md-1 col-xl-1" id="rightbox">
-                      <img src="http://img.tecxlabs.com/images/profile/fullscreen.svg" alt="image" />
+                    <div class="col-md-1 col-xl-1 text-right" id="rightbox">
+                      <a href="profile-account-full.html">
+                        <img src="images/profile/fullscreen.svg" alt="image" />
+                      </a>
                     </div>
                   </div>
                 </div>
