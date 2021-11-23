@@ -2028,6 +2028,24 @@ left: 942px;
 top: 450px;
 border-radius: 0px;}
 #WithdrawRequestModal h3{font-family: 'Inter', sans-serif;font-weight: 500;text-transform: unset;}
+#WithdrawRequestModal .modal-header{position: absolute;right: 0;}
+#WithdrawRequestModal .modal-body{padding:30px 25px 25px;}
+.nbox .failed {
+  background: #FF6872;
+  color: #ffffff;
+}
+.nbox .inprogress {
+  background: #5762F7;
+  color: #ffffff;
+}
+.nbox .done {
+  background: #52D057;
+  color: #ffffff;
+}
+.nbox .cancelled {
+  background: #E0E0E0;
+  color: #ffffff;
+}
 /*funds*/
 
 /*.funds-deposit form .form {
