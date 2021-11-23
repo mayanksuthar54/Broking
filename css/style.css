@@ -2011,6 +2011,7 @@ tr[disabled] {
   font-size: 18px;
   padding: 15px 0;
 }
+.dfundsbox aside{font-size: 14px;font-weight: 600;text-decoration: underline;}
 .fund-equityplate {
   color: #000000;
   background: #ffffff;
@@ -2020,6 +2021,13 @@ tr[disabled] {
   overflow: hidden;
   /*margin-bottom: 10px;*/
 }
+#Wait{
+  height: 35px;
+width: 35px;
+left: 942px;
+top: 450px;
+border-radius: 0px;}
+#WithdrawRequestModal h3{font-family: 'Inter', sans-serif;font-weight: 500;text-transform: unset;}
 /*funds*/
 
 /*.funds-deposit form .form {
@@ -2306,7 +2314,7 @@ input[type="radio"][name="tabs"]:checked
 .optionchain {color: #000000;background: #ffffff;border: 1px solid #d2d0e1;height: 68.5vh;overflow: auto;font-family: 'Inter', sans-serif;}
 .futurestock{padding-bottom: 15px;border-bottom: 1px solid #d2d0e1;vertical-align: middle;}
 .futurestock h3{margin: auto 0;padding-right: 10px;}
-.futurestock button{background: none;color: #6a4eee;height: 35px;padding: 8px 15px;font-size: 14px;font-weight:400;}
+.futurestock button{background: none;color: #6a4eee;height: 35px;padding: 6px 15px;font-size: 14px;font-weight:400;}
 .futurestock button:hover{background: #6a4eee;color: #ffffff;}
 .futurestock button.active{background: #6a4eee;font-weight:600;}
 .futurename {font-family: 'Inter', sans-serif;font-weight: 300;font-size: 14px;text-transform: uppercase;color: #121212;margin: auto;padding:0 10px 0 10px;height: min-content;}
@@ -2336,7 +2344,7 @@ table#OptionChain tbody tr:nth-child(even) td:nth-child(n+7){background: #ffffff
 table#OptionChain thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
 table#OptionChain tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 600;width: 10%;border-bottom: none;}
 table#OptionChain tr.psticky{position: sticky;top: 58px;bottom: 0;width: 100%;z-index: 2;}
-table#OptionChain tr.psticky td .shortcoverbox{min-width: 200px;display: inline-block;background: #F5F3FF!important;padding: 10px;float: right;position: absolute;top: 4px;right: -5%;}
+table#OptionChain tr.psticky td .shortcoverbox{min-width: 200px;display: inline-block;background: #F5F3FF!important;padding: 10px;float: right;position: absolute;top: 4px;right: -30%;}
 table#OptionChain tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
 table#OptionChain tr.psticky td.shortcover{/*background: #F5F3FF!important;*/height: 63px;}
 table#OptionChain tr.psticky td.shortcover span{text-transform: uppercase;display: block;}
@@ -2347,8 +2355,8 @@ table#OptionChain div.watchlistbox .wbuy {background-color: #1964e4;color: #ffff
 table#OptionChain div.watchlistbox .wsell {background-color: #f31813;}
 table#OptionChain div.watchlistbox .wsell:hover {color: #ffffff;}
 table#OptionChain div.watchlistbox .chart {background-color: #ffffff;border:1px solid #A5A7A4; }
-table#OptionChain div.watchlistbox .add {background-color: #ffffff;border:1px solid #A5A7A4;color: #121212;font-weight: 300;font-size: 20px;line-height: 1;}
-table#OptionChain .watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 50%;width: 25px;height: 25px;font-weight: 500;}
+table#OptionChain div.watchlistbox .add {background-color: #ffffff;border:1px solid #A5A7A4;color: #121212;font-weight: 300;font-size: 20px;}
+table#OptionChain .watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 50%;width: 25px;height: 25px;font-weight: 500;line-height: 0.5;}
 
 table#OptionChain2{border-collapse: separate;border-spacing: 0;}
 table#OptionChain2 td{border-top: none;border-bottom: 1px solid #c9ccd7;}
@@ -2720,7 +2728,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   }
   table#OptionChain tbody td{padding: 10px;font-size: 11px;}
   table#OptionChain2 tbody td{padding: 10px;font-size: 11px;}
-  table#OptionChain tr.psticky td .shortcoverbox{right: -10%;}
+  table#OptionChain tr.psticky td .shortcoverbox{right: -60%;}
   table#OptionChain thead tr th{height: 72px;}
   table#OptionChain2 thead tr th{height: 72px;}
 }
@@ -2788,7 +2796,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   }
   .b-listing #mainwatchlist tr td {
     /*width:65%;*/
-    padding: 10px 10px 5px 15px;
+    padding: 10px 10px 5px 15px;white-space: unset;
   }
   #watchlistinner .table-cell {
     font-size: 12px;
@@ -2835,10 +2843,10 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     font-size: 16px;
   }
   .plate-2 #watchlistinner-market.marketlive {
-    padding: 0px 5px 0px 15px;
+    padding: 0px 5px 0px 5px;
   }
   .plate-2 #watchlistinner-market.marketlive2 {
-    padding: 0px 15px 0px 5px;
+    padding: 0px 5px 0px 5px;
     height: 40px;
   }
   .plate-2 #watchlistinner-market {
@@ -2892,8 +2900,8 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   .login-box1 h1 {
     font-size: 25px;
   }
-  .form {
-    height: 44px;
+  .b-listing .form {
+    height: 59px;
   }
   .form__label {
     top: 0.7rem;
@@ -2915,8 +2923,15 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     font-size: 13px;
   }
   table#OptionChain2 tbody td{padding: 10px;}
-  table#OptionChain tr.psticky td .shortcoverbox{right: -10%;}
+  table#OptionChain tr.psticky td .shortcoverbox{right: -60%;}
   .btn-primary.padding-top18 {padding-top: 10px;}
+
+.withdraw-header{
+  width: 2px;
+  
+  transform: translate(-50%,50%);
+}
+
 }
 
 @media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
@@ -2927,9 +2942,13 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
 }
 
 @media (min-width: 1400px) and (max-width: 1499.98px) {
+  .plate-2 #watchlistinner-market.marketlive{padding: 0px 10px 0px 10px;}
+  .plate-2 #watchlistinner-market.marketlive2{padding: 0px 10px 0px 5px;}
+  .b-listing #mainwatchlist tr td{padding: 8px 5px 8px 20px;}
+  #search{margin: 0px 5px 0px 20px;}
   table#OptionChain tbody td{padding: 10px;}
   table#OptionChain2 tbody td{padding: 10px;}
-  table#OptionChain tr.psticky td .shortcoverbox{right: -9%;}
+  table#OptionChain tr.psticky td .shortcoverbox{right: -70%;}
 }
 
 @media (min-width: 1500px) and (max-width: 1599.98px) {
@@ -3096,7 +3115,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   #watchlistinner-market h4 {
     font-size: 12px;
   }
-  table#OptionChain tr.psticky td .shortcoverbox{right: -8%;}
+  table#OptionChain tr.psticky td .shortcoverbox{right: -52%;}
 }
 
 @media (min-width: 1600px) {
@@ -3224,4 +3243,219 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   .niftymain {
     margin: 10px 0;
   }
+  table#OptionChain tr.psticky td .shortcoverbox{right: -54%;}
+}
+
+@media (min-width: 1600px) and (-webkit-device-pixel-ratio: 1.25) {
+  .plate {
+    height: 50vh;
+    padding: 30px;
+  }
+  .plate-2 {
+    position: fixed;
+    height: 96vh;
+  }
+  .b-listing #mainwatchlist {
+    margin: 10px 0 10px 0;
+    height: 69vh;
+    overflow: auto; /*padding:0 12px 0 0;*/
+    display: block;
+  }
+  .b-listing #mainwatchlist tr td {
+    width: 100%;
+    padding: 10px 25px;
+  }
+  .b-listing #mainwatchlist tr span {
+    font-size: 16px;
+  }
+  #search {
+    margin: 0px 25px;
+  }
+  .pagenum {
+    padding: 0px 30px;
+  }
+  .price-box .lprice {
+    font-size: 18px;
+  }
+  .price-box p {
+    font-size: 12px;
+  }
+  .plate h1 {
+    font-size: 50px;
+  }
+  .equitytxt p {
+    font-size: 20px;
+  }
+  .equitybtn a {
+    font-size: 20px;
+  }
+  .positions p {
+    font-size: 16px;
+    margin: 5px 0px;
+  }
+  .positions .progress {
+    margin: 10px 0;
+    height: 10px;
+  }
+  .equity-summary table tr th {
+    font-size: 16px;
+    padding: 10px 10px 20px 0px;
+  }
+  .equity-summary table tr td {
+    font-size: 14px;
+  }
+  .holdingleft h3 {
+    font-size: 40px;
+  }
+  .holdingleft p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #marketbox {
+    height: 68vh;
+  }
+  #holdingbox {
+    height: 68vh;
+  }
+  #chart img {
+    margin-top: 20px;
+  }
+  .holdingbtn span a {
+    font-size: 20px;
+  }
+  #menutxt .nav-item a {
+    padding: 4px 14px;
+  }
+  #watchlistinner-market h4 {
+    font-size: 12px;
+  }
+  table#OptionChain tr.psticky td .shortcoverbox{right: -30%;}
+}
+
+@media (min-width: 1700px) {
+  .plate {
+    height: 38vh;
+    padding: 30px;
+  }
+  .plate-2 {
+    height: 96vh;
+  }
+  .profile {
+    padding: 30px;
+  }
+  .equityplate {
+    padding: 30px;
+  }
+  .equityplate span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .portfolioplate {
+    padding: 30px;
+  }
+  .b-listing #mainwatchlist {
+    height: 74vh;
+    overflow: auto; /*padding:0 12px 0 0;*/
+    display: block;
+  }
+  .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 8px 18px 8px 30px;}
+  .b-listing #watchlistinner tr th {padding: 6px 6px;}
+  .b-listing #watchlistinner tr td {
+    width: 100%;
+    padding: 3px 6px;
+    font-size: 14px;
+  }
+  .b-listing #watchlistinner2 tr th {
+    padding: 6px 6px;
+  }
+  .b-listing #watchlistinner2 tr td {
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 12px;
+  }
+  .b-listing #watchlistinner2 tr td:nth-child(1) {
+    color: #9a9a9a;
+  }
+  .b-listing #watchlistinner2 tr td:nth-child(2) {
+    color: #121212;
+    font-weight: 600;
+    text-align: right;
+  }
+  #mainwatchlist tr.collapse td:nth-child(1) {
+    padding-right: 4px;
+  }
+  #mainwatchlist tr.collapse td:nth-child(2) {
+    padding-left: 4px;
+  }
+  #mainwatchlist tr.collapse td #watchlistinner tr th {
+    padding: 3px 16px 6px 6px;
+  }
+  .search-results {
+    max-height: 74vh;
+  }
+  .recentsearch {
+    height: 74vh;
+  }
+  table#equitytable {
+    height: 66vh;
+    overflow: auto;
+    display: block;
+  }
+  .pagenum {
+    padding: 0px 30px;
+  }
+  .price-box .lprice {
+    font-size: 18px;
+  }
+  .price-box p {
+    font-size: 12px;
+  }
+  .plate h1 {
+    font-size: 50px;
+  }
+  .equitytxt p {
+    font-size: 20px;
+  }
+  .equitybtn a {
+    font-size: 20px;
+  }
+  .positions p {
+    font-size: 16px;
+    margin: 5px 0px;
+  }
+  .positions .progress {
+    margin: 10px 0;
+    height: 10px;
+  }
+  .equity-summary table tr th {
+    font-size: 16px;
+    padding: 10px 20px 20px 0px;
+    width: 1%;
+  }
+  .equity-summary table tr td {
+    font-size: 14px;
+  }
+  .holdingleft h3 {
+    font-size: 40px;
+  }
+  .holdingleft p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #marketbox {
+    height: 52vh;
+  }
+  #holdingbox {
+    height: 52vh;
+  }
+  #chart img {
+    margin-top: 20px;
+  }
+  .holdingbtn span a {
+    font-size: 20px;
+  }
+  .niftymain {
+    margin: 10px 0;
+  }
+  table#OptionChain tr.psticky td .shortcoverbox{right: -30%;}
 }
