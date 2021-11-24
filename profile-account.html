@@ -608,47 +608,56 @@
             <div class="container-fluid">
               <ul class="navbar-nav nav-justified text-center" id="menutxt">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link d-flex flex-column">
-                    <img class="d-block d-sm-none" src="images/close.svg" width="20">
-                    <span class="d-none d-sm-inline">Dashboard</span>
+                  <a href="index.html" class="active nav-link d-flex flex-column">
+                    <img class="d-block d-lg-none" src="images/close.svg" width="20">
+                    <span class="d-none d-lg-inline">Dashboard</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="portfolio.html" class="nav-link d-flex flex-column">
-                      <img class="d-block d-sm-none" src="images/close.svg" width="20">
-                      <span class="d-none d-sm-inline">portfolio</span>
+                      <img class="d-block d-lg-none" src="images/close.svg" width="20">
+                      <span class="d-none d-lg-inline">portfolio</span>
                   </a>
                 </li>
                 <li class="nav-item">
                     <a href="orders.html" class="nav-link d-flex flex-column">
-                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
-                        <span class="d-none d-sm-inline">orders</span>
+                        <img class="d-block d-lg-none" src="images/close.svg" width="20">
+                        <span class="d-none d-lg-inline">orders</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="funds.html" class="nav-link d-flex flex-column">
-                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
-                        <span class="d-none d-sm-inline">funds</span>
+                        <img class="d-block d-lg-none" src="images/close.svg" width="20">
+                        <span class="d-none d-lg-inline">funds</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link d-flex flex-column">
-                        <img class="d-block d-sm-none" src="images/close.svg" width="20">
-                        <span class="d-none d-sm-inline">Reports</span>
+                        <img class="d-block d-lg-none" src="images/close.svg" width="20">
+                        <span class="d-none d-lg-inline">Reports</span>
                     </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="active nav-link text-center d-flex flex-column" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="fa fa-bell fa-lg"></span>
-                        <span class="d-none d-sm-inline px-1 mt-1">Jennifer Miler</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">My Profile</a>
-                        <a class="dropdown-item" href="#">Support/FAQ</a>
-                        <a class="dropdown-item" href="#">Logout</a>
-                    </div>
                 </li>
               </ul>
+              <div class="dropdmenu d-flex float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                <div class="circle">
+                  <span>JM</span>
+                </div>
+                <p class="usernamep">Jennifer Miller</p>
+              </div>
+              <div class="dropdown-menu dropdown-menu-right dropdmenulist" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item top-botmline" href="#">
+                  <img src="images/profile/profile.svg"> My Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <img src="images/profile/reports.svg"> Reports
+                </a>
+                <a class="dropdown-item top-botmline" href="#">
+                  <img src="images/profile/support.svg"> Support/FAQ
+                </a>
+                <a class="dropdown-item" href="#">
+                  <img src="images/profile/logout.svg"> Logout
+                </a>
+              </div>
             </div>
           </nav>
           <!-- <div class="row">
@@ -705,7 +714,7 @@
                               <div class="col-md-12 col-xl-3">
                                 <p>Inactive segments</p>
                               </div>
-                              <div class="col-md-12 col-xl-6 mb-4">
+                              <div class="col-md-12 col-xl-9 mb-4">
                                 <div class="derivatives-box">
                                   <div class="derivatives">
                                     <div class="segmentname">Derivatives</div>
@@ -958,12 +967,13 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             <button class="btn btn-primary newpin">Proceed</button>
                           </div>
-
+                        </div>
+                        <div class="row">
                           <div class="col-md-4 col-xl-3 mt-4">
                             <p>Permanent Approval</p>
                           </div>
                           <div class="col-md-8 col-xl-9 mt-4">
-                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                             <button class="btn btn-primary poa">Download PoA Form</button>
                           </div>
                         </div>
