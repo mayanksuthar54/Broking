@@ -6,14 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Nuvester Admin</title>
   
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/extra.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="shortcut icon" href="images/logo.svg" />
 
@@ -590,7 +585,7 @@
         <!-- 2 -->
         <div class="col-md-6 col-lg-8 col-xl-9">
           <nav class="navbar navbar-dark navbar-expand justify-content-center">
-            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/><span>NUVESTER</span></a>
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/></a>
             <div class="container-fluid">
               <ul class="navbar-nav nav-justified text-center" id="menutxt">
                 <li class="nav-item">
@@ -606,13 +601,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                    <a href="orders.html" class="active nav-link d-flex flex-column">
+                    <a href="orders.html" class="nav-link d-flex flex-column">
                         <img class="d-block d-sm-none" src="images/close.svg" width="20">
                         <span class="d-none d-sm-inline">orders</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="funds.html" class="nav-link d-flex flex-column">
+                    <a href="funds.html" class="active nav-link d-flex flex-column">
                         <img class="d-block d-sm-none" src="images/close.svg" width="20">
                         <span class="d-none d-sm-inline">funds</span>
                     </a>
@@ -648,118 +643,116 @@
 	        </div> -->
         	
         	<div class="row">
-	            <!-- tab -->
-	            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Portfolio">
-	              <div class="portfolioplate fadeIn-element">
-                  <div>
-	                <div class="row slideInDown-element">
-	                  <div class="col-md-12 tabline">
-	                    <div class="row mb-4">
-                        <div class="col-md-4">
-                          <img src="images/wait.svg"> <h2>Recent Withdrawals</h2>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <table class="datatable table table-hover table-sortable" id="PortfolioTable">
-                            <thead>
-                              <tr>
-                                <th style="width: 10%">Date</th>
-                                <th style="width: 40%">Status</th>
-                                <th style="width: 10%">Amount requested</th>
-                                <th style="width: 10%">Amount processed</th>
-                                <th style="width: 10%">Billing ID</th>
-                                <th style="width: 30%">Remark</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>17-11-2021</td>
-                                <td>
-                                  <div class="nbox"><p class="inprogress">IN-PROGRESS</p></div>
-                                  <span>Cancel transaction</span>
-                                </td>
-                                <td><h3>550.22</h3></td>
-                                <td>--</td>
-                                <td>1563542185</td>
-                                <td>--</td>
-                              </tr>
-                              <tr>
-                                <td>10-11-2021</td>
-                                <td><div class="nbox"><p class="failed">FAILED</p></div></td>
-                                <td><h3>6263.87</h3></td>
-                                <td>--</td>
-                                <td>2654846358</td>
-                                <td>Insufficient Balance</td>
-                              </tr>
-                              <tr>
-                                <td>08-09-2021</td>
-                                <td><div class="nbox"><p class="done">DONE</p></div></td>
-                                <td><h3>550.22</h3></td>
-                                <td>550.22</td>
-                                <td>1453932563</td>
-                                <td>--</td>
-                              </tr>
-                              <tr>
-                                <td>24-04-2019</td>
-                                <td><div class="nbox"><p class="cancelled">CANCELLED</p></div></td>
-                                <td><h3>550.22</h3></td>
-                                <td>--</td>
-                                <td>2654846358</td>
-                                <td>--</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-
-	                  </div>
-	                </div>
-                  </div>
-	              </div>
-                <div class="row fadeIn-element">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Portfolio">
+              <div class="portfolioplate fadeIn-element">
+                <div>
+                <div class="row slideInDown-element recentwithdrawals">
                   <div class="col-md-12">
-                    <div class="footer-bottom">
-                      <div class="footer-logo">
-                        <div class="name-logo">
-                          <img src="images/footer/sensibull.svg">
-                          <h6>Sensibull</h6>
-                        </div>
-                        <div class="name-logo">
-                          <img src="images/footer/smallcase.svg">
-                          <h6>Smallcase</h6>
-                        </div>
-                        <div class="name-logo">
-                          <img src="images/footer/vested.svg">
-                          <h6>Vested</h6>
-                        </div>
-                        <div class="name-logo">
-                          <img src="images/footer/streak.svg">
-                          <h6>Streak</h6>
-                        </div>
-                        <div class="name-logo">
-                          <img src="images/footer/smart-store.svg">
-                          <h6>Smart Store</h6>
-                        </div>
+                    <div class="row mb-4">
+                      <div class="col-md-12">
+                        <img src="images/wait.svg"> <h2>Recent Withdrawals</h2>
                       </div>
-                      <div class="footer-content">
-                        <div class="fname border-right">
-                          <h6 class="color-grey">Holdings M2M</h6>
-                          <h6>375.95</h6>
-                        </div>
-                        <div class="fname">
-                          <h6 class="color-grey">Positions M2M</h6>
-                          <h6>388.25</h6>
-                        </div>
-                        <div class="d-inline-block">
-                          <a href="#"><img src="images/footer/alert.svg"></a>
-                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <table class="datatable table table-hover" id="RecentTable">
+                          <thead>
+                            <tr>
+                              <th style="width: 10%">Date</th>
+                              <th style="width: 25%">Status</th>
+                              <th style="width: 15%">Amount requested</th>
+                              <th style="width: 15%">Amount processed</th>
+                              <th style="width: 15%">Billing ID</th>
+                              <th style="width: 30%">Remark</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>17-11-2021</td>
+                              <td>
+                                <div class="nbox"><p class="inprogress">IN-PROGRESS</p></div>
+                                <a href="#/" id="canceltransaction" data-toggle="modal" data-target="#canceltransactionModal">Cancel transaction</a>
+                              </td>
+                              <td><h3>550.22</h3></td>
+                              <td>--</td>
+                              <td>1563542185</td>
+                              <td>--</td>
+                            </tr>
+                            <tr>
+                              <td>10-11-2021</td>
+                              <td><div class="nbox"><p class="failed">FAILED</p></div></td>
+                              <td><h3>6263.87</h3></td>
+                              <td>--</td>
+                              <td>2654846358</td>
+                              <td>Insufficient Balance Insufficient Balance Insufficient Balance</td>
+                            </tr>
+                            <tr>
+                              <td>08-09-2021</td>
+                              <td><div class="nbox"><p class="done">DONE</p></div></td>
+                              <td><h3>550.22</h3></td>
+                              <td>550.22</td>
+                              <td>1453932563</td>
+                              <td>--</td>
+                            </tr>
+                            <tr>
+                              <td>24-04-2019</td>
+                              <td><div class="nbox"><p class="cancelled">CANCELLED</p></div></td>
+                              <td><h3>550.22</h3></td>
+                              <td>--</td>
+                              <td>2654846358</td>
+                              <td>--</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="row fadeIn-element">
+                <div class="col-md-12">
+                  <div class="footer-bottom">
+                    <div class="footer-logo">
+                      <div class="name-logo">
+                        <img src="images/footer/sensibull.svg">
+                        <h6>Sensibull</h6>
+                      </div>
+                      <div class="name-logo">
+                        <img src="images/footer/smallcase.svg">
+                        <h6>Smallcase</h6>
+                      </div>
+                      <div class="name-logo">
+                        <img src="images/footer/vested.svg">
+                        <h6>Vested</h6>
+                      </div>
+                      <div class="name-logo">
+                        <img src="images/footer/streak.svg">
+                        <h6>Streak</h6>
+                      </div>
+                      <div class="name-logo">
+                        <img src="images/footer/smart-store.svg">
+                        <h6>Smart Store</h6>
+                      </div>
+                    </div>
+                    <div class="footer-content">
+                      <div class="fname border-right">
+                        <h6 class="color-grey">Holdings M2M</h6>
+                        <h6>375.95</h6>
+                      </div>
+                      <div class="fname">
+                        <h6 class="color-grey">Positions M2M</h6>
+                        <h6>388.25</h6>
+                      </div>
+                      <div class="d-inline-block">
+                        <a href="#"><img src="images/footer/alert.svg"></a>
                       </div>
                     </div>
                   </div>
                 </div>
-	            </div>
-	            <!-- tab -->
+              </div>
+            </div>
         	</div>
         </div> 
       </div>
@@ -768,10 +761,11 @@
   <!-- container-scroller -->
 
   <!-- Custom js for this page-->
-  <script src="js/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
   <!-- End custom js for this page-->
 
   <script type="text/javascript">
@@ -782,48 +776,23 @@
 </body>
 </html>
 
-<script type="text/javascript">
-  /**
- * Sorts a HTML table.
- * 
- * @param {HTMLTableElement} table The table to sort
- * @param {number} column The index of the column to sort
- * @param {boolean} asc Determines if the sorting will be in ascending
- */
-  function sortTableByColumn(table, column, asc = true) {
-      const dirModifier = asc ? 1 : -1;
-      const tBody = table.tBodies[0];
-      const rows = Array.from(tBody.querySelectorAll("tr"));
-
-      // Sort each row
-      const sortedRows = rows.sort((a, b) => {
-          const aColText = a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
-          const bColText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
-
-          return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
-      });
-
-      // Remove all existing TRs from the table
-      while (tBody.firstChild) {
-          tBody.removeChild(tBody.firstChild);
-      }
-
-      // Re-add the newly sorted rows
-      tBody.append(...sortedRows);
-
-      // Remember how the column is currently sorted
-      table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"));
-      table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-asc", asc);
-      table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-desc", !asc);
-  }
-
-  document.querySelectorAll(".table-sortable th").forEach(headerCell => {
-      headerCell.addEventListener("click", () => {
-          const tableElement = headerCell.parentElement.parentElement.parentElement;
-          const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
-          const currentIsAscending = headerCell.classList.contains("th-sort-asc");
-
-          sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
-      });
-  });
-</script>
+<!-- Modal -->
+<div class="modal fade" id="canceltransactionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title m-auto" id="exampleModalLabel">Confirmation</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="http://img.tecxlabs.com/images/close.svg" width="15">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <p class="mb-3">Are you sure you want to cancel this request ?</p>
+          <button type="submit" class="btn btn-primary w-100 submitbtn">Yes</button>
+          <button type="submit" class="btn btn-primary w-100 submitbtn-no">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

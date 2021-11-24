@@ -122,7 +122,7 @@ a.navbar-brand span {
 button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .btn-primary {
   background-color: #6a4eee;
-  border-radius: 4px;
+  border-radius: 6px;
   border: none;
   color: #ffffff;
   margin-right: 3px;
@@ -420,6 +420,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .tradingbtn button .companylogo { width: 30px;height: 30px;border-radius: 35px;margin-right: 7px;overflow: hidden;display: inline-block;position: relative;border: 1px solid #d2d0e1;border-radius: 50%;}
 .tradingbtn button .companylogo img{height: 23px;width: 412px;}
 .tradingbtn button .companyname h4{display: inline;text-transform: uppercase;line-height: 2;}
+.tradingbtn button .companyname{width: auto;}
 
 .tradingbtn button span {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
 .tradingbtn{margin-top: 10px;}
@@ -958,6 +959,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .positions .progress .progress-bar {
   border-radius: 4px;
   background-color: #307bfa;
+  height: 10px;
 }
 
 .holdingleft h3 {
@@ -1360,7 +1362,7 @@ tr:hover div.watchlistbox {
 
 
 /* select starting stylings ------------------------------*/
-.select-text {position: relative;font-family: inherit;background-color: transparent;width: 100%;height: 60px;padding: 10px 10px 10px 10px;font-size: 18px;border-radius: 4px;border: 2px solid #d2d0e1;}
+.select-text {position: relative;font-family: inherit;background-color: transparent;width: 100%;height: 60px;padding: 10px 10px 10px 10px;font-size: 18px;border-radius: 6px;border: 2px solid #d2d0e1;}
 /* Remove focus */
 .select-text:focus {outline: none;border: 2px solid #6a4eee;}
 /* Use custom arrow */
@@ -2004,13 +2006,10 @@ tr[disabled] {
   font-size: 18px;
   padding: 15px 0;
 }
-.dfundsbox form button.withdfund-btn {
-  border-color: #ff6872;
-  background: #ff6872;
-  color: #ffffff;
-  font-size: 18px;
-  padding: 15px 0;
-}
+.dfundsbox form button.addfund-btn:hover svg line{stroke: #6a4eee;}
+.dfundsbox form button.withdfund-btn {border-color: #ff6872;background: #ff6872;color: #ffffff;font-size: 18px;padding: 15px 0;}
+.dfundsbox form button.withdfund-btn:hover{border-color: #ff6872;background: #ffffff;color: #ff6872;font-size: 18px;padding: 15px 0;}
+.dfundsbox form button.withdfund-btn:hover svg path {stroke: #ff6872;fill: #ff6872;}
 .dfundsbox aside{font-size: 14px;font-weight: 600;text-decoration: underline;}
 .fund-equityplate {
   color: #000000;
@@ -2021,36 +2020,42 @@ tr[disabled] {
   overflow: hidden;
   /*margin-bottom: 10px;*/
 }
-#Wait{
-  height: 35px;
-width: 35px;
-left: 942px;
-top: 450px;
-border-radius: 0px;}
-#WithdrawRequestModal h3{font-family: 'Inter', sans-serif;font-weight: 500;text-transform: unset;}
-#WithdrawRequestModal .modal-header{position: absolute;right: 0;}
+#Wait{height: 35px;width: 35px;left: 942px;top: 450px;border-radius: 0px;}
+#WithdrawRequestModal h3{font-family: 'Inter', sans-serif;font-weight: 500;text-transform: unset;margin: 10px 0 15px;}
+#WithdrawRequestModal .modal-header{position: absolute;right: 0;z-index: 1;}
 #WithdrawRequestModal .modal-body{padding:30px 25px 25px;}
-.nbox .failed {
-  background: #FF6872;
-  color: #ffffff;
-}
-.nbox .inprogress {
-  background: #5762F7;
-  color: #ffffff;
-}
-.nbox .done {
-  background: #52D057;
-  color: #ffffff;
-}
-.nbox .cancelled {
-  background: #E0E0E0;
-  color: #ffffff;
-}
+#canceltransaction{color: #FF0606;text-decoration: underline;margin-left: 15px;font-size: 14px;}
+#canceltransactionModal button.close{display: inline-block;margin-left: 0;}
+#canceltransactionModal .modal-dialog{max-width: 380px;}
+.recentwithdrawals h2{display: inline-block;margin-bottom: 0;padding-left: 10px;vertical-align: middle;}
+table#RecentTable {width: 100%;}
+#RecentTable tbody td .nbox {max-width: fit-content;min-width: 110px;height: 25px;text-align: center;display: inline-block;}
+#RecentTable tbody td p {font-size: 12px;font-weight: 400;margin: 0 auto;padding: 5px 15px;color: #ffffff;border-radius: 6px;text-transform: uppercase;}
+#RecentTable thead tr th {font-size: 16px;font-weight: 400;color: #a5a7a4;padding: 14px 15px;}
+#RecentTable thead tr th:nth-last-child(1){text-align: right;}
+#RecentTable tbody tr td:nth-last-child(1){text-align: right;}
+#RecentTable .inprogress {background: #5762F7;}
+#RecentTable .done {background: #52D057;}
+#RecentTable .cancelled {background: #E0E0E0;}
+#RecentTable .failed {background: #FF6872;}
+#RecentTable h3 {font-weight: 400;display: inline-block;vertical-align: middle;margin: 1px;}
+#RecentTable h3 span {font-size: 14px;font-weight: 400;color: #a5a7a4;}
+#RecentTable .regular-checkbox {display: none;}
+#RecentTable thead {border-top: 1px solid #d2d0e1;}
+#RecentTable thead tr label {border: 1px solid #d2d0e1;display: inline-block;width: 20px;height: 20px;border-radius: 4px;margin: 0px;}
+#RecentTable tbody td label {border: 1px solid #d2d0e1;display: inline-block;width: 20px;height: 20px;border-radius: 4px;margin: 0px;}
+#RecentTable tr td .watchlistbox img {width: 15px;height: 15px;border: none;margin: 0 10px;}
+#RecentTable tr td .watchlistbox .dropdown-item span {color: #e0d8d5;}
+#RecentTable tr td {padding: 18px 15px;border-bottom: 1px solid #eeeeee;font-size: 18px;height: 68px;vertical-align: middle;}
+#RecentTable tr {border-bottom: 1px solid #eeeeee;}
+#RecentTable thead th {border-bottom: 1px solid #eeeeee;border-top: 1px solid #eeeeee;}
+#RecentTable tfoot tr td {padding: 12px 10px;}
+#RecentTable tfoot {border-bottom: 1px solid #eeeeee;}
+#RecentTable div.watchlistbox {margin-left: 8%;position: unset;}
+#RecentTable tr:hover div.watchlistbox {display: inline-block;}
 /*funds*/
 
-/*.funds-deposit form .form {
-  height: 3rem;
-}*/
+/*.funds-deposit form .form {height: 3rem;}*/
 
 /*footer*/
 .footer-logo {
@@ -2103,6 +2108,7 @@ border-radius: 0px;}
   color: #a5a7a4;
 }
 /*footer*/
+
 
 /*login*/
 .login-box1 {
@@ -2216,6 +2222,7 @@ border-radius: 0px;}
 }
 /*login*/
 
+
 /*profile*/
 .border1-padding15{border: 1px solid #d2d0e1;padding: 30px;margin-bottom: 20px;}
 .usernamep{display: inline-block;margin: auto;}
@@ -2327,6 +2334,7 @@ input[type="radio"][name="tabs"]:checked
 #ChangePassword .tab-label-content {width: 100%;}
 #ChangePassword .tab-label-content .tab-content {width: 100%;position: absolute;top: 30px;;line-height: 1;left: 30px;display: none;}
 /*profile*/
+
 
 /*option chain*/
 .optionchain {color: #000000;background: #ffffff;border: 1px solid #d2d0e1;height: 68.5vh;overflow: auto;font-family: 'Inter', sans-serif;}
@@ -2784,7 +2792,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   }
   .plate {
     height: 47vh;
-    padding: 20px;
+    padding: 15px;
   }
   .plate-2 {
     position: fixed;
@@ -2798,6 +2806,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   .niftymain {
     margin: 6px 0;
   }
+  .b-listing{padding: 0 10px 0 0;}
   .b-listing #mainwatchlist {
     margin: 8px 0 8px 0;
     height: 63vh;
@@ -2813,11 +2822,10 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     margin-right: 6px;
   }
   .b-listing #mainwatchlist tr td {
-    /*width:65%;*/
-    padding: 10px 10px 5px 15px;white-space: unset;
+    padding: 10px 7px 5px 7px;white-space: unset;
   }
   #watchlistinner .table-cell {
-    font-size: 12px;
+    font-size: 11px;
   }
   #mainwatchlist tr.collapse td {
     /*display: grid;*/
@@ -2825,8 +2833,9 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   div.watchlistbox {
     padding-right: 5px;
   }
+  .price-box p{line-height: 1;}
   #search {
-    margin: 0px 2px 0px 15px;
+    margin: 0px 2px 0px 10px;
   }
   #searchwatchlist {
   }
@@ -2906,6 +2915,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     font-size: 12px;
     padding: 12px 10px;
   }
+  .dfundsbox form button.withdfund-btn:hover{font-size: 12px;padding: 12px 10px;}
   .login-box1 .login-section1 {
     margin: 6% auto 6% auto;
   }
@@ -2943,13 +2953,17 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
   table#OptionChain2 tbody td{padding: 10px;}
   table#OptionChain tr.psticky td .shortcoverbox{right: -60%;}
   .btn-primary.padding-top18 {padding-top: 10px;}
-
-.withdraw-header{
-  width: 2px;
-  
-  transform: translate(-50%,50%);
-}
-
+  .withdraw-header{width: 2px;transform: translate(-50%,50%);}
+  #mainwatchlist .companylogo{margin-right: 3px;width: 45px;height: 45px;}
+  .positions .progress{height: 10px;}
+  .dfundsbox{padding: 0 6px;}
+  .dfundsbox aside{font-size: 13px;}
+  .toptxt p{margin: 12px 0!important;}
+  .equity-summary table tr th{padding: 8px 20px 10px 0px;}
+  table#equitytable {height: 66vh;overflow: auto;}
+  #RecentTable tr td{font-size: 14px;}
+  #RecentTable tbody td .nbox{display: block;height: 35px;}
+  #canceltransaction{margin-left: 0;}
 }
 
 @media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
