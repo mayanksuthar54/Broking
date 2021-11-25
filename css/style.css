@@ -1,6 +1,7 @@
 body {
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: 'Inter', sans-serif;
   font-weight: initial;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
@@ -65,7 +66,7 @@ input:disabled {
 }
 input:focus-visible {outline: none;}
 .table td, .table th{vertical-align: middle;}
-.padding-top18{padding-top: 18px;}
+.padding-top18{padding-top: 28px;}
 .icon-inside {
   position: absolute;
   right: 25px;
@@ -525,7 +526,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   border: transparent;
   border-bottom: 1px solid #6a4eee;
   padding: 20px 0 10px 0;
-  margin: 0px 18px 0px 30px;
+  margin: 0px 13px 0px 25px;
   display: -webkit-inline-box;
   width: -webkit-fill-available;
 }
@@ -666,7 +667,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 }
 
 #watchlistinner .table-cell {
-  padding: 4px 2px;
+  padding: 4px 2px;font-size: 14px;
 }
 #watchlistinner tr td {
   padding: 6px 0;
@@ -2333,6 +2334,8 @@ input[type="radio"][name="tabs"]:checked
 #ChangePassword .tab-wrap .tab-label-content label:nth-child(1) {cursor: pointer;color: #121212;background-color: #ffffff;box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;text-align: center;height: 36px;transition: color 0.2s ease; /*width: 100%;*/font-size: 14px;font-weight: 400;padding: 0px 12px 10px 12px;}
 #ChangePassword .tab-label-content {width: 100%;}
 #ChangePassword .tab-label-content .tab-content {width: 100%;position: absolute;top: 30px;;line-height: 1;left: 30px;display: none;}
+.mobile-edited aside{color: #6A4EEE;font-size: 12px;font-weight: 600;}
+.mobile-edited aside span{color: #6A4EEE!important;font-weight: 400;display: inline-block;}
 /*profile*/
 
 
@@ -2402,6 +2405,7 @@ table#OptionChain2 tbody tr:nth-child(even) td:nth-child(n+7){background: #fffff
 table#OptionChain2 thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
 table#OptionChain2 tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 600;width: 10%;border-bottom: none;}
 table#OptionChain2 tr.psticky{position: sticky;top: 55px;bottom: 0;width: 100%;z-index: 1;height: 63px;}
+table#OptionChain2 .psticky::before tr{content: "&";background: red;}
 table#OptionChain2 tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
 table#OptionChain2 tr.psticky td.shortcover{background: #F5F3FF!important;}
 table#OptionChain2 tr.psticky td.shortcover.tbg-white{background: #ffffff!important;}
@@ -2418,6 +2422,14 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
 .shortcoverp span:nth-child(1){width: 60px;display: inline-block;font-weight: 600;}
 .shortcoverp span:nth-child(2){width: 120px;display: inline-block;font-size: 12px;font-weight: 500;}
 /*option chain*/
+
+/*svg*/
+svg{}
+#tw {stroke-dasharray:  300 , 0, 3000;}
+svg:hover #tw { animation: tw .7s; }
+@keyframes tw { 0% {stroke-dasharray:  300, 500, 3000} 100% { stroke-dasharray:3300, 500, 3000;} }
+/*svg*/
+
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -2843,12 +2855,12 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     padding: 6px 15px 6px 10px;
   }
   #searchwatchlist tr td:nth-child(2) {
-    padding: 6px 10px 6px 15px;
+    padding: 6px 10px 6px 15px;vertical-align: middle;
   }
   #searchwatchlist tr.watch-list td:nth-child(1){padding: 8px 15px 8px 10px}
   #searchwatchlist tr.watch-list td:nth-child(2){padding: 6px 10px 6px 15px}
   .pagenum {
-    padding: 0px 10px 0px 20px;
+    padding: 0px 10px 0px 10px;
   }
   .positions p {
     font-size: 14px;
@@ -3404,7 +3416,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
     overflow: auto; /*padding:0 12px 0 0;*/
     display: block;
   }
-  .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 8px 18px 8px 30px;}
+  .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 8px 13px 8px 25px;}
   .b-listing #watchlistinner tr th {padding: 6px 6px;}
   .b-listing #watchlistinner tr td {
     width: 100%;
