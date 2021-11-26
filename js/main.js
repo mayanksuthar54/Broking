@@ -138,11 +138,11 @@ this.ok = function(){
 
 
 
-// drag
-// $(document).ready(function() {
-//         // Initialise the first table (as before)
-//         $("#mainwatchlist").tableDnD();
-//     });
+//drag
+$(document).ready(function() {
+        // Initialise the first table (as before)
+        $("#mainwatchlist").tableDnD();
+    });
 
 const slider = document.querySelector('.itemslide');
 let isDown = false;
