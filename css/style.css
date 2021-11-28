@@ -76,7 +76,8 @@ input:focus-visible {outline: none;}
   color: #c4c3c3;
   z-index: 3;
 }
-
+.font-wieght400{font-weight: 400;}
+.font-wieght500{font-weight: 500;}
 .navbar {
   padding: 15px 0px;
   box-shadow: none;
