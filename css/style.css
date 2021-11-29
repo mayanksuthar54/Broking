@@ -96,7 +96,6 @@ a.navbar-brand span {
   margin-left: 8px;
   vertical-align: middle;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
 }
 .navbar-light .navbar-toggler {
   color: #ffffff;
@@ -117,7 +116,6 @@ a.navbar-brand span {
   margin-left: 8px;
   vertical-align: middle;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
   font-size: 20px;
 }
 button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
@@ -154,7 +152,6 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   border-color: #6a4eee;
 }
 #menutxt .nav-item a {
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #979797;
@@ -350,6 +347,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .page-item.active .page-link {
   background-color: #6a4eee;
   color: #ffffff;
+  width: 36px;
 }
 .page-item .page-link {
   color: #000000;
@@ -931,6 +929,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   margin: 16px 0;
   font-size: 34px;
   font-weight: 600;
+  text-transform: none;
 }
 
 .positions p {
@@ -1362,7 +1361,7 @@ tr:hover div.watchlistbox {
 
 
 /* select starting stylings ------------------------------*/
-.select-text {position: relative;font-family: inherit;background-color: transparent;width: 100%;height: 60px;padding: 10px 10px 10px 10px;font-size: 18px;border-radius: 6px;border: 2px solid #d2d0e1;}
+.select-text {position: relative;font-family: inherit;background-color: transparent;width: 100%;height: 60px;padding: 10px 30px 10px 20px;font-size: 18px;border-radius: 6px;border: 2px solid #d2d0e1;}
 /* Remove focus */
 .select-text:focus {outline: none;border: 2px solid #6a4eee;}
 /* Use custom arrow */
@@ -1417,7 +1416,7 @@ input[type="number"] {
   width: 100%;
   height: 100% !important;
   border: 2px solid #d2d0e1;
-  border-radius: 0.5rem !important;
+  /*border-radius: 0.5rem !important;*/
   font-family: inherit;
   font-size: inherit;
   /* color: ; */
@@ -2283,12 +2282,13 @@ table#RecentTable {width: 100%;}
 
 .active-box{width: 42%;display: inline-block;}
 /*.basicplan{background: linear-gradient(180deg, #6A4EEE 17.07%, #211075 100%);padding: 10px;color: #ffffff;border-radius:6px 6px 0 0;}*/
-.basicplan{background-image: url(../images/active-plan.svg);padding: 10px;color: #ffffff;border-radius:6px;}
-.basicplan span{display: inline-block;font-weight: 500;font-size: 40px!important;color: #ffffff!important;}
-.basicplan aside{display: inline-block;float: right;padding:6px 10px;background: #D1EE4E;border-radius: 0 0 6px 6px;color: #121212;position: absolute;top: -8px;left: 20%;}
-.basicplan small{display: block;padding: 15px 0;font-size: 12px;}
-.basicplan .onetimebox{border-radius: 15px;background: #7A60ED;width: fit-content;padding: 5px 10px;font-size: 10px;}
-.basicplan .rupee{display: inline-block;vertical-align: top;}
+.basicplan{padding: 10px;color: #ffffff;border-radius:6px;}
+.basicplan img{width: 100%;}
+.basicplan span{display: inline-block;font-weight: 500;font-size: 40px!important;color: #ffffff!important;position: absolute;left: 10%;top: 22%;}
+.basicplan aside{display: inline-block;float: right;padding:6px 10px;background: #D1EE4E;border-radius: 0 0 6px 6px;color: #121212;position: absolute;top: 0px;left: 20%;font-size: 14px!important;font-weight: 500;}
+.basicplan small{display: block;padding: 5px 0;font-size: 12px;position: absolute;top: 65%;left: 8%;width: 180px;}
+.basicplan .onetimebox{border-radius: 15px;background: #7A60ED;width: fit-content;padding: 5px 10px;font-size: 10px;position: absolute;top: 50%;left: 8%;}
+.basicplan .rupee{display: inline-block;vertical-align: top;position: absolute;top: 20%;left: 8%;font-size: 22px;}
 .basic-content{border-radius: 6px;padding: 8px 20px;}
 .basic-content small{font-size: 10px;}
 .bankacc{display: flex;}
@@ -2312,6 +2312,7 @@ table#RecentTable {width: 100%;}
 
 /* radio */
 #ChangePassword .form__input{background: #F8F7FF;}
+#tab2-content .form__input{background: #F8F7FF!important;}
 #ChangePassword .form__label{background: #F8F7FF;color: #909093;}
 #ChangePassword input[type="radio"] {/*display: none;*/}
 #ChangePassword input[type="radio"] + *::before {/*content: "";display: inline-block;width: 1rem;height: 1rem;margin-top: 0.3rem;border-radius: 50%;border-style: solid;border-width: 0.1rem;border-color: #6a4eee;*/}
@@ -2342,7 +2343,7 @@ input[type="radio"][name="tabs"]:checked
 .mobupdate{height: 60px;}
 .mobupdate img{margin-right: 15px;justify-content: center;align-items: center;height: 60px;}
 .innertopheading {margin-bottom: 20px;}
-.innertopheading img{transform: rotate(180deg);margin-right: 10px;display: inline-block;width: 20px;}
+.innertopheading img{transform: rotate(180deg);margin-right: 10px;display: inline-block;width: 20px;vertical-align: unset;}
 .innertopheading h3{display: inline-block;text-transform: unset;font-weight: 400;color: #121212;}
 .otpbtn{width: 50px;}
 .otpbtn svg path{fill: #ffffff;font-size: 25px;}
@@ -2350,10 +2351,20 @@ input[type="radio"][name="tabs"]:checked
 .otpbtn:hover svg path{fill: #6a4eee;font-size: 25px;}
 .mobile-change{height: 52px;vertical-align: middle;}
 .mobile-change h6{color: #00C707;justify-content: center;align-items: center;height: 52px;display: flex;margin-left: 15px;font-weight: 400;}
-#formheight52 .form{height: 52px;}
+#formheight52 .form{height: 52px;margin-bottom: 20px;}
+#formheight52 .form .select-label{top: 0.9rem;}
+#formheight52 .select-text:focus ~ .select-label, .select-text:valid ~ .select-label {top: -0.4rem;}
+#formheight52 .form .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label{top: -0.4rem;}
+#formheight52 .form .form__label{/*top: 0.9rem;*/}
+#formheight52 .select-text{height: 52px;margin-bottom: 20px;}
 #formheight52 .btn-primary{height: 52px;text-transform: none;font-weight: 500;}
+#formheight52 .select-text{font-size: 16px;padding: 10px 10px 10px 20px;}
 .btn.disabled, .btn:disabled{background: #D2D0E1;color: #ffffff;border: none;}
 #external span{color: #909093;font-size: 12px;margin-right: 15px;} 
+/*select:after{position: absolute;top: 18px;right: 10px;content: url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg);}*/
+#ContactInfo ul{padding-left: 1.2rem;width: 80%;}
+#ContactInfo ul li{font-size: 14px;line-height: 20px;}
+select {-moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */appearance:none;background:url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg) 0 0 no-repeat;width:192px;padding:2px;background-position: right;background-repeat: no-repeat;background-position-x: 96%;}
 /*profile*/
 
 
@@ -2391,7 +2402,7 @@ table#OptionChain tbody tr:nth-child(even) td:nth-child(n+7){background: #ffffff
 table#OptionChain thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
 table#OptionChain tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 600;width: 10%;border-bottom: none;}
 table#OptionChain tr.psticky{position: sticky;top: 58px;bottom: 0;width: 100%;z-index: 2;}
-table#OptionChain tr.psticky td .shortcoverbox{min-width: 200px;display: inline-block;background: #F5F3FF!important;padding: 10px;float: right;position: absolute;top: 4px;right: -30%;}
+table#OptionChain tr.psticky td .shortcoverbox{min-width: 200px;display: inline-block;background: #E4F0FF!important;padding: 10px;float: right;position: absolute;top: 4px;right: -30%;}
 table#OptionChain tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
 table#OptionChain tr.psticky td.shortcover{/*background: #F5F3FF!important;*/height: 63px;}
 table#OptionChain tr.psticky td.shortcover span{text-transform: uppercase;display: block;}
@@ -2423,7 +2434,7 @@ table#OptionChain2 tbody tr:nth-child(even) td:nth-child(n+7){background: #fffff
 table#OptionChain2 thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
 table#OptionChain2 tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 600;width: 10%;border-bottom: none;}*/
 table#OptionChain2 tr.psticky{position: sticky;top: 55px;bottom: 0;width: 100%;z-index: 1;height: 63px;}
-table#OptionChain2 .psticky::before tr{content: "&";background: red;}
+/*table#OptionChain2 .psticky::before tr{content: "&";background: red;}*/
 table#OptionChain2 tr.psticky td{background: #ffffff!important;border-bottom: 1px solid #c9ccd7;border-collapse: separate;border-spacing: 0;}
 table#OptionChain2 tr.psticky td.shortcover{background: #F5F3FF!important;}
 table#OptionChain2 tr.psticky td.shortcover.tbg-white{background: #ffffff!important;}
@@ -2798,6 +2809,8 @@ svg:hover #tw { animation: tw .7s; }
   h6 {font-size: 11px;font-weight: 600;}
   #mainbox {padding: 0;}
   .plate {height: 47vh;padding: 15px;}
+  .plate h1{font-size: 26px;}
+  .plate span{font-size: 18px;}
   .plate-2 {position: fixed;height: 95vh;}
   /*.navbar{padding:0px 28px;}*/
   .marketlive {height: 40px;padding: 0px 20px;}
@@ -2829,7 +2842,10 @@ svg:hover #tw { animation: tw .7s; }
   .plate-2 #watchlistinner-market.marketlive2 {padding: 0px 5px 0px 5px;height: 40px;}
   .plate-2 #watchlistinner-market {width: 49%;}
   .fund-equityplate {height: 70vh;overflow: auto;}
+  #PortfolioTable thead tr th {font-size: 15px;}
+  #PortfolioTable tr td {font-size: 15px;}
   .form{height: 44px;}
+  .select-text{height: 44px;}
   #BuyWModal {width: 36%;}
   .portfolioplate {height: 70vh;}
   .equityplate {height: 70vh;}
@@ -2843,10 +2859,11 @@ svg:hover #tw { animation: tw .7s; }
   .dfundsbox form button.withdfund-btn:hover{font-size: 12px;padding: 12px 10px;}
   .login-box1 .login-section1 {margin: 6% auto 6% auto;}
   .login-box1 .forgot-section1 {margin: 6% auto 6% auto;}
-  .login-box1 .login-content .navbar-brand {margin: 30px 0 0 50px;}
+  .login-box1 .login-content .navbar-brand {margin: 15px 0 0 50px;}
   .login-box1 h1 {font-size: 25px;}
   .b-listing .form {height: 59px;}
   .form__label {top: 0.7rem;}
+  .select-label {top: 0.7rem;}
   .btn-primary {height: 44px;font-size: 14px;}
   .login-box1 .login-section1 p {font-size: 16px;}
   .login-box1 .forgot-section1 p {font-size: 16px;}
