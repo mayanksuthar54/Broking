@@ -1279,6 +1279,15 @@ tr:hover div.watchlistbox {
   margin-bottom: 10px;
   width: 100%;
 }
+.form2 {
+  position: relative;
+  width: 20rem;
+  height: 3rem;
+  height: 60px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.form2 .form__label{top: 1rem;}
 .form.textarea{height: 112px!important;}
 .form textarea{height: 112px;}
 .form__input {
@@ -1361,104 +1370,55 @@ tr:hover div.watchlistbox {
 
 
 /* select starting stylings ------------------------------*/
-.select-text {position: relative;font-family: inherit;background-color: transparent;width: 100%;height: 60px;padding: 10px 30px 10px 20px;font-size: 18px;border-radius: 6px;border: 2px solid #d2d0e1;}
+.form .select-text {position: relative;font-family: inherit;background-color: transparent;width: 100%;height: 60px;padding: 10px 30px 10px 20px;font-size: 18px;border-radius: 6px;border: 2px solid #d2d0e1;}
 /* Remove focus */
-.select-text:focus {outline: none;border: 2px solid #6a4eee;}
+.form .select-text:focus {outline: none;border: 2px solid #6a4eee;}
 /* Use custom arrow */
-.select .select-text {appearance: none;-webkit-appearance:none;color: gray;}
-.select:after {position: absolute;top: 18px;right: 10px;/* Styling the down arrow */width: 0;height: 0;padding: 0;content: '';border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 6px solid #d2d0e1;pointer-events: none;}
+.form .select .select-text {appearance: none;-webkit-appearance:none;color: gray;}
+.form .select:after {position: absolute;top: 18px;right: 10px;/* Styling the down arrow */width: 0;height: 0;padding: 0;content: '';border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 6px solid #d2d0e1;pointer-events: none;}
 /* LABEL ======================================= */
-.select-label {color: #d2d0e1;background: white;font-size: 18px;font-weight: normal;position: absolute;pointer-events: none;padding: 0 5px;left: 1rem;top: 1.2rem;transition: 0.2s ease all;}
+.form .select-label {color: #d2d0e1;background: white;font-size: 18px;font-weight: normal;position: absolute;pointer-events: none;padding: 0 5px;left: 1rem;top: 1.2rem;transition: 0.2s ease all;}
 /* active state */
-.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {color: #6a4eee;top: -8px;transition: 0.2s ease all;font-size: 14px;}
-.select-text:valid:not(focus) ~ .select-label {color: #121212;}
-.select-text:valid:focus ~ .select-label {color: #6a4eee;}
+.form .select-text:focus ~ .select-label, .select-text:valid ~ .select-label {color: #6a4eee;top: -8px;transition: 0.2s ease all;font-size: 14px;}
+.form .select-text:valid:not(focus) ~ .select-label {color: #121212;}
+.form .select-text:valid:focus ~ .select-label {color: #6a4eee;}
 
+/* select starting stylings ------------------------------*/
+.form2 .select-text {position: relative;font-family: inherit;background-color: transparent;width: 100%;height: 60px;padding: 10px 30px 10px 20px;font-size: 18px;border-radius: 6px;border: 2px solid #d2d0e1;}
+/* Remove focus */
+.form2 .select-text:focus {outline: none;border: 2px solid #6a4eee;}
+/* Use custom arrow */
+.form2 .select .select-text {appearance: none;-webkit-appearance:none;color: gray;}
+.form2 .select:after {position: absolute;top: 18px;right: 10px;/* Styling the down arrow */width: 0;height: 0;padding: 0;content: '';border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 6px solid #d2d0e1;pointer-events: none;}
+/* LABEL ======================================= */
+.form2 .select-label {color: #d2d0e1;background: white;font-size: 18px;font-weight: normal;position: absolute;pointer-events: none;padding: 0 5px;left: 1rem;top: 1rem;transition: 0.2s ease all;}
+/* active state */
+.form2 .select-text:focus ~ .select-label, .select-text:valid ~ .select-label {color: #6a4eee;top: -8px;transition: 0.2s ease all;font-size: 14px;}
+.form2 .select-text:valid:not(focus) ~ .select-label {color: #121212;}
+.form2 .select-text:valid:focus ~ .select-label {color: #6a4eee;}
 
-
-.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  color: #000000;
-}
-.form__input:focus ~ .icon-inside svg path {
-  fill: #6a4eee;
-  stroke: #6a4eee;
-}
-.form__input:not(:placeholder-shown).form__input:not(:focus)
-  ~ .icon-inside
-  svg
-  path {
-  fill: #000000;
-  stroke: #000000;
-}
-
-.form__input:focus ~ .icon-inside i.fa-eye-slash {
-  color: #6a4eee;
-}
-.form__input:focus ~ .icon-inside i.fa-eye{
-  color: #6a4eee;
-}
-.icon-inside .fa-eye-slash:hover {
-  color: #6a4eee;
-}
-.icon-inside .fa-eye:hover {
-  color: #6a4eee;
-}
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {color: #000000;}
+.form__input:focus ~ .icon-inside svg path {fill: #6a4eee;stroke: #6a4eee;}
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .icon-inside svg path {fill: #000000;stroke: #000000;}
+.form__input:focus ~ .icon-inside i.fa-eye-slash {color: #6a4eee;}
+.form__input:focus ~ .icon-inside i.fa-eye{color: #6a4eee;}
+.icon-inside .fa-eye-slash:hover {color: #6a4eee;}
+.icon-inside .fa-eye:hover {color: #6a4eee;}
 
 /*input:focus, input:not(:placeholder-shown), input:-webkit-autofill{border: 2px solid #000000;}*/
-.form__input:focus ~ .form__label {
-  color: #6a4eee;
-}
+.form__input:focus ~ .form__label {color: #6a4eee;}
 
-input[type="number"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100% !important;
-  border: 2px solid #d2d0e1;
-  /*border-radius: 0.5rem !important;*/
-  font-family: inherit;
-  font-size: inherit;
-  /* color: ; */
-  outline: none;
-  padding: 1.25rem !important;
-  background: none !important;
-  -moz-appearance: textfield;
-}
+input[type="number"] {position: absolute;top: 0;left: 0;width: 100%;height: 100% !important;border: 2px solid #d2d0e1;/*border-radius: 0.5rem !important;*/font-family: inherit;font-size: inherit;/* color: ; */outline: none;padding: 1.25rem !important;background: none !important;-moz-appearance: textfield;}
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 
-.modal {
-  display: none;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.25);
-}
-.modal .modal-dialog {
-  /*margin-top: 10%;*/
-}
-.modal button.btn-primary {
-  /*background: #6a4eee;*/
-  border-radius: 7px; /*height: 60px;*/
-  font-size: 18px;
-}
-.modal #search {
-  padding: 0 0 10px;
-  margin: 0;
-}
-.modal #search input {
-  width: 100%;
-}
-.modal .submitbtn {
-  margin-bottom: 10px;
-}
-.modal .submitbtn-no {
-  background: #d9d9d9 !important;
-  border-color: #d9d9d9;
-  vertical-align: top;
-}
+.modal {display: none;position: fixed;background-color: rgba(0, 0, 0, 0.25);}
+.modal .modal-dialog {/*margin-top: 10%;*/}
+.modal button.btn-primary {/*background: #6a4eee;*/border-radius: 7px; /*height: 60px;*/font-size: 18px;}
+.modal #search {padding: 0 0 10px;margin: 0;}
+.modal #search input {width: 100%;}
+.modal .submitbtn {margin-bottom: 10px;}
+.modal .submitbtn-no {background: #d9d9d9 !important;border-color: #d9d9d9;vertical-align: top;}
 .modal-header {
   border-bottom: none;
   padding: 25px 25px 10px;
@@ -2271,7 +2231,7 @@ table#RecentTable {width: 100%;}
 .equitiesbtn button:active{color: #00B123!important;background: rgba(0, 177, 35, 0.05)!important;border: 1px solid #00B123!important;}
 .equitiesbtn button img{margin-right: 5px;}
 .prighttxt a{font-size: 12px;font-weight: 500;color: #6a4eee;}
-.cdsl p{color: #A5A7A4;}
+.cdsl p{color: #A5A7A4;margin-bottom: 25px;}
 .cdsl span{color: #000000;}
 #Nominee small{color: #A5A7A4;font-size: 12px;font-weight: 400;}
 #Nominee img{display: block;margin:0 auto; }
@@ -2280,15 +2240,14 @@ table#RecentTable {width: 100%;}
 #PowerAttorney button.poa{height: 40px;padding: 12px 28px;text-transform: none;font-weight: 500;margin-top: 15px; }
 #AccountClosure button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
 
-.active-box{width: 42%;display: inline-block;}
-/*.basicplan{background: linear-gradient(180deg, #6A4EEE 17.07%, #211075 100%);padding: 10px;color: #ffffff;border-radius:6px 6px 0 0;}*/
-.basicplan{padding: 10px;color: #ffffff;border-radius:6px;}
-.basicplan img{width: 100%;}
-.basicplan span{display: inline-block;font-weight: 500;font-size: 40px!important;color: #ffffff!important;position: absolute;left: 10%;top: 22%;}
-.basicplan aside{display: inline-block;float: right;padding:6px 10px;background: #D1EE4E;border-radius: 0 0 6px 6px;color: #121212;position: absolute;top: 0px;left: 20%;font-size: 14px!important;font-weight: 500;}
-.basicplan small{display: block;padding: 5px 0;font-size: 12px;position: absolute;top: 65%;left: 8%;width: 180px;}
-.basicplan .onetimebox{border-radius: 15px;background: #7A60ED;width: fit-content;padding: 5px 10px;font-size: 10px;position: absolute;top: 50%;left: 8%;}
-.basicplan .rupee{display: inline-block;vertical-align: top;position: absolute;top: 20%;left: 8%;font-size: 22px;}
+.active-box{width: 42%;display: inline-block;background: url(../images/active-plan.svg);background-position: center;background-size: cover;border-radius: 20px;}
+.basicplan2{padding: 30px;color: #ffffff;}
+.basicplan2 span{display: inline-block;font-weight: 500;font-size: 40px!important;color: #ffffff!important;}
+.basicplan2 aside{display: inline-block;float: right;padding:6px 10px;background: #D1EE4E;border-radius: 0 0 6px 6px;color: #121212;position: absolute;top: -10px;left: 20%;font-size: 14px!important;font-weight: 500;}
+.basicplan2 small{display: block;padding: 5px 0;font-size: 12px;width: 140px;}
+.basicplan2 .onetimebox{border-radius: 15px;background: #7A60ED;width: fit-content;padding: 5px 10px;font-size: 11px;margin: 10px 0;}
+.basicplan2 .rupee{display: inline-block;vertical-align: top;font-size: 22px;}
+
 .basic-content{border-radius: 6px;padding: 8px 20px;}
 .basic-content small{font-size: 10px;}
 .bankacc{display: flex;}
@@ -2351,11 +2310,7 @@ input[type="radio"][name="tabs"]:checked
 .otpbtn:hover svg path{fill: #6a4eee;font-size: 25px;}
 .mobile-change{height: 52px;vertical-align: middle;}
 .mobile-change h6{color: #00C707;justify-content: center;align-items: center;height: 52px;display: flex;margin-left: 15px;font-weight: 400;}
-#formheight52 .form{height: 52px;margin-bottom: 20px;}
-#formheight52 .form .select-label{top: 0.9rem;}
-#formheight52 .select-text:focus ~ .select-label, .select-text:valid ~ .select-label {top: -0.4rem;}
-#formheight52 .form .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label{top: -0.4rem;}
-#formheight52 .form .form__label{/*top: 0.9rem;*/}
+#formheight52 .form2{height: 52px;margin-bottom: 20px;}
 #formheight52 .select-text{height: 52px;margin-bottom: 20px;}
 #formheight52 .btn-primary{height: 52px;text-transform: none;font-weight: 500;}
 #formheight52 .select-text{font-size: 16px;padding: 10px 10px 10px 20px;}
@@ -2365,6 +2320,9 @@ input[type="radio"][name="tabs"]:checked
 #ContactInfo ul{padding-left: 1.2rem;width: 80%;}
 #ContactInfo ul li{font-size: 14px;line-height: 20px;}
 select {-moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */appearance:none;background:url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg) 0 0 no-repeat;width:192px;padding:2px;background-position: right;background-repeat: no-repeat;background-position-x: 96%;}
+.fileupload form label{border: 1.5px dashed #6A4EEE;border-radius: 10px;height: 130px;width: 130px;margin-bottom: 10px;}
+.fileupload form input[type=file]{display: none;}
+#formheight52 ul{width: 100%;}
 /*profile*/
 
 

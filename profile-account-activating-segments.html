@@ -724,25 +724,99 @@
                           <div class="col-md-12" id="formheight52">
                             <div class="row">
                               <div class="col-md-8">
-                                <div class="form">
+                                <div class="form2">
                                   <select class="select-text" required>
-                                    <option value="" selected>Bank Statement</option>
-                                    <option value="1">Name 1</option>
-                                    <option value="2">Name 2</option>
-                                    <option value="3">Name 3</option>
+                                    <option value="" selected>Income Proof</option>
+                                    <option value="bank">Bank Statement</option>
+                                    <option value="itr">ITR (Income Tax Return)</option>
+                                    <option value="salary">Salary Slip</option>
+                                    <option value="form16">Form 16</option>
+                                    <option value="holding">Holding Statement</option>
                                   </select>
-                                  <label class="select-label">Bank Statement</label>
+                                  <label class="select-label">Income Proof</label>
                                 </div>
                               </div>
                             </div>
                             <div class="row">
                               <div class="col-md-8">
-                                <div class="form mb-3">
-                                  <input type="number" id="penterotpnumber" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
-                                  <label for="penterotpnumber" class="form__label">Enter OTP</label>
+                                <div class="bank data mb-3">
+                                  <ul>
+                                    <li>Bank statements must show transactions of the last 6 months</li>
+                                    <li>Minimum closing balance of your bank statement must be Rs. 10,000</li>
+                                    <li>Image shouldn’t be blurred</li>
+                                    <li>Bank Logo/Stamp should be visible</li>
+                                    <li>Name should be clearly visible</li>
+                                    <li>IFSC should be visible on the bank statement</li>
+                                  </ul>
+                                  <div class="fileupload">
+                                    <form action="" method="POST">
+                                      <input type="file" name="fileupload" id="Upload-file" />
+                                      <label for="Upload-file"></label>
+                                    </form>
+                                    <small class="mt-2">Format: PDF</small>
+                                  </div>
                                 </div>
-                                <div class="float-right mb-3 d-none">
-                                  <span><a href="#">02:15</a></span>
+                                <div class="itr data mb-3">
+                                  <ul>
+                                    <li>Image shouldn't be blurred</li>
+                                    <li>Name should be clearly visible</li>
+                                    <li>Assessment must be of the most recent two years</li>
+                                    <li>The ITR Acknowledgment number is required</li>
+                                  </ul>
+                                  <div class="fileupload">
+                                    <form action="upload.php" method="POST">
+                                      <input type="file" name="fileupload" />
+                                    </form>
+                                  </div>
+                                </div>
+                                <div class="salary data mb-3">
+                                  <ul>
+                                    <li>Image shouldn't be blurred</li>
+                                    <li>Company Name/Stamp should be visible</li>
+                                    <li>Name should be clearly visible</li>
+                                    <li>Salary slips must be of the last 3 months</li>
+                                  </ul>
+                                  <div class="fileupload">
+                                    <form action="upload.php" method="POST">
+                                      
+                                    </form>
+                                  </div>
+                                </div>
+                                <div class="form16 data mb-3">
+                                  <ul>
+                                    <li>Image shouldn't be blurred</li>
+                                    <li>Name should be clearly visible</li>
+                                    <li>Form 16 should be of the latest month</li>
+                                  </ul>
+                                  <div class="fileupload">
+                                    <form action="upload.php" method="POST">
+                                      
+                                    </form>
+                                  </div>
+                                </div>
+                                <div class="holding data mb-3">
+                                  <ul>
+                                    <li>Image shouldn't be blurred</li>
+                                    <li>Company Name/Stamp should be visible</li>
+                                    <li>Name should be clearly visible</li>
+                                    <li>Salary slips must be of the last 3 months</li>
+                                  </ul>
+                                  <div class="fileupload">
+                                    <form action="upload.php" method="POST">
+                                      
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-8">
+                                <div class="form2 mb-3">
+                                  <input type="number" id="filepassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
+                                  <label for="filepassword" class="form__label">File Password</label>
+                                </div>
+                                <div class="mb-3">
+                                  <span>*Require if income proof file is password protected</span>
                                 </div>
                               </div>
                             </div>
@@ -827,3 +901,19 @@
   </script> 
 </body>
 </html>
+
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".data").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".data").hide();
+            }
+        });
+    }).change();
+});
+</script>
