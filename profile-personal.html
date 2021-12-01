@@ -12,11 +12,37 @@
 
   <link rel="shortcut icon" href="images/logo.svg" />
 
+  <meta name="theme-color" content="rgb(106, 78, 238)">
+
 </head>
 <body>
+
+  <div class="mobile-band">
+    <div class="d-inline-block bandleft">
+      <a href="">
+        <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.853 3.64735C12.946 3.74293 12.998 3.87101 12.998 4.00435C12.998 4.13769 12.946 4.26577 12.853 4.36135L9.40299 7.86135C9.30923 7.95508 9.18208 8.00774 9.04949 8.00774C8.91691 8.00774 8.78976 7.95508 8.69599 7.86135C8.60207 7.76626 8.5494 7.638 8.5494 7.50435C8.5494 7.3707 8.60207 7.24243 8.69599 7.14735L11.298 4.50935L1.49799 4.50935C1.36406 4.50935 1.23561 4.45614 1.14091 4.36143C1.0462 4.26673 0.992994 4.13828 0.992994 4.00435C0.992994 3.87041 1.0462 3.74196 1.14091 3.64726C1.23561 3.55255 1.36406 3.49935 1.49799 3.49935L11.298 3.49935L8.69799 0.862346C8.60407 0.767263 8.5514 0.638997 8.5514 0.505346C8.5514 0.371696 8.60407 0.243429 8.69799 0.148346C8.79176 0.0546108 8.91891 0.00195313 9.05149 0.00195313C9.18408 0.00195313 9.31123 0.0546108 9.40499 0.148346L12.853 3.64735Z" fill="#121212"/>
+        </svg>
+        <h2>Profile</h2>
+      </a>
+    </div>
+    <!-- <div class="d-inline-block bandright float-right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13.988" height="16" viewBox="0 0 13.988 16">
+        <g id="Delete" transform="translate(-5 -3)">
+          <path id="Path_821" data-name="Path 821" d="M15.266,22.077H10.179A3.129,3.129,0,0,1,7,19V11.615a.636.636,0,0,1,1.272,0V19a1.878,1.878,0,0,0,1.907,1.846h5.087A1.878,1.878,0,0,0,17.173,19V11.615a.636.636,0,0,1,1.272,0V19A3.129,3.129,0,0,1,15.266,22.077Z" transform="translate(-0.728 -3.077)" fill="#121212"/>
+          <path id="Path_822" data-name="Path 822" d="M18.352,8.231H5.636A.616.616,0,1,1,5.636,7H18.352a.616.616,0,1,1,0,1.231Z" transform="translate(0 -1.538)" fill="#121212"/>
+          <path id="Path_823" data-name="Path 823" d="M16.722,6.692H11.636A.626.626,0,0,1,11,6.077V4.846A1.878,1.878,0,0,1,12.907,3h2.543a1.878,1.878,0,0,1,1.907,1.846V6.077A.626.626,0,0,1,16.722,6.692ZM12.272,5.462h3.815V4.846a.626.626,0,0,0-.636-.615H12.907a.626.626,0,0,0-.636.615Z" transform="translate(-2.185 0)" fill="#121212"/>
+          <path id="Path_824" data-name="Path 824" d="M13.636,19.538A.626.626,0,0,1,13,18.923V14.615a.636.636,0,0,1,1.272,0v4.308A.626.626,0,0,1,13.636,19.538Z" transform="translate(-2.913 -4.231)" fill="#121212"/>
+          <path id="Path_825" data-name="Path 825" d="M17.636,19.538A.626.626,0,0,1,17,18.923V14.615a.636.636,0,0,1,1.272,0v4.308A.626.626,0,0,1,17.636,19.538Z" transform="translate(-4.37 -4.231)" fill="#121212"/>
+        </g>
+      </svg>
+      <h4>Done</h4>
+    </div> -->
+  </div>
+
   <div class="container-fluid">
     <div id="mainbox">
-      <div class="row" id="livemarketmobile">
+      <!-- <div class="row" id="livemarketmobile">
         <div class="col-md-12">
           <ul class="navbar-nav">
             <li class="nav-item nav-search d-lg-block d-xl-none ml-0">
@@ -35,8 +61,8 @@
             </li>
           </ul>
         </div>
-      </div>
-
+      </div> -->
+      
       <div class="row">
         <!-- 1 -->
         <div class="col-md-6 col-lg-4 col-xl-3">
@@ -603,7 +629,7 @@
 
         <!-- 2 -->
         <div class="col-md-6 col-lg-8 col-xl-9">
-          <nav class="navbar navbar-dark navbar-expand justify-content-center">
+          <nav class="navbar navbar-dark navbar-expand justify-content-center" id="desktop-menu">
             <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/></a>
             <div class="container-fluid">
               <ul class="navbar-nav nav-justified text-center" id="menutxt">
@@ -660,6 +686,7 @@
               </div>
             </div>
           </nav>
+          
           <!-- <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <div class="contentbox fadeIn-element">
@@ -669,15 +696,46 @@
             </div>
           </div> -->
           
-          <style type="text/css">
-            
-          </style>
           <div class="row">
               <!-- Equity Summary -->
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="profile fadeIn-element">
                   <div class="row slideInDown-element ">
 
+                    <div class="mobilebox">
+                      <div class="container-fluid">
+                        <nav class="navbar navbar-expand-xs navbar-light fixed-top mobilemenu">
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <!-- <a class="navbar-brand" href="#"><img src="http://img.tecxlabs.com/images/logo.svg" alt="logo"/></a> -->
+                          <div class="collapse navbar-collapse pt-4" id="navbarCollapse">
+                            <div class="personalbox">
+                              <img src="http://img.tecxlabs.com/images/profile/personal-2.svg" />
+                              <div class="personal-content">
+                                <a href="profile-personal.html"><aside>Personal</aside></a>
+                                <a href="profile-personal.html#BasicInfo"><p>Basic information</p></a>
+                                <a href="profile-personal.html#ContactInfo"><p>Contact information</p></a>
+                                <a href="profile-personal.html#DematDetails"><p>Demat Details</p></a>
+                              </div>
+                            </div>
+                            <div class="accountbox">
+                              <img src="http://img.tecxlabs.com/images/profile/account-2.svg" />
+                              <div class="personal-content">
+                                <a href="#" class="active"><aside>Account</aside></a>
+                                <a href="profile-account.html#Segments"><p>Segments</p></a>
+                                <a href="profile-account.html#TradingPlan"><p>Trading Plan</p></a>
+                                <a href="profile-account.html#BankDetails"><p>Bank Details</p></a>
+                                <a href="profile-account.html#ChangePassword"><p>Change Password & PIN</p></a>
+                                <a href="profile-account.html#Nominee"><p>Nominee</p></a>
+                                <a href="profile-account.html#PowerAttorney"><p>Power of Attorney (PoA)</p></a>
+                                <a href="profile-account.html#AccountClosure"><p>Account Closure</p></a>
+                              </div>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
 
                     <div class="col-md-6 col-xl-3" id="leftbox">
                       <div class="personal">
@@ -717,35 +775,35 @@
                       <div class="basicinfo border1-padding15" id="BasicInfo">
                         <aside>Basic Info</aside>
                         <div class="row">
-                          <div class="col-md-3">
+                          <div class="col-6 col-md-3">
                             <p>Name</p>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-6 col-md-3">
                             <span>Jennifer Miller</span>
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-3">
+                          <div class="col-6 col-md-3">
                             <p>UCC</p>
                           </div>
-                          <div class="col-xl-3">
+                          <div class="col-6 col-xl-3">
                             <span>GE5589</span>
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-3">
+                          <div class="col-6 col-md-3">
                             <p>PAN</p>
                           </div>
-                          <div class="col-xl-3">
+                          <div class="col-6 col-xl-3">
                             <span>A**P***74P</span>
                             <img src="http://img.tecxlabs.com/images/profile/eye.svg" alt="image" />
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-3">
+                          <div class="col-6 col-md-3">
                             <p>Password</p>
                           </div>
-                          <div class="col-xl-3">
+                          <div class="col-6 col-xl-3">
                             <span>**********</span>
                           </div>
                         </div>
@@ -753,11 +811,11 @@
                       <div class="contactinfo border1-padding15" id="ContactInfo">
                         <aside>Contact Info</aside>
                         <div class="row">
-                          <div class="col-md-12">
+                          <div class="col-md-12 contactprofile">
                             <!-- <form> -->
                               <div class="row">
                                 <div class="col-md-6">
-                                  <div class="form mb-4">
+                                  <div class="form">
                                     <input type="number" id="ppmobilenumber" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="9876543210" required />
                                     <label for="ppmobilenumber" class="form__label">Mobile number</label>
                                   </div>
@@ -772,7 +830,7 @@
                               </div>
                               <div class="row">
                                 <div class="col-md-6">
-                                  <div class="form mb-4">
+                                  <div class="form">
                                     <input type="text" id="ppemailaddress" class="form__input" placeholder=" " onfocus="onEnter(this)" value="jennifer.miller@gmail.com" required />
                                     <label for="ppemailaddress" class="form__label">Email address</label>
                                   </div>
@@ -787,7 +845,7 @@
                               </div>
                               <div class="row">
                                 <div class="col-md-6">
-                                  <div class="form mb-4 textarea">
+                                  <div class="form textarea">
                                     <textarea id="ppcorrespondence1" class="form__input" placeholder=" " onfocus="onEnter(this)" rows="8" value="120, Dev Chaaya, M B Raut Rd, Opp Balmohan Vidya Mandir, Shivaji, Dadar (west), Mumbai" required aria-label="Label">120, Dev Chaaya, M B Raut Rd, Opp Balmohan Vidya Mandir, Shivaji, Dadar (west), Mumbai</textarea>
                                     <label for="ppcorrespondence1" class="form__label">Address</label>
                                   </div>

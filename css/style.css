@@ -266,9 +266,8 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .marketbox {
   height: 74px;
 }
-.nsebse h6 {
-  font-weight: 400;
-}
+.nsebse h6 {font-weight: 400;margin: 0;}
+.nsebse h6.pgreen {font-weight: 400;}
 .nsebse .table-cell h6:nth-child(1) {
   color: #a5a7a4;
   margin-bottom: 0;
@@ -641,7 +640,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   font-size: 12px;
 }
 #watchlistinner-market h4 {
-  font-size: 14px;
+  font-size: 14px;line-height: 1.5;margin: 0;
 }
 .plate-2 #watchlistinner-market {
   width: 49.4%;
@@ -653,7 +652,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .plate-2 #watchlistinner-market.marketlive {
   padding: 0px 20px 0px 20px;
   border-right: 1px solid #d2d0e1;
-  margin-top: 15px;
+  margin-top: 14px;
 }
 .plate-2 #watchlistinner-market.marketlive2 {
   padding: 0px 20px 0px 15px;
@@ -2180,7 +2179,8 @@ table#RecentTable {width: 100%;}
   font-weight: 500 !important;
 }
 /*login*/
-
+.mobilemenu{display: none;}
+.mobile-band{display: none;}
 
 /*profile*/
 .border1-padding15{border: 1px solid #d2d0e1;padding: 30px;margin-bottom: 20px;}
@@ -2410,8 +2410,19 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
 .shortcoverp span:nth-child(2){width: 120px;display: inline-block;font-size: 12px;font-weight: 500;}
 /*option chain*/
 
+/*mobile responsive*/
+.mobilebox{margin-top: 40px;}
+
+.mobilemenu{border-bottom: 1px solid #d2d0e1;background: #ffffff;}
+.mobilemenu .navbar-brand{color:#6344f2;}
+.mobilemenu #navbarCollapse{background-color:#ffffff;border: 1px solid #d2d0e1;}
+
+/*@media (max-width: 1024px) {
+    
+}*/
+/*mobile responsive*/
+
 /*svg*/
-svg{}
 #tw {stroke-dasharray:  300 , 0, 3000;}
 svg:hover #tw { animation: tw .7s; }
 @keyframes tw { 0% {stroke-dasharray:  300, 500, 3000} 100% { stroke-dasharray:3300, 500, 3000;} }
@@ -2420,40 +2431,31 @@ svg:hover #tw { animation: tw .7s; }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-  .b-listing #mainwatchlist tr td {
-    padding: 10px 20px;
-  }
-  .plate-2 {
-    position: inherit;
-    width: 100%;
-  }
-  .login-box2 {
-    display: none;
-  }
-  .login-box1 .login-section1 {
-    width: 90%;
-    margin: 10% auto 20% auto;
-  }
-  .login-box1 .signtxt {
-    width: 80%;
-  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .plate-2 {
-    position: inherit;
-    width: 100%;
-  }
-  .b-listing #mainwatchlist tr td {
-    padding: 10px 20px;
-  }
-  .login-box2 {
-    display: none;
-  }
-  .login-box1 .signtxt {
-    width: 60%;
-  }
+@media (max-width: 767.98px) {
+  .plate-2 {display: none;}
+  #livemarketmobile .plate-3 {display: none;}
+  #desktop-menu {display: none;}
+  #leftbox {display: none;}
+  .footer-bottom {display: none;}
+  .profile{padding: 0px;border: none;height: auto;margin-top: 100px;overflow: unset;}
+  .b-listing #mainwatchlist tr td {padding: 10px 20px;}
+  .login-box2 {display: none;}
+  .login-box1 .signtxt {width: 60%;}
+  .navbar-collapse {position: fixed;top: 128px;left: 0;padding-left: 15px;padding-right: 15px;padding-bottom: 15px;width: 75%;height: 100%;}
+  .navbar-collapse.collapsing {left: -75%;transition: height 0s ease;}
+  .navbar-collapse.show {left: 0;transition: left 300ms ease-in-out;}
+  .navbar-toggler.collapsed ~ .navbar-collapse {transition: left 500ms ease-in-out;}
+  .mobilemenu{margin-top: 56px;display: block;}
+  .mobile-band{height: 60px;background:linear-gradient(270deg, #E100FF 0%, #7F00FF 100%);top: 0;z-index: 9999;position: fixed;width: 100%;color: #ffffff;padding: 16px 20px;display: block;}
+  .mobile-band .bandleft svg {transform: rotate(180deg);width: 30px;height: 25px;display: inline-block;}
+  .mobile-band .bandleft svg path{fill: #ffffff;}
+  .mobile-band .bandleft h2{font-size: 20px;font-weight: 500;display: inline-block;margin-left: 10px;color: #ffffff;}
+  .mobile-band .bandright svg {width: 30px;height: 25px;display: inline-block;}
+  .mobile-band .bandright svg path{fill: #ffffff;}
+  .mobile-band .bandright h4{font-size: 20px;font-weight: 700;display: inline-block;margin-left: 10px;}
 }
 
 /*Medium devices (tablets, 768px and up)*/
