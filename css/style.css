@@ -1587,19 +1587,6 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
   display: none;
 }
 
-@media screen and (max-width: 800px) {
-  #Portfolio .tab-wrap {
-    width: 80%;
-    margin-left: 10%;
-    top: -106px;
-  }
-  #ChangePassword .tab-wrap {
-    width: 80%;
-    margin-left: 10%;
-    top: -106px;
-  }
-}
-
 #popupbox .modal-body p {
   font-size: 12px;
   /*text-align: justify;*/
@@ -2230,7 +2217,9 @@ table#RecentTable {width: 100%;}
 .equitiesbtn button:hover{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;}
 .equitiesbtn button:active{color: #00B123!important;background: rgba(0, 177, 35, 0.05)!important;border: 1px solid #00B123!important;}
 .equitiesbtn button img{margin-right: 5px;}
-.prighttxt a{font-size: 12px;font-weight: 500;color: #6a4eee;}
+.prighttxt a{font-size: 12px;font-weight: 500;color: #6a4eee;padding-right: 10px;}
+.prighttxt a:nth-child(1){border-right: 1px solid #E5E5E5;}
+.prighttxt a:nth-child(2){padding-left: 10px;}
 .cdsl p{color: #A5A7A4;margin-bottom: 25px;}
 .cdsl span{color: #000000;}
 #Nominee small{color: #A5A7A4;font-size: 12px;font-weight: 400;}
@@ -2319,7 +2308,8 @@ input[type="radio"][name="tabs"]:checked
 /*select:after{position: absolute;top: 18px;right: 10px;content: url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg);}*/
 #ContactInfo ul{padding-left: 1.2rem;width: 80%;}
 #ContactInfo ul li{font-size: 14px;line-height: 20px;}
-select {-moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */appearance:none;background:url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg) 0 0 no-repeat;width:192px;padding:2px;background-position: right;background-repeat: no-repeat;background-position-x: 96%;}
+select {-moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */appearance:none;background:url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg) 0 0 no-repeat;padding:2px;background-position: right;background-repeat: no-repeat;background-position-x: 96%;}
+select option{background: #ffffff;color: #121212;border-radius: 6px;border-bottom: 1ps solid #efefef;}
 .fileupload form label{border: 1.5px dashed #6A4EEE;border-radius: 10px;height: 130px;width: 130px;margin-bottom: 10px;}
 .fileupload form input[type=file]{display: none;}
 #formheight52 ul{width: 100%;}
@@ -2435,11 +2425,7 @@ svg:hover #tw { animation: tw .7s; }
 
 
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-}
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 767.98px) {
+@media (max-width: 374.98px) {
   .plate-2 {display: none;}
   #livemarketmobile .plate-3 {display: none;}
   #desktop-menu {display: none;}
@@ -2466,6 +2452,63 @@ svg:hover #tw { animation: tw .7s; }
   .mobilebox{display: block;}
   .contactprofile .form{margin-bottom: 15px;}
   .mobupdate {height: 90px;}
+  .derivatives-box{width: 100%;}
+  .commodities-box{width: 100%;margin: 15px 0 0 0;}
+  #mainbox{padding: 0 10px;}
+  .equitiesbtn button{margin: 4px 4px 0 0;}
+  .active-box{width: 100%;}
+  .bank-details p{width: 48%;}
+  .prighttxt{float: none!important;}
+  .prighttxt img{margin: 0 4px 0 0;}
+  .bank-details p{width: 48%;}
+  .border1-padding15{padding: 15px;}
+  #ChangePassword .tab-label-content .tab-content{width: auto;}
+  #ChangePassword .tab-label-content{width: auto;}
+  #ChangePassword .tab-wrap .tab-label-content label:nth-child(1){height: 32px;}
+  #ChangePassword form .form{width: auto;}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .plate-2 {display: none;}
+  #livemarketmobile .plate-3 {display: none;}
+  #desktop-menu {display: none;}
+  #leftbox {display: none;}
+  .footer-bottom {display: none;}
+  #desktop-icon-menu {display: none;}
+  #desktop-menu {display: none;}
+  .profile{padding: 0px;border: none;height: auto;margin-top: 100px;overflow: unset;}
+  .b-listing #mainwatchlist tr td {padding: 10px 20px;}
+  .login-box2 {display: none;}
+  .login-box1 .signtxt {width: 60%;}
+  .navbar-collapse {position: fixed;top: 128px;left: 0;padding-left: 15px;padding-right: 15px;padding-bottom: 15px;width: 75%;height: 100%;}
+  .navbar-collapse.collapsing {left: -75%;transition: height 0s ease;}
+  .navbar-collapse.show {left: 0;transition: left 300ms ease-in-out;}
+  .navbar-toggler.collapsed ~ .navbar-collapse {transition: left 500ms ease-in-out;}
+  .mobilemenu{margin-top: 56px;display: block;}
+  .mobile-band{height: 60px;background:linear-gradient(270deg, #E100FF 0%, #7F00FF 100%);top: 0;z-index: 9999;position: fixed;width: 100%;color: #ffffff;padding: 16px 20px;display: block;}
+  .mobile-band .bandleft svg {transform: rotate(180deg);width: 30px;height: 25px;display: inline-block;}
+  .mobile-band .bandleft svg path{fill: #ffffff;}
+  .mobile-band .bandleft h2{font-size: 20px;font-weight: 500;display: inline-block;margin-left: 10px;color: #ffffff;}
+  .mobile-band .bandright svg {width: 30px;height: 25px;display: inline-block;}
+  .mobile-band .bandright svg path{fill: #ffffff;}
+  .mobile-band .bandright h4{font-size: 20px;font-weight: 700;display: inline-block;margin-left: 10px;}
+  .mobilebox{display: block;}
+  .contactprofile .form{margin-bottom: 15px;}
+  .mobupdate {height: 90px;}
+  .derivatives-box{width: 260px;}
+  .commodities-box{width: 260px;margin: 15px 0 0 0;}
+  #mainbox{padding: 0 10px;}
+  .equitiesbtn button{margin: 4px 4px 0 0;}
+  .active-box{width: 270px;}
+  .border1-padding15{padding: 20px;}
+  .prighttxt{float: none!important;}
+  .prighttxt img{margin: 0 5px 0 0;}
+  .bank-details p{width: 48%;}
+  #ChangePassword .tab-label-content .tab-content{width: auto;}
+  #ChangePassword .tab-label-content{width: auto;}
+  #ChangePassword .tab-wrap .tab-label-content label:nth-child(1){height: 32px;}
+  #ChangePassword form .form{width: 280px;}
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -2485,6 +2528,11 @@ svg:hover #tw { animation: tw .7s; }
   #leftbox .personal{position: unset;}
   .profile p{font-size: 13px;}
   .personal-content a.active aside {font-size: 16px;}
+  .mobilemenu{display: block;position: sticky;}
+  .profile #leftbox{display: none;}
+  .mobile-edited h6{display: block;}
+  .contactprofile .form{margin: 10px 0 15px 0;}
+  .mobupdate img{height: 40px;margin-right: 5px;}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -2509,13 +2557,19 @@ svg:hover #tw { animation: tw .7s; }
   .d-desktop{display: none;}
   .d-ipad{display: block;}
   .marketbox {height: 96px;}
-  .plate-2 #watchlistinner-market.marketlive{padding: 0px 12px 4px 12px;margin-top: 4px;border-right: none;border-bottom: 1px solid #d2d0e2;}
+  .plate-2 #watchlistinner-market.marketlive{padding: 0px 12px 4px 12px;margin: 4px 0px 0px;border-right: none;border-bottom: 1px solid #d2d0e2;}
   .plate-2 #watchlistinner-market.marketlive2{padding: 0px 12px 4px 12px;}
   .plate-2 #watchlistinner-market{width: 100%;}
   #menutxt .nav-item a{font-size: 16px;}
   #leftbox .personal{position: unset;}
   .profile p{font-size: 13px;}
   .personal-content a.active aside {font-size: 16px;}
+  .mobilemenu{display: block;position: sticky;padding-top:0;}
+  .mobilemenu #navbarCollapse{padding: 15px;}
+  .profile #leftbox{display: none;}
+  .mobile-edited h6{display: block;}
+  .contactprofile .form{margin: 10px 0 15px 0;}
+  .mobupdate img{height: 40px;}
 }
 
 /* ----------- iPad Pro ----------- */
@@ -2550,12 +2604,13 @@ svg:hover #tw { animation: tw .7s; }
   .plate {height: 47vh;padding: 20px;}
   .plate-2 {position: fixed;height: 95vh;}
   /*.navbar{padding:0px 28px;}*/
-  .marketlive {/* height: 40px; */padding: 0px 20px;}
+  .marketlive {height: 40px;padding: 0px 20px;}
   .niftymain {margin: 6px 0;}
+  .b-listing{padding: 0 10px 0 0;}
   .b-listing #mainwatchlist {margin: 8px 0 8px 0;height: 63vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .b-listing #mainwatchlist tr span {max-width: 70%;}
   .b-listing #mainwatchlist tr img {width: 35px;height: 35px;margin-right: 6px;}
-  .b-listing #mainwatchlist tr td {/*width:65%;*/padding: 10px 10px 5px 15px;}
+  .b-listing #mainwatchlist tr td {padding: 10px 7px 5px 7px;white-space: unset;}
   #watchlistinner .table-cell {font-size: 12px;}
   #mainwatchlist tr.collapse td {display: grid;}
   div.watchlistbox {padding-right: 5px;}
@@ -2604,6 +2659,10 @@ svg:hover #tw { animation: tw .7s; }
   .profile p{font-size: 13px;}
   .personal-content a.active aside {font-size: 16px;}
   .name-logo{margin-right: 0px;}
+  .mobile-edited h6{margin-bottom: 0;}
+  .mobupdate{height: 80px;}
+  .footer-bottom h6{margin: 12px 6px;}
+  .companylogo{margin-right: 2px;}
 }
 
 @media (min-width: 1366px) and (max-width: 1399.98px) {
@@ -2623,6 +2682,7 @@ svg:hover #tw { animation: tw .7s; }
   .niftymain {margin: 6px 0;}
   .b-listing{padding: 0 10px 0 0;}
   .b-listing #mainwatchlist {margin: 8px 0 8px 0;height: 63vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .recentsearch{margin: 8px 0 8px 0;height: 63vh;top: 61;}
   .b-listing #mainwatchlist tr span {max-width: 70%;}
   .b-listing #mainwatchlist tr img {width: 35px;height: 35px;margin-right: 6px;}
   .b-listing #mainwatchlist tr td {padding: 10px 7px 5px 7px;white-space: unset;}
@@ -2703,6 +2763,12 @@ svg:hover #tw { animation: tw .7s; }
   .trendingbox{padding: 15px 10px;}
   .mobile-edited h6{margin-bottom: 0;}
   .mobupdate{height: 80px;}
+  .form textarea{padding: 0.6rem 1.2rem;}
+  .dfundsbox .form .select-text{height: 44px;}
+  .funds-equity{padding: 20px 40px;}
+  .dfundsbox .form .select-label{}
+  .b-listing #watchlistinner2 tr td:nth-child(1){padding: 2px 3px 2px 2px;}
+  .b-listing #watchlistinner2 tr td:nth-child(2){padding: 2px 3px 2px 2px;}
 }
 
 @media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
@@ -2725,14 +2791,27 @@ svg:hover #tw { animation: tw .7s; }
   .nsebse h6{font-size: 13px;}
 }
 
+@media only screen and (min-width: 1400px) and (max-height: 1050px) and (orientation: landscape){
+  h1 {font-size: 37px;font-weight: 600;text-transform: uppercase;}
+  h2 {font-size: 19px;font-weight: 600;}
+  h3 {font-size: 15px;font-weight: 600;text-transform: uppercase;}
+  h4 {font-size: 13px;font-weight: 600;}
+  h5 {font-size: 12px;font-weight: 600;text-transform: uppercase;}
+  h6 {font-size: 11px;font-weight: 600;}
+  .b-listing #mainwatchlist {height: 66vh;display: block;overflow: hidden;}
+  .plate-2{height: 96vh;}
+  .footer-bottom h6{margin: 12px 4px;}
+  .footer-bottom .footer-logo .name-logo img {width: 20px;}
+  .footer-content h6:nth-child(2) {width: 76px;}
+  #searchwatchlist tr.watch-list td:nth-child(1) {padding: 8px 15px 8px 10px;}
+  #searchwatchlist tr td:nth-child(1) {padding: 6px 15px 6px 10px;}
+  #search {margin: 0px 2px 0px 10px;}
+  .b-listing #mainwatchlist tr td {padding: 10px 7px 5px 7px;white-space: unset;}
+}
+
 @media (min-width: 1500px) and (max-width: 1599.98px) {
-  .plate {
-    height: 33vh;
-    padding: 30px;
-  }
-  .plate-2 {
-    height: 88vh;
-  }
+  .plate {height: 33vh;padding: 30px;}
+  .plate-2 {height: 88vh;}
   .plate-2 #watchlistinner-market.marketlive{padding: 0px 8px 0px 8px;}
   .plate-2 #watchlistinner-market.marketlive2{padding: 0px 8px 0px 8px;}
   .plate-2 #watchlistinner-market{width: 49%;}
