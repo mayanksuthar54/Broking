@@ -129,7 +129,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
   height: 60px;
   font-size: 16px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: unset;
   line-height: 0;
 }
 .btn-primary:hover {
@@ -1426,7 +1426,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
   padding: 10px 25px 25px;
 }
 .modal-body .form {
-  height: 3rem;
+  /*height: 3rem;*/
 }
 .modal-content {
   border-radius: 10px;
@@ -1973,6 +1973,8 @@ tr[disabled] {
 #canceltransactionModal button.close{display: inline-block;margin-left: 0;}
 #canceltransactionModal .modal-dialog{max-width: 380px;}
 .recentwithdrawals h2{display: inline-block;margin-bottom: 0;padding-left: 10px;vertical-align: middle;}
+.recentwithdrawals .innertopheading img{width: 30px;height: 30px;}
+.recentwithdrawals .innertopheading {margin-bottom: 0;vertical-align: middle;}
 table#RecentTable {width: 100%;}
 #RecentTable tbody td .nbox {max-width: fit-content;min-width: 110px;height: 25px;text-align: center;display: inline-block;}
 #RecentTable tbody td p {font-size: 12px;font-weight: 400;margin: 0 auto;padding: 5px 15px;color: #ffffff;border-radius: 6px;text-transform: uppercase;}
@@ -2314,6 +2316,14 @@ select option{background: #ffffff;color: #121212;border-radius: 6px;border-botto
 .fileupload form input[type=file]{display: none;}
 #formheight52 ul{width: 100%;}
 .mobilebox{display: none;}
+.activeinfoicon img{align-items: center;justify-content: center;height: 52px;}
+.banktypebtn{height: 52px;border: 1.5px solid #6A4EEE;padding: 14px 30px;width: fit-content;display: inline-block;border-radius: 6px;background: #F8F7FF;color: #6a4eee;font-weight: 500;font-size: 14px;}
+.banktypebtn input{display: none;}
+.modal-body p{color: #121212;}
+#confirmbankdetails .modal-dialog{max-width: 430px;}
+.findifscsearch{margin-top: 20px;}
+.findifscsearch .findifscsearchtable{height:25vh;overflow: auto;}
+.findifscsearch .sr-list{border-bottom: 1px solid #D2D0E1;padding: 8px 0;}
 /*profile*/
 
 
@@ -2522,7 +2532,7 @@ svg:hover #tw { animation: tw .7s; }
   #desktop-icon-menu{display: block;}
   #desktop-menu{display: none;}
   .marketbox {height: 96px;}
-  .plate-2 #watchlistinner-market.marketlive{padding: 0px 12px 4px 12px;margin-top: 4px;border-right: none;border-bottom: 1px solid #d2d0e2;}
+  .plate-2 #watchlistinner-market.marketlive{padding: 0px 12px 4px 12px;margin: 4px 0 0;border-right: none;border-bottom: 1px solid #d2d0e2;}
   .plate-2 #watchlistinner-market.marketlive2{padding: 0px 12px 4px 12px;}
   .plate-2 #watchlistinner-market{width: 100%;}
   #leftbox .personal{position: unset;}
@@ -2533,6 +2543,8 @@ svg:hover #tw { animation: tw .7s; }
   .mobile-edited h6{display: block;}
   .contactprofile .form{margin: 10px 0 15px 0;}
   .mobupdate img{height: 40px;margin-right: 5px;}
+  .form__label{font-size: 13px;}
+  .btn-primary{line-height: initial;}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -2792,12 +2804,12 @@ svg:hover #tw { animation: tw .7s; }
 }
 
 @media only screen and (min-width: 1400px) and (max-height: 1050px) and (orientation: landscape){
-  h1 {font-size: 37px;font-weight: 600;text-transform: uppercase;}
-  h2 {font-size: 19px;font-weight: 600;}
-  h3 {font-size: 15px;font-weight: 600;text-transform: uppercase;}
-  h4 {font-size: 13px;font-weight: 600;}
-  h5 {font-size: 12px;font-weight: 600;text-transform: uppercase;}
-  h6 {font-size: 11px;font-weight: 600;}
+  h1 {font-size: 37px;}
+  h2 {font-size: 19px;}
+  h3 {font-size: 15px;}
+  h4 {font-size: 13px;}
+  h5 {font-size: 12px;}
+  h6 {font-size: 11px;}
   .b-listing #mainwatchlist {height: 66vh;display: block;overflow: hidden;}
   .plate-2{height: 96vh;}
   .footer-bottom h6{margin: 12px 4px;}
@@ -2806,10 +2818,53 @@ svg:hover #tw { animation: tw .7s; }
   #searchwatchlist tr.watch-list td:nth-child(1) {padding: 8px 15px 8px 10px;}
   #searchwatchlist tr td:nth-child(1) {padding: 6px 15px 6px 10px;}
   #search {margin: 0px 2px 0px 10px;}
-  .b-listing #mainwatchlist tr td {padding: 10px 7px 5px 7px;white-space: unset;}
+  .plate {height: 38vh;padding: 15px;}
+  .plate-2 {height: 96vh;}
+  .profile {padding: 30px;}
+  .equityplate {padding: 30px;}
+  .equityplate span {font-size: 20px;font-weight: 600;}
+  .portfolioplate {padding: 30px;}
+  .b-listing #mainwatchlist {height: 74vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 10px 7px 5px 7px;white-space: nowrap;}
+  .b-listing #watchlistinner tr th {padding: 6px 6px;}
+  .b-listing #watchlistinner tr td {width: 100%;padding: 3px 6px;font-size: 14px;}
+  .b-listing #watchlistinner2 tr th {padding: 6px 6px;}
+  .b-listing #watchlistinner2 tr td {width: 100%;padding: 5px 0px;font-size: 12px;}
+  .b-listing #watchlistinner2 tr td:nth-child(1) {color: #9a9a9a;}
+  .b-listing #watchlistinner2 tr td:nth-child(2) {color: #121212;font-weight: 600;text-align: right;}
+  #mainwatchlist tr.collapse td:nth-child(1) {padding-right: 4px;}
+  #mainwatchlist tr.collapse td:nth-child(2) {padding-left: 4px;}
+  #mainwatchlist tr.collapse td #watchlistinner tr th {padding: 3px 16px 6px 6px;}
+  .search-results {max-height: 74vh;}
+  .recentsearch {height: 74vh;}
+  table#equitytable {height: 66vh;overflow: auto;display: block;}
+  .pagenum {padding: 0px 30px;}
+  .price-box .lprice {font-size: 18px;}
+  .price-box p {font-size: 12px;}
+  .plate h1 {font-size: 35px;}
+  .equitytxt p {font-size: 17px;}
+  .equitybtn a {font-size: 18px;}
+  .positions p {font-size: 16px; margin: 5px 0px;}
+  .positions .progress {margin: 10px 0;height: 10px;}
+  .equity-summary table tr th {font-size: 16px;padding: 10px 20px 20px 0px;width: 1%;}
+  .equity-summary table tr td {font-size: 14px;}
+  .holdingleft h3 {font-size: 40px;}
+  .holdingleft p {font-size: 18px;margin-bottom: 30px;}
+  #marketbox {height: 52vh;}
+  #holdingbox {height: 52vh;}
+  #chart img {margin-top: 20px;}
+  .holdingbtn span a {font-size: 20px;}
+  .niftymain {margin: 10px 0;}
+  table#OptionChain tr.psticky td .shortcoverbox{right: -30%;}
 }
 
 @media (min-width: 1500px) and (max-width: 1599.98px) {
+  h1 {font-size: 40px;}
+  h2 {font-size: 22px;}
+  h3 {font-size: 18px;}
+  h4 {font-size: 16px;}
+  h5 {font-size: 15px;}
+  h6 {font-size: 14px;}
   .plate {height: 33vh;padding: 30px;}
   .plate-2 {height: 88vh;}
   .plate-2 #watchlistinner-market.marketlive{padding: 0px 8px 0px 8px;}
@@ -2889,6 +2944,12 @@ svg:hover #tw { animation: tw .7s; }
 }
 
 @media (min-width: 1500px) and (-webkit-device-pixel-ratio: 1.25) {
+  h1 {font-size: 40px;}
+  h2 {font-size: 22px;}
+  h3 {font-size: 18px;}
+  h4 {font-size: 16px;}
+  h5 {font-size: 15px;}
+  h6 {font-size: 14px;}
   .plate {
     height: 50vh;
     padding: 30px;
@@ -2975,6 +3036,12 @@ svg:hover #tw { animation: tw .7s; }
 }
 
 @media (min-width: 1600px) {
+  h1 {font-size: 40px;}
+  h2 {font-size: 22px;}
+  h3 {font-size: 18px;}
+  h4 {font-size: 16px;}
+  h5 {font-size: 15px;}
+  h6 {font-size: 14px;}
   .plate {height: 38vh;padding: 30px;}
   .plate-2 {height: 96vh;}
   .plate-2 #watchlistinner-market.marketlive{padding: 0px 8px 0px 8px;}
@@ -3019,6 +3086,12 @@ svg:hover #tw { animation: tw .7s; }
 }
 
 @media (min-width: 1600px) and (-webkit-device-pixel-ratio: 1.25) {
+  h1 {font-size: 40px;}
+  h2 {font-size: 22px;}
+  h3 {font-size: 18px;}
+  h4 {font-size: 16px;}
+  h5 {font-size: 15px;}
+  h6 {font-size: 14px;}
   .plate {
     height: 50vh;
     padding: 30px;
@@ -3105,6 +3178,12 @@ svg:hover #tw { animation: tw .7s; }
 }
 
 @media (min-width: 1700px) {
+  h1 {font-size: 40px;}
+  h2 {font-size: 22px;}
+  h3 {font-size: 18px;}
+  h4 {font-size: 16px;}
+  h5 {font-size: 15px;}
+  h6 {font-size: 14px;}
   .plate {
     height: 38vh;
     padding: 30px;
@@ -3130,7 +3209,7 @@ svg:hover #tw { animation: tw .7s; }
     overflow: auto; /*padding:0 12px 0 0;*/
     display: block;
   }
-  .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 8px 13px 8px 25px;}
+  .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 8px 13px 8px 25px;white-space: nowrap;}
   .b-listing #watchlistinner tr th {padding: 6px 6px;}
   .b-listing #watchlistinner tr td {
     width: 100%;
@@ -3165,6 +3244,9 @@ svg:hover #tw { animation: tw .7s; }
   .search-results {
     max-height: 74vh;
   }
+  #search{margin: 0px 13px 0px 25px;}
+  #searchwatchlist tr td:nth-child(1) {padding: 8px 13px 8px 30px;}
+  #searchwatchlist tr.watch-list td:nth-child(1){padding: 8px 15px 8px 30px;}
   .recentsearch {
     height: 74vh;
   }
@@ -3231,3 +3313,4 @@ svg:hover #tw { animation: tw .7s; }
   }
   table#OptionChain tr.psticky td .shortcoverbox{right: -30%;}
 }
+

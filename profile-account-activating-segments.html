@@ -774,7 +774,7 @@
                         <div class="personal-content">
                           <a href="#"><aside>Personal</aside>
                           <a href="profile-personal.html#BasicInfo"><p>Basic information</p></a>
-                          <a href="profile-personal.html#ContactInfo" class="active"><p>Contact information</p></a>
+                          <a href="profile-personal.html#ContactInfo"><p>Contact information</p></a>
                           <a href="profile-personal.html#DematDetails"><p>Demat Details</p></a>
                         </div>
                       </div>
@@ -782,7 +782,7 @@
                         <img src="http://img.tecxlabs.com/images/profile/account.svg" alt="image" />
                         <div class="personal-content">
                           <a href="profile-account.html"><aside>Account</aside></a>
-                          <a href="profile-account.html#Segments"><p>Segments</p></a>
+                          <a href="profile-account.html#Segments" class="active"><p>Segments</p></a>
                           <a href="profile-account.html#TradingPlan"><p>Trading Plan</p></a>
                           <a href="profile-account.html#BankDetails"><p>Bank Details</p></a>
                           <a href="profile-account.html#ChangePassword"><p>Change Password & PIN</p></a>
@@ -794,9 +794,9 @@
                     </div>
                   </div>
 
-                  <div class="col-md-6 col-lg-8 col-xl-8" id="rightbox">
+                  <div class="col-md-12 col-lg-9 col-xl-6" id="rightbox">
                     <div class="innertopheading">
-                      <img src="images/arrow-right.svg">
+                      <a href="profile-account.html"><img src="images/arrow-right.svg"></a>
                       <h3>Activating Segments</h3>
                     </div>
                     <div class="contactinfo border1-padding15" id="ContactInfo">
@@ -817,6 +817,9 @@
                                 <label class="select-label">Income Proof</label>
                               </div>
                             </div>
+                            <div class="col-md-4 activeinfoicon">
+                              <img src="https://img.tecxlabs.com/images/info.svg" alt="image" width="23" />
+                            </div>
                           </div>
                           <div class="row">
                             <div class="col-md-8">
@@ -833,8 +836,14 @@
                                   <form action="" method="POST">
                                     <input type="file" name="fileupload" id="Upload-file" />
                                     <label for="Upload-file"></label>
+                                    <embed class="d-block" src="" type="application/pdf" frameBorder="0" scrolling="auto" height="100%" width="100%"></embed>
                                   </form>
-                                  <small class="mt-2">Format: PDF</small>
+                                  <aside class="d-block">bank_statement.pdf</aside>
+                                  <div class="text-center">
+                                    <img src="http://img.tecxlabs.com/images/eye-web.svg" alt="image" />
+                                    <img src="http://img.tecxlabs.com/images/watchlist/delete.svg" alt="image" />
+                                  </div>
+                                  <small class="my-2">Format: PDF</small>
                                 </div>
                                 <div class="form2 mb-3">
                                   <input type="number" id="filepassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
@@ -855,7 +864,7 @@
                                   <form action="" method="POST">
                                     <input type="file" name="fileupload" id="Upload-file" />
                                     <label for="Upload-file"></label>
-                                  </form>
+                                  </form>                                  
                                   <small class="mt-2">Format: PDF</small>
                                 </div>
                                 <div class="form2 mb-3">
@@ -910,7 +919,7 @@
                                 </div>
                               </div>
                               <div class="holding data mb-3">
-                                
+                                <img src="https://img.tecxlabs.com/images/info.svg" width="18" alt="image" /> <small>Your holdings statement as on 2021-11-11 will be used as proof of income.</small>
                               </div>
                             </div>
                           </div>
@@ -928,7 +937,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3 col-xl-3 text-right" id="external">
+                  <div class="col-md-12 col-lg-3 col-xl-3 text-right" id="external">
                     <span>Step 1 of 2</span>
                     <img src="images/profile/fullscreen.svg" alt="image" />
                   </div>
