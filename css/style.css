@@ -2201,7 +2201,7 @@ table#RecentTable {width: 100%;}
 .derivatives-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;}
 .derivatives{padding: 12px;}
 .derivatives span{display: block;font-size: 12px;}
-.derivatives button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;cursor: default;}
+.derivatives button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;cursor: default;text-transform: uppercase;}
 .derivatives button:hover{background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;}
 .derivatives button:active{background-color: #F1F6FA!important;color: #000000!important;border: 1px solid #D2D0E1!important;}
 .activatederive{background: #6a4eee;border-radius: 0px 0px 6px 6px;padding: 8px 12px;}
@@ -2211,11 +2211,11 @@ table#RecentTable {width: 100%;}
 .commodities-box{border: 1px solid #d2d0e1;border-radius: 6px;width:48%;display: inline-block;margin-left: 2%}
 .commodities{padding: 12px;}
 .commodities span{display: block;}
-.commodities button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;cursor: default;}
+.commodities button{height: 30px;padding: 8px 10px;font-size: 12px;font-weight: 400;background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;cursor: default;text-transform: uppercase;}
 .commodities button:hover{background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;}
 .commodities button:active{background-color: #F1F6FA!important;color: #000000!important;border: 1px solid #D2D0E1!important;}
 .equitiesbtn{margin-top: 10px;}
-.equitiesbtn button{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;padding: 8px 10px;height: 31px;font-size: 12px;font-weight: 400;cursor: default;}
+.equitiesbtn button{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;padding: 8px 10px;height: 31px;font-size: 12px;font-weight: 400;cursor: default;text-transform: uppercase;}
 .equitiesbtn button:hover{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;}
 .equitiesbtn button:active{color: #00B123!important;background: rgba(0, 177, 35, 0.05)!important;border: 1px solid #00B123!important;}
 .equitiesbtn button img{margin-right: 5px;}
@@ -2242,12 +2242,12 @@ table#RecentTable {width: 100%;}
 .basic-content{border-radius: 6px;padding: 8px 20px;}
 .basic-content small{font-size: 10px;}
 .bankacc{display: flex;}
-.bankacc span{font-size: 12px!important;}
+.bankacc span{font-size: 12px!important;display: contents;}
 .bank-details {margin-top: 15px;}
-.bank-details p{width: 20%;font-size: 12px!important;}
+.bank-details p{width: 24%;font-size: 12px!important;}
 .bankname img{margin-right: 5px;}
 #BankDetails .bankname p{font-size: 12px;display: inline;color: #000000;}
-.bankpribtn{display: inline-block;margin-left: 40px;}
+.bankpribtn{display: inline-block;float: right;}
 .bankpribtn .primarybtn{border-radius: 15px;font-size: 10px;font-weight: 500;padding: 5px 11px;height: 22px;background: #6a4eee;color: #ffffff;width: 60px;display: inline-block;}
 .addbtn{font-size: 20px!important;font-family: "Open Sans", sans-serif;color: #6A4EEE!important;margin: 0 auto;}
 #ChangePassword form .form{height: 50px;width: 300px;}
@@ -2324,6 +2324,11 @@ select option{background: #ffffff;color: #121212;border-radius: 6px;border-botto
 .findifscsearch{margin-top: 20px;}
 .findifscsearch .findifscsearchtable{height:25vh;overflow: auto;}
 .findifscsearch .sr-list{border-bottom: 1px solid #D2D0E1;padding: 8px 0;}
+.bankname{display: inline-block;}
+.bankname p{display: inline;}
+.banknamelist{border-bottom: 1px solid #d2d0e1;padding: 20px 0;}
+.banknamelist:nth-last-child(1){border-bottom:none;}
+.banknamelist .bank-details p{width: 50%;}
 /*profile*/
 
 
