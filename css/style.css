@@ -1956,15 +1956,7 @@ tr[disabled] {
 .dfundsbox form button.withdfund-btn:hover{border-color: #ff6872;background: #ffffff;color: #ff6872;font-size: 18px;padding: 15px 0;}
 .dfundsbox form button.withdfund-btn:hover svg path {stroke: #ff6872;fill: #ff6872;}
 .dfundsbox aside{font-size: 14px;font-weight: 600;text-decoration: underline;}
-.fund-equityplate {
-  color: #000000;
-  background: #ffffff;
-  padding: 18px;
-  border: 1px solid #d2d0e1;
-  height: 79vh;
-  overflow: hidden;
-  /*margin-bottom: 10px;*/
-}
+.fund-equityplate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 79vh;overflow: hidden;/*margin-bottom: 10px;*/}
 #Wait{height: 35px;width: 35px;left: 942px;top: 450px;border-radius: 0px;}
 #WithdrawRequestModal h3{font-weight: 500;text-transform: unset;margin: 10px 0 15px;}
 #WithdrawRequestModal .modal-header{position: absolute;right: 0;z-index: 1;}
@@ -2329,6 +2321,21 @@ select option{background: #ffffff;color: #121212;border-radius: 6px;border-botto
 .banknamelist{border-bottom: 1px solid #d2d0e1;padding: 20px 0;}
 .banknamelist:nth-last-child(1){border-bottom:none;}
 .banknamelist .bank-details p{width: 50%;}
+.error-text{color: #FB4242!important;}
+.error-field{border:1px solid #FB4242!important;}
+.error-field:focus ~ .form__label {color: #FB4242;}
+.banknamelist .btn-primary{height: 30px;font-size: 12px;font-weight: 500;}
+#ModificationCharges .modal-dialog{max-width: 380px;}
+#ModificationCharges h3{font-weight: 500;text-transform: unset;margin: 10px 0 15px;}
+#ModificationCharges .modal-header{position: absolute;right: 0;z-index: 1;}
+#ModificationCharges .modal-body{padding:30px 25px 25px;}
+#ModificationCharges .modal-body img{width: 30px;}
+#ModificationCharges .modal-body p{font-size: 18px;}
+
+#Deleteaccount button.close{display: inline-block;margin-left: 0;}
+#Deleteaccount .modal-dialog{max-width: 380px;}
+#Deletebank button.close{display: inline-block;margin-left: 0;}
+#Deletebank .modal-dialog{max-width: 380px;}
 /*profile*/
 
 
