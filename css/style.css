@@ -2160,7 +2160,7 @@ table#RecentTable {width: 100%;}
   font-weight: 500 !important;
 }
 /*login*/
-.mobilemenu{display: none;}
+/*.mobilemenu{display: none;}*/
 .mobile-band{display: none;}
 
 /*profile*/
@@ -2426,9 +2426,9 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
 /*mobile responsive*/
 .mobilebox{margin-top: 40px;}
 
-.mobilemenu{border-bottom: 1px solid #d2d0e1;background: #ffffff;}
+.mobilemenu{border-bottom: none;background: #ffffff;}
 .mobilemenu .navbar-brand{color:#6344f2;}
-.mobilemenu #navbarCollapse{background-color:#ffffff;border: 1px solid #d2d0e1;}
+.mobilemenu #navbarCollapse{background-color:#ffffff;z-index: 1;position: fixed;top: 16%;}
 #desktop-icon-menu{display: none;}
 .marketlive .mb-1{line-height: 0;}
 .marketlive2 .mb-1{line-height: 0;}
@@ -2455,7 +2455,7 @@ svg:hover #tw { animation: tw .7s; }
   .footer-bottom {display: none;}
   #desktop-icon-menu {display: none;}
   #desktop-menu {display: none;}
-  .profile{padding: 0px;border: none;height: auto;margin-top: 100px;overflow: unset;}
+  .profile{padding: 0px;border: none;height: auto;margin-top: 130px;overflow: unset;}
   .b-listing #mainwatchlist tr td {padding: 10px 20px;}
   .login-box2 {display: none;}
   .login-box1 .signtxt {width: 60%;}
@@ -2463,7 +2463,7 @@ svg:hover #tw { animation: tw .7s; }
   .navbar-collapse.collapsing {left: -75%;transition: height 0s ease;}
   .navbar-collapse.show {left: 0;transition: left 300ms ease-in-out;}
   .navbar-toggler.collapsed ~ .navbar-collapse {transition: left 500ms ease-in-out;}
-  .mobilemenu{margin-top: 56px;display: block;}
+  .mobilemenu{margin-top: 0px;display: block;border-bottom: 1px solid #d2d0e1;position: fixed;left: 0;width: 100%;z-index: 1;top: 60px;}
   .mobile-band{height: 60px;background:linear-gradient(270deg, #E100FF 0%, #7F00FF 100%);top: 0;z-index: 9999;position: fixed;width: 100%;color: #ffffff;padding: 16px 20px;display: block;}
   .mobile-band .bandleft svg {transform: rotate(180deg);width: 30px;height: 25px;display: inline-block;}
   .mobile-band .bandleft svg path{fill: #ffffff;}
@@ -2488,6 +2488,7 @@ svg:hover #tw { animation: tw .7s; }
   #ChangePassword .tab-label-content{width: auto;}
   #ChangePassword .tab-wrap .tab-label-content label:nth-child(1){height: 32px;}
   #ChangePassword form .form{width: auto;}
+  .mobilemenu
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -2499,7 +2500,7 @@ svg:hover #tw { animation: tw .7s; }
   .footer-bottom {display: none;}
   #desktop-icon-menu {display: none;}
   #desktop-menu {display: none;}
-  .profile{padding: 0px;border: none;height: auto;margin-top: 100px;overflow: unset;}
+  .profile{padding: 0px;border: none;height: auto;margin-top: 120px;overflow: unset;}
   .b-listing #mainwatchlist tr td {padding: 10px 20px;}
   .login-box2 {display: none;}
   .login-box1 .signtxt {width: 60%;}
@@ -2507,7 +2508,8 @@ svg:hover #tw { animation: tw .7s; }
   .navbar-collapse.collapsing {left: -75%;transition: height 0s ease;}
   .navbar-collapse.show {left: 0;transition: left 300ms ease-in-out;}
   .navbar-toggler.collapsed ~ .navbar-collapse {transition: left 500ms ease-in-out;}
-  .mobilemenu{margin-top: 56px;display: block;}
+  .mobilemenu{display: block;border-bottom: 1px solid #d2d0e1;position: fixed;left: 0;width: 100%;z-index: 1;top: 60px;}
+  .mobilemenu #navbarCollapse{position: inherit;}
   .mobile-band{height: 60px;background:linear-gradient(270deg, #E100FF 0%, #7F00FF 100%);top: 0;z-index: 9999;position: fixed;width: 100%;color: #ffffff;padding: 16px 20px;display: block;}
   .mobile-band .bandleft svg {transform: rotate(180deg);width: 30px;height: 25px;display: inline-block;}
   .mobile-band .bandleft svg path{fill: #ffffff;}
@@ -2550,13 +2552,14 @@ svg:hover #tw { animation: tw .7s; }
   #leftbox .personal{position: unset;}
   .profile p{font-size: 13px;}
   .personal-content a.active aside {font-size: 16px;}
-  .mobilemenu{display: block;position: sticky;}
+  .mobilemenu{display: block;position: sticky;border-bottom: 1px solid #d2d0e1;}
   .profile #leftbox{display: none;}
   .mobile-edited h6{display: block;}
   .contactprofile .form{margin: 10px 0 15px 0;}
   .mobupdate img{height: 40px;margin-right: 5px;}
   .form__label{font-size: 13px;}
   .btn-primary{line-height: initial;}
+  .mobilemenu #navbarCollapse{position: unset;margin: 24px 16px;}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -2589,7 +2592,7 @@ svg:hover #tw { animation: tw .7s; }
   .profile p{font-size: 13px;}
   .personal-content a.active aside {font-size: 16px;}
   .mobilemenu{display: block;position: sticky;padding-top:0;}
-  .mobilemenu #navbarCollapse{padding: 15px;}
+  .mobilemenu #navbarCollapse{padding: 15px;position: unset;}
   .profile #leftbox{display: none;}
   .mobile-edited h6{display: block;}
   .contactprofile .form{margin: 10px 0 15px 0;}
@@ -2687,6 +2690,7 @@ svg:hover #tw { animation: tw .7s; }
   .mobupdate{height: 80px;}
   .footer-bottom h6{margin: 12px 6px;}
   .companylogo{margin-right: 2px;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
 }
 
 @media (min-width: 1366px) and (max-width: 1399.98px) {
@@ -2696,6 +2700,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 13px;font-weight: 600;}
   h5 {font-size: 12px;font-weight: 600;text-transform: uppercase;}
   h6 {font-size: 11px;font-weight: 600;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
   #mainbox {padding: 0;}
   .plate {height: 47vh;padding: 15px;}
   .plate h1{font-size: 26px;}
@@ -2800,6 +2805,7 @@ svg:hover #tw { animation: tw .7s; }
   table#OptionChain thead tr th{height: 72px;}
   table#OptionChain2 thead tr th{height: 72px;}
   .login-box1 .login-section1 {margin: 10% auto 10% auto;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
 }
 
 @media (min-width: 1400px) and (max-width: 1499.98px) {
@@ -2813,6 +2819,7 @@ svg:hover #tw { animation: tw .7s; }
   .plate-2 #watchlistinner-market{width: 49%;}
   #watchlistinner-market h4{font-size: 13px;}
   .nsebse h6{font-size: 13px;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
 }
 
 @media only screen and (min-width: 1400px) and (max-height: 1050px) and (orientation: landscape){
@@ -2822,6 +2829,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 13px;}
   h5 {font-size: 12px;}
   h6 {font-size: 11px;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
   .b-listing #mainwatchlist {height: 66vh;display: block;overflow: hidden;}
   .plate-2{height: 96vh;}
   .footer-bottom h6{margin: 12px 4px;}
@@ -2877,6 +2885,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 16px;}
   h5 {font-size: 15px;}
   h6 {font-size: 14px;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
   .plate {height: 33vh;padding: 30px;}
   .plate-2 {height: 88vh;}
   .plate-2 #watchlistinner-market.marketlive{padding: 0px 8px 0px 8px;}
@@ -2962,6 +2971,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 16px;}
   h5 {font-size: 15px;}
   h6 {font-size: 14px;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
   .plate {
     height: 50vh;
     padding: 30px;
@@ -3054,6 +3064,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 16px;}
   h5 {font-size: 15px;}
   h6 {font-size: 14px;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
   .plate {height: 38vh;padding: 30px;}
   .plate-2 {height: 96vh;}
   .plate-2 #watchlistinner-market.marketlive{padding: 0px 8px 0px 8px;}
@@ -3104,6 +3115,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 16px;}
   h5 {font-size: 15px;}
   h6 {font-size: 14px;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
   .plate {
     height: 50vh;
     padding: 30px;
@@ -3196,6 +3208,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 16px;}
   h5 {font-size: 15px;}
   h6 {font-size: 14px;}
+  .navbar-expand-xl .navbar-collapse{display: block!important;}
   .plate {
     height: 38vh;
     padding: 30px;
