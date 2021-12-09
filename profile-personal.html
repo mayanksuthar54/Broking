@@ -30,6 +30,7 @@
 
   <div class="container-fluid">
     <div id="mainbox">
+
       <nav class="navbar navbar-dark navbar-expand justify-content-center" id="desktop-icon-menu">
         <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/></a>
         <div class="container-fluid">
@@ -93,24 +94,20 @@
         <div class="col-md-4 col-lg-4 col-xl-3">
           <div class="plate-2 fadeIn-element">
             <div class="marketbox border-bottom">
-              <div id="watchlistinner-market" class="marketlive">
-                <div class="mb-1">
-                  <div class="d-inline-block"><h4 class="nname">Nifty Bank</h4></div>
-                  <div class="d-inline-block float-right"><h4 class="pgreen">10121.40</h4></div>
-                </div>
-                <div class="nsebse">
-                  <div class="d-inline-block"><h6>NSE</h6></div>
-                  <div class="d-inline-block float-right"><h6 class="mpercent pred">+122.03 (+1.04%)</h6></div>
+              <div id="watchlistinner-market" class="table marketlive">
+                <div class="table-cell"><h4 class="nname">Nifty 50</h4></div>
+                <div class="table-cell"><h4 class="pgreen">10121.40</h4></div>
+                <div class="table-row nsebse" href="#">
+                  <div class="table-cell"><h6>NSE INDEX</h6></div>
+                  <div class="table-cell"><h6 class="mpercent">0.27%</h6></div>
                 </div>
               </div>
-              <div id="watchlistinner-market" class="marketlive2">
-                <div class="mb-1">
-                  <div class="d-inline-block"><h4 class="nname">Nifty Bank</h4></div>
-                  <div class="d-inline-block float-right"><h4 class="pred">10121.40</h4></div>
-                </div>
-                <div class="nsebse">
-                  <div class="d-inline-block"><h6>NSE</h6></div>
-                  <div class="d-inline-block float-right"><h6 class="mpercent pgreen">+122.03 (+1.04%)</h6></div>
+              <div id="watchlistinner-market" class="table marketlive2">
+                <div class="table-cell"><h4 class="nname">Sensex</h4></div>
+                <div class="table-cell"><h4 class="pred">32998.65</h4></div>
+                <div class="table-row nsebse" href="#">
+                  <div class="table-cell"><h6>NSE INDEX</h6></div>
+                  <div class="table-cell"><h6 class="mpercent">0.27%</h6></div>
                 </div>
               </div>
             </div>
@@ -715,16 +712,7 @@
               </div>
             </div>
           </nav>
-          
-          <!-- <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <div class="contentbox fadeIn-element">
-                <p>The final stage of the peak margin rules is effective from today, September 1, 2021. This means that you will need full SPAN + Exposure margin for F&O and at least 20% of trade value (or VaR+ELM) for intraday (MIs & CO) equity trades.</p>
-                <a href="#">Read more</a>
-              </div>
-            </div>
-          </div> -->
-          
+
           <div class="row">
               <!-- Equity Summary -->
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -732,7 +720,7 @@
                 <div class="profile fadeIn-element">
                   <div class="container-fluid">
                     <div class="row slideInDown-element ">
-                      <div class="col-md-12 col-xl-3" id="">
+                      <div class="col-md-12 col-xl-3">
                         <!-- hamburger -->
                         <nav class="navbar navbar-expand-xl navbar-light mobilemenu">
                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -768,7 +756,7 @@
                       </div>
 
                       <div class="col-md-11 col-xl-8" id="rightbox">
-                        <div class="basicinfo border1-padding15" id="BasicInfo">
+                        <div class="basicinfo border1-padding15"  data-anchor="Basic" id="BasicInfo">
                           <aside>Basic Info</aside>
                           <div class="row">
                             <div class="col-sm-6 col-xl-3">
@@ -804,7 +792,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="contactinfo border1-padding15" id="ContactInfo">
+                        <div class="contactinfo border1-padding15" data-anchor="Contact" id="ContactInfo">
                           <aside>Contact Info</aside>
                           <div class="row">
                             <div class="col-md-12 contactprofile">

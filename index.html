@@ -26,22 +26,22 @@
             <div class="marketbox border-bottom">
               <div id="watchlistinner-market" class="marketlive">
                 <div class="mb-1">
-                  <div class="d-inline-block"><h4 class="nname">Nifty Bank</h4></div>
-                  <div class="d-inline-block float-right"><h4 class="pgreen">10121.40</h4></div>
+                  <div class="d-inline-block"><p class="nname">Nifty Bank</p></div>
+                  <div class="d-inline-block float-right"><p class="pgreen">10121.40</p></div>
                 </div>
                 <div class="nsebse">
-                  <div class="d-inline-block"><h6>NSE</h6></div>
-                  <div class="d-inline-block float-right"><h6 class="mpercent pred">+122.03 (+1.04%)</h6></div>
+                  <div class="d-inline-block"><p class="c-grey">NSE</p></div>
+                  <div class="d-inline-block float-right"><p class="mpercent pred">+122.03 (+1.04%)</p></div>
                 </div>
               </div>
-              <div id="watchlistinner-market" class="marketlive2">
+              <div id="watchlistinner-market" class="marketlive">
                 <div class="mb-1">
-                  <div class="d-inline-block"><h4 class="nname">Nifty Bank</h4></div>
-                  <div class="d-inline-block float-right"><h4 class="pred">10121.40</h4></div>
+                  <div class="d-inline-block"><p class="nname">Nifty Bank</p></div>
+                  <div class="d-inline-block float-right"><p class="pred">10121.40</p></div>
                 </div>
                 <div class="nsebse">
-                  <div class="d-inline-block"><h6>NSE</h6></div>
-                  <div class="d-inline-block float-right"><h6 class="mpercent pgreen">+122.03 (+1.04%)</h6></div>
+                  <div class="d-inline-block"><p class="c-grey">BSE</p></div>
+                  <div class="d-inline-block float-right"><p class="mpercent pgreen">+122.03 (+1.04%)</p></div>
                 </div>
               </div>
 
@@ -284,8 +284,30 @@
                 </table>
               </div>
               <!-- search data -->
-
+              <style type="text/css">
+                ul li{list-style: none;}
+              </style>
               <!-- data -->
+              <!-- <ul>
+                <div>
+                  <div> 
+                    <div>
+                      <div className="companylogo">
+                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg" width="40">
+                      </div>
+                      <div className="companyname">
+                        <h4>BANKNIFTY18NOV21C401001111111</h4>
+                        <p>nse</p>
+                      </div>
+                    </div>
+                    <div className="price-box">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </div>
+                  </div>
+                </div>         
+              </ul> -->
+
               <table id="mainwatchlist" class="table table-borderless">
                 <tbody class="connectedSortable">
                   <tr class="slideInDown-element" id="1">
@@ -924,17 +946,19 @@
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
                 <div class="plate fadeIn-element">
                   <div class="slideInDown-element">
-                    <img src="http://img.tecxlabs.com/images/equity.svg"> <span>Equity</span>
+                    <img src="images/equity.svg"> <span>Equity</span>
                     <div>
                       <h1>98.46 lac</h1>
                     </div>
                     <div class="equitytxt">
                       <p>Margin Available</p>
-                      <div class="row">
-                        <div class="col-md-9"><p>Margin Used</p></div>
-                        <div class="col-md-3"><span>18.85 k</span></div>
-                        <div class="col-md-9"><p>Opening Balance</p></div>
-                        <div class="col-md-3"><span>1.00 cr</span></div>
+                      <div class="marginused">
+                        <div class="d-inline-block"><p>Margin Used</p></div>
+                        <div class="d-inline-block float-right"><span>18.85 k</span></div>
+                      </div>
+                      <div class="marginused">
+                        <div class="d-inline-block"><p>Opening Balance</p></div>
+                        <div class="d-inline-block float-right"><span>1.00 cr</span></div>
                       </div>
                     </div>
                     <div class="equitybtn"><a href="#"><img src="http://img.tecxlabs.com/images/eye-web.svg">View Statement</a></div>
@@ -948,7 +972,7 @@
                 <div class="plate fadeIn-element">
                   <div class="row slideInDown-element">
                     <div class="col-md-12">
-                      <img src="http://img.tecxlabs.com/images/positions.svg"> <span>Positions</span>
+                      <img src="images/positions.svg"> <span>Positions</span>
                     </div>
                     <div class="col-md-12 positions mt-4" id="bar-graph">
                       <div class="row">
@@ -1107,7 +1131,7 @@
                 <div class="plate fadeIn-element">
                   <div class="row slideInDown-element">
                     <div class="col-md-12 equitysummarymenu">
-                      <img src="http://img.tecxlabs.com/images/equity-summary.svg"> <span>Equity Summary</span>
+                      <img src="images/equity-summary.svg"> <span>Equity Summary</span>
                       <span class="float-right" id="equitysummarymenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://img.tecxlabs.com/images/filter.svg"></span>
                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="equitysummarymenu">
                         <a class="dropdown-item active">Top Gainers</a>
@@ -1175,7 +1199,7 @@
                 <div class="plate fadeIn-element" id="holdingbox">
                   <div class="row slideInDown-element">
                     <div class="col-md-6">
-                      <img src="http://img.tecxlabs.com/images/holdings.svg"> <span>Holdings (3)</span>
+                      <img src="images/holdings.svg"> <span>Holdings (3)</span>
                     </div>
                     <div class="col-md-6 holdingbtn">
                       <span><a href="portfolio.html#holdings">View All Holdings</a></span>
@@ -1220,7 +1244,7 @@
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <div class="plate fadeIn-element" id="marketbox">
                   <div class="slideInDown-element">
-                    <img src="http://img.tecxlabs.com/images/market-overview.svg"> <span>Market Overview</span>
+                    <img src="images/market-overview.svg"> <span>Market Overview</span>
                     <div class="col-md-12 mt-4">
                       <img src="http://img.tecxlabs.com/images/graph.png" class="img-fluid">
                     </div>
