@@ -10,7 +10,7 @@ h6 {font-size: 14px;font-weight: 600;}
 a {color: #6a4eee;text-decoration: none;}
 a:hover {color: #333;text-decoration: none;}
 .border-bottom {border-bottom: 1px solid #d2d0e1 !important;}
-::-webkit-scrollbar {width: 4px;}
+::-webkit-scrollbar {width: 4px;height: 4px;}
 /*::-webkit-scrollbar-track {background-color: #efefef}*/
 ::-webkit-scrollbar-thumb {background-color: rgb(99 68 242 / 50%);border-radius: 20px;}
 /*::-webkit-scrollbar-thumb:hover {background-color: #efefef;}*/
@@ -210,83 +210,28 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .price-box .text-red {color: #ff0606;}
 .price-box .lprice {font-size: 16px;font-weight: 600;margin-bottom: 10px;}
 
-.equitytxt {
-  color: #a5a7a4;
-  font-size: 17px;
-  margin-bottom: 20px;
-}
-.equitytxt p {
-  color: #a5a7a4;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 14px;
-}
-.equitytxt span {
-  color: #000000;
-  float: right;
-}
-.equitybtn a {
-  font-size: 16px;
-  font-weight: 500;
-  color: #6a4eee;
-}
-.equitybtn a img {
-  margin: 0 6px 0 0;
-}
+.equitytxt {color: #a5a7a4;font-size: 17px;margin-bottom: 20px;}
+.equitytxt p {color: #a5a7a4;font-size: 16px;font-weight: 400;margin-bottom: 14px;}
+.equitytxt span {color: #000000;float: right;}
+.equitybtn a {font-size: 16px;font-weight: 500;color: #6a4eee;}
+.equitybtn a img {margin: 0 6px 0 0;}
 
-.equity-summary a {
-  text-decoration: none;
-}
-.equity-summary table tr th {
-  padding: 10px 20px 20px 0px;
-  font-size: 13px;
-  font-weight: 500;
-}
-.toptxt p {
-  margin: 20px 0 !important;
-  font-size: 20px;
-  font-weight: 500;
-}
-.equity-summary table tr td {
-  padding: 5px 10px 8px 2px;
-  font-size: 14px;
-  font-weight: 400; /*width: 100%;*/
-}
+.equity-summary a {text-decoration: none;}
+.equity-summary table tr th {padding: 10px 20px 20px 0px;font-size: 13px;font-weight: 500;}
+.toptxt p {margin: 20px 0 !important;font-size: 20px;font-weight: 500;}
+.equity-summary table tr td {padding: 5px 10px 8px 2px;font-size: 14px;font-weight: 400; /*width: 100%;*/}
 
-.equitysummarymenu .active {
-  font-weight: 700;
-  background: none !important;
-}
+.equitysummarymenu .active {font-weight: 700;background: none !important;}
 .equitysummarymenu .dropdown-item.active,
-.dropdown-item:active {
-  background-color: none !important;
-}
-.equitysummarymenu .dropdown-menu {
-  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);
-  border: none;
-  font-size: 12px;
-  top: 6px !important;
-}
-.equitysummarymenu .dropdown-menu .dropdown-item {
-  border-bottom: 1px solid #d2d0e1;
-  padding: 10px 12px;
-}
-.equitysummarymenu .dropdown-menu .dropdown-item::after {
-  content: "";
-  position: absolute;
-  height: 0;
-  width: 0;
-  right: 1em;
-  top: -6px;
-  border: 6px solid transparent;
-  border-top: 0;
-  border-bottom-color: #ffffff;
-}
+.dropdown-item:active {background-color: none !important;}
+.equitysummarymenu .dropdown-menu {box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);border: none;font-size: 12px;top: 6px !important;}
+.equitysummarymenu .dropdown-menu .dropdown-item {border-bottom: 1px solid #d2d0e1;padding: 10px 12px;}
+.equitysummarymenu .dropdown-menu .dropdown-item::after {content: "";position: absolute;height: 0;width: 0;right: 1em;top: -6px;border: 6px solid transparent;border-top: 0;border-bottom-color: #ffffff;}
 .equitysummarymenu .dropdown-menu .dropdown-item:nth-last-child(1) {
   border-bottom: none;
 }
 .marginused p{font-size: 18px;}
-.marginused span{font-size: 18px;}
+.marginused span{font-size: 18px!important;}
 #port-holding h3 {
   font-size: 25px;
   font-weight: 600;
@@ -611,45 +556,25 @@ div.watchlistbox .searchadd {
   background-color: #00c707;
 }
 div.watchlistbox .searchadded {
-  background: url(http://img.tecxlabs.com/images/tick.svg) center center no-repeat #ffffff;
-  border: 1px solid #a5a7a4;
-  background-color: #9e9e9e;
-}
-
-div.watchlistbox .wdelete {
-  background: url(http://img.tecxlabs.com/images/watchlist/delete.svg) center center no-repeat
-    #ffffff;
-  border: 1px solid #a5a7a4;
-}
-div.watchlistbox .wdelete:hover {
-  background: url(http://img.tecxlabs.com/images/watchlist/delete-r.svg) center center no-repeat
-    #ffffff;
-}
-div.watchlistbox .wmore {
-  background: url(http://img.tecxlabs.com/images/watchlist/more.svg) center center no-repeat #ffffff;
-  border: 1px solid #a5a7a4;
-}
-div.watchlistbox .wmore:hover {
-  background: url(http://img.tecxlabs.com/images/watchlist/more-w.svg) center center no-repeat
-    #6a4eee;
-}
+  background: url(http://img.tecxlabs.com/images/tick.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;background-color: #9e9e9e;}
+div.watchlistbox .wdelete {background: url(http://img.tecxlabs.com/images/watchlist/delete.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;}
+div.watchlistbox .wdelete:hover {background: url(http://img.tecxlabs.com/images/watchlist/delete-r.svg) center center no-repeat #ffffff;}
+div.watchlistbox .wmore {background: url(http://img.tecxlabs.com/images/watchlist/more.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;}
+div.watchlistbox .wmore:hover {background: url(http://img.tecxlabs.com/images/watchlist/more-w.svg) center center no-repeat #6a4eee;}
 
 
 div.watchlistbox .btn-primary.dropdown-toggle:not(:disabled):not(.disabled):active,
 div.watchlistbox .btn-primary:not(:disabled):not(.disabled).active,
-div.watchlistbox .show > .btn-primary.dropdown-toggle {
-  background-color: #6a4eee;
-  border-color: #6a4eee;
-  background: url(http://img.tecxlabs.com/images/watchlist/more-w.svg) center center no-repeat
-    #6a4eee;
-}
+div.watchlistbox .show > .btn-primary.dropdown-toggle {background-color: #6a4eee;border-color: #6a4eee;background: url(http://img.tecxlabs.com/images/watchlist/more-w.svg) center center no-repeat #6a4eee;}
 
-div.watchlistbox button.bg-white:hover {
-  background-color: #6a4eee;
-}
-tr:hover div.watchlistbox {
-  display: block;
-}
+div.watchlistbox button.bg-white:hover {background-color: #6a4eee;}
+tr:hover div.watchlistbox {display: block;}
+.w-list:hover div.watchlistbox {display: block;}
+.w-list{margin-bottom: 10px;padding: 4px 0px;}
+.w-list div.watchlistbox {display: none;position: absolute;right: 0;top: 11%;padding-right: 18px;width: max-content}
+.companyname p{color: #121212;font-size: 16px;overflow: auto;}
+.w-list .companyname{margin-right: 0px;display: inline-block;position: relative;vertical-align: sub;width: 75%;word-break: break-all;}
+.w-list:hover{background: #efefef;}
 
 #SChartModal #watchlistinner2 tr td:nth-child(1) {
   color: #9a9a9a;
@@ -1520,12 +1445,12 @@ select option{background: #ffffff;color: #121212;border-radius: 6px;border-botto
 .optionchain {color: #000000;background: #ffffff;border: 1px solid #d2d0e1;height: 68.5vh;overflow: auto;}
 .futurestock{padding-bottom: 15px;border-bottom: 1px solid #d2d0e1;vertical-align: middle;}
 .futurestock h3{margin: auto 0;padding-right: 10px;}
-.futurestock button{background: none;color: #6a4eee;height: 35px;padding: 6px 15px;font-size: 14px;font-weight:400;}
+.futurestock button{background: none;color: #6a4eee;height: 35px;padding: 6px 15px;font-size: 14px;font-weight:400;margin: 0 0px 0 5px;}
 .futurestock button:hover{background: #6a4eee;color: #ffffff;}
 .futurestock button.active{background: #6a4eee;font-weight:600;}
-.futurename {font-weight: 300;font-size: 14px;text-transform: uppercase;color: #121212;margin: auto;padding:0 10px 0 10px;height: min-content;}
-.futureprice {font-weight: 500;font-size: 18px;text-transform: uppercase;padding-right: 5px;margin: auto;min-width: 90px;height: min-content;}
-.updownper {font-weight: 400;font-size: 16px;padding-right: 10px;border-right: 1px solid #d2d0e1;min-width: 140px;height: min-content;margin: auto;text-align: center;}
+.futurename {font-weight: 300;font-size: 14px;text-transform: uppercase;color: #121212;margin: auto;padding:0 8px 0 8px;height: min-content;}
+.futureprice {font-weight: 500;font-size: 18px;text-transform: uppercase;padding-right: 10px;margin: auto;/*min-width: 80px;*/height: min-content;text-align: right;}
+.updownper {font-weight: 400;font-size: 16px;padding-left: 6px;border-right: 1px solid #d2d0e1;/*min-width: 120px;*/height: min-content;margin: auto;text-align: left;padding-right: 18px;}
 /*.updownper:nth-last-child(1){border:none;}*/
 .future1{}
 .futurebox{display: flex;position: relative;width: 100%;overflow-x: scroll;overflow-y: hidden;white-space: nowrap;}
@@ -1540,6 +1465,8 @@ table#OptionChain thead{position: sticky;top: 0;width: 100%;z-index: 2;backgroun
 table#OptionChain thead tr th{white-space:normal;font-size: 12px;font-weight: 400;line-height: 1.4;color: #909093;vertical-align: middle;padding: 10px 10px;height: 58px;border-bottom: 1px solid #dee2e6;}
 table#OptionChain tbody td{font-size: 12px;padding:10px 10px;color: #121212;font-weight: 500;}
 table#OptionChain tbody tr td a{color: #121212;}
+table#OptionChain tbody tr td span:nth-child(2){margin-left: 4px;}
+table#OptionChain2 tbody tr td span:nth-child(2){margin-left: 4px;}
 table#OptionChain tbody tr td a:hover{text-decoration: underline;}
 table#OptionChain thead tr th:nth-child(6n+0){background: #ffffff;text-align: center;font-weight: 600;}
 table#OptionChain tbody tr td:nth-child(6n+0){background: #ffffff;text-align: center;border-top: none;border-right: 1px solid #f7f7f7;font-weight: 600;width: 10%;border-bottom: none;}
@@ -1582,8 +1509,8 @@ table#OptionChain2 div.watchlistbox .add {background-color: #ffffff;border:1px s
 table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 50%;width: 25px;height: 25px;font-weight: 500;}
 
 .shortcoverp {display: inline-flex;}
-.shortcoverp span:nth-child(1){width: 60px;display: inline-block;font-weight: 600;}
-.shortcoverp span:nth-child(2){width: 120px;display: inline-block;font-size: 12px;font-weight: 500;}
+.shortcoverp span:nth-child(1){width: 60px;display: inline-block;font-weight: 600;text-align: right;}
+.shortcoverp span:nth-child(2){width: 120px;display: inline-block;font-size: 12px;font-weight: 500;text-align: left;margin-left: 8px;}
 /*option chain*/
 
 /*mobile responsive*/

@@ -286,29 +286,85 @@
               <!-- search data -->
               <style type="text/css">
                 ul li{list-style: none;}
+                ul{padding: 0 10px 0px 28px;}
               </style>
               <!-- data -->
-              <!-- <ul>
-                <div>
+
+              <ul id="mainwatchlist">
+                <div class="w-list">
                   <div> 
-                    <div>
-                      <div className="companylogo">
+                    <div class="d-inline-block" style="width:68%;">
+                      <div class="companylogo">
                         <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg" width="40">
                       </div>
-                      <div className="companyname">
-                        <h4>BANKNIFTY18NOV21C401001111111</h4>
-                        <p>nse</p>
+                      <div class="companyname">
+                        <p>BANKNIFTY18NOV21C401001111111</p>
+                        <span>nse</span>
                       </div>
                     </div>
-                    <div className="price-box">
+                    <div class="price-box d-inline-block" style="width:30%;">
+                      <div class="watchlistbox">
+                        <button type="button" class="btn btn-primary wbuy" data-toggle="tooltip" data-placement="top" title="Buy" onclick="Alert.render('You look very pretty today.')">B</button>
+                        <button type="button" class="btn btn-primary wsell" data-toggle="tooltip" data-placement="top" title="Sell">S</button>
+                          <div class="d-inline-block" id="accordionExample">
+                            <div id="headingOne">
+                              <button class="btn btn-primary wmarketdepth" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                            </div>
+                          </div>
+                        <button type="button" class="btn btn-primary woption-chain" data-toggle="tooltip" data-placement="top" title="Option chain"></button>
+                        <button type="button" class="btn btn-primary wmore dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/pin.svg"> Pin</a>
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/create-gtt.svg"> Create GTT</a>
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/chart.svg"> Chart</a>
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/delete.svg"> delete</a>
+                          <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Fundamentals</a>
+                          <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Technicals</a>
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/alert.svg"> Set Alerts</a>
+                        </div>
+                      </div>
                       <div class="lprice text-red">1503.45</div>
                       <p>+2.03 (+1.04%)</p>
                     </div>
                   </div>
-                </div>         
-              </ul> -->
+                </div>
+                <div class="w-list">
+                  <div> 
+                    <div class="d-inline-block" style="width:68%;">
+                      <div class="companylogo">
+                        <span>H</span>
+                      </div>
+                      <div class="companyname">
+                        <h4>HINDUNILVR</h4>
+                        <p>nse</p>
+                      </div>
+                    </div>
+                    <div class="price-box d-inline-block" style="width:30%;">
+                      <div class="lprice text-red">74459.05</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-list">
+                  <div>
+                    <div class="d-inline-block" style="width:68%;">
+                      <div class="companylogo">
+                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg">
+                      </div>
+                      <div class="companyname">
+                        <h4>HINDUNILVR</h4>
+                        <p>nse</p>
+                      </div>
+                    </div>
+                    <div class="price-box d-inline-block" style="width:30%;">
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </div>
+                  </div>
+                </div>
+              </ul>
 
-              <table id="mainwatchlist" class="table table-borderless">
+              <!-- <table id="mainwatchlist" class="table table-borderless">
                 <tbody class="connectedSortable">
                   <tr class="slideInDown-element" id="1">
                     <td>
@@ -329,7 +385,6 @@
                               <button class="btn btn-primary wmarketdepth" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
                             </div>
                           </div>
-                        <!-- <button type="button" class="btn btn-primary wmarketdepth"></button> -->
                         <button type="button" class="btn btn-primary woption-chain" data-toggle="tooltip" data-placement="top" title="Option chain"></button>
                         <button type="button" class="btn btn-primary wmore dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -342,7 +397,7 @@
                           <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/alert.svg"> Set Alerts</a>
                         </div>
                       </div>
-                      <div class="lprice text-green">1501.45</div>
+                      <div class="lprice text-green">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </td>
                     <tr id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -377,7 +432,7 @@
                               <div class="table-cell">0</div>
                           </a>
                         </div>
-                      <!-- </td> -->
+                      <!-- </td> 
                       <td>
                         <div id="watchlistinner" class="table">
                           <div class="table-cell c-red"><h6>Bid</h6></div>
@@ -485,7 +540,7 @@
                               <button class="btn btn-primary wmarketdepth" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1"></button>
                             </div>
                           </div>
-                        <!-- <button type="button" class="btn btn-primary wmarketdepth"></button> -->
+                        <!-- <button type="button" class="btn btn-primary wmarketdepth"></button> 
                         <button type="button" class="btn btn-primary woption-chain" data-toggle="tooltip" data-placement="top" title="Option chain"></button>
                         <button type="button" class="btn btn-primary wmore dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -634,7 +689,7 @@
                       </div>
                     </td>
                     <td class="price-box">
-                      <div class="lprice text-red">1503.45</div>
+                      <div class="lprice text-red">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </td>
                   </tr>
@@ -805,7 +860,7 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> -->
 
               <div class="saa">
                 <div class="row">
