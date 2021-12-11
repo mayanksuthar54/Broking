@@ -232,331 +232,85 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 }
 .marginused p{font-size: 18px;}
 .marginused span{font-size: 18px!important;}
-#port-holding h3 {
-  font-size: 25px;
-  font-weight: 600;
-}
-#port-holding .holdingleft p {
-  font-size: 16px;
-  font-weight: 400;
-}
+#port-holding h3 {font-size: 25px;font-weight: 600;}
+#port-holding .holdingleft p {font-size: 16px;font-weight: 400;}
 
-.contentbox {
-  color: #000000;
-  background: #f2efff;
-  padding: 18px;
-  border: 1px solid #d2d0e1;
-  height: auto;
-  overflow: hidden;
-  margin-bottom: 28px;
-}
+.contentbox {color: #000000;background: #f2efff;padding: 18px;border: 1px solid #d2d0e1;height: auto;overflow: hidden;margin-bottom: 28px;}
 
-.plate {
-  color: #000000;
-  background: #ffffff;
-  padding: 18px;
-  border: 1px solid #d2d0e1;
-  height: 40vh;
-  overflow: hidden;
-  margin-bottom: 17px;
-}
+.plate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 40vh;overflow: hidden;margin-bottom: 17px;}
 
-.profile {
-  color: #000000;
-  background: #ffffff;
-  padding: 18px;
-  border: 1px solid #d2d0e1;
-  height: 79vh;
-  overflow: auto;
-  /*margin-bottom: 10px;*/
-}
+.profile {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 79vh;overflow: auto;/*margin-bottom: 10px;*/}
 
 
-.equityplate {
-  color: #000000;
-  background: #ffffff;
-  padding: 18px;
-  border: 1px solid #d2d0e1;
-  height: 79vh;
-  overflow: hidden;
-  /*margin-bottom: 10px;*/
-}
-.equityplate span {
-  font-size: 20px;
-  font-weight: 600;
-  margin-left: 10px;
-}
-.equityplate .toptxt p {
-  font-size: 26px;
-}
-.equityplate table tr td {
-  padding: 5px 10px 12px 2px;
-}
-.portfolioplate {
-  color: #000000;
-  background: #ffffff;
-  padding: 18px;
-  border: 1px solid #d2d0e1;
-  height: 79vh;
-  overflow: auto;
-  /*margin-bottom: 10px;*/
-}
+.equityplate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 79vh;overflow: hidden;/*margin-bottom: 10px;*/}
+.equityplate span {font-size: 20px;font-weight: 600;margin-left: 10px;}
+.equityplate .toptxt p {font-size: 26px;}
+.equityplate table tr td {padding: 5px 10px 12px 2px;}
+.portfolioplate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 79vh;overflow: auto;/*margin-bottom: 10px;*/}
 
-#holdingbox {
-  height: 60vh;
-}
-#holdingbox a {
-  text-decoration: none;
-}
-#marketbox {
-  height: 60vh;
-}
-.plate-2 {
-  color: #000000;
-  background: #ffffff;
-  border: 1px solid #d2d0e1;
-  position: fixed;
-  width: 23%;
-}
-.plate span {
-  font-size: 20px;
-  font-weight: 500;
-  vertical-align: middle;
-  margin-left: 10px;
-}
-.plate h1 {
-  color: #6a4eee;
-  margin: 16px 0;
-  font-size: 34px;
-  font-weight: 400;
-  text-transform: none;
-}
+#holdingbox {height: 60vh;}
+#holdingbox a {text-decoration: none;}
+#marketbox {height: 60vh;}
+.plate-2 {color: #000000;background: #ffffff;border: 1px solid #d2d0e1;position: fixed;width: 23%;}
+.plate span {font-size: 20px;font-weight: 500;vertical-align: middle;margin-left: 10px;}
+.plate h1 {color: #6a4eee;margin: 16px 0;font-size: 34px;font-weight: 400;text-transform: none;}
 
-.positions p {
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 0;
-}
-#bar-graph {
-  overflow: auto;
-  height: 230px;
-}
-#bar-graph .col-md-6:nth-child(1) {
-  padding: 0 6px 2px 15px;
-}
-#bar-graph .col-md-6:nth-child(2) {
-  padding: 0 15px 0 6px;
-}
-#bar-graph .col-md-6 {
-  padding: 0 6px;
-}
-.positions .progress {
-  border-radius: 4px;
-  background-color: #ffffff;
-  margin: 7px 0;
-  height: 5px;
-}
-.positions .progress .progress-bar {
-  border-radius: 4px;
-  background-color: #307bfa;
-  /*height: 10px;*/
-}
+.positions p {text-transform: uppercase;font-weight: 400;margin: 0;}
+#bar-graph {overflow: auto;height: 230px;}
+#bar-graph .col-md-6:nth-child(1) {padding: 0 6px 2px 15px;}
+#bar-graph .col-md-6:nth-child(2) {padding: 0 15px 0 6px;}
+#bar-graph .col-md-6 {padding: 0 6px;}
+.positions .progress {border-radius: 4px;background-color: #ffffff;margin: 7px 0;height: 5px;}
+.positions .progress .progress-bar {border-radius: 4px;background-color: #307bfa;/*height: 10px;*/}
 
-.holdingleft h3 {
-  font-size: 28px;
-  margin-bottom: 4px;
-  font-weight: 400;
-}
-.holdingleft span {
-  font-size: 14px;
-  margin: 0;
-}
-.holdingleft p {
-  color: #a5a7a4;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
-.holdingbtn span a {
-  font-size: 16px;
-  font-weight: 500;
-  color: #6a4eee;
-  float: right;
-  text-decoration: underline!important;
-}
+.holdingleft h3 {font-size: 28px;margin-bottom: 4px;font-weight: 400;}
+.holdingleft span {font-size: 14px;margin: 0;}
+.holdingleft p {color: #a5a7a4;margin-bottom: 20px;font-weight: 400;}
+.holdingbtn span a {font-size: 16px;font-weight: 500;color: #6a4eee;float: right;text-decoration: underline!important;}
 
-.listingnum {
-  display: inline-flex;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #a5a7a4;
-  right: 0;
-  position: absolute;
-}
+.listingnum {display: inline-flex;margin-top: 10px;font-size: 14px;color: #a5a7a4;right: 0;position: absolute;}
 
-.menu-bar {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  height: 14px;
-  margin-left: -10px;
-}
-.bars {
-  display: block;
-  width: 20px;
-  height: 3px;
-  background-color: #333;
-  box-shadow: 0 5px 0 #333, 0 10px 0 #333;
-}
-.menu {
-  display: none;
-  width: 100%;
-  padding: 30px 10px 50px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #fff;
-}
-.menu ul {
-  margin-bottom: 0;
-}
-.menu a {
-  color: #333;
-  text-transform: uppercase;
-  opacity: 0.8;
-}
-.menu a:hover {
-  text-decoration: none;
-  opacity: 1;
-}
+.menu-bar {position: absolute;top: 20px;left: 50%;height: 14px;margin-left: -10px;}
+.bars {display: block;width: 20px;height: 3px;background-color: #333;box-shadow: 0 5px 0 #333, 0 10px 0 #333;}
+.menu {display: none;width: 100%;padding: 30px 10px 50px;margin: 0 auto;text-align: center;background-color: #fff;}
+.menu ul {margin-bottom: 0;}
+.menu a {color: #333;text-transform: uppercase;opacity: 0.8;}
+.menu a:hover {text-decoration: none;opacity: 1;}
 
-#livemarketmobile .plate-3 {
-  color: #000000;
-  background: #ffffff;
-  padding: 18px;
-  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);
-  height: auto;
-  overflow: hidden;
-  margin-bottom: 20px;
-  width: 100%;
-}
+#livemarketmobile .plate-3 {color: #000000;background: #ffffff;padding: 18px;box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);height: auto;overflow: hidden;margin-bottom: 20px;width: 100%;}
 
-.slideInDown-element {
-  animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 3s; /* don't forget to set a duration! */
-}
-.slideInLeft-element {
-  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 3s; /* don't forget to set a duration! */
-}
-.fadeIn-element {
-  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
+.slideInDown-element {animation: slideInDown; /* referring directly to the animation's @keyframe declaration */animation-duration: 3s; /* don't forget to set a duration! */}
+.slideInLeft-element {animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */animation-duration: 3s; /* don't forget to set a duration! */}
+.fadeIn-element {animation: fadeIn; /* referring directly to the animation's @keyframe declaration */animation-duration: 2s; /* don't forget to set a duration! */}
 
-.watchlistname {
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 15px;
-}
-.watchlistname .col-md-6 {
-  display: inline-block;
-  padding: 0;
-}
-.watchlistname .col-md-6:nth-last-child(1) {
-  float: right;
-}
-.watchlistname h3 {
-  display: inline;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-.watchlistname h6 {
-  display: inline;
-  text-transform: none;
-}
-.watchlistname p {
-  display: inline;
-}
-.watchlistname span {
-  margin-left: 10px;
-  color: #a5a7a4;
-  font-size: 12px;
-  text-transform: uppercase;
-}
+.watchlistname {border-bottom: 1px solid #eeeeee;padding-bottom: 15px;}
+.watchlistname .col-md-6 {display: inline-block;padding: 0;}
+.watchlistname .col-md-6:nth-last-child(1) {float: right;}
+.watchlistname h3 {display: inline;text-transform: uppercase;vertical-align: middle;}
+.watchlistname h6 {display: inline;text-transform: none;}
+.watchlistname p {display: inline;}
+.watchlistname span {margin-left: 10px;color: #a5a7a4;font-size: 12px;text-transform: uppercase;}
 
 .dropdown-item.active,
-.dropdown-item:active {
-  background-color: #6a4eee;
-}
+.dropdown-item:active {background-color: #6a4eee;}
 
-td {
-  position: relative;
-}
-div.watchlistbox {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 30%;
-  padding-right: 18px;
-  width: max-content;
-}
-div.watchlistbox .dropdown-menu.show {
-  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);
-  border: none;
-  padding: 0;
-}
-div.watchlistbox .dropdown-menu {
-  top: 10px !important;
-  left: -14px !important;
-}
+td {position: relative;}
+div.watchlistbox {display: none;position: absolute;right: 0;top: 30%;padding-right: 18px;width: max-content;}
+div.watchlistbox .dropdown-menu.show {box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);border: none;padding: 0;}
+div.watchlistbox .dropdown-menu {top: 10px !important;left: -14px !important;}
 div.watchlistbox .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: none;
-}
-div.watchlistbox .wbuy {
-  background-color: #1964e4;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-}
-div.watchlistbox .wsell {
-  background-color: #f31813;
-  border-radius: 6px;
-  color: #ffffff;
-}
-div.watchlistbox .wmarketdepth {
-  background: url(http://img.tecxlabs.com/images/watchlist/market-depth.svg) center center no-repeat
-    #ffffff;
-  border: 1px solid #a5a7a4;
-}
-div.watchlistbox .wmarketdepth:hover {
-  background: url(http://img.tecxlabs.com/images/watchlist/market-depth-w.svg) center center
-    no-repeat #6a4eee;
-}
-div.watchlistbox .wchart {
-  background: url(http://img.tecxlabs.com/images/watchlist/chart.svg) center center no-repeat #ffffff;
-  border: 1px solid #a5a7a4;
-}
-div.watchlistbox .woption-chain {
-  background: url(http://img.tecxlabs.com/images/watchlist/option-chain.svg) center center no-repeat
-    #ffffff;
-  border: 1px solid #a5a7a4;
-}
-div.watchlistbox .woption-chain:hover {
-  background: url(http://img.tecxlabs.com/images/watchlist/option-chain.svg) center center no-repeat
-    #ffffff;
-  border: 1px solid #a5a7a4;
-}
-div.watchlistbox .wchart:hover {
-  background: url(http://img.tecxlabs.com/images/watchlist/chart-w.svg) center center no-repeat
-    #6a4eee;
-}
-div.watchlistbox .searchadd {
-  background: url(http://img.tecxlabs.com/images/add.svg) center center no-repeat #ffffff;
-  border: 1px solid #a5a7a4;
-  background-color: #00c707;
-}
-div.watchlistbox .searchadded {
-  background: url(http://img.tecxlabs.com/images/tick.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;background-color: #9e9e9e;}
+.show > .btn-primary.dropdown-toggle:focus {box-shadow: none;}
+div.watchlistbox .wbuy {background-color: #1964e4;color: #ffffff;border: none;border-radius: 6px;}
+div.watchlistbox .wsell {background-color: #f31813;border-radius: 6px;color: #ffffff;}
+div.watchlistbox .wmarketdepth {background: url(http://img.tecxlabs.com/images/watchlist/market-depth.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;}
+div.watchlistbox .wmarketdepth:hover {background: url(http://img.tecxlabs.com/images/watchlist/market-depth-w.svg) center center no-repeat #6a4eee;}
+div.watchlistbox .wchart {background: url(http://img.tecxlabs.com/images/watchlist/chart.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;}
+div.watchlistbox .woption-chain {background: url(http://img.tecxlabs.com/images/watchlist/option-chain.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;}
+div.watchlistbox .woption-chain:hover {background: url(http://img.tecxlabs.com/images/watchlist/option-chain.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;}
+div.watchlistbox .wchart:hover {background: url(http://img.tecxlabs.com/images/watchlist/chart-w.svg) center center no-repeat #6a4eee;}
+div.watchlistbox .searchadd {background: url(http://img.tecxlabs.com/images/add.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;  background-color: #00c707;}
+div.watchlistbox .searchadded {background: url(http://img.tecxlabs.com/images/tick.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;background-color: #9e9e9e;}
 div.watchlistbox .wdelete {background: url(http://img.tecxlabs.com/images/watchlist/delete.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;}
 div.watchlistbox .wdelete:hover {background: url(http://img.tecxlabs.com/images/watchlist/delete-r.svg) center center no-repeat #ffffff;}
 div.watchlistbox .wmore {background: url(http://img.tecxlabs.com/images/watchlist/more.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;}
@@ -576,153 +330,39 @@ tr:hover div.watchlistbox {display: block;}
 .w-list .companyname{margin-right: 0px;display: inline-block;position: relative;vertical-align: sub;width: 75%;word-break: break-all;}
 .w-list:hover{background: #efefef;}
 
-#SChartModal #watchlistinner2 tr td:nth-child(1) {
-  color: #9a9a9a;
-}
-#SChartModal #watchlistinner2 tr td:nth-child(2) {
-  color: #121212;
-  font-weight: 600;
-  text-align: right;
-}
-#SChartModal #watchlistinner2 tr th {
-  padding: 6px 6px;
-}
-#SChartModal #watchlistinner2 tr td {
-  width: 100%;
-  padding: 5px 0px;
-  font-size: 12px;
-}
-.modal-buy {
-  background: #5762f7;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.modal-sell {
-  background: #ff6872;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.modal-gtt {
-  background: #6a4eee;
-  color: #ffffff;
-  text-transform: uppercase;
-}
+#SChartModal #watchlistinner2 tr td:nth-child(1) {color: #9a9a9a;}
+#SChartModal #watchlistinner2 tr td:nth-child(2) {color: #121212;font-weight: 600;text-align: right;}
+#SChartModal #watchlistinner2 tr th {padding: 6px 6px;}
+#SChartModal #watchlistinner2 tr td {width: 100%;padding: 5px 0px;font-size: 12px;}
+.modal-buy {background: #5762f7;color: #ffffff;text-transform: uppercase;}
+.modal-sell {background: #ff6872;color: #ffffff;text-transform: uppercase;}
+.modal-gtt {background: #6a4eee;color: #ffffff;text-transform: uppercase;}
 
-.watchlistbox button {
-  padding: 0px;
-  z-index: 1;
-  border: none;
-  border-radius: 6px;
-  width: 40px;
-  height: 30px;
-}
-#mainwatchlist tr td .watchlistbox img {
-  width: 15px;
-  height: 15px;
-  border: none;
-  margin: 0 10px;
-}
-.watchlistbox button.dropdown-toggle::after {
-  display: none;
-}
-.watchlistbox .dropdown-menu a {
-  font-size: 12px;
-  padding: 9px 0px;
-  border-bottom: 0.5px solid #d2d0e1;
-}
-.watchlistbox .dropdown-menu a::after {
-  content: "";
-  position: absolute;
-  height: 0;
-  width: 0;
-  right: 1em;
-  top: -6px;
-  border: 6px solid transparent;
-  border-top: 0;
-  border-bottom-color: #ffffff;
-}
-.watchlistbox .dropdown-menu.show a:nth-last-child(1) {
-  border-bottom: none;
-}
-.watchlistbox .dropdown-menu a img {
-  margin: 0 10px;
-}
+.watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 6px;width: 40px;height: 30px;}
+#mainwatchlist tr td .watchlistbox img {width: 15px;height: 15px;border: none;margin: 0 10px;}
+.watchlistbox button.dropdown-toggle::after {display: none;}
+.watchlistbox .dropdown-menu a {font-size: 12px;padding: 9px 0px;border-bottom: 0.5px solid #d2d0e1;}
+.watchlistbox .dropdown-menu a::after {content: "";position: absolute;height: 0;width: 0;right: 1em;top: -6px;border: 6px solid transparent;border-top: 0;border-bottom-color: #ffffff;}
+.watchlistbox .dropdown-menu.show a:nth-last-child(1) {border-bottom: none;}
+.watchlistbox .dropdown-menu a img {margin: 0 10px;}
 
-.top-botmline {
-  border-bottom: 1px solid #eeeeee;
-  border-top: 1px solid #eeeeee;
-}
+.top-botmline {border-bottom: 1px solid #eeeeee;border-top: 1px solid #eeeeee;}
 
-.form {
-  position: relative;
-  width: 20rem;
-  height: 3rem;
-  height: 60px;
-  margin-bottom: 10px;
-  width: 100%;
-}
-.form2 {
-  position: relative;
-  width: 20rem;
-  height: 3rem;
-  height: 60px;
-  margin-bottom: 10px;
-  width: 100%;
-}
+.form {position: relative;width: 20rem;height: 3rem;height: 60px;margin-bottom: 10px;width: 100%;}
+.form2 {position: relative;width: 20rem;height: 3rem;height: 60px;margin-bottom: 10px;width: 100%;}
 .form2 .form__label{top: 1rem;}
 .form.textarea{height: 112px!important;}
 .form textarea{height: 112px;}
-.form__input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #d2d0e1;
-  border-radius: 6px;
-  font-family: "Open Sans", sans-serif;
-  font-size: inherit;
-  /* color: ; */
-  outline: none;
-  padding: 1.25rem;
-  background: none; /* Change border when input focus*/
-}
-.form__input:hover {
-  border-color: #d2d0e1;
-  color: #222222;
-}
-.form__input:focus {
-  border-color: #6a4eee;
-}
-.form__input:focus:after {
-  color: #6a4eee;
-  border: 2px solid #312f3c;
-}
-.form__label {
-  position: absolute;
-  left: 1rem;
-  top: 1.2rem;
-  padding: 0 0.5rem;
-  color: #d2d0e1;
-  cursor: text;
-  /*transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;*/
-  transition: 85ms ease-in-out;
-  background-color: #ffffff;
-  font-size: 16px;
-}
+.form__input {position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 2px solid #d2d0e1;border-radius: 6px;font-family: "Open Sans", sans-serif;font-size: inherit;/* color: ; */outline: none;padding: 1.25rem;background: none; /* Change border when input focus*/}
+.form__input:hover {border-color: #d2d0e1;color: #222222;}
+.form__input:focus {border-color: #6a4eee;}
+.form__input:focus:after {color: #6a4eee;border: 2px solid #312f3c;}
+.form__label {position: absolute;left: 1rem;top: 1.2rem;padding: 0 0.5rem;color: #d2d0e1;cursor: text;/*transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;*/transition: 85ms ease-in-out;background-color: #ffffff;font-size: 16px;}
 
 .form__input:focus ~ .form__label,
-.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: -0.5rem;
-  font-size: 0.8rem;
-  left: 0.8rem;
-}
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {top: -0.5rem;font-size: 0.8rem;left: 0.8rem;}
 #ChangePassword .form__input:focus ~ .form__label,
-#ChangePassword .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: -0.5rem;
-  font-size: 0.8rem;
-  left: 0.8rem;
-}
+#ChangePassword .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {top: -0.5rem;font-size: 0.8rem;left: 0.8rem;}
 
 #AuthoriseTable .form__input:focus ~ .form__label,
 #AuthoriseTable .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {top: -0.5rem;font-size: 0.8rem;left: 0.8rem;}
@@ -808,21 +448,10 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 
 .modal-header .form {margin-bottom: 0px;}
 
-.convertbox p {
-  color: #a5a7a4;
-  font-weight: 400;
-}
-.convertbox {
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eeeeee;
-}
-.convertbox span {
-  font-size: 12px;
-  color: #a5a7a4;
-}
-.convertbox .form {
-  margin-bottom: 4px;
-}
+.convertbox p {color: #a5a7a4;font-weight: 400;}
+.convertbox {padding-bottom: 15px;border-bottom: 1px solid #eeeeee;}
+.convertbox span {font-size: 12px;color: #a5a7a4;}
+.convertbox .form {margin-bottom: 4px;}
 
 #InfoModal .nbox p {font-size: 12px;font-weight: 400;margin: 0 auto;padding: 2px;color: #ffffff;border-radius: 2px;text-transform: uppercase;}
 #InfoModal .nbox {max-width: fit-content;min-width: 60px;height: 25px;text-align: center;background: #fc8b00;border-radius: 2px;display: inline-block;margin-right: 6px;}
@@ -847,306 +476,72 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 #Portfolio input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide {left: calc((100% / 4) * 2);}
 #Portfolio input[type="radio"][name="tabs"]:nth-of-type(4):checked ~ .slide {left: calc((100% / 4) * 3);}
 #Portfolio input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {left: 0;}
-#Portfolio label {
-  cursor: pointer;
-  color: #a5a7a4;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 36px;
-  transition: color 0.2s ease; /*width: 100%;*/
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0px 12px 10px 12px;
-}
-#Portfolio .slide {
-  background: #6a4eee;
-  width: calc(22% / 2);
-  height: 4px;
-  position: absolute;
-  left: 0;
-  top: calc(100% - 4px);
-  transition: left 0.3s ease-out;
-  border-radius: 4px;
-  margin-left: 15px;
-}
-#Portfolio .tab-label-content {
-  width: 100%;
-}
-#Portfolio .tab-label-content .tab-content {
-  width: 93%;
-  position: absolute;
-  top: 100px;
-  left: 34px;
-  line-height: 130%;
-  display: none;
-}
+#Portfolio label {cursor: pointer;color: #a5a7a4;background-color: #ffffff;box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;text-align: center;height: 36px;transition: color 0.2s ease; /*width: 100%;*/font-size: 18px;font-weight: 600;padding: 0px 12px 10px 12px;}
+#Portfolio .slide {background: #6a4eee;width: calc(22% / 2);height: 4px;position: absolute;left: 0;top: calc(100% - 4px);transition: left 0.3s ease-out;border-radius: 4px;margin-left: 15px;}
+#Portfolio .tab-label-content {width: 100%;}
+#Portfolio .tab-label-content .tab-content {width: 93%;position: absolute;top: 100px;left: 34px;line-height: 130%;display: none;}
 
-#popupbox .modal-body p {
-  font-size: 12px;
-  /*text-align: justify;*/
-}
-#Portfolio #search {
-  width: 40%;
-  padding: 0 0 10px;
-}
-#Portfolio #searhnbtn .btnalign {
-  display: inline-block;
-  padding-top: 8px;
-  vertical-align: middle;
-  margin-left: 15px;
-}
-#Portfolio #searhnbtn #search input {
-  padding: 8px 8px;
-}
+#popupbox .modal-body p {font-size: 12px;/*text-align: justify;*/}
+#Portfolio #search {width: 40%;padding: 0 0 10px;}
+#Portfolio #searhnbtn .btnalign {display: inline-block;padding-top: 8px;vertical-align: middle;margin-left: 15px;}
+#Portfolio #searhnbtn #search input {padding: 8px 8px;}
 
-#AuthoriseTable{max-height: 35vh;
-    display: table;
-    overflow: auto;
-    margin-bottom: 20px;border: 1px solid #eeeeee;border-radius: 6px;}
-#AuthoriseTable thead tr th {
-  font-size: 14px;
-  font-weight: 400;
-  color: #a5a7a4;
-  padding: 14px 15px;
-}
-#AuthoriseTable thead tr:nth-child(1) label {
-  border: 1px solid #d2d0e1;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  margin: 0px;
-}
-#AuthoriseTable tbody td:nth-child(1) label {
-  border: 1px solid #d2d0e1;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  margin: 0px;
-}
-#AuthoriseTable .regular-checkbox {
-  display: none;
-}
-#AuthoriseTable .regular-checkbox:checked + label {
-  background-color: #6a4eee;
-  border: 1px solid #6a4eee;
-  color: #ffffff;
-}
-#AuthoriseTable .regular-checkbox:checked + label:after {
-  content: url(http://img.tecxlabs.com/images/positions/checkbox-tick.svg);
-  font-size: 10px;
-  position: absolute; /*top: 28px;left: 18px;*/
-  color: #ffffff;
-  margin: -3px -4px;
-}
-#AuthoriseTable tr td {
-  padding: 8px 12px;
-  border-bottom: 1px solid #eeeeee;
-  font-size: 18px;
-  /*height: 68px;*/
-  vertical-align: middle;
-}
-#AuthoriseTable tr td .form {
-  margin-bottom: 0;
-  height: auto;
-}
-#AuthoriseTable tr {
-  border-bottom: 1px solid #eeeeee;
-}
-#AuthoriseTable thead th {
-  border-bottom: 1px solid #eeeeee;
-  border-top: 1px solid #eeeeee;
-}
-#AuthoriseTable input[type="number"] {
-  width: 100%;
-  height: 78%;
-  padding: 4px 10px!important;
-  background:#ffffff!important;
-}
-#popupbox button.btn-primary {
-  font-size: 14px !important;
-}
-#AuthoriseTable .form__label {
-  top: 0.5rem;
-    left: 0.2rem;
-    font-size: 12px;  
-}
+#AuthoriseTable{max-height: 35vh;display: table;overflow: auto;margin-bottom: 20px;border: 1px solid #eeeeee;border-radius: 6px;}
+#AuthoriseTable thead tr th {font-size: 14px;font-weight: 400;color: #a5a7a4;padding: 14px 15px;}
+#AuthoriseTable thead tr:nth-child(1) label {border: 1px solid #d2d0e1;display: inline-block;width: 20px;height: 20px;border-radius: 4px;margin: 0px;}
+#AuthoriseTable tbody td:nth-child(1) label {border: 1px solid #d2d0e1;display: inline-block;width: 20px;height: 20px;border-radius: 4px;margin: 0px;}
+#AuthoriseTable .regular-checkbox {display: none;}
+#AuthoriseTable .regular-checkbox:checked + label {background-color: #6a4eee;border: 1px solid #6a4eee;color: #ffffff;}
+#AuthoriseTable .regular-checkbox:checked + label:after {content: url(http://img.tecxlabs.com/images/positions/checkbox-tick.svg);font-size: 10px;position: absolute; /*top: 28px;left: 18px;*/color: #ffffff;margin: -3px -4px;}
+#AuthoriseTable tr td {padding: 8px 12px;border-bottom: 1px solid #eeeeee;font-size: 18px;/*height: 68px;*/vertical-align: middle;}
+#AuthoriseTable tr td .form {margin-bottom: 0;height: auto;}
+#AuthoriseTable tr {border-bottom: 1px solid #eeeeee;}
+#AuthoriseTable thead th {border-bottom: 1px solid #eeeeee;border-top: 1px solid #eeeeee;}
+#AuthoriseTable input[type="number"] {width: 100%;height: 78%;padding: 4px 10px!important;background:#ffffff!important;}
+#popupbox button.btn-primary {font-size: 14px !important;}
+#AuthoriseTable .form__label {top: 0.5rem;left: 0.2rem;font-size: 12px;  }
 
-table#PortfolioTable {
-  width: 100%;
-}
-#PortfolioTable tbody td .nbox {
-  max-width: fit-content;
-  min-width: 70px;
-  height: 25px;
-  text-align: center;
-}
-#PortfolioTable tbody td p {
-  font-size: 12px;
-  font-weight: 400;
-  margin: 0 auto;
-  padding: 2px;
-  color: #ffffff;
-  border-radius: 2px;
-  text-transform: uppercase;
-}
-#PortfolioTable thead tr th {
-  font-size: 16px;
-  font-weight: 400;
-  color: #a5a7a4;
-  padding: 14px 15px;
-}
-#PortfolioTable .orange {
-  background: #fc8b00;
-}
-#PortfolioTable .purple {
-  background: #d554fd;
-}
-#PortfolioTable .blue {
-  background: #30dbf9;
-}
-#PortfolioTable h3 {
-  font-weight: 400;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 1px;
-}
-#PortfolioTable h3 span {
-  font-size: 14px;
-  font-weight: 400;
-  color: #a5a7a4;
-}
-#PortfolioTable .regular-checkbox {
-  display: none;
-}
-#PortfolioTable thead {
-  border-top: 1px solid #d2d0e1;
-}
-#PortfolioTable thead tr label {
-  border: 1px solid #d2d0e1;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  margin: 0px;
-}
-#PortfolioTable tbody td label {
-  border: 1px solid #d2d0e1;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  margin: 0px;
-}
-#PortfolioTable .regular-checkbox:checked + label {
-  background-color: #6a4eee;
-  border: 1px solid #6a4eee;
-  color: #ffffff;
-}
-#PortfolioTable .regular-checkbox:checked + label:after {
-  content: url(http://img.tecxlabs.com/images/positions/checkbox-tick.svg);
-  font-size: 10px;
-  position: absolute; /*top: 28px;left: 18px;*/
-  color: #ffffff;
-  margin: -3px -12px;
-}
-#PortfolioTable tr td .watchlistbox img {
-  width: 15px;
-  height: 15px;
-  border: none;
-  margin: 0 10px;
-}
-#PortfolioTable tr td .watchlistbox .dropdown-item span {
-  color: #e0d8d5;
-}
-#PortfolioTable tr td {
-  padding: 18px 15px;
-  border-bottom: 1px solid #eeeeee;
-  font-size: 18px;
-  height: 68px;
-  vertical-align: middle;
-}
-#PortfolioTable tr {
-  border-bottom: 1px solid #eeeeee;
-}
-#PortfolioTable thead th {
-  border-bottom: 1px solid #eeeeee;
-  border-top: 1px solid #eeeeee;
-}
-#PortfolioTable tfoot tr td {
-  padding: 12px 10px;
-}
-#PortfolioTable tfoot {
-  border-bottom: 1px solid #eeeeee;
-}
-#PortfolioTable div.watchlistbox {
-  margin-left: 8%;
-  position: unset;
-}
-#PortfolioTable tr:hover div.watchlistbox {
-  display: inline-block;
-}
+table#PortfolioTable {width: 100%;}
+#PortfolioTable tbody td .nbox {max-width: fit-content;min-width: 70px;height: 25px;text-align: center;}
+#PortfolioTable tbody td p {font-size: 12px;font-weight: 400;margin: 0 auto;padding: 2px;color: #ffffff;border-radius: 2px;text-transform: uppercase;}
+#PortfolioTable thead tr th {font-size: 16px;font-weight: 400;color: #a5a7a4;padding: 14px 15px;}
+#PortfolioTable .orange {background: #fc8b00;}
+#PortfolioTable .purple {background: #d554fd;}
+#PortfolioTable .blue {background: #30dbf9;}
+#PortfolioTable h3 {font-weight: 400;display: inline-block;vertical-align: middle;margin: 1px;}
+#PortfolioTable h3 span {font-size: 14px;font-weight: 400;color: #a5a7a4;}
+#PortfolioTable .regular-checkbox {display: none;}
+#PortfolioTable thead {border-top: 1px solid #d2d0e1;}
+#PortfolioTable thead tr label {border: 1px solid #d2d0e1;display: inline-block;width: 20px;height: 20px;border-radius: 4px;margin: 0px;}
+#PortfolioTable tbody td label {border: 1px solid #d2d0e1;display: inline-block;width: 20px;height: 20px;border-radius: 4px;margin: 0px;}
+#PortfolioTable .regular-checkbox:checked + label {background-color: #6a4eee;border: 1px solid #6a4eee;color: #ffffff;}
+#PortfolioTable .regular-checkbox:checked + label:after {content: url(http://img.tecxlabs.com/images/positions/checkbox-tick.svg);font-size: 10px;position: absolute; /*top: 28px;left: 18px;*/color: #ffffff;margin: -3px -12px;}
+#PortfolioTable tr td .watchlistbox img {width: 15px;height: 15px;border: none;margin: 0 10px;}
+#PortfolioTable tr td .watchlistbox .dropdown-item span {color: #e0d8d5;}
+#PortfolioTable tr td {padding: 18px 15px;border-bottom: 1px solid #eeeeee;font-size: 18px;height: 68px;vertical-align: middle;}
+#PortfolioTable tr {border-bottom: 1px solid #eeeeee;}
+#PortfolioTable thead th {border-bottom: 1px solid #eeeeee;border-top: 1px solid #eeeeee;}
+#PortfolioTable tfoot tr td {padding: 12px 10px;}
+#PortfolioTable tfoot {border-bottom: 1px solid #eeeeee;}
+#PortfolioTable div.watchlistbox {margin-left: 8%;position: unset;}
+#PortfolioTable tr:hover div.watchlistbox {display: inline-block;}
 
-#Portfolio .positions .progress {
-  width: 80%;
-  display: inline;
-}
-#Portfolio .positions span {
-  float: right;
-  position: absolute;
-  margin-left: 10px;
-}
-#Portfolio #bar-graph {
-  height: auto;
-  margin-bottom: 38px;
-}
-#Portfolio .positions .progress .progress-bar {
-  height: 8px;
-  display: inline-block;
-}
-tr[disabled] td::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.05);
-}
-tr[disabled] {
-  pointer-events: none;
-}
-.table-sortable th {
-  cursor: pointer;
-}
+#Portfolio .positions .progress {width: 80%;display: inline;}
+#Portfolio .positions span {float: right;position: absolute;margin-left: 10px;}
+#Portfolio #bar-graph {height: auto;margin-bottom: 38px;}
+#Portfolio .positions .progress .progress-bar {height: 8px;display: inline-block;}
+tr[disabled] td::after {position: absolute;content: "";top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.05);}
+tr[disabled] {pointer-events: none;}
+.table-sortable th {cursor: pointer;}
 
-.table-sortable .th-sort-asc:hover::after {
-  content: url(http://img.tecxlabs.com/images/orders/up-arrow-grey.svg);
-}
-.table-sortable .th-sort-desc:hover::after {
-  content: url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg);
-}
+.table-sortable .th-sort-asc:hover::after {content: url(http://img.tecxlabs.com/images/orders/up-arrow-grey.svg);}
+.table-sortable .th-sort-desc:hover::after {content: url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg);}
 .table-sortable .th-sort-asc::after,
-.table-sortable th.th-sort-desc::after {
-  margin-left: 5px;
-  float: right;
-}
+.table-sortable th.th-sort-desc::after {margin-left: 5px;float: right;}
 .table-sortable .th-sort-asc:hover,
-.table-sortable .th-sort-desc:hover {
-  background: #f5f5f5;
-}
-.table-sortable th:hover {
-  background: #f5f5f5;
-}
-.table-sortable th:hover::after {
-  content: url(http://img.tecxlabs.com/images/orders/up-arrow-grey.svg);
-  /*float: right;*/
-}
+.table-sortable .th-sort-desc:hover {background: #f5f5f5;}
+.table-sortable th:hover {background: #f5f5f5;}
+.table-sortable th:hover::after {content: url(http://img.tecxlabs.com/images/orders/up-arrow-grey.svg);/*float: right;*/}
 
 #PortfolioTable .exitbtn {background: url(http://img.tecxlabs.com/images/positions/exit.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;padding: 10px 20px;height: auto;}
 .nbox .bsell {background: #ff6872;color: #ffffff;}
