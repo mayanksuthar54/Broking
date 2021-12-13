@@ -148,7 +148,6 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 #search input {border: transparent;padding: 8px 14px 0;font-size: 16px;font-weight: 400;width: 84%;background: transparent;color: #121212;display: block;position: absolute;margin-left: 14px;}
 #search ::placeholder {color: #cacaca;}
 .search-results {position: absolute;z-index: 1;display: none;width: 100%;margin: 13px 0 12px 0;max-height: 66vh;overflow: auto;}
-
 .search-results-modal {position: absolute;z-index: 1;display: none;width: 90.8%;max-height: 45vh;overflow: auto;}
 .search-results-modaladd {position: relative;z-index: 1;display: none;max-height: 45vh;overflow: auto;}
 .search-results-modal #searchwatchlist .watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 6px;width: 40px;height: 30px;}
@@ -198,10 +197,8 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .modal-body .btn3 {padding: 20px 0;}
 .modal-body .bidtable {border-bottom: 1px solid #eeeeee;}
 .modal-body .opentable {border-bottom: 1px solid #eeeeee;}
-
 .modal-body #watchlistinner .table-row .table-cell:nth-child(2) {text-align: center;}
 .modal-body #watchlistinner .table-row .table-cell:nth-child(3) {text-align: center;}
-
 .modal-body #watchlistinner2 .d-inline-block:nth-child(1) {color: #9a9a9a;}
 
 .price-box {text-align: right;}
@@ -236,11 +233,8 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 #port-holding .holdingleft p {font-size: 16px;font-weight: 400;}
 
 .contentbox {color: #000000;background: #f2efff;padding: 18px;border: 1px solid #d2d0e1;height: auto;overflow: hidden;margin-bottom: 28px;}
-
-.plate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 40vh;overflow: hidden;margin-bottom: 17px;}
-
+.plate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 40vh;overflow: auto;margin-bottom: 17px;}
 .profile {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 79vh;overflow: auto;/*margin-bottom: 10px;*/}
-
 
 .equityplate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 79vh;overflow: hidden;/*margin-bottom: 10px;*/}
 .equityplate span {font-size: 20px;font-weight: 600;margin-left: 10px;}
@@ -323,12 +317,17 @@ div.watchlistbox .show > .btn-primary.dropdown-toggle {background-color: #6a4eee
 
 div.watchlistbox button.bg-white:hover {background-color: #6a4eee;}
 tr:hover div.watchlistbox {display: block;}
-.w-list:hover div.watchlistbox {display: block;}
+
+#ultabledata li{list-style: none;}
+#ultabledata{padding: 0;position: relative;}
+#ultabledata .companyname p{color: #121212;font-size: 16px;overflow: auto;}
 .w-list{margin-bottom: 10px;padding: 4px 0px;}
-.w-list div.watchlistbox {display: none;position: absolute;right: 0;top: 11%;padding-right: 18px;width: max-content}
-.companyname p{color: #121212;font-size: 16px;overflow: auto;}
 .w-list .companyname{margin-right: 0px;display: inline-block;position: relative;vertical-align: sub;width: 75%;word-break: break-all;}
-.w-list:hover{background: #efefef;}
+.w-data:hover div.watchlistbox {display: block;}
+.w-data div.watchlistbox {display: none;position: absolute;right: 0;top: 20px;padding-right: 18px;width: max-content}
+.w-data{padding: 4px 12px 4px 25px;}
+.w-data:hover{background: #efefef;}
+#ultabledata div.collapse {border-top: 1px solid #bbbbbb;border-bottom: 1px solid #bbbbbb;}
 
 #SChartModal #watchlistinner2 tr td:nth-child(1) {color: #9a9a9a;}
 #SChartModal #watchlistinner2 tr td:nth-child(2) {color: #121212;font-weight: 600;text-align: right;}
@@ -440,13 +439,12 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 .modal-body {padding: 10px 25px 25px;}
 .modal-body .form {/*height: 3rem;*/}
 .modal-content {border-radius: 10px;border: none;}
+.modal-header .form {margin-bottom: 0px;}
 .close {opacity: 10;}
 #DeleteCModal .modal-dialog {max-width: 260px !important;}
 #DeleteCModal .modal-body {padding: 0px 25px 25px;}
 #EditWModal .modal-dialog {max-width: 400px !important;}
 #ConvertModal .modal-dialog {max-width: 400px !important;}
-
-.modal-header .form {margin-bottom: 0px;}
 
 .convertbox p {color: #a5a7a4;font-weight: 400;}
 .convertbox {padding-bottom: 15px;border-bottom: 1px solid #eeeeee;}
@@ -525,7 +523,6 @@ table#PortfolioTable {width: 100%;}
 #PortfolioTable tfoot {border-bottom: 1px solid #eeeeee;}
 #PortfolioTable div.watchlistbox {margin-left: 8%;position: unset;}
 #PortfolioTable tr:hover div.watchlistbox {display: inline-block;}
-
 #Portfolio .positions .progress {width: 80%;display: inline;}
 #Portfolio .positions span {float: right;position: absolute;margin-left: 10px;}
 #Portfolio #bar-graph {height: auto;margin-bottom: 38px;}
@@ -533,7 +530,6 @@ table#PortfolioTable {width: 100%;}
 tr[disabled] td::after {position: absolute;content: "";top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.05);}
 tr[disabled] {pointer-events: none;}
 .table-sortable th {cursor: pointer;}
-
 .table-sortable .th-sort-asc:hover::after {content: url(http://img.tecxlabs.com/images/orders/up-arrow-grey.svg);}
 .table-sortable .th-sort-desc:hover::after {content: url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg);}
 .table-sortable .th-sort-asc::after,
@@ -542,7 +538,6 @@ tr[disabled] {pointer-events: none;}
 .table-sortable .th-sort-desc:hover {background: #f5f5f5;}
 .table-sortable th:hover {background: #f5f5f5;}
 .table-sortable th:hover::after {content: url(http://img.tecxlabs.com/images/orders/up-arrow-grey.svg);/*float: right;*/}
-
 #PortfolioTable .exitbtn {background: url(http://img.tecxlabs.com/images/positions/exit.svg) center center no-repeat #ffffff;border: 1px solid #a5a7a4;padding: 10px 20px;height: auto;}
 .nbox .bsell {background: #ff6872;color: #ffffff;}
 .nbox .bbuy {background: #5762f7;color: #ffffff;}
@@ -614,7 +609,6 @@ table#RecentTable {width: 100%;}
 /*.funds-deposit form .form {height: 3rem;}*/
 /*funds*/
 
-
 /*footer*/
 .footer-logo {display: inline-block;}
 .footer-bottom {/*position: absolute;*/bottom: 0;background: #ffffff;width: 100%;border-left: 1px solid #d2d0e1;border-right: 1px solid #d2d0e1;border-bottom: 1px solid #d2d0e1;padding: 12px 30px;left: 18px;}
@@ -672,18 +666,15 @@ table#RecentTable {width: 100%;}
 .personal-content {padding-left: 16px;width: 100%;}
 .personalbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
 .personalbox .personal-content aside{font-size: 18px;margin-bottom: 10px;color: #121212;}
-
 .accountbox{border-top: 1px solid var(--message-box-border);padding-bottom: 16px;display: flex;align-items: flex-start;width: 100%;}
 .accountbox .personal-content aside{font-size: 18px;font-weight: 400;color: #121212;margin-bottom: 10px;}
 .personal-content a.active aside{color: #6a4eee;font-size: 20px;font-weight: 500;}
 .personal-content a.active p{color: #6a4eee;}
 
-
 #rightbox .basicinfo{color: #121212;}
 #rightbox p{font-size: 14px;color: #a5a7a4;}
 #rightbox span{font-size: 14px;color: #121212;}
 #rightbox aside{font-size: 16px;margin-bottom: 20px;}
-
 #rightbox .contactinfo form .form{height: 50px;margin-bottom: 30px!important;}
 #rightbox .contactinfo form .form .form__label{}
 
@@ -750,6 +741,9 @@ table#RecentTable {width: 100%;}
 #ChangePassword{height: 400px;}
 #PowerAttorney p{font-size: 12px;color: #000000;text-align: justify;}
 
+input[type=file].form__input{padding: 0.8rem 1.2rem;}
+input[type=file].form__input::file-selector-button {display: none;}
+
 /* radio */
 #ChangePassword .form__input{background: #F8F7FF;}
 #tab2-content .form__input{background: #F8F7FF!important;}
@@ -759,7 +753,6 @@ table#RecentTable {width: 100%;}
 #ChangePassword input[type="radio"]:checked + * {color: #6a4eee;}
 #ChangePassword input[type="radio"]:checked + *::before {background: radial-gradient(#6a4eee 0%, #6a4eee 40%, transparent 50%, transparent);border-color: #6a4eee;}
 #ChangePassword input[type="radio"] + * {display: flex;/*padding: 0.5rem 0rem;*/}
-
 #ChangePassword .tab-wrap {width: 25%; /*margin-left: 20%;*/ /*position: relative;*/display: flex; /*top: -106px;*/}
 #ChangePassword input[type="radio"][name="tabs"] {/*position: absolute;z-index: -2;*/margin: 4% 0px;}
 #ChangePassword input[type="radio"][name="tabs"]:checked + .tab-label-content label {/*color: #121212;*/}
@@ -795,6 +788,7 @@ input[type="radio"][name="tabs"]:checked
 #formheight52 .select-text{height: 52px;margin-bottom: 20px;}
 #formheight52 .btn-primary{height: 52px;text-transform: none;font-weight: 500;}
 #formheight52 .select-text{font-size: 16px;padding: 10px 10px 10px 20px;}
+#formheight52 .form2 .icon-inside{top: calc(53% - 12px);}
 .btn.disabled, .btn:disabled{background: #D2D0E1;color: #ffffff;border: none;}
 #external span{color: #909093;font-size: 12px;margin-right: 15px;} 
 /*select:after{position: absolute;top: 18px;right: 10px;content: url(http://img.tecxlabs.com/images/orders/down-arrow-grey.svg);}*/
@@ -829,7 +823,6 @@ select option{background: #ffffff;color: #121212;border-radius: 6px;border-botto
 #ModificationCharges .modal-body{padding:30px 25px 25px;}
 #ModificationCharges .modal-body img{width: 30px;}
 #ModificationCharges .modal-body p{font-size: 18px;}
-
 #Deleteaccount button.close{display: inline-block;margin-left: 0;}
 #Deleteaccount .modal-dialog{max-width: 380px;}
 #Deletebank button.close{display: inline-block;margin-left: 0;}
@@ -1564,4 +1557,3 @@ svg:hover #tw { animation: tw .7s; }
   .niftymain {margin: 10px 0;}
   table#OptionChain tr.psticky td .shortcoverbox{right: -30%;}
 }
-
