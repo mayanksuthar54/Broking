@@ -791,21 +791,44 @@
                                     <li>Name should be clearly visible</li>
                                     <li>IFSC should be visible on the bank statement</li>
                                   </ul>
-                                  <div class="fileupload">
+
+                                  <!-- <div class="fileupload mb-3">
+                                    <input type="file" id="real-file" hidden="hidden" />
+                                    <button type="button" id="custom-button"><h2>+</h2></button>
+                                    <span id="custom-text">No file chosen, yet.</span>
+                                    <div class="text-left my-2">
+                                      <img src="http://img.tecxlabs.com/images/eye-web.svg" alt="image">
+                                      <img src="http://img.tecxlabs.com/images/watchlist/delete.svg" alt="image">
+                                    </div>
+                                  </div> -->
+                                  <div id="preview-container">
+                                    <button id="upload-dialog" class="">
+                                      <h3>+</h3>
+                                      <canvas id="pdf-preview" width="150"></canvas>
+                                    </button>
+                                    <div id="pdf-loader" class="d-none">Loading Preview ..</div>
+                                    
+                                    <input type="file" id="pdf-file" class="mb-3" name="pdf" accept="application/pdf" />
+                                    <span id="pdf-name" class="d-none"></span>
+                                    <button id="upload-button" class="d-none">Upload</button>
+                                    <button id="cancel-pdf" class="d-none">Cancel</button>
+                                  </div>
+
+                                  <!-- <div class="fileupload">
                                     <form action="" method="POST">
-                                      <input type="file" name="fileupload" id="Upload-file" />
+                                      <input type="file" name="fileupload" id="Upload-file" accept=".pdf">
                                       <label for="Upload-file"></label>
                                       <embed class="d-block" src="" type="application/pdf" frameBorder="0" scrolling="auto" height="100%" width="100%"></embed>
                                     </form>
                                     <aside class="d-block">bank_statement.pdf</aside>
                                     <div class="text-center">
-                                      <img src="http://img.tecxlabs.com/images/eye-web.svg" alt="image" />
-                                      <img src="http://img.tecxlabs.com/images/watchlist/delete.svg" alt="image" />
+                                      <img src="http://img.tecxlabs.com/images/eye-web.svg" alt="image">
+                                      <img src="http://img.tecxlabs.com/images/watchlist/delete.svg" alt="image">
                                     </div>
                                     <small class="my-2">Format: PDF</small>
-                                  </div>
+                                  </div> -->
                                   <div class="form2 mb-3">
-                                    <input type="number" id="filepassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
+                                    <input type="number" id="filepassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required>
                                     <label for="filepassword" class="form__label">File Password</label>
                                   </div>
                                   <div class="mb-3">
@@ -960,6 +983,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/pdf.js"></script>
+  <script src="js/pdf.worker.js"></script>
   <!-- End custom js for this page-->
 
   <script> 
@@ -984,4 +1009,146 @@ $(document).ready(function(){
         });
     }).change();
 });
+
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+
 </script>
+
+<script>
+
+var _PDF_DOC,
+  _CANVAS = document.querySelector('#pdf-preview'),
+  _OBJECT_URL;
+
+function showPDF(pdf_url) {
+  PDFJS.getDocument({ url: pdf_url }).then(function(pdf_doc) {
+    _PDF_DOC = pdf_doc;
+
+    // Show the first page
+    showPage(1);
+
+    // destroy previous object url
+      URL.revokeObjectURL(_OBJECT_URL);
+  }).catch(function(error) {
+    // trigger Cancel on error
+    document.querySelector("#cancel-pdf").click();
+    
+    // error reason
+    alert(error.message);
+  });;
+}
+
+function showPage(page_no) {
+  // fetch the page
+  _PDF_DOC.getPage(page_no).then(function(page) {
+    // set the scale of viewport
+    var scale_required = _CANVAS.width / page.getViewport(1).width;
+
+    // get viewport of the page at required scale
+    var viewport = page.getViewport(scale_required);
+
+    // set canvas height
+    _CANVAS.height = viewport.height;
+
+    var renderContext = {
+      canvasContext: _CANVAS.getContext('2d'),
+      viewport: viewport
+    };
+    
+    // render the page contents in the canvas
+    page.render(renderContext).then(function() {
+      document.querySelector("#pdf-preview").style.display = 'inline-block';
+      document.querySelector("#pdf-loader").style.display = 'none';
+    });
+  });
+}
+
+
+/* Show Select File dialog */
+document.querySelector("#upload-dialog").addEventListener('click', function() {
+    document.querySelector("#pdf-file").click();
+});
+
+/* Selected File has changed */
+document.querySelector("#pdf-file").addEventListener('change', function() {
+    // user selected file
+    var file = this.files[0];
+
+    // allowed MIME types
+    var mime_types = [ 'application/pdf' ];
+    
+    // Validate whether PDF
+    if(mime_types.indexOf(file.type) == -1) {
+        alert('Error : Incorrect file type');
+        return;
+    }
+
+    // validate file size
+    if(file.size > 10*1024*1024) {
+        alert('Error : Exceeded size 10MB');
+        return;
+    }
+
+    // validation is successful
+
+    // hide upload dialog button
+    document.querySelector("#upload-dialog").style.display = 'inline-block';
+    
+    // set name of the file
+    document.querySelector("#pdf-name").innerText = file.name;
+    document.querySelector("#pdf-name").style.display = 'inline-block';
+
+    // show cancel and upload buttons now
+    document.querySelector("#cancel-pdf").style.display = 'inline-block';
+    document.querySelector("#upload-button").style.display = 'inline-block';
+
+    // Show the PDF preview loader
+    document.querySelector("#pdf-loader").style.display = 'inline-block';
+
+    // object url of PDF 
+    _OBJECT_URL = URL.createObjectURL(file)
+
+    // send the object url of the pdf to the PDF preview function
+  showPDF(_OBJECT_URL);
+});
+
+/* Reset file input */
+document.querySelector("#cancel-pdf").addEventListener('click', function() {
+    // show upload dialog button
+    document.querySelector("#upload-dialog").style.display = 'inline-block';
+
+    // reset to no selection
+    document.querySelector("#pdf-file").value = '';
+
+    // hide elements that are not required
+    document.querySelector("#pdf-name").style.display = 'none';
+    document.querySelector("#pdf-preview").style.display = 'none';
+    document.querySelector("#pdf-loader").style.display = 'none';
+    document.querySelector("#cancel-pdf").style.display = 'none';
+    document.querySelector("#upload-button").style.display = 'none';
+});
+
+/* Upload file to server */
+document.querySelector("#upload-button").addEventListener('click', function() {
+    // AJAX request to server
+    alert('This will upload file to server');
+});
+
+</script>
+

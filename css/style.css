@@ -743,7 +743,13 @@ table#RecentTable {width: 100%;}
 
 input[type=file].form__input{padding: 0.8rem 1.2rem;}
 input[type=file].form__input::file-selector-button {display: none;}
-
+canvas#pdf-preview {border: 1.5px dashed #6A4EEE;border-radius: 10px;height: 130px;width: 130px;margin-bottom: 10px;background: none;display: block;}
+#custom-button h2 {color: #6a4eee;}
+#custom-text {margin-left: 10px;font-family: sans-serif;color: #fff;}
+input[type=file]#pdf-file::file-selector-button {display: none;}
+#preview-container button{background: none;border: none;}
+#preview-container button h3{position: absolute;left: 20%;top: 50%;z-index: 1;color: #6A4EEE;}
+                                    
 /* radio */
 #ChangePassword .form__input{background: #F8F7FF;}
 #tab2-content .form__input{background: #F8F7FF!important;}
