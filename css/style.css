@@ -245,7 +245,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 #holdingbox {height: 60vh;}
 #holdingbox a {text-decoration: none;}
 #marketbox {height: 60vh;}
-.plate-2 {color: #000000;background: #ffffff;border: 1px solid #d2d0e1;position: fixed;width: 23%;}
+.plate-2 {color: #000000;background: #ffffff;border: 1px solid #d2d0e1;position: fixed;width: 23%;overflow: ;}
 .plate span {font-size: 20px;font-weight: 500;vertical-align: middle;margin-left: 10px;}
 .plate h1 {color: #6a4eee;margin: 16px 0;font-size: 34px;font-weight: 400;text-transform: none;}
 
@@ -318,16 +318,24 @@ div.watchlistbox .show > .btn-primary.dropdown-toggle {background-color: #6a4eee
 div.watchlistbox button.bg-white:hover {background-color: #6a4eee;}
 tr:hover div.watchlistbox {display: block;}
 
+/*ul Wtable*/
 #ultabledata li{list-style: none;}
 #ultabledata{padding: 0;position: relative;}
 #ultabledata .companyname p{color: #121212;font-size: 16px;overflow: auto;}
-.w-list{margin-bottom: 10px;padding: 4px 0px;}
-.w-list .companyname{margin-right: 0px;display: inline-block;position: relative;vertical-align: sub;width: 75%;word-break: break-all;}
-.w-data:hover div.watchlistbox {display: block;}
-.w-data div.watchlistbox {display: none;position: absolute;right: 0;top: 20px;padding-right: 18px;width: max-content}
-.w-data{padding: 4px 12px 4px 25px;}
-.w-data:hover{background: #efefef;}
-#ultabledata div.collapse {border-top: 1px solid #bbbbbb;border-bottom: 1px solid #bbbbbb;}
+#ultabledata .companylogo {vertical-align: middle;}
+#ultabledata .price-box {vertical-align: middle;}
+#ultabledata .price-box .lprice{font-size: 18px;font-weight: 400;}
+#ultabledata .w-list{/*margin-bottom: 10px;*/padding: 4px 0px;}
+#ultabledata .w-list .companyname{margin-right: 0px;display: inline-block;position: relative;vertical-align: middle;width: 75%;word-break: break-all;}
+#ultabledata .w-list .companyname span{font-size: 12px;color: #A5A7A4;text-transform: uppercase;}
+#ultabledata .w-data:hover div.watchlistbox {display: block;}
+#ultabledata .w-data div.watchlistbox {display: none;position: absolute;right: 0;top: 20px;padding-right: 18px;width: max-content}
+#ultabledata .w-data{padding: 4px 12px 4px 25px;}
+#ultabledata .w-data:hover{background: #efefef;}
+#ultabledata .collapse {border-top: 1px solid #bbbbbb;border-bottom: 1px solid #bbbbbb;}
+#ultabledata .collapse #watchlistinner {/*width: 49%;display: inline-block;*/margin: 4px 12px 4px 25px;}
+#ultabledata .collapse #watchlistinner .table-cell {margin: 4px 12px 4px 25px;}
+/*ul Wtable*/
 
 #SChartModal #watchlistinner2 tr td:nth-child(1) {color: #9a9a9a;}
 #SChartModal #watchlistinner2 tr td:nth-child(2) {color: #121212;font-weight: 600;text-align: right;}
@@ -1040,6 +1048,7 @@ svg:hover #tw { animation: tw .7s; }
   .form__label{font-size: 13px;}
   .btn-primary{line-height: initial;}
   .mobilemenu #navbarCollapse{position: unset;margin: 24px 16px;}
+  #mainbox{padding: 0 15px;}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -1077,6 +1086,7 @@ svg:hover #tw { animation: tw .7s; }
   .mobile-edited h6{display: block;}
   .contactprofile .form{margin: 10px 0 15px 0;}
   .mobupdate img{height: 40px;}
+  #mainbox{padding: 0 5px;}
 }
 
 /* ----------- iPad Pro ----------- */
@@ -1103,7 +1113,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 13px;font-weight: 600;}
   h5 {font-size: 12px;font-weight: 600;text-transform: uppercase;}
   h6 {font-size: 11px;font-weight: 600;}
-  #mainbox {padding: 0;}
+  #mainbox {padding: 0 5px;}
   .plate {height: 47vh;padding: 20px;}
   .plate-2 {position: fixed;height: 95vh;}
   /*.navbar{padding:0px 28px;}*/
@@ -1177,7 +1187,7 @@ svg:hover #tw { animation: tw .7s; }
   h5 {font-size: 12px;font-weight: 600;text-transform: uppercase;}
   h6 {font-size: 11px;font-weight: 600;}
   .navbar-expand-xl .navbar-collapse{display: block!important;}
-  #mainbox {padding: 0;}
+  #mainbox {padding: 0 5px;}
   .plate {height: 47vh;padding: 15px;}
   .plate h1{font-size: 26px;}
   .plate span{font-size: 18px;}
