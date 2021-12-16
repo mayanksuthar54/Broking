@@ -8,233 +8,254 @@
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="shortcut icon" href="images/logo.svg" />
 
 </head>
 <body>
-  <div class="mobilebox">
+  <div class="mobile-band">
+    <div class="d-inline-block bandleft">
+      <a href="">
+        <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.853 3.64735C12.946 3.74293 12.998 3.87101 12.998 4.00435C12.998 4.13769 12.946 4.26577 12.853 4.36135L9.40299 7.86135C9.30923 7.95508 9.18208 8.00774 9.04949 8.00774C8.91691 8.00774 8.78976 7.95508 8.69599 7.86135C8.60207 7.76626 8.5494 7.638 8.5494 7.50435C8.5494 7.3707 8.60207 7.24243 8.69599 7.14735L11.298 4.50935L1.49799 4.50935C1.36406 4.50935 1.23561 4.45614 1.14091 4.36143C1.0462 4.26673 0.992994 4.13828 0.992994 4.00435C0.992994 3.87041 1.0462 3.74196 1.14091 3.64726C1.23561 3.55255 1.36406 3.49935 1.49799 3.49935L11.298 3.49935L8.69799 0.862346C8.60407 0.767263 8.5514 0.638997 8.5514 0.505346C8.5514 0.371696 8.60407 0.243429 8.69799 0.148346C8.79176 0.0546108 8.91891 0.00195313 9.05149 0.00195313C9.18408 0.00195313 9.31123 0.0546108 9.40499 0.148346L12.853 3.64735Z" fill="#121212"/>
+        </svg>
+        <h2>Profile</h2>
+      </a>
+    </div>
+  </div>
+
+  <div class="profile fadeIn-element pt-4">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top mobilemenu">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="http://img.tecxlabs.com/images/logo.svg" alt="logo"/></a>
-        <div class="collapse navbar-collapse pt-4" id="navbarCollapse">
-          <div class="personalbox">
-            <img src="http://img.tecxlabs.com/images/profile/personal-2.svg" />
-            <div class="personal-content">
-              <a href="profile-personal.html"><aside>Personal</aside></a>
-              <a href="profile-personal.html#BasicInfo"><p>Basic information</p></a>
-              <a href="profile-personal.html#ContactInfo"><p>Contact information</p></a>
-              <a href="profile-personal.html#DematDetails"><p>Demat Details</p></a>
+      <div class="row slideInDown-element ">
+        <div class="col-md-12 col-xl-3">
+          <!-- hamburger -->
+          <nav class="navbar navbar-expand-xl navbar-light mobilemenu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#"><img src="http://img.tecxlabs.com/images/logo.svg" alt="logo"/></a> -->
+            <div class="collapse navbar-collapse pt-4" id="navbarCollapse">
+              <div class="personalbox">
+                <img src="images/profile/personal.svg">
+                <div class="personal-content">
+                  <a href="profile-personal.html"><aside>Personal</aside></a>
+                  <a href="profile-personal.html#BasicInfo"><p>Basic information</p></a>
+                  <a href="profile-personal.html#ContactInfo"><p>Contact information</p></a>
+                  <a href="profile-personal.html#DematDetails"><p>Demat Details</p></a>
+                </div>
+              </div>
+              <div class="accountbox">
+                <img src="images/profile/account-2.svg">
+                <div class="personal-content">
+                  <a href="profile-account.html" class="active"><aside>Account</aside></a>
+                  <a href="profile-account.html#Segments"><p>Segments</p></a>
+                  <a href="profile-account.html#TradingPlan"><p>Trading Plan</p></a>
+                  <a href="profile-account.html#BankDetails"><p>Bank Details</p></a>
+                  <a href="profile-account.html#ChangePassword"><p>Change Password & PIN</p></a>
+                  <a href="profile-account.html#Nominee"><p>Nominee</p></a>
+                  <a href="profile-account.html#PowerAttorney"><p>Power of Attorney (PoA)</p></a>
+                  <a href="profile-account.html#AccountClosure"><p>Account Closure</p></a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="accountbox">
-            <img src="http://img.tecxlabs.com/images/profile/account-2.svg" />
-            <div class="personal-content">
-              <a href="#" class="active"><aside>Account</aside></a>
-              <a href="profile-account.html#Segments"><p>Segments</p></a>
-              <a href="profile-account.html#TradingPlan"><p>Trading Plan</p></a>
-              <a href="profile-account.html#BankDetails"><p>Bank Details</p></a>
-              <a href="profile-account.html#ChangePassword"><p>Change Password & PIN</p></a>
-              <a href="profile-account.html#Nominee"><p>Nominee</p></a>
-              <a href="profile-account.html#PowerAttorney"><p>Power of Attorney (PoA)</p></a>
-              <a href="profile-account.html#AccountClosure"><p>Account Closure</p></a>
-            </div>
-          </div>
+          </nav>
+          <!-- hamburger -->
         </div>
-      </nav>
 
-      <div class="row">
-        <div class="col-md-12 mt-5">
-          <div class="profile-mobile fadeIn-element">
-            <div class="row slideInDown-element ">
-              <div class="col-md-12" id="rightbox">
+        <div class="col-md-11 col-xl-8" id="rightbox">
+          <div class="basicinfo border1-padding15" id="Segments">
+            <div class="row">
+              <div class="col-md-12 col-xl-12">
+                <aside>Segments</aside>
+                <div class="row">
+                  <div class="col-md-12 col-xl-3">
+                    <p>Inactive segments</p>
+                  </div>
+                  <div class="col-md-12 col-xl-9 mb-4">
+                    <div class="derivatives-box">
+                      <div class="derivatives">
+                        <div class="segmentname">Derivatives</div>
+                        <button class="btn btn-primary">nse cur</button>
+                        <button class="btn btn-primary">nse fo</button>
+                      </div>
+                      <a href="profile-account-activating-segments.html">
+                        <div class="activatederive">
+                          <p>Activate derivatives</p><img class="float-right" src="http://img.tecxlabs.com/images/profile/arrow.svg" />
+                        </div>
+                      </a>
+                    </div>
 
-                <div class="basicinfo" id="Segments">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <aside>Segments</aside>
-                      <div class="row">
-                        <div class="col-md-12 col-xl-4">
-                          <p>Inactive segments</p>
+                    <div class="commodities-box">
+                      <div class="commodities">
+                        <div class="segmentname">Commodities</div>
+                        <button class="btn btn-primary">mcx</button>
+                      </div>
+                      <a href="#">
+                        <div class="activatederive">
+                          <p>Activate derivatives</p><img class="float-right" src="http://img.tecxlabs.com/images/profile/arrow.svg" />
                         </div>
-                        <div class="col-md-12 mb-4">
-                          <div class="derivatives-box">
-                            <div class="derivatives">
-                              <span>Derivatives</span>
-                              <button class="btn btn-primary">nse cur</button>
-                              <button class="btn btn-primary">nse fo</button>
-                            </div>
-                            <div class="activatederive">
-                              <a href="#"><p>Activate derivatives</p><img class="float-right" src="assets/img/profile/arrow.svg" /></a>
-                            </div>
-                          </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-xl-3">
+                    <p>Active segments</p>
+                  </div>
+                  <div class="col-md-12 col-xl-8">
+                    <span>Equities</span>
+                    <div class="equitiesbtn">
+                       <button class="btn btn-primary"><img src="http://img.tecxlabs.com/images/profile/green-tick.svg" />bse eq</button>
+                       <button class="btn btn-primary"><img src="http://img.tecxlabs.com/images/profile/green-tick.svg" />nse eq</button>
+                       <button class="btn btn-primary"><img src="http://img.tecxlabs.com/images/profile/green-tick.svg" />bse mf</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                          <div class="commodities-box">
-                            <div class="commodities">
-                              <span>Commodities</span>
-                              <button class="btn btn-primary">mcx</button>
-                            </div>
-                            <div class="activatederive">
-                              <a href="#"><p>Activate derivatives</p><img class="float-right" src="assets/img/profile/arrow.svg" /></a>
-                            </div>
-                          </div>
-                        </div>
+          <div class="contactinfo border1-padding15" id="TradingPlan">
+            <div class="row">
+              <div class="col-md-12 col-xl-3">
+                 <aside class="d-inline-block">Trading Plan</aside>
+              </div>
+              <div class="col-md-12 col-xl-9">
+                <aside class="prighttxt float-right"><a href="#">Upgrade Plan</a></aside>
+              </div>
+            </div>
+           
+            <div class="row">
+              <div class="col-md-12 col-xl-3">
+                <p>Demat details</p>
+              </div>
+              <div class="col-md-12 col-xl-9 cdsl">
+                <p>CDSL: <span>1208689635863486</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-xl-3">
+                <p>Active Plan</p>
+              </div>
+              <div class="col-md-12 col-xl-9">
+                <div class="active-box">
+                  <div class="basicplan2">
+                    <div class="rupee">₹</div>
+                    <span>500</span>
+                    <aside>Basic Plan</aside>
+                    <div class="onetimebox">One time payment</div>
+                    <small>Free delivery trades forever.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                        <div class="col-md-12 col-xl-4">
-                          <p>Active segments</p>
-                        </div>
-                        <div class="col-md-12 col-xl-8">
-                          <span>Equities</span>
-                          <div class="equitiesbtn">
-                             <button class="btn btn-primary"><img src="assets/img/profile/green-tick.svg" />bse eq</button>
-                             <button class="btn btn-primary"><img src="assets/img/profile/green-tick.svg" />nse eq</button>
-                             <button class="btn btn-primary"><img src="assets/img/profile/green-tick.svg" />bse mf</button>
-                          </div>
-                        </div>
+          <div class="dematdetails border1-padding15" id="BankDetails">
+            <div class="row">
+              <div class="col-md-12 col-xl-12">
+                <aside class="d-inline-block">Bank Details</aside>
+                <aside class="prighttxt float-right">
+                  <a href="modify-bank-account.html">
+                    <img src="images/profile/edit.svg" alt="image" /> Modify Accounts
+                  </a>
+                  <a href="add-bank-account.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 14 14" enable-background="new 0 0 14 14" xml:space="preserve">
+                      <g id="Info" transform="translate(-1711 -790)" display="none"><text transform="matrix(1 0 0 1 1717 800)" display="inline" fill="#6a4eee" font-family="'OpenSans-Bold'" font-size="8">i</text><g id="Ellipse_77" transform="translate(1711 790)" display="inline"><circle fill="none" cx="7" cy="7" r="7"/><circle fill="none" stroke="#6a4eee" cx="7" cy="7" r="6.5"/></g></g><line id="Sell" fill="none" stroke="#6a4eee" stroke-width="1.1" x1="0.458" y1="7" x2="13.542" y2="7"/><line id="Sell_1_" fill="none" stroke="#6a4eee" stroke-width="1.1" x1="7" y1="0.458" x2="7" y2="13.542"/>
+                    </svg> Add New Bank
+                  </a>
+                </aside>
+                <div class="row mt-3">
+                  <div class="col-md-12 col-xl-3">
+                    <p>Bank 1</p>
+                  </div>
+                  <div class="col-md-12 col-xl-9">
+                    <span class="bankname">
+                      <img src="http://img.tecxlabs.com/images/profile/bank-icon.svg"/><p>STATE BANK OF INDIA</p>
+                    </span>
+                    <div class="bankpribtn">
+                      <div class="primarybtn">Primary</div>
+                    </div>
+                    <div class="bank-details">
+                      <div class="bankacc">
+                        <p>Account No:</p>
+                        <span>**********0659</span>
+                      </div>
+                      <div class="bankacc">
+                        <p>IFSC:</p>
+                        <span>AXIS0001234</span>
+                      </div>
+                      <div class="bankacc">
+                        <p>MICR:</p>
+                        <span>1234567890</span>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="contactinfo" id="TradingPlan">
-                  <div class="row">
-                    <div class="col-sm-12">
-                       <aside class="d-inline-block">Trading Plan</aside>
-                      <aside class="prighttxt float-right"><a href="#">Upgrade Plan</a></aside>
-                    </div>
+                <div class="row mt-3">
+                  <div class="col-md-12 col-xl-3">
+                    <p>Bank 2</p>
                   </div>
-                 
-                  <div class="row">
-                    <div class="col-md-12 col-xl-4">
-                      <p>Demat details</p>
-                    </div>
-                    <div class="col-md-12 col-xl-6 cdsl">
-                      <p>CDSL:<span>1208689635863486</span></p>
-                    </div>
-
-                    <div class="col-md-12 col-xl-4">
-                      <p>Active Plan</p>
-                    </div>
-                    <div class="col-md-12 col-xl-8">
-                      <div class="active-box">
-                        <div class="basicplan">
-                          <div class="rupee">₹</div>
-                          <span>200</span>
-                          <aside>BASIC PLAN</aside>
-                          <small>PER TRADE OR 0.05%</small>
-                          <small>(Whichever is lower)</small>
-                        </div>
-                        <div class="basic-content">
-                          <small>Upto 5x leverage on Cash segment. Free delivery trades forever.</small>
-                          <br/>
-                          <small>Delivery trade changes - Free</small>
-                        </div>
+                  <div class="col-md-12 col-xl-9">
+                    <span class="bankname">
+                      <img src="http://img.tecxlabs.com/images/profile/bank-icon.svg"/><p>STATE BANK OF INDIA</p>
+                    </span>
+                    <div class="bank-details">
+                      <div class="bankacc">
+                        <p>Account No:</p>
+                        <span>**********0659</span>
+                      </div>
+                      <div class="bankacc">
+                        <p>IFSC:</p>
+                        <span>AXIS0001234</span>
+                      </div>
+                      <div class="bankacc">
+                        <p>MICR:</p>
+                        <span>1234567890</span>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="dematdetails" id="BankDetails">
-                  <div class="row">
-                    <div class="col-md-12 col-xl-10">
-                      <aside class="d-inline-block">Bank Details</aside>
-                      <aside class="prighttxt float-right"><a href="#">Add New Bank<img src="assets/img/profile/bank-icon-2.svg"/></a></aside>
-                      <div class="row mt-3">
-                        <div class="col-md-12 col-xl-4">
-                          <p>Bank 1</p>
-                        </div>
-                        <div class="col-md-12 col-xl-6">
-                          <span class="bankname">
-                            <img src="assets/img/profile/bank-icon.svg"/><p>STATE BANK OF INDIA</p>
-                          </span>
-                          <div class="bank-details">
-                            <div class="bankacc">
-                              <p>Account No:</p>
-                              <span>**********0659</span>
-                            </div>
-                            <div class="bankacc">
-                              <p>IFSC:</p>
-                              <span>AXIS0001234</span>
-                            </div>
-                            <div class="bankacc">
-                              <p>MICR:</p>
-                              <span>1234567890</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-2 col-xl-2 bankpribtn">
-                            <a href="#"><img src="assets/img/profile/edit.svg"/></a>
-                            <div class="primarybtn">Primary</div>
-                          </div>
+                <div class="row mt-3">
+                  <div class="col-md-12 col-xl-3">
+                    <p>Bank 3</p>
+                  </div>
+                  <div class="col-md-12 col-xl-9">
+                    <span class="bankname">
+                      <img src="http://img.tecxlabs.com/images/profile/bank-icon.svg"/><p>STATE BANK OF INDIA</p>
+                    </span>
+                    <div class="bank-details">
+                      <div class="bankacc">
+                        <p>Account No:</p>
+                        <span>**********0659</span>
+                      </div>
+                      <div class="bankacc">
+                        <p>IFSC:</p>
+                        <span>AXIS0001234</span>
+                      </div>
+                      <div class="bankacc">
+                        <p>MICR:</p>
+                        <span>1234567890</span>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="dematdetails" id="ChangePassword">
-                  <aside>Change Password & PIN</aside>
-                  <div class="row mt-4">
-                    <div class="col-md-12 col-xl-10">
-                      <div class="tab-wrap">
-                        <input type="radio" name="tabs" id="tab1" checked>
-                        <div class="tab-label-content" id="tab1-content">
-                          <label for="tab1">Password</label>
-                          <div class="tab-content">
-                            <div class="row mb-5">
-                              <div class="">
-                                <form>
-                                  <div class="form">
-                                    <input type="password" id="oldpassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
-                                    <label for="oldpassword" class="form__label">Old Password*</label>
-                                  </div>
-                                  <div class="form">
-                                    <input type="password" id="enternewpass" class="form__input" placeholder=" " onfocus="onEnter(this)" value="" required />
-                                    <label for="enternewpass" class="form__label">Enter New Password*</label>
-                                  </div>
-                                  <div class="form">
-                                    <input type="password" id="confirmpass" class="form__input" placeholder=" " onfocus="onEnter(this)" value="" required />
-                                    <label for="confirmpass" class="form__label">Confirm Password*</label>
-                                  </div>
-                                  <button class="btn btn-primary">Submit</button>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <input type="radio" name="tabs" id="tab2">
-                        <div class="tab-label-content" id="tab2-content">
-                          <label for="tab2">PIN</label>
-                          <div class="tab-content">
-                            <div class="row mb-4">
-                              <div class="">
-                                <form>
-                                  <div class="form">
-                                    <input type="number" id="oldpin" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
-                                    <label for="oldpin" class="form__label">Old PIN*</label>
-                                  </div>
-                                  <div class="form">
-                                    <input type="number" id="enternewpin" class="form__input" placeholder=" " onfocus="onEnter(this)" value="" required />
-                                    <label for="enternewpin" class="form__label">Enter New PIN*</label>
-                                  </div>
-                                  <div class="form">
-                                    <input type="number" id="confirmpin" class="form__input" placeholder=" " onfocus="onEnter(this)" value="" required />
-                                    <label for="confirmpin" class="form__label">Confirm PIN*</label>
-                                  </div>
-                                  <button class="btn btn-primary">Submit</button>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                        <!-- <div class="col-md-6 col-xl-6 mt-4">
-                          <p>Password</p>
+          <div class="dematdetails border1-padding15" id="ChangePassword">
+            <aside>Change Password & PIN</aside>
+            <div class="row mt-4">
+              <div class="col-md-12 col-xl-10">
+                <div class="tab-wrap">
+                  <input type="radio" name="tabs" id="tab1" checked>
+                  <div class="tab-label-content" id="tab1-content">
+                    <label for="tab1">Password</label>
+                    <div class="tab-content">
+                      <div class="row mb-5">
+                        <div class="">
                           <form>
                             <div class="form">
                               <input type="password" id="oldpassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
@@ -248,10 +269,19 @@
                               <input type="password" id="confirmpass" class="form__input" placeholder=" " onfocus="onEnter(this)" value="" required />
                               <label for="confirmpass" class="form__label">Confirm Password*</label>
                             </div>
+                            <button class="btn btn-primary">Submit</button>
                           </form>
-                        </div> -->
-                       <!--  <div class="col-md-6 col-xl-6 mt-4">
-                          <p>PIN</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input type="radio" name="tabs" id="tab2">
+                  <div class="tab-label-content" id="tab2-content">
+                    <label for="tab2">PIN</label>
+                    <div class="tab-content">
+                      <div class="row mb-4">
+                        <div class="">
                           <form>
                             <div class="form">
                               <input type="number" id="oldpin" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
@@ -265,72 +295,80 @@
                               <input type="number" id="confirmpin" class="form__input" placeholder=" " onfocus="onEnter(this)" value="" required />
                               <label for="confirmpin" class="form__label">Confirm PIN*</label>
                             </div>
+                            <button class="btn btn-primary">Submit</button>
                           </form>
                         </div>
-                        <div class="col-md-12 mt-3 text-center">
-                          <button class="btn btn-primary">Submit</button>
-                        </div> -->
-                    </div>
-                  </div>
-                </div>
-
-                <div class="dematdetails" id="Nominee">
-                  <div class="row">
-                    <div class="col-md-12 col-xl-10">
-                      <aside>Nominee</aside>
-                      <small>Appoint nominees who are authorized to benefit from this account</small>
-                      <div class="row">
-                        <div class="col-md-12 text-center mt-2">
-                          <img class="d-block" src="assets/img/profile/add-nominee.svg"/>
-                          <button class="btn btn-primary">Add Nominee</button>
-                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="dematdetails" id="PowerAttorney">
-                  <aside>Power of Attorney (PoA)</aside>
-                  <div class="row">
-                    <div class="col-md-4 col-xl-4">
-                      <p>Approval via PIN</p>
-                    </div>
-                    <div class="col-md-8 col-xl-6">
-                      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
-                      <button class="btn btn-primary newpin">Get New PIN</button>
-                    </div>
-
-                    <div class="col-md-4 col-xl-4 mt-4">
-                      <p>Permanent Approval</p>
-                    </div>
-                    <div class="col-md-8 col-xl-6 mt-4">
-                      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
-                      <button class="btn btn-primary poa">Download PoA Form</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="dematdetails pb-5" id="AccountClosure">
-                  <aside>Account closure</aside>
-                  <div class="row">
-                    <div class="col-md-4 col-xl-4">
-                      <p>Close my account</p>
-                    </div>
-                    <div class="col-md-8 col-xl-6">
-                      <span>If you close the account you will not be able to trade with Nuvester.<br>
-                      To reopen your account you will have do the KYC process again. You will get a fresh demat account and wiull have to pay the account opening charges.</span>
-                      <button class="btn btn-primary">Close Account</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> 
+
+          <div class="dematdetails border1-padding15" id="Nominee">
+            <div class="row">
+              <div class="col-md-12 col-xl-12">
+                <aside>Nominee</aside>
+                <small>Appoint nominees who are authorized to benefit from this account</small>
+                <div class="row">
+                  <div class="col-md-12 text-center mt-2">
+                    <img class="d-block" src="http://img.tecxlabs.com/images/profile/add-nominee.svg"/>
+                    <button class="btn btn-primary">Add Nominee</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dematdetails border1-padding15" id="PowerAttorney">
+            <aside>Power of Attorney (PoA)</aside>
+            <div class="row">
+              <div class="col-md-4 col-xl-3">
+                <p>Approval via PIN</p>
+              </div>
+              <div class="col-md-8 col-xl-9">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <button class="btn btn-primary newpin">Proceed</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-xl-3 mt-4">
+                <p>Permanent Approval</p>
+              </div>
+              <div class="col-md-8 col-xl-9 mt-4">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <img src="images/info.svg" alt="image" /><small class="ml-1">Same form will be sent on your registered email id.</small>
+                <br/>
+                <button class="btn btn-primary poa">Download PoA Form</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dematdetails border1-padding15 pb-5" id="AccountClosure">
+            <aside>Account closure</aside>
+            <div class="row">
+              <div class="col-md-4 col-xl-3">
+                <p>Close my account</p>
+              </div>
+              <div class="col-md-8 col-xl-9">
+                <span>If you close the account you will not be able to trade with Nuvester.<br>
+                To reopen your account you will have do the KYC process again. You will get a fresh demat account and wiull have to pay the account opening charges.</span>
+                <br/>
+                <button class="btn btn-primary">Close Account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-1 col-lg-1 col-xl-1 text-right" id="external">
+          <a href="profile-account-full.html">
+            <img src="images/profile/fullscreen.svg" alt="image" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  <!-- container-scroller -->
 
   <!-- Custom js for this page-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

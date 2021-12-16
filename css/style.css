@@ -233,7 +233,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 #port-holding .holdingleft p {font-size: 16px;font-weight: 400;}
 
 .contentbox {color: #000000;background: #f2efff;padding: 18px;border: 1px solid #d2d0e1;height: auto;overflow: hidden;margin-bottom: 28px;}
-.plate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 40vh;overflow: auto;margin-bottom: 17px;}
+.plate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 40vh;overflow: hidden;margin-bottom: 17px;}
 .profile {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 79vh;overflow: auto;/*margin-bottom: 10px;*/}
 
 .equityplate {color: #000000;background: #ffffff;padding: 18px;border: 1px solid #d2d0e1;height: 79vh;overflow: hidden;/*margin-bottom: 10px;*/}
@@ -913,6 +913,11 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
 .shortcoverp {display: inline-flex;}
 .shortcoverp span:nth-child(1){width: 60px;display: inline-block;font-weight: 600;text-align: right;}
 .shortcoverp span:nth-child(2){width: 120px;display: inline-block;font-size: 12px;font-weight: 500;text-align: left;margin-left: 8px;}
+.swiper-slide .arrow{display: flex;}
+#green-arrow{margin: auto;}
+#red-arrow{margin: auto;}
+#green-arrow svg{fill: #00c707;transform: rotate(180deg);}
+#red-arrow svg{fill: #ff0606;}
 /*option chain*/
 
 /*mobile responsive*/

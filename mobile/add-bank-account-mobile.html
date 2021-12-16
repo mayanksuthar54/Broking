@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nuvester Admin</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="shortcut icon" href="images/logo.svg" />
+
+</head>
+<body>
+
+  <div class="mobile-band">
+    <div class="d-inline-block bandleft">
+      <a href="">
+        <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.853 3.64735C12.946 3.74293 12.998 3.87101 12.998 4.00435C12.998 4.13769 12.946 4.26577 12.853 4.36135L9.40299 7.86135C9.30923 7.95508 9.18208 8.00774 9.04949 8.00774C8.91691 8.00774 8.78976 7.95508 8.69599 7.86135C8.60207 7.76626 8.5494 7.638 8.5494 7.50435C8.5494 7.3707 8.60207 7.24243 8.69599 7.14735L11.298 4.50935L1.49799 4.50935C1.36406 4.50935 1.23561 4.45614 1.14091 4.36143C1.0462 4.26673 0.992994 4.13828 0.992994 4.00435C0.992994 3.87041 1.0462 3.74196 1.14091 3.64726C1.23561 3.55255 1.36406 3.49935 1.49799 3.49935L11.298 3.49935L8.69799 0.862346C8.60407 0.767263 8.5514 0.638997 8.5514 0.505346C8.5514 0.371696 8.60407 0.243429 8.69799 0.148346C8.79176 0.0546108 8.91891 0.00195313 9.05149 0.00195313C9.18408 0.00195313 9.31123 0.0546108 9.40499 0.148346L12.853 3.64735Z" fill="#121212"/>
+        </svg>
+        <h2>Profile</h2>
+      </a>
+    </div>
+  </div>
+
+  <div class="profile fadeIn-element">
+    <div class="container-fluid">
+      <div class="row slideInDown-element ">
+
+        <div class="col-md-12 col-xl-3">
+          <!-- hamburger -->
+          <nav class="navbar navbar-expand-xl navbar-light mobilemenu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#"><img src="http://img.tecxlabs.com/images/logo.svg" alt="logo"/></a> -->
+            <div class="collapse navbar-collapse pt-4" id="navbarCollapse">
+              <div class="personalbox">
+                <img src="images/profile/personal.svg">
+                <div class="personal-content">
+                  <a href="profile-personal.html"><aside>Personal</aside></a>
+                  <a href="profile-personal.html#BasicInfo"><p>Basic information</p></a>
+                  <a href="profile-personal.html#ContactInfo"><p>Contact information</p></a>
+                  <a href="profile-personal.html#DematDetails"><p>Demat Details</p></a>
+                </div>
+              </div>
+              <div class="accountbox">
+                <img src="images/profile/account-2.svg">
+                <div class="personal-content">
+                  <a href="profile-account.html" class="active"><aside>Account</aside></a>
+                  <a href="profile-account.html#Segments"><p>Segments</p></a>
+                  <a href="profile-account.html#TradingPlan"><p>Trading Plan</p></a>
+                  <a href="profile-account.html#BankDetails"><p>Bank Details</p></a>
+                  <a href="profile-account.html#ChangePassword"><p>Change Password & PIN</p></a>
+                  <a href="profile-account.html#Nominee"><p>Nominee</p></a>
+                  <a href="profile-account.html#PowerAttorney"><p>Power of Attorney (PoA)</p></a>
+                  <a href="profile-account.html#AccountClosure"><p>Account Closure</p></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- hamburger -->
+        </div>
+
+        <div class="col-md-12 col-lg-9 col-xl-6" id="rightbox">
+          <div class="innertopheading">
+            <a href="profile-account.html"><img src="images/arrow-right.svg"></a>
+            <h3>Add Bank Account</h3>
+          </div>
+          <div class="contactinfo border1-padding15" id="ContactInfo">
+            <aside>Account Type</aside>
+            <div class="row">
+              <div class="col-md-12" id="formheight52">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="form2">
+                      <div class="banktypebtn">
+                        <input type="radio" id="savings" name="banktype" value="savings">
+                        <label for="savings">Savings</label>
+                      </div>
+                    </div>
+                    <div class="form2 mb-4">
+                      <input type="number" id="bankaccountnum" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
+                      <label for="bankaccountnum" class="form__label">Bank Account Number</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="form2 mb-3">
+                      <input type="text" id="enterifsccode" class="form__input error-field" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
+                      <label for="enterifsccode" class="form__label">IFSC Code</label>
+                    </div>
+                    <div class="float-left mb-3">
+                      <span class="error-text">IFSC Not Found !</span>
+                    </div>
+                    <div class="float-right mb-3">
+                      <span><a href="#" data-toggle="modal" data-target="#ifsccodefind"><img src="https://img.tecxlabs.com/images/search.svg" alt="image" /> Find your IFSC Code</a></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex">
+                    <div class="float-right activeinfoicon">
+                      <img src="images/error.svg" alt="image" width="20" class="mr-2" />
+                      <img src="https://img.tecxlabs.com/images/info.svg" alt="image" width="23" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-9">
+                    <button class="btn btn-primary w-100 disabled" data-toggle="modal" data-target="#confirmbankdetails">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3 col-xl-3 text-right" id="external">
+          <span>Step 1 of 3</span>
+          <img src="images/profile/fullscreen.svg" alt="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom js for this page-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+  <!-- End custom js for this page-->
+
+  <script> 
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script> 
+</body>
+</html>
+
+
+<!-- Modal -->
+<div class="modal fade" id="confirmbankdetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Confirm Bank Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="http://img.tecxlabs.com/images/close.svg" width="15">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+          <p class="mb-3">IFSC Code: ICICI1234</p>
+          <p class="mb-3">Bank Name: ICICI Bank</p>
+          <p class="mb-3">Address: Lorem Ipsum is simply dummytext of the printing and typesetting dummytext of the printing and typesetting</p>
+          <button type="submit" class="btn btn-primary w-100 submitbtn">Confirm</button>
+          <button type="submit" class="btn btn-primary w-100 submitbtn-no">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ifsccodefind" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Find your IFSC Code</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="http://img.tecxlabs.com/images/close.svg" width="15">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form2">
+            <input type="text" id="ifsccode" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required>
+            <label for="ifsccode" class="form__label">Enter IFSC Code</label>
+          </div>
+        </form>
+        <p class="text-center">Or</p>
+        <form>
+          <div class="form2">
+            <input type="text" id="bankname" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required>
+            <label for="bankname" class="form__label">Enter Bank Name</label>
+          </div>
+        </form>
+        <form>
+          <div class="form">
+            <input type="text" id="branchlocation" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required>
+            <label for="branchlocation" class="form__label">Enter Branch Location</label>
+          </div>
+        </form>
+        <div class="mt-3">
+          <button type="submit" class="btn btn-primary w-100">Search</button>
+        </div>
+
+        <div class="findifscsearch">
+          <p>Search Results</p>
+          <div class="findifscsearchtable">
+            <div class="sr-list">
+              <p>ICICI Lower Parel - W</p>
+              <p>Address: Lorem Ipsum is simply dummy textof the printing and typesetting industry.</p>
+              <p>IFSC Code: ICICI1234</p>
+            </div>
+            <div class="sr-list">
+              <p>ICICI Lower Parel - W</p>
+              <p>Address: Lorem Ipsum is simply dummy textof the printing and typesetting industry.</p>
+              <p>IFSC Code: ICICI1234</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
