@@ -10,6 +10,7 @@ h6 {font-size: 14px;font-weight: 600;}
 a {color: #6a4eee;text-decoration: none;}
 a:hover {color: #333;text-decoration: none;}
 .border-bottom {border-bottom: 1px solid #d2d0e1 !important;}
+.border-top {border-top: 1px solid #d2d0e1 !important;}
 ::-webkit-scrollbar {width: 4px;height: 4px;}
 /*::-webkit-scrollbar-track {background-color: #efefef}*/
 ::-webkit-scrollbar-thumb {background-color: rgb(99 68 242 / 50%);border-radius: 20px;}
@@ -36,8 +37,7 @@ a.navbar-brand span {color: #6a4eee;margin-left: 8px;vertical-align: middle;font
 .d-ipad{display: none;}
 .logo span {color: #6a4eee;margin-left: 8px;vertical-align: middle;font-weight: 700;font-size: 20px;}
 button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
-.btn-primary {background-color: #6a4eee;border-radius: 6px;border: none;color: #ffffff;margin-right: 3px;border: 1px solid #6a4eee;height: 60px;font-size: 16px;font-weight: 700;text-transform: unset;line-height: 0;
-}
+.btn-primary {background-color: #6a4eee;border-radius: 6px;border: none;color: #ffffff;margin-right: 3px;border: 1px solid #6a4eee;height: 60px;font-size: 16px;font-weight: 700;text-transform: unset;line-height: 0;}
 .btn-primary:hover {color: #6a4eee;background-color: transparent;border-radius: 6px;border-color: #6a4eee;}
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -332,9 +332,10 @@ tr:hover div.watchlistbox {display: block;}
 #ultabledata .w-data div.watchlistbox {display: none;position: absolute;right: 0;top: 20px;padding-right: 18px;width: max-content}
 #ultabledata .w-data{padding: 4px 12px 4px 25px;}
 #ultabledata .w-data:hover{background: #efefef;}
-#ultabledata .collapse {border-top: 1px solid #bbbbbb;border-bottom: 1px solid #bbbbbb;}
-#ultabledata .collapse #watchlistinner {/*width: 49%;display: inline-block;*/margin: 4px 12px 4px 25px;}
-#ultabledata .collapse #watchlistinner .table-cell {margin: 4px 12px 4px 25px;}
+#ultabledata #watchlistinner .table-cell {margin: 4px 0px 4px 25px;min-width: 65px;}
+#ultabledata #collapseOne #watchlistinner {margin: 4px 0px 4px 25px;margin-bottom: 1rem;}
+#ultabledata #collapseOne #watchlistinner .depth-row p{font-size: 12px;color: #A5A7A4;margin-bottom: 4px;}
+#ultabledata #collapseOne #watchlistinner .depth-row span{font-size: 12px;color: #121212;font-weight: 600;}
 /*ul Wtable*/
 
 #SChartModal #watchlistinner2 tr td:nth-child(1) {color: #9a9a9a;}
@@ -884,7 +885,7 @@ table#OptionChain div.watchlistbox .wbuy {background-color: #1964e4;color: #ffff
 table#OptionChain div.watchlistbox .wsell {background-color: #f31813;font-size: 12px;}
 table#OptionChain div.watchlistbox .wsell:hover {color: #ffffff;}
 table#OptionChain div.watchlistbox .chart {background-color: #ffffff;border:1px solid #A5A7A4; }
-table#OptionChain div.watchlistbox .add {background-color: #ffffff;border:1px solid #A5A7A4;color: #121212;font-weight: 300;font-size: 20px;}
+table#OptionChain div.watchlistbox .add {background-color: #ffffff;border:1px solid #A5A7A4;color: #121212;font-weight: 300;font-size: 21px;}
 table#OptionChain .watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 50%;width: 25px;height: 25px;font-weight: 500;line-height: 0.5;}
 
 table#OptionChain2{border-collapse: separate;border-spacing: 0;}
@@ -1126,6 +1127,7 @@ svg:hover #tw { animation: tw .7s; }
   .niftymain {margin: 6px 0;}
   .b-listing{padding: 0 10px 0 0;}
   .b-listing #mainwatchlist {margin: 8px 0 8px 0;height: 63vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #ultabledata {margin: 8px 0 8px 0;height: 63vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .b-listing #mainwatchlist tr span {max-width: 70%;}
   .b-listing #mainwatchlist tr img {width: 35px;height: 35px;margin-right: 6px;}
   .b-listing #mainwatchlist tr td {padding: 10px 7px 5px 7px;white-space: unset;}
@@ -1193,7 +1195,7 @@ svg:hover #tw { animation: tw .7s; }
   h5 {font-size: 12px;font-weight: 600;text-transform: uppercase;}
   h6 {font-size: 11px;font-weight: 600;}
   .navbar-expand-xl .navbar-collapse{display: block!important;}
-  #mainbox {padding: 0 5px;}
+  #mainbox {padding: 0px;}
   .plate {height: 47vh;padding: 15px;}
   .plate h1{font-size: 26px;}
   .plate span{font-size: 16px;}
@@ -1203,6 +1205,7 @@ svg:hover #tw { animation: tw .7s; }
   .niftymain {margin: 6px 0;}
   .b-listing{padding: 0 10px 0 0;}
   .b-listing #mainwatchlist {margin: 8px 0 8px 0;height: 63vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #ultabledata {margin: 8px 0 8px 0;height: 63vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .recentsearch{margin: 8px 0 8px 0;height: 63vh;top: 61;}
   .b-listing #mainwatchlist tr span {max-width: 70%;}
   .b-listing #mainwatchlist tr img {width: 35px;height: 35px;margin-right: 6px;}
@@ -1298,6 +1301,9 @@ svg:hover #tw { animation: tw .7s; }
   #ultabledata .w-list .companyname{width: 64%;}
   #ultabledata .companyname p{font-size: 14px;}
   .marginused span{font-size: 16px!important;}
+  #ultabledata #collapseOne #watchlistinner:nth-child(1){margin: 4px 0px 4px 10px;}
+  #ultabledata #collapseOne #watchlistinner:nth-child(2){margin: 4px 0px 4px 0px;}
+  #ultabledata #watchlistinner .table-cell {margin: 4px 0px 4px 10px;min-width: 48px;}
 }
 
 @media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
@@ -1331,6 +1337,7 @@ svg:hover #tw { animation: tw .7s; }
   h6 {font-size: 11px;}
   .navbar-expand-xl .navbar-collapse{display: block!important;}
   .b-listing #mainwatchlist {height: 66vh;display: block;overflow: hidden;}
+  .b-listing #ultabledata {height: 66vh;display: block;overflow: hidden;}
   .plate-2{height: 96vh;}
   .footer-bottom h6{margin: 12px 4px;}
   .footer-bottom .footer-logo .name-logo img {width: 20px;}
@@ -1345,6 +1352,7 @@ svg:hover #tw { animation: tw .7s; }
   .equityplate span {font-size: 20px;font-weight: 600;}
   .portfolioplate {padding: 30px;}
   .b-listing #mainwatchlist {height: 74vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #ultabledata {height: 74vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 10px 7px 5px 7px;white-space: nowrap;}
   .b-listing #watchlistinner tr th {padding: 6px 6px;}
   .b-listing #watchlistinner tr td {width: 100%;padding: 3px 6px;font-size: 14px;}
@@ -1392,6 +1400,7 @@ svg:hover #tw { animation: tw .7s; }
   .plate-2 #watchlistinner-market.marketlive2{padding: 0px 8px 0px 8px;}
   .plate-2 #watchlistinner-market{width: 49%;}
   .b-listing #mainwatchlist {height: 68vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #ultabledata {height: 68vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .b-listing #mainwatchlist tr td {width: 100%;padding: 10px 30px;}
   .b-listing #mainwatchlist tr span {font-size: 16px;}
   .pagenum {padding: 0px 30px;}
@@ -1427,6 +1436,7 @@ svg:hover #tw { animation: tw .7s; }
   .plate {height: 50vh;padding: 30px;}
   .plate-2 {position: fixed;height: 96vh;}
   .b-listing #mainwatchlist {margin: 10px 0 10px 0;height: 69vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #ultabledata {margin: 10px 0 10px 0;height: 69vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .b-listing #mainwatchlist tr td {width: 100%;padding: 10px 25px;}
   .b-listing #mainwatchlist tr span {font-size: 16px;}
   #search {margin: 0px 25px;}
@@ -1469,6 +1479,7 @@ svg:hover #tw { animation: tw .7s; }
   .equityplate span {font-size: 20px;font-weight: 600;}
   .portfolioplate {padding: 30px;}
   .b-listing #mainwatchlist {height: 74vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #ultabledata {height: 74vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 8px 18px 8px 30px;}
   .b-listing #watchlistinner tr th {padding: 6px 6px;}
   .b-listing #watchlistinner tr td {width: 100%;padding: 3px 6px;font-size: 14px;}
@@ -1513,6 +1524,7 @@ svg:hover #tw { animation: tw .7s; }
   .plate {height: 50vh;padding: 30px;}
   .plate-2 {position: fixed;height: 96vh;}
   .b-listing #mainwatchlist {margin: 10px 0 10px 0;height: 69vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #ultabledata {margin: 10px 0 10px 0;height: 69vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .b-listing #mainwatchlist tr td {width: 100%;padding: 10px 25px;}
   .b-listing #mainwatchlist tr span {font-size: 16px;}
   #search {margin: 0px 25px;}
@@ -1552,6 +1564,7 @@ svg:hover #tw { animation: tw .7s; }
   .equityplate span {font-size: 20px;font-weight: 600;}
   .portfolioplate {padding: 30px;}
   .b-listing #mainwatchlist {height: 74vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
+  .b-listing #ultabledata {height: 74vh;overflow: auto; /*padding:0 12px 0 0;*/display: block;}
   .b-listing #mainwatchlist tr td {/*width: 60%;*/padding: 8px 13px 8px 25px;white-space: nowrap;}
   .b-listing #watchlistinner tr th {padding: 6px 6px;}
   .b-listing #watchlistinner tr td {width: 100%;padding: 3px 6px;font-size: 14px;}
