@@ -44,24 +44,6 @@
                   <div class="d-inline-block float-right"><p class="mpercent pgreen">+122.03 (+1.04%)</p></div>
                 </div>
               </div>
-
-
-              <!-- <div id="watchlistinner-market" class="table marketlive">
-                <div class="table-cell"><h4 class="nname">Nifty Bank</h4></div>
-                <div class="table-cell"><h4 class="pgreen">10121.40</h4></div>
-                <div class="table-row nsebse" href="#">
-                  <div class="table-cell"><h6>NSE</h6></div>
-                  <div class="table-cell"><h6 class="mpercent">22.03 (+1.04%)</h6></div>
-                </div>
-              </div>
-              <div id="watchlistinner-market" class="table marketlive2">
-                <div class="table-cell"><h4 class="nname">Nifty bank</h4></div>
-                <div class="table-cell"><h4 class="pred">32998.65</h4></div>
-                <div class="table-row nsebse" href="#">
-                  <div class="table-cell"><h6>NSE INDEX</h6></div>
-                  <div class="table-cell"><h6 class="mpercent">22.03 (+1.04%)</h6></div>
-                </div>
-              </div> -->
             </div>
             <div class="b-listing">
               <div class="input-group slideInDown-element" id="search">
@@ -289,7 +271,7 @@
               <ul id="ultabledata">
                 <div class="w-list">
                   <div class="w-data"> 
-                    <div class="d-inline-block" style="width:68%;">
+                    <div class="d-inline-block leftblock">
                       <div class="companylogo">
                         <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg" width="40">
                       </div>
@@ -298,7 +280,7 @@
                         <span>nse</span>
                       </div>
                     </div>
-                    <div class="price-box d-inline-block" style="width:30%;">
+                    <div class="price-box d-inline-block rightblock">
                       <div class="watchlistbox">
                         <button type="button" class="btn btn-primary wbuy" data-toggle="tooltip" data-placement="top" title="Buy" onclick="Alert.render('You look very pretty today.')">B</button>
                         <button type="button" class="btn btn-primary wsell" data-toggle="tooltip" data-placement="top" title="Sell">S</button>
@@ -325,9 +307,9 @@
                   </div>
                   <div>
                     <div id="collapseOne" class="collapse border-bottom border-top" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="row">
-                        <div class="col-md-6 pr-0">
-                          <div id="watchlistinner">
+                      <div class="row m-0">
+                        <div class="col-md-6 col-xl-6 pr-0">
+                          <div id="watchlistinnertab">
                             <div class="table-cell c-blue"><h6>Bid</h6></div>
                             <div class="table-cell c-blue text-center"><h6>Orders</h6></div>
                             <div class="table-cell c-blue text-center"><h6>Qty</h6></div>
@@ -358,8 +340,8 @@
                             </a>
                           </div>
                         </div>
-                        <div class="col-md-6 pl-0">
-                          <div id="watchlistinner">
+                        <div class="col-md-6 col-xl-6 pl-0">
+                          <div id="watchlistinnertab2">
                             <div class="table-cell c-red"><h6>Offer</h6></div>
                             <div class="table-cell c-red text-center"><h6>Orders</h6></div>
                             <div class="table-cell c-red text-center"><h6>Qty</h6></div>
@@ -393,9 +375,9 @@
                       </div>
                     </div>
                     <div id="collapseOne" class="collapse border-bottom depth2" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="row">
+                      <div class="row m-0">
                         <div class="col-md-6 pr-0">
-                          <div id="watchlistinner">
+                          <div id="watchlistinnertab">
                             <div class="depth-row">
                               <div class="d-inline-block"><p>Open</p></div>
                               <div class="d-inline-block float-right"><span>73270.00</span></div>
@@ -419,7 +401,7 @@
                           </div>
                         </div>
                         <div class="col-md-6 pl-0">
-                          <div id="watchlistinner">
+                          <div id="watchlistinnertab2">
                             <div class="depth-row">
                               <div class="d-inline-block"><p>High</p></div>
                               <div class="d-inline-block float-right"><span>73380.00</span></div>
@@ -449,7 +431,167 @@
 
                 <div class="w-list">
                   <div class="w-data"> 
-                    <div class="d-inline-block" style="width:68%;">
+                    <div class="d-inline-block leftblock">
+                      <div class="companylogo">
+                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg" width="40">
+                      </div>
+                      <div class="companyname">
+                        <p>BANKNIFTY18NOV21C401001111111</p>
+                        <span>nse</span>
+                      </div>
+                    </div>
+                    <div class="price-box d-inline-block rightblock">
+                      <div class="watchlistbox">
+                        <button type="button" class="btn btn-primary wbuy" data-toggle="tooltip" data-placement="top" title="Buy" onclick="Alert.render('You look very pretty today.')">B</button>
+                        <button type="button" class="btn btn-primary wsell" data-toggle="tooltip" data-placement="top" title="Sell">S</button>
+                          <div class="d-inline-block" id="accordionExample">
+                            <div id="headingOne">
+                              <button class="btn btn-primary wmarketdepth" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                            </div>
+                          </div>
+                        <button type="button" class="btn btn-primary woption-chain" data-toggle="tooltip" data-placement="top" title="Option chain"></button>
+                        <button type="button" class="btn btn-primary wmore dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/pin.svg"> Pin</a>
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/create-gtt.svg"> Create GTT</a>
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/chart.svg"> Chart</a>
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/delete.svg"> delete</a>
+                          <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Fundamentals</a>
+                          <a class="dropdown-item" href="#"><img src="" style="width: 15px;height: 15px;background: rgba(106, 78, 238, 0.2);border-radius: 3px;"> Technicals</a>
+                          <a class="dropdown-item" href="#"><img src="http://img.tecxlabs.com/images/watchlist/alert.svg"> Set Alerts</a>
+                        </div>
+                      </div>
+                      <div class="lprice text-red">1503.45</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="collapseOne" class="collapse border-bottom border-top" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="row m-0">
+                        <div class="col-md-6 pr-0">
+                          <div id="watchlistinnertab">
+                            <div class="table-cell c-blue"><h6>Bid</h6></div>
+                            <div class="table-cell c-blue text-center"><h6>Orders</h6></div>
+                            <div class="table-cell c-blue text-center"><h6>Qty</h6></div>
+                            <a class="table-row c-blue" href="#">
+                              <div class="table-cell">77128.10</div>
+                              <div class="table-cell">1234</div>
+                              <div class="table-cell">100000</div>
+                            </a>
+                            <a class="table-row c-blue" href="#">
+                              <div class="table-cell">77128.10</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                            </a>
+                            <a class="table-row c-blue" href="#">
+                              <div class="table-cell">77128.10</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                            </a>
+                            <a class="table-row c-blue" href="#">
+                              <div class="table-cell">77128.10</div>
+                              <div class="table-cell">0</div>
+                              <div class="table-cell">0</div>
+                            </a>
+                            <a class="table-row c-blue" href="#">
+                              <div class="table-cell">Total</div>
+                              <div class="table-cell"></div>
+                              <div class="table-cell">0</div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-md-6 pl-0">
+                          <div id="watchlistinnertab2">
+                            <div class="table-cell c-red"><h6>Offer</h6></div>
+                            <div class="table-cell c-red text-center"><h6>Orders</h6></div>
+                            <div class="table-cell c-red text-center"><h6>Qty</h6></div>
+                            <a class="table-row c-red" href="#">
+                                <div class="table-cell">77128.10</div>
+                                <div class="table-cell">1234</div>
+                                <div class="table-cell">100000</div>
+                            </a>
+                            <a class="table-row c-red" href="#">
+                                <div class="table-cell">77128.10</div>
+                                <div class="table-cell">0</div>
+                                <div class="table-cell">0</div>
+                            </a>
+                            <a class="table-row c-red" href="#">
+                                <div class="table-cell">77128.10</div>
+                                <div class="table-cell">0</div>
+                                <div class="table-cell">0</div>
+                            </a>
+                            <a class="table-row c-red" href="#">
+                                <div class="table-cell">77128.10</div>
+                                <div class="table-cell">0</div>
+                                <div class="table-cell">0</div>
+                            </a>
+                            <a class="table-row c-red" href="#">
+                                <div class="table-cell">Total</div>
+                                <div class="table-cell"></div>
+                                <div class="table-cell">0</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="collapseOne" class="collapse border-bottom depth2" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="row m-0">
+                        <div class="col-md-6 pr-0">
+                          <div id="watchlistinnertab">
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>Open</p></div>
+                              <div class="d-inline-block float-right"><span>73270.00</span></div>
+                            </div>
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>Low</p></div>
+                              <div class="d-inline-block float-right"><span>72100.00</span></div>
+                            </div>
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>Volume</p></div>
+                              <div class="d-inline-block float-right"><span>5280</span></div>
+                            </div>
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>LTQ</p></div>
+                              <div class="d-inline-block float-right"><span>1</span></div>
+                            </div>
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>Lower Circuit</p></div>
+                              <div class="d-inline-block float-right"><span>65975.85</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 pl-0">
+                          <div id="watchlistinnertab2">
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>High</p></div>
+                              <div class="d-inline-block float-right"><span>73380.00</span></div>
+                            </div>
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>Prev. close</p></div>
+                              <div class="d-inline-block float-right"><span>73306.45</span></div>
+                            </div>
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>Avg. price</p></div>
+                              <div class="d-inline-block float-right"><span>73306.45</span></div>
+                            </div>
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>LTT</p></div>
+                              <div class="d-inline-block float-right"><span>2021/08/30 15:29:57</span></div>
+                            </div>
+                            <div class="depth-row">
+                              <div class="d-inline-block"><p>Upper Circuit</p></div>
+                              <div class="d-inline-block float-right"><span>80637.05</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-list">
+                  <div class="w-data"> 
+                    <div class="d-inline-block leftblock">
                       <div class="companylogo">
                         <span>H</span>
                       </div>
@@ -458,110 +600,127 @@
                         <span>nse</span>
                       </div>
                     </div>
-                    <div class="price-box d-inline-block" style="width:30%;">
+                    <div class="price-box d-inline-block rightblock">
                       <div class="lprice text-red">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </div>
                   </div>
                 </div>
                 <div class="w-list">
-                  <div class="w-data">
-                    <div class="d-inline-block" style="width:68%;">
+                  <div class="w-data"> 
+                    <div class="d-inline-block leftblock">
                       <div class="companylogo">
-                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg">
+                        <span>H</span>
                       </div>
                       <div class="companyname">
                         <p>HINDUNILVR</p>
                         <span>nse</span>
                       </div>
                     </div>
-                    <div class="price-box d-inline-block" style="width:30%;">
-                      <div class="lprice text-red">1503.45</div>
+                    <div class="price-box d-inline-block rightblock">
+                      <div class="lprice text-red">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </div>
                   </div>
                 </div>
                 <div class="w-list">
-                  <div class="w-data">
-                    <div class="d-inline-block" style="width:68%;">
+                  <div class="w-data"> 
+                    <div class="d-inline-block leftblock">
                       <div class="companylogo">
-                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg">
+                        <span>H</span>
                       </div>
                       <div class="companyname">
                         <p>HINDUNILVR</p>
                         <span>nse</span>
                       </div>
                     </div>
-                    <div class="price-box d-inline-block" style="width:30%;">
-                      <div class="lprice text-red">1503.45</div>
+                    <div class="price-box d-inline-block rightblock">
+                      <div class="lprice text-red">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </div>
                   </div>
                 </div>
                 <div class="w-list">
-                  <div class="w-data">
-                    <div class="d-inline-block" style="width:68%;">
+                  <div class="w-data"> 
+                    <div class="d-inline-block leftblock">
                       <div class="companylogo">
-                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg">
+                        <span>H</span>
                       </div>
                       <div class="companyname">
                         <p>HINDUNILVR</p>
                         <span>nse</span>
                       </div>
                     </div>
-                    <div class="price-box d-inline-block" style="width:30%;">
-                      <div class="lprice text-red">1503.45</div>
+                    <div class="price-box d-inline-block rightblock">
+                      <div class="lprice text-red">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </div>
                   </div>
                 </div>
                 <div class="w-list">
-                  <div class="w-data">
-                    <div class="d-inline-block" style="width:68%;">
+                  <div class="w-data"> 
+                    <div class="d-inline-block leftblock">
                       <div class="companylogo">
-                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg">
+                        <span>H</span>
                       </div>
                       <div class="companyname">
                         <p>HINDUNILVR</p>
                         <span>nse</span>
                       </div>
                     </div>
-                    <div class="price-box d-inline-block" style="width:30%;">
-                      <div class="lprice text-red">1503.45</div>
+                    <div class="price-box d-inline-block rightblock">
+                      <div class="lprice text-red">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </div>
                   </div>
                 </div>
                 <div class="w-list">
-                  <div class="w-data">
-                    <div class="d-inline-block" style="width:68%;">
+                  <div class="w-data"> 
+                    <div class="d-inline-block leftblock">
                       <div class="companylogo">
-                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg">
+                        <span>H</span>
                       </div>
                       <div class="companyname">
                         <p>HINDUNILVR</p>
                         <span>nse</span>
                       </div>
                     </div>
-                    <div class="price-box d-inline-block" style="width:30%;">
-                      <div class="lprice text-red">1503.45</div>
+                    <div class="price-box d-inline-block rightblock">
+                      <div class="lprice text-red">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </div>
                   </div>
                 </div>
                 <div class="w-list">
-                  <div class="w-data">
-                    <div class="d-inline-block" style="width:68%;">
+                  <div class="w-data"> 
+                    <div class="d-inline-block leftblock">
                       <div class="companylogo">
-                        <img src="http://img.tecxlabs.com/images/hdfc-logo.jpg">
+                        <span>H</span>
                       </div>
                       <div class="companyname">
                         <p>HINDUNILVR</p>
                         <span>nse</span>
                       </div>
                     </div>
-                    <div class="price-box d-inline-block" style="width:30%;">
-                      <div class="lprice text-red">1503.45</div>
+                    <div class="price-box d-inline-block rightblock">
+                      <div class="lprice text-red">74459.05</div>
+                      <p>+2.03 (+1.04%)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-list">
+                  <div class="w-data"> 
+                    <div class="d-inline-block leftblock">
+                      <div class="companylogo">
+                        <span>H</span>
+                      </div>
+                      <div class="companyname">
+                        <p>HINDUNILVR</p>
+                        <span>nse</span>
+                      </div>
+                    </div>
+                    <div class="price-box d-inline-block rightblock">
+                      <div class="lprice text-red">74459.05</div>
                       <p>+2.03 (+1.04%)</p>
                     </div>
                   </div>
