@@ -916,6 +916,25 @@
       <div class="modal-body">
         <form>
           <div class="form2">
+            <input type="text" id="ifsccode" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" >
+            <label for="ifsccode" class="form__label">Enter IFSC Code</label>
+          </div>
+          <p class="text-center">Or</p>
+          <div class="form2">
+            <input type="text" id="bankname" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required>
+            <label for="bankname" class="form__label">Enter Bank Name</label>
+          </div>
+          <div class="form2">
+            <input type="text" id="branchlocation" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required>
+            <label for="branchlocation" class="form__label">Enter Branch Location</label>
+          </div>
+          <div class="mt-3">
+            <button type="submit" class="btn btn-primary w-100">Search</button>
+          </div>
+        </form>
+
+        <!-- <form>
+          <div class="form2">
             <input type="text" id="ifsccode" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required>
             <label for="ifsccode" class="form__label">Enter IFSC Code</label>
           </div>
@@ -935,7 +954,7 @@
         </form>
         <div class="mt-3">
           <button type="submit" class="btn btn-primary w-100">Search</button>
-        </div>
+        </div> -->
 
         <div class="findifscsearch">
           <p>Search Results</p>

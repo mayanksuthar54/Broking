@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nuvester Admin</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="shortcut icon" href="images/logo.svg" />
+
+</head>
+<body>
+
+  <div class="mobile-band">
+    <div class="d-inline-block bandleft">
+      <a href="">
+        <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.853 3.64735C12.946 3.74293 12.998 3.87101 12.998 4.00435C12.998 4.13769 12.946 4.26577 12.853 4.36135L9.40299 7.86135C9.30923 7.95508 9.18208 8.00774 9.04949 8.00774C8.91691 8.00774 8.78976 7.95508 8.69599 7.86135C8.60207 7.76626 8.5494 7.638 8.5494 7.50435C8.5494 7.3707 8.60207 7.24243 8.69599 7.14735L11.298 4.50935L1.49799 4.50935C1.36406 4.50935 1.23561 4.45614 1.14091 4.36143C1.0462 4.26673 0.992994 4.13828 0.992994 4.00435C0.992994 3.87041 1.0462 3.74196 1.14091 3.64726C1.23561 3.55255 1.36406 3.49935 1.49799 3.49935L11.298 3.49935L8.69799 0.862346C8.60407 0.767263 8.5514 0.638997 8.5514 0.505346C8.5514 0.371696 8.60407 0.243429 8.69799 0.148346C8.79176 0.0546108 8.91891 0.00195313 9.05149 0.00195313C9.18408 0.00195313 9.31123 0.0546108 9.40499 0.148346L12.853 3.64735Z" fill="#121212"/>
+        </svg>
+        <h2>Profile</h2>
+      </a>
+    </div>
+  </div>
+
+  <div class="profile fadeIn-element pt-4">
+    <div class="container-fluid">
+      <div class="row slideInDown-element ">
+
+        <div class="col-md-12 col-xl-3">
+          <!-- hamburger -->
+          <nav class="navbar navbar-expand-xl navbar-light mobilemenu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#"><img src="http://img.tecxlabs.com/images/logo.svg" alt="logo"/></a> -->
+            <div class="collapse navbar-collapse pt-4" id="navbarCollapse">
+              <div class="personalbox">
+                <img src="images/profile/personal.svg">
+                <div class="personal-content">
+                  <a href="profile-personal.html"><aside>Personal</aside></a>
+                  <a href="profile-personal.html#BasicInfo"><p>Basic information</p></a>
+                  <a href="profile-personal.html#ContactInfo"><p>Contact information</p></a>
+                  <a href="profile-personal.html#DematDetails"><p>Demat Details</p></a>
+                </div>
+              </div>
+              <div class="accountbox">
+                <img src="images/profile/account-2.svg">
+                <div class="personal-content">
+                  <a href="profile-account.html" class="active"><aside>Account</aside></a>
+                  <a href="profile-account.html#Segments"><p>Segments</p></a>
+                  <a href="profile-account.html#TradingPlan"><p>Trading Plan</p></a>
+                  <a href="profile-account.html#BankDetails"><p>Bank Details</p></a>
+                  <a href="profile-account.html#ChangePassword"><p>Change Password & PIN</p></a>
+                  <a href="profile-account.html#Nominee"><p>Nominee</p></a>
+                  <a href="profile-account.html#PowerAttorney"><p>Power of Attorney (PoA)</p></a>
+                  <a href="profile-account.html#AccountClosure"><p>Account Closure</p></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- hamburger -->
+        </div>
+
+        <div class="col-md-12 col-lg-9 col-xl-6" id="rightbox">
+          <div class="innertopheading">
+            <a href="profile-account.html"><img src="images/arrow-right.svg"></a>
+            <h3>Activating Segments</h3>
+          </div>
+          <div class="contactinfo border1-padding15" id="ContactInfo">
+            <aside>Income Proof</aside>
+            <div class="row">
+              <div class="col-md-12" id="formheight52">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="form2">
+                      <select class="select-text" required>
+                        <!-- <option value="" selected>Income Proof</option> -->
+                        <option value="bank" selected>Bank Statement</option>
+                        <option value="itr">ITR (Income Tax Return)</option>
+                        <option value="salary">Salary Slip</option>
+                        <option value="form16">Form 16</option>
+                        <option value="holding">Holding Statement</option>
+                      </select>
+                      <label class="select-label">Income Proof</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4 activeinfoicon">
+                    <img src="https://img.tecxlabs.com/images/info.svg" alt="image" width="23" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="bank data mb-3">
+                      <ul>
+                        <li>Bank statements must show transactions of the last 6 months</li>
+                        <li>Minimum closing balance of your bank statement must be Rs. 10,000</li>
+                        <li>Image shouldn’t be blurred</li>
+                        <li>Bank Logo/Stamp should be visible</li>
+                        <li>Name should be clearly visible</li>
+                        <li>IFSC should be visible on the bank statement</li>
+                      </ul>
+
+                      <!-- <div class="fileupload mb-3">
+                        <input type="file" id="real-file" hidden="hidden" />
+                        <button type="button" id="custom-button"><h2>+</h2></button>
+                        <span id="custom-text">No file chosen, yet.</span>
+                        <div class="text-left my-2">
+                          <img src="http://img.tecxlabs.com/images/eye-web.svg" alt="image">
+                          <img src="http://img.tecxlabs.com/images/watchlist/delete.svg" alt="image">
+                        </div>
+                      </div> -->
+                      <div id="preview-container">
+                        <button id="upload-dialog" class="">
+                          <h3>+</h3>
+                          <canvas id="pdf-preview" width="150"></canvas>
+                        </button>
+                        <div id="pdf-loader" class="d-none">Loading Preview ..</div>
+                        
+                        <input type="file" id="pdf-file" class="mb-3" name="pdf" accept="application/pdf" />
+                        <span id="pdf-name" class="d-none"></span>
+                        <button id="upload-button" class="d-none">Upload</button>
+                        <button id="cancel-pdf" class="d-none">Cancel</button>
+                      </div>
+
+                      <!-- <div class="fileupload">
+                        <form action="" method="POST">
+                          <input type="file" name="fileupload" id="Upload-file" accept=".pdf">
+                          <label for="Upload-file"></label>
+                          <embed class="d-block" src="" type="application/pdf" frameBorder="0" scrolling="auto" height="100%" width="100%"></embed>
+                        </form>
+                        <aside class="d-block">bank_statement.pdf</aside>
+                        <div class="text-center">
+                          <img src="http://img.tecxlabs.com/images/eye-web.svg" alt="image">
+                          <img src="http://img.tecxlabs.com/images/watchlist/delete.svg" alt="image">
+                        </div>
+                        <small class="my-2">Format: PDF</small>
+                      </div> -->
+                      <div class="form2 mb-3">
+                        <input type="number" id="filepassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required>
+                        <label for="filepassword" class="form__label">File Password</label>
+                      </div>
+                      <div class="mb-3">
+                        <span>*Require if income proof file is password protected</span>
+                      </div>
+                    </div>
+                    <div class="itr data mb-3">
+                      <ul>
+                        <li>Image shouldn't be blurred</li>
+                        <li>Name should be clearly visible</li>
+                        <li>Assessment must be of the most recent two years</li>
+                        <li>The ITR Acknowledgment number is required</li>
+                      </ul>
+                      <div class="fileupload">
+                        <form action="" method="POST">
+                          <input type="file" name="fileupload" id="Upload-file" />
+                          <label for="Upload-file"></label>
+                        </form>                                  
+                        <small class="mt-2">Format: PDF</small>
+                      </div>
+                      <div class="form2 mb-3">
+                        <input type="number" id="filepassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
+                        <label for="filepassword" class="form__label">File Password</label>
+                      </div>
+                      <div class="mb-3">
+                        <span>*Require if income proof file is password protected</span>
+                      </div>
+                    </div>
+                    <div class="salary data mb-3">
+                      <ul>
+                        <li>Image shouldn't be blurred</li>
+                        <li>Company Name/Stamp should be visible</li>
+                        <li>Name should be clearly visible</li>
+                        <li>Salary slips must be of the last 3 months</li>
+                      </ul>
+                      <div class="fileupload">
+                        <form action="" method="POST">
+                          <input type="file" name="fileupload" id="Upload-file" />
+                          <label for="Upload-file"></label>
+                        </form>
+                        <small class="mt-2">Format: PDF</small>
+                      </div>
+                      <div class="form2 mb-3">
+                        <input type="number" id="filepassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
+                        <label for="filepassword" class="form__label">File Password</label>
+                      </div>
+                      <div class="mb-3">
+                        <span>*Require if income proof file is password protected</span>
+                      </div>
+                    </div>
+                    <div class="form16 data mb-3">
+                      <ul>
+                        <li>Image shouldn't be blurred</li>
+                        <li>Name should be clearly visible</li>
+                        <li>Form 16 should be of the latest month</li>
+                      </ul>
+                      <div class="fileupload">
+                        <form action="" method="POST">
+                          <input type="file" name="fileupload" id="Upload-file" />
+                          <label for="Upload-file"></label>
+                        </form>
+                        <small class="mt-2">Format: PDF</small>
+                      </div>
+                      <div class="form2 mb-3">
+                        <input type="number" id="filepassword" class="form__input" autocomplete="off" placeholder=" " onfocus="onEnter(this)" value="" required />
+                        <label for="filepassword" class="form__label">File Password</label>
+                      </div>
+                      <div class="mb-3">
+                        <span>*Require if income proof file is password protected</span>
+                      </div>
+                    </div>
+                    <div class="holding data mb-3">
+                      <img src="https://img.tecxlabs.com/images/info.svg" width="18" alt="image" /> <small>Your holdings statement as on 2021-11-11 will be used as proof of income.</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    <button class="btn btn-primary w-100 disabled">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3 col-xl-3 text-right" id="external">
+          <span>Step 1 of 2</span>
+          <img src="images/profile/fullscreen.svg" alt="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom js for this page-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pdf.js"></script>
+  <script src="js/pdf.worker.js"></script>
+  <!-- End custom js for this page-->
+
+  <script> 
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script> 
+</body>
+</html>
+
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".data").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".data").hide();
+            }
+        });
+    }).change();
+});
+
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+
+</script>
+
+<script>
+
+var _PDF_DOC,
+  _CANVAS = document.querySelector('#pdf-preview'),
+  _OBJECT_URL;
+
+function showPDF(pdf_url) {
+  PDFJS.getDocument({ url: pdf_url }).then(function(pdf_doc) {
+    _PDF_DOC = pdf_doc;
+
+    // Show the first page
+    showPage(1);
+
+    // destroy previous object url
+      URL.revokeObjectURL(_OBJECT_URL);
+  }).catch(function(error) {
+    // trigger Cancel on error
+    document.querySelector("#cancel-pdf").click();
+    
+    // error reason
+    alert(error.message);
+  });;
+}
+
+function showPage(page_no) {
+  // fetch the page
+  _PDF_DOC.getPage(page_no).then(function(page) {
+    // set the scale of viewport
+    var scale_required = _CANVAS.width / page.getViewport(1).width;
+
+    // get viewport of the page at required scale
+    var viewport = page.getViewport(scale_required);
+
+    // set canvas height
+    _CANVAS.height = viewport.height;
+
+    var renderContext = {
+      canvasContext: _CANVAS.getContext('2d'),
+      viewport: viewport
+    };
+    
+    // render the page contents in the canvas
+    page.render(renderContext).then(function() {
+      document.querySelector("#pdf-preview").style.display = 'inline-block';
+      document.querySelector("#pdf-loader").style.display = 'none';
+    });
+  });
+}
+
+
+/* Show Select File dialog */
+document.querySelector("#upload-dialog").addEventListener('click', function() {
+    document.querySelector("#pdf-file").click();
+});
+
+/* Selected File has changed */
+document.querySelector("#pdf-file").addEventListener('change', function() {
+    // user selected file
+    var file = this.files[0];
+
+    // allowed MIME types
+    var mime_types = [ 'application/pdf' ];
+    
+    // Validate whether PDF
+    if(mime_types.indexOf(file.type) == -1) {
+        alert('Error : Incorrect file type');
+        return;
+    }
+
+    // validate file size
+    if(file.size > 10*1024*1024) {
+        alert('Error : Exceeded size 10MB');
+        return;
+    }
+
+    // validation is successful
+
+    // hide upload dialog button
+    document.querySelector("#upload-dialog").style.display = 'inline-block';
+    
+    // set name of the file
+    document.querySelector("#pdf-name").innerText = file.name;
+    document.querySelector("#pdf-name").style.display = 'inline-block';
+
+    // show cancel and upload buttons now
+    document.querySelector("#cancel-pdf").style.display = 'inline-block';
+    document.querySelector("#upload-button").style.display = 'inline-block';
+
+    // Show the PDF preview loader
+    document.querySelector("#pdf-loader").style.display = 'inline-block';
+
+    // object url of PDF 
+    _OBJECT_URL = URL.createObjectURL(file)
+
+    // send the object url of the pdf to the PDF preview function
+  showPDF(_OBJECT_URL);
+});
+
+/* Reset file input */
+document.querySelector("#cancel-pdf").addEventListener('click', function() {
+    // show upload dialog button
+    document.querySelector("#upload-dialog").style.display = 'inline-block';
+
+    // reset to no selection
+    document.querySelector("#pdf-file").value = '';
+
+    // hide elements that are not required
+    document.querySelector("#pdf-name").style.display = 'none';
+    document.querySelector("#pdf-preview").style.display = 'none';
+    document.querySelector("#pdf-loader").style.display = 'none';
+    document.querySelector("#cancel-pdf").style.display = 'none';
+    document.querySelector("#upload-button").style.display = 'none';
+});
+
+/* Upload file to server */
+document.querySelector("#upload-button").addEventListener('click', function() {
+    // AJAX request to server
+    alert('This will upload file to server');
+});
+
+</script>
+

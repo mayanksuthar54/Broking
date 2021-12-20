@@ -1,5 +1,5 @@
 body {font-size: 1rem;font-family: 'Inter', sans-serif;font-weight: initial;line-height: normal;-webkit-font-smoothing: antialiased;}
-p {font-size: 16px;margin-bottom: 0.4rem;line-height: 1.4rem;}
+p {font-size: 16px;margin-bottom: 0.4rem;line-height: 16px;}
 h1 {font-size: 40px;font-weight: 600;text-transform: uppercase;}
 h2 {font-size: 22px;font-weight: 600;}
 h3 {font-size: 18px;font-weight: 600;text-transform: uppercase;}
@@ -81,9 +81,9 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .marketlive .mpercent {font-weight: 400;text-align: end;}
 .niftymain {display: inline-flex;color: #000000;font-weight: 700;margin: 15px 0;}
 .sensexmain {display: inline-flex;color: #000000;margin-left: 30px;}
-.companylogo {width: 50px;height: 50px;border: 1px solid #8b72ff;border-radius: 35px;margin-right: 10px;overflow: hidden;display: inline-block;position: relative;}
+.companylogo {width: 50px;height: 50px;border: 1.5px solid #8b72ff;border-radius: 35px;margin-right: 5px;overflow: hidden;display: inline-block;position: relative;}
 .companylogo img {height: 40px;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);object-fit: contain;width: 90%;}
-.companylogo span {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
+.companylogo span {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);font-weight: 700;color: #6a4eee;font-size: 20px;border-radius: 50%;padding: 3px;width: 31px;text-align: center;background: #efecff;}
 .companyname {margin-right: 0px;overflow: hidden;display: inline-block;position: relative;vertical-align: top;width: 60%;}
 .companyname h4 {text-transform: uppercase;word-break: break-word;display: inline-block;white-space: normal;}
 .companyname p {font-size: 12px;font-weight: 400;text-transform: uppercase;color: #a5a7a4;margin-bottom: 0;padding-top: 2px;}
@@ -143,7 +143,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 #searchwatchlist div.watchlistbox {display: none;position: absolute;right: 0;top: 28%;padding-right: 30px;}
 #searchwatchlist tr:hover div.watchlistbox {display: block;}
 #searchwatchlist tbody tr:hover {background: #efefef;}
-#search {border: transparent;border-bottom: 1px solid #6a4eee;padding: 20px 0 10px 0;margin: 0px 13px 0px 25px;display: -webkit-inline-box;width: -webkit-fill-available;}
+#search {border: transparent;border-bottom: 1px solid #6a4eee;padding: 15px 0 10px 0;margin: 0px 13px 0px 25px;display: -webkit-inline-box;width: -webkit-fill-available;}
 #search span {vertical-align: -webkit-baseline-middle;}
 #search input {border: transparent;padding: 8px 14px 0;font-size: 16px;font-weight: 400;width: 84%;background: transparent;color: #121212;display: block;position: absolute;margin-left: 14px;}
 #search ::placeholder {color: #cacaca;}
@@ -158,7 +158,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .search-results-modal #searchwatchlist div.watchlistbox {padding-right: 0px;}
 /*search*/
 
-.b-listing {padding: 0 12px 0 0;position: relative;}
+.b-listing {padding: 0 6px 0 0;position: relative;}
 .b-listing #mainwatchlist {margin: 12px 0 12px 0;width: fit-content;width: 100%;}
 .b-listing #mainwatchlist tbody {width: 100%;display: inline-table;}
 .b-listing #mainwatchlist tbody tr:hover {background: #efefef;}
@@ -320,13 +320,13 @@ tr:hover div.watchlistbox {display: block;}
 
 /*ul Wtable*/
 #ultabledata li{list-style: none;}
-#ultabledata{padding: 0;position: relative;}
-#ultabledata .companyname p{color: #121212;font-size: 16px;overflow: auto;}
+#ultabledata{padding: 0;position: relative;margin-top: 10px;}
+#ultabledata .companyname p{color: #121212;font-size: 14px;overflow: auto;}
 #ultabledata .companylogo {vertical-align: middle;}
 #ultabledata .price-box {vertical-align: middle;}
-#ultabledata .price-box .lprice{font-size: 18px;font-weight: 400;margin-bottom: 0;}
-#ultabledata .w-list{/*margin-bottom: 10px;*/padding: 4px 0px;}
-#ultabledata .w-list .companyname{margin-right: 0px;display: inline-block;position: relative;vertical-align: middle;width: 70%;word-break: break-all;}
+#ultabledata .price-box .lprice{font-size: 16px;font-weight: 400;margin-bottom: 0;}
+#ultabledata .w-list{/*margin-bottom: 10px;*/padding: 0px 0px 10px;}
+#ultabledata .w-list .companyname{margin-right: 0px;display: inline-block;position: relative;vertical-align: middle;width: 72%;word-break: break-all;}
 #ultabledata .w-list .companyname span{font-size: 12px;color: #A5A7A4;text-transform: uppercase;}
 #ultabledata .w-data:hover div.watchlistbox {display: block;}
 #ultabledata .w-data div.watchlistbox {display: none;position: absolute;right: 0;top: auto;padding-right: 18px;width: max-content}
@@ -731,8 +731,13 @@ table#RecentTable {width: 100%;}
 .cdsl p{color: #A5A7A4;margin-bottom: 25px;}
 .cdsl span{color: #000000;}
 #Nominee small{color: #A5A7A4;font-size: 12px;font-weight: 400;}
-#Nominee img{display: block;margin:0 auto; }
+#Nominee img.d-block{display: block;margin:0 auto; }
+#Nominee .nomineename p{font-size: 12px;display: inline;color: #000000;text-transform: uppercase;}
 #Nominee button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
+.nominee-details {margin-top: 15px;}
+.nominee-details p{width: 24%;font-size: 12px!important;}
+.nomineelist{display: flex;}
+.nomineelist span{font-size: 12px!important;display: contents;}
 #PowerAttorney button.newpin{height: 40px;padding: 12px 53px;text-transform: none;font-weight: 500;margin-top: 15px; }
 #PowerAttorney button.poa{height: 40px;padding: 12px 28px;text-transform: none;font-weight: 500;margin-top: 15px; }
 #AccountClosure button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
@@ -1344,6 +1349,8 @@ svg:hover #tw { animation: tw .7s; }
   #watchlistinnertab .table-cell{font-size: 12px;}
   #watchlistinnertab2 .table-cell{font-size: 12px;}
   .pagenum .dropdown-menu button{width: 30px;padding: 6px 0;}
+  #ultabledata .leftblock{width: 60%;}
+  #ultabledata .rightblock{width: 38%;}
 }
 
 @media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.25) {
@@ -1652,7 +1659,7 @@ svg:hover #tw { animation: tw .7s; }
   #mainwatchlist tr.collapse td:nth-child(2) {padding-left: 4px;}
   #mainwatchlist tr.collapse td #watchlistinner tr th {padding: 3px 16px 6px 6px;}
   .search-results {max-height: 74vh;}
-  #search{margin: 0px 13px 0px 25px;}
+  #search{margin: 0px 10px 0px 20px;}
   #searchwatchlist tr td:nth-child(1) {padding: 8px 13px 8px 30px;}
   #searchwatchlist tr.watch-list td:nth-child(1){padding: 8px 15px 8px 30px;}
   .recentsearch {height: 74vh;}
@@ -1675,4 +1682,10 @@ svg:hover #tw { animation: tw .7s; }
   /*.holdingbtn span a {font-size: 20px;}*/
   .niftymain {margin: 10px 0;}
   table#OptionChain tr.psticky td .shortcoverbox{right: -30%;}
+  #ultabledata .w-data {padding: 4px 4px 4px 20px;}
+  #ultabledata #collapseOne #watchlistinnertab {margin: 10px 0px 4px 10px;}
+  #ultabledata #collapseOne #watchlistinnertab2 {margin: 10px 0px 4px 10px;}
+  #ultabledata #watchlistinnertab .table-cell {min-width: 60px;}
+  #ultabledata #watchlistinnertab2 .table-cell {min-width: 60px;}
+  .plate-2 #watchlistinner-market.marketlive{padding: 0px 10px 0px 10px;}
 }
