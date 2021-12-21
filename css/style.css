@@ -1232,6 +1232,7 @@ svg:hover #tw { animation: tw .7s; }
   h4 {font-size: 13px;font-weight: 600;}
   h5 {font-size: 12px;font-weight: 600;text-transform: uppercase;}
   h6 {font-size: 11px;font-weight: 600;}
+  .plate-2{width: 24%;}
   .navbar-expand-xl .navbar-collapse{display: block!important;}
   #mainbox {padding: 0px;}
   .plate {height: 47vh;padding: 15px;}
@@ -1260,16 +1261,16 @@ svg:hover #tw { animation: tw .7s; }
   #searchwatchlist tr.watch-list td:nth-child(1){padding: 8px 15px 8px 10px}
   #searchwatchlist tr.watch-list td:nth-child(2){padding: 6px 10px 6px 15px}
   .pagenum {padding: 0px 10px 0px 10px;}
-  .positions p {font-size: 14px;}
+  .positions p {font-size: 13px;}
   #bar-graph {height: 204px;}
-  .price-box .lprice {/*margin-bottom: 2px;*/}
+  #ultabledata .price-box .lprice{margin-bottom: 4px;}
   #chart img {margin-top: 16px;}
   .holdingbtn span a {font-size: 16px;}
   .equitytxt p {font-size: 15px;}
   .equitybtn a {font-size: 15px;}
   .equity-summary table tr td{padding: 5px 10px 4px 2px;}
   .holdingleft h3{font-size: 24px;margin-bottom: 0;}
-  .holdingleft p{margin-bottom: 14px;}
+  .holdingleft p{margin-bottom: 13px;}
   .plate-2 #watchlistinner-market.marketlive {padding: 0px 5px 0px 5px;}
   .plate-2 #watchlistinner-market.marketlive2 {padding: 0px 5px 0px 5px;height: 40px;}
   .plate-2 #watchlistinner-market {width: 49%;}
@@ -1296,7 +1297,7 @@ svg:hover #tw { animation: tw .7s; }
   .b-listing .form {height: 59px;}
   .form__label {top: 0.7rem;}
   .select-label {top: 0.7rem;}
-  .btn-primary {height: 44px;font-size: 14px;}
+  .btn-primary {height: 44px;font-size: 13px;}
   .login-box1 .login-section1 p {font-size: 16px;}
   .login-box1 .forgot-section1 p {font-size: 16px;}
   .login-box1 .signtxt {width: 80%;}
@@ -1312,12 +1313,12 @@ svg:hover #tw { animation: tw .7s; }
   .toptxt p{margin: 12px 0!important;}
   .equity-summary table tr th{padding: 8px 20px 10px 0px;}
   table#equitytable {height: 66vh;overflow: auto;}
-  #RecentTable tr td{font-size: 14px;}
+  #RecentTable tr td{font-size: 13px;}
   #RecentTable tbody td .nbox{display: block;height: 35px;}
   #canceltransaction{margin-left: 0;}
   .table td, .table th{vertical-align: top;}
   .active-box{width: 60%;}
-  .personalbox .personal-content aside{font-size: 14px;}
+  .personalbox .personal-content aside{font-size: 13px;}
   .profile p{font-size: 13px;}
   .personal-content a.active aside{font-size: 16px;}
   #menutxt .nav-item a{font-size: 16px;padding: 4px 16px;}
@@ -1337,7 +1338,7 @@ svg:hover #tw { animation: tw .7s; }
   .b-listing #watchlistinner2 tr td:nth-child(2){padding: 2px 3px 2px 2px;}
   #ultabledata .w-data{padding: 4px 2px 2px 10px;}
   #ultabledata .w-list .companyname{width: 64%;}
-  #ultabledata .companyname p{font-size: 14px;line-height: 1.2;}
+  #ultabledata .companyname p{font-size: 13px;line-height: 1.2;}
   .marginused span{font-size: 16px!important;}
   #ultabledata #collapseOne .row .col-md-6{padding: 0;}
   .companylogo{margin-right: 4px;}
