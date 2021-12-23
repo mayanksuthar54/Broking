@@ -377,7 +377,7 @@ tr:hover div.watchlistbox {display: block;}
 .form2 .form__label{top: 1rem;}
 .form.textarea{height: 112px!important;}
 .form textarea{height: 112px;}
-.form__input {position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 2px solid #d2d0e1;border-radius: 6px;font-family: "Open Sans", sans-serif;font-size: inherit;/* color: ; */outline: none;padding: 1.25rem;background: none; /* Change border when input focus*/}
+.form__input {position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 2px solid #d2d0e1;border-radius: 6px;font-size: inherit;/* color: ; */outline: none;padding: 1.25rem;background: none; /* Change border when input focus*/}
 .form__input:hover {border-color: #d2d0e1;color: #222222;}
 .form__input:focus {border-color: #6a4eee;}
 .form__input:focus:after {color: #6a4eee;border: 2px solid #312f3c;}
@@ -721,7 +721,7 @@ table#RecentTable {width: 100%;}
 .commodities button:hover{background: #F1F6FA;color: #000000;border: 1px solid #D2D0E1;}
 .commodities button:active{background-color: #F1F6FA!important;color: #000000!important;border: 1px solid #D2D0E1!important;}
 .equitiesbtn{margin-top: 10px;}
-.equitiesbtn button{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;padding: 8px 10px;height: 31px;font-size: 12px;font-weight: 400;cursor: default;text-transform: uppercase;}
+.equitiesbtn button{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;padding: 8px 10px;height: 31px;font-size: 12px;font-weight: 400;cursor: default;text-transform: uppercase;margin-bottom: 5px;}
 .equitiesbtn button:hover{color: #00B123;background: rgba(0, 177, 35, 0.05);border: 1px solid #00B123;}
 .equitiesbtn button:active{color: #00B123!important;background: rgba(0, 177, 35, 0.05)!important;border: 1px solid #00B123!important;}
 .equitiesbtn button img{margin-right: 5px;}
@@ -742,7 +742,7 @@ table#RecentTable {width: 100%;}
 #PowerAttorney button.poa{height: 40px;padding: 12px 28px;text-transform: none;font-weight: 500;margin-top: 15px; }
 #AccountClosure button{height: 40px;padding: 12px 50px;text-transform: none;font-weight: 500;margin-top: 15px; }
 
-.active-box{width: 42%;display: inline-block;background: url(../images/active-plan.svg);background-position: center;background-size: cover;border-radius: 20px;}
+.active-box{width: 42%;display: inline-block;background: url(http://img.tecxlabs.com/images/active-plan.svg);background-position: center;background-size: cover;border-radius: 20px;}
 .basicplan2{padding: 30px;color: #ffffff;}
 .basicplan2 span{display: inline-block;font-weight: 500;font-size: 40px!important;color: #ffffff!important;}
 .basicplan2 aside{display: inline-block;float: right;padding:6px 10px;background: #D1EE4E;border-radius: 0 0 6px 6px;color: #121212;position: absolute;top: -10px;left: 20%;font-size: 14px!important;font-weight: 500;}
@@ -760,7 +760,7 @@ table#RecentTable {width: 100%;}
 #BankDetails .bankname p{font-size: 12px;display: inline;color: #000000;}
 .bankpribtn{display: inline-block;float: right;}
 .bankpribtn .primarybtn{border-radius: 15px;font-size: 10px;font-weight: 500;padding: 5px 11px;height: 22px;background: #6a4eee;color: #ffffff;width: 60px;display: inline-block;}
-.addbtn{font-size: 20px!important;font-family: "Open Sans", sans-serif;color: #6A4EEE!important;margin: 0 auto;}
+.addbtn{font-size: 20px!important;color: #6A4EEE!important;margin: 0 auto;}
 #ChangePassword form .form{height: 50px;width: 300px;}
 #ChangePassword button{height: 40px;text-transform: none;background: #D2D0E1;font-weight: 500;border:1px solid #D2D0E1;padding: 12px 70px;width: 100%;}
 #ChangePassword button:hover{height: 40px;text-transform: none;background: #6A4EEE;font-weight: 500;border:1px solid #D2D0E1;color: #ffffff;}
@@ -777,8 +777,8 @@ canvas#pdf-preview {border: 1.5px dashed #6A4EEE;border-radius: 10px;height: 130
 #custom-button h2 {color: #6a4eee;}
 #custom-text {margin-left: 10px;font-family: sans-serif;color: #fff;}
 input[type=file]#pdf-file::file-selector-button {display: none;}
-#preview-container button{background: none;border: none;}
-#preview-container button h3{position: absolute;left: 20%;top: 50%;z-index: 1;color: #6A4EEE;}
+#preview-container button{background: none;border: none;position: relative;}
+#preview-container button h3{position: absolute;left: 65px;top: 55px;color: #6A4EEE;}
                                     
 /* radio */
 #ChangePassword .form__input{background: #F8F7FF;}
@@ -946,7 +946,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
 .mobilebox{margin-top: 40px;}
 .mobilemenu{border-bottom: none;background: #ffffff;}
 .mobilemenu .navbar-brand{color:#6344f2;}
-.mobilemenu #navbarCollapse{background-color:#ffffff;z-index: 1;position: fixed;top: 16%;}
+.mobilemenu #navbarCollapse{position: fixed;top: 150px;}
 #desktop-icon-menu{display: none;}
 .marketlive .mb-1{line-height: 0;}
 .marketlive2 .mb-1{line-height: 0;}
@@ -1003,7 +1003,7 @@ svg:hover #tw { animation: tw .7s; }
   #ChangePassword .tab-label-content{width: auto;}
   #ChangePassword .tab-wrap .tab-label-content label:nth-child(1){height: 32px;}
   #ChangePassword form .form{width: auto;}
-  .mobilemenu{}
+  .mobilemenu #navbarCollapse{position: inherit;background-color:#ffffff;top: 131px;padding-top: 20px;box-shadow: 0px 4px 5px 0px #7f7f7f;}
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -1024,7 +1024,7 @@ svg:hover #tw { animation: tw .7s; }
   .navbar-collapse.show {left: 0;transition: left 300ms ease-in-out;}
   .navbar-toggler.collapsed ~ .navbar-collapse {transition: left 500ms ease-in-out;}
   .mobilemenu{display: block;border-bottom: 1px solid #d2d0e1;position: fixed;left: 0;width: 100%;z-index: 1;top: 60px;}
-  .mobilemenu #navbarCollapse{position: inherit;}
+  .mobilemenu #navbarCollapse{position: inherit;background-color:#ffffff;top: 131px;padding-top: 20px;box-shadow: 0px 4px 5px 0px #7f7f7f;}
   .mobile-band{height: 60px;background:linear-gradient(270deg, #E100FF 0%, #7F00FF 100%);top: 0;z-index: 9999;position: fixed;width: 100%;color: #ffffff;padding: 16px 20px;display: block;}
   .mobile-band .bandleft svg {transform: rotate(180deg);width: 30px;height: 25px;display: inline-block;}
   .mobile-band .bandleft svg path{fill: #ffffff;}
@@ -1054,8 +1054,8 @@ svg:hover #tw { animation: tw .7s; }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .b-listing #mainwatchlist tr td {padding: 10px 20px;}
   .plate-2 {position: unset;width: 100%;}
-  .login-box2 .phone-image img {width: 50%;}
-  .login-box1 {height: auto;}
+  .login-box2 .phone-image img {/*width: 50%;*/object-fit: none;height: 100vh;object-position: right;}
+  .login-box1 {height: auto;z-index: 3;}
   .login-box1 .login-section1 {width: 80%;margin: 10% auto 20% auto;}
   .login-box1 .signtxt {width: 80%;}
   #desktop-icon-menu{display: block;}
@@ -1341,7 +1341,9 @@ svg:hover #tw { animation: tw .7s; }
   #ultabledata .companyname p{font-size: 13px;line-height: 1.2;}
   .marginused span{font-size: 16px!important;}
   #ultabledata #collapseOne .row .col-md-6{padding: 0;}
-  .companylogo{margin-right: 4px;}
+  .companylogo{margin-right: 0px;width: 40px;height: 40px;}
+  .companylogo img{width: 60%;}
+  .companylogo span{font-size: 16px;}
   #ultabledata .w-data {padding: 4px 4px 4px 10px;}
   #ultabledata #collapseOne #watchlistinnertab{margin: 4px 0px 4px 10px;}
   #ultabledata #collapseOne #watchlistinnertab2{margin: 4px 0px 4px 0px;}
