@@ -224,9 +224,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .equitysummarymenu .dropdown-menu {box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14%);border: none;font-size: 12px;top: 6px !important;}
 .equitysummarymenu .dropdown-menu .dropdown-item {border-bottom: 1px solid #d2d0e1;padding: 10px 12px;}
 .equitysummarymenu .dropdown-menu .dropdown-item::after {content: "";position: absolute;height: 0;width: 0;right: 1em;top: -6px;border: 6px solid transparent;border-top: 0;border-bottom-color: #ffffff;}
-.equitysummarymenu .dropdown-menu .dropdown-item:nth-last-child(1) {
-  border-bottom: none;
-}
+.equitysummarymenu .dropdown-menu .dropdown-item:nth-last-child(1) {border-bottom: none;}
 .marginused p{font-size: 18px;}
 .marginused span{font-size: 18px!important;}
 #port-holding h3 {font-size: 25px;font-weight: 600;}
