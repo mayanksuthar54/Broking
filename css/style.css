@@ -246,6 +246,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 .plate-2 {color: #000000;background: #ffffff;border: 1px solid #d2d0e1;position: fixed;width: 23%;overflow: ;}
 .plate span {font-size: 20px;font-weight: 500;vertical-align: middle;margin-left: 10px;}
 .plate h1 {color: #6a4eee;margin: 16px 0;font-size: 34px;font-weight: 400;text-transform: none;}
+#bar-graph .text-center div p{text-transform: unset;}
 
 .positions p {text-transform: uppercase;font-weight: 400;margin: 0;}
 #bar-graph {overflow: auto;height: 230px;}
@@ -861,6 +862,11 @@ select option{background: #ffffff;color: #121212;border-radius: 6px;border-botto
 #Deleteaccount .modal-dialog{max-width: 380px;}
 #Deletebank button.close{display: inline-block;margin-left: 0;}
 #Deletebank .modal-dialog{max-width: 380px;}
+#PendingDues button.close{display: inline-block;margin-left: 0;}
+#PendingDues .modal-dialog{max-width: 380px;}
+#HoldingsDemat button.close{display: inline-block;margin-left: 0;}
+#HoldingsDemat .modal-dialog{max-width: 380px;}
+
 /*profile*/
 
 /*option chain*/
