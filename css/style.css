@@ -104,7 +104,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 /*recent search*/
 .recentsearch h4{font-weight: 500;font-size: 14px;}
 .recentsearch h4.pasthisto {padding: 0 25px 0px 30px;}
-.recentsearch {font-family: 'inter',sans-serif;z-index: 1;width: 100%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;position: absolute;top: 59px;}
+.recentsearch {font-family: 'inter',sans-serif;z-index: 1;width: 100%;margin: 13px 0 12px 0;height: 66vh;overflow: auto;background: #ffffff;position: absolute;top: 53px;}
 .pasthistory{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding-bottom: 15px;}
 .eventsbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
 .trendingbox{min-height: 100px;max-height: 250px;overflow: auto;border-bottom: 1px solid #d2d0e1;padding: 15px 30px;}
@@ -147,7 +147,7 @@ button, input, optgroup, select, textarea{font-family: 'inter',sans-serif;}
 #search span {vertical-align: -webkit-baseline-middle;}
 #search input {border: transparent;padding: 8px 14px 0;font-size: 16px;font-weight: 400;width: 84%;background: transparent;color: #121212;display: block;position: absolute;margin-left: 14px;}
 #search ::placeholder {color: #cacaca;}
-.search-results {position: absolute;z-index: 1;display: none;width: 100%;margin: 13px 0 12px 0;max-height: 66vh;overflow: auto;}
+.search-results {position: absolute;z-index: 1;display: none;width: 100%;margin: 10px 0 12px 0;max-height: 66vh;overflow: auto;}
 .search-results-modal {position: absolute;z-index: 1;display: none;width: 90.8%;max-height: 45vh;overflow: auto;}
 .search-results-modaladd {position: relative;z-index: 1;display: none;max-height: 45vh;overflow: auto;}
 .search-results-modal #searchwatchlist .watchlistbox button {padding: 0px;z-index: 1;border: none;border-radius: 6px;width: 40px;height: 30px;}
@@ -324,7 +324,7 @@ tr:hover div.watchlistbox {display: block;}
 #ultabledata .companylogo {vertical-align: middle;}
 #ultabledata .price-box {vertical-align: middle;}
 #ultabledata .price-box .lprice{font-size: 16px;font-weight: 400;margin-bottom: 0;}
-#ultabledata .w-list{/*margin-bottom: 10px;*/padding: 0px 0px 10px;}
+#ultabledata .w-list{/*margin-bottom: 10px;*/padding: 0px 0px 6px;}
 #ultabledata .w-list .companyname{margin-right: 0px;display: inline-block;position: relative;vertical-align: middle;width: 72%;word-break: break-all;}
 #ultabledata .w-list .companyname span{font-size: 12px;color: #A5A7A4;text-transform: uppercase;}
 #ultabledata .w-data:hover div.watchlistbox {display: block;}
@@ -955,6 +955,7 @@ table#OptionChain2 .watchlistbox button {padding: 0px;z-index: 1;border: none;bo
 .marketlive .mb-1{line-height: 0;}
 .marketlive2 .mb-1{line-height: 0;}
 .nsebse{line-height: 0;}
+.scriptname{line-height: 0;margin-bottom: 10px;}
 .contactprofile .form{margin-bottom: 25px;}
 /*mobile responsive*/
 
@@ -1266,7 +1267,7 @@ svg:hover #tw { animation: tw .7s; }
   #searchwatchlist tr.watch-list td:nth-child(2){padding: 6px 10px 6px 15px}
   .pagenum {padding: 0px 10px 0px 10px;}
   .positions p {font-size: 13px;}
-  #bar-graph {height: 204px;}
+  #bar-graph {height: 185px;}
   #ultabledata .price-box .lprice{margin-bottom: 4px;}
   #chart img {margin-top: 16px;}
   .holdingbtn span a {font-size: 16px;}
@@ -1311,7 +1312,7 @@ svg:hover #tw { animation: tw .7s; }
   .btn-primary.padding-top18 {padding-top: 20px;}
   .withdraw-header{width: 2px;transform: translate(-50%,50%);}
   #mainwatchlist .companylogo{margin-right: 3px;width: 45px;height: 45px;}
-  .positions .progress{height: 10px;}
+  .positions .progress{height: 5px;}
   .dfundsbox{padding: 0 6px;}
   .dfundsbox aside{font-size: 13px;}
   .toptxt p{margin: 12px 0!important;}
@@ -1326,7 +1327,7 @@ svg:hover #tw { animation: tw .7s; }
   .profile p{font-size: 13px;}
   .personal-content a.active aside{font-size: 16px;}
   #menutxt .nav-item a{font-size: 16px;padding: 4px 16px;}
-  .positions .progress .progress-bar{height: 8px;}
+  .positions .progress .progress-bar{/*height: 8px;*/}
   .search-results{margin: 8px 0 8px 0;height: 63vh;}
   .pasthistory{margin-right: 6px;}
   .recentsearch h4.pasthisto{padding: 0 0px 0px 10px}
@@ -1349,10 +1350,12 @@ svg:hover #tw { animation: tw .7s; }
   .companylogo img{width: 60%;}
   .companylogo span{font-size: 16px;}
   #ultabledata .w-data {padding: 4px 4px 4px 10px;}
-  #ultabledata #collapseOne #watchlistinnertab{margin: 4px 0px 4px 10px;}
-  #ultabledata #collapseOne #watchlistinnertab2{margin: 4px 0px 4px 0px;}
+  #ultabledata #collapseOne #watchlistinnertab{margin: 4px 4px 4px 10px;}
+  #ultabledata #collapseOne #watchlistinnertab2{margin: 4px 0px 4px 4px;}
   #ultabledata #watchlistinnertab .table-cell{min-width: 40px;max-width: 50px;}
   #ultabledata #watchlistinnertab2 .table-cell{min-width: 40px;max-width: 50px;}
+  #ultabledata #collapseOne #watchlistinnertab2 .depth-row span{font-size: 11px;}
+  #ultabledata #collapseOne #watchlistinnertab .depth-row span{font-size: 11px;}
   #watchlistinnertab .table-cell{font-size: 12px;}
   #watchlistinnertab2 .table-cell{font-size: 12px;}
   .pagenum .dropdown-menu button{width: 30px;padding: 6px 0;}
@@ -1392,12 +1395,16 @@ svg:hover #tw { animation: tw .7s; }
   .navbar-expand-xl .navbar-collapse{display: block!important;}
   .companylogo{margin-right: 4px;}
   #ultabledata .w-data {padding: 4px 4px 4px 10px;}
-  #ultabledata #collapseOne #watchlistinnertab{margin: 10px 0px 4px 0px;}
+  #ultabledata #collapseOne #watchlistinnertab{margin: 10px 0px 4px 8px;}
   #ultabledata #collapseOne #watchlistinnertab2{margin: 10px 0px 4px 8px;}
   /*#ultabledata #watchlistinnertab .table-cell{min-width: auto;}*/
   /*#ultabledata #watchlistinnertab2 .table-cell{min-width: auto;}*/
   #watchlistinnertab .table-cell{font-size: 13px;}
   #watchlistinnertab2 .table-cell{font-size: 13px;}
+  #ultabledata .w-list .companyname{width: 69%;}
+  #ultabledata .leftblock{width: 64%;}
+  #ultabledata .rightblock{width: 34%;}
+  #ultabledata #collapseOne .row .col-md-6{padding: 0;}
 }
 
 @media only screen and (min-width: 1400px) and (max-height: 1050px) and (orientation: landscape){
@@ -1456,6 +1463,12 @@ svg:hover #tw { animation: tw .7s; }
   /*.holdingbtn span a {font-size: 20px;}*/
   .niftymain {margin: 10px 0;}
   table#OptionChain tr.psticky td .shortcoverbox{right: -30%;}
+  #ultabledata #collapseOne #watchlistinnertab{margin: 10px 2px 4px 8px;}
+  #ultabledata #collapseOne #watchlistinnertab2{margin: 10px 0px 4px 2px;}
+  #ultabledata .w-list .companyname{width: 67%;}
+  #ultabledata .leftblock{width: 64%;}
+  #ultabledata .rightblock{width: 34%;}
+  #ultabledata #collapseOne .row .col-md-6{padding: 0;}
 }
 
 @media (min-width: 1500px) and (max-width: 1599.98px) {
