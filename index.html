@@ -2351,7 +2351,7 @@
             <label for="day">NSE: 1,577.30</label>
           </div>
         </div>
-      </div>
+      </div>            
       <div class="four columns text-right">
         <div class="wrap-right">
           <div class="nudge"></div>
@@ -2368,127 +2368,129 @@
           </div>
         </div>
       </div>
+      <ul class="nav nav-pills mb-3" id="orders-tab" role="tablist">
+        <li class="nav-item"><a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Regular</a></li>
+        <li class="nav-item"><a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">GTT</a></li>
+        <li class="nav-item"><a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Cover</a></li>
+        <li class="nav-item"><a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">AMO</a></li>
+        <li class="nav-item"><a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Basket</a></li>
+        <li class="nav-item"><a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">SIP</a></li>
+      </ul>
     </div>
   </div>
   <section class="wrap">
-    <div class="variety">
-      <div class="su-radio-group">
-        <div class="type su-radio-wrap checked" aria-label="Regular order" data-balloon-pos="up">
-          <input id="radio-181" type="radio" name="variety" title="Regular order" data-label="Regular" class="su-radio" value="0" checked="">
-          <label class="su-radio-label">Regular</label>
-        </div>
-        <div class="type su-radio-wrap" aria-label="Cover order" data-balloon-pos="up">
-          <input id="radio-182" type="radio" name="variety" title="Cover order" data-label="Cover" class="su-radio" value="1">
-          <label class="su-radio-label">Cover</label>
-        </div>
-        <div class="type su-radio-wrap" aria-label="AMO order" data-balloon-pos="up">
-          <input id="radio-183" type="radio" name="variety" title="AMO order" data-label="Cover" class="su-radio" value="2">
-          <label class="su-radio-label">AMO</label>
-        </div>
-      </div>
-    </div>
-    <div class="body border-bottom">
-      <div class="product_row">
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <input id="radio-206" type="radio" name="product" data-label="Intraday <span>MIS</span>" class="su-radio" value="I" checked="">
-            <label for="radio-206">Intraday <span>MIS</span></label>
-          </div>
-          <div class="col-sm-6 col-md-6">
-            <input id="radio-259" type="radio" name="product" title="CashNCarry: Longterm investment. Requires full upfront margin." data-label="Longterm <span>CNC</span>" class="su-radio" value="CNC">
-            <label for="radio-259">Longterm <span>CNC</span></label>
-          </div>
-        </div>
-      </div>
-      <div class="fields">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="form">
-              <input type="text" id="userid" class="form__input" autocomplete="off" placeholder=" ">
-              <label for="userid" class="form__label">Qty.</label>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form">
-              <input type="text" id="userid" class="form__input" autocomplete="off" placeholder="" disabled>
-              <label for="userid" class="form__label">Price</label>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form">
-              <input type="text" id="userid" class="form__input" autocomplete="off" placeholder=" " >
-              <label for="userid" class="form__label">Trigger price</label>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a href="#collapse" id="toggle" class="nav-toggle">Hide <img src="http://img.tecxlabs.com/images/"></a>
-          </div>
-          <div class="col-md-4">
-            <div class="su-radio-group order-type">
-              <div class="su-radio-wrap" tooltip-pos="down" aria-label="Buy at market price" data-balloon-pos="down">
-                <input id="radio-212" type="radio" name="orderType" title="Buy at market price" data-label="Market" class="su-radio" value="MARKET">
-                <label for="radio-212" class="su-radio-label">Market</label>
+    <div class="tab-content" id="pills-tabContent">
+      <!-- Regular -->
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="body">
+          <div class="product_row">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <input id="radio-206" type="radio" name="product" data-label="Intraday <span>MIS</span>" class="su-radio" value="I" checked="">
+                <label for="radio-206">Intraday <span>MIS</span></label>
               </div>
-              <div class="su-radio-wrap" tooltip-pos="down" aria-label="Buy at a preferred price" data-balloon-pos="down">
-                <input id="radio-213" type="radio" name="orderType" title="Buy at a preferred price" data-label="Limit" class="su-radio" value="LIMIT" checked="">
-                <label for="radio-213" class="su-radio-label">Limit</label>
+              <div class="col-sm-6 col-md-6">
+                <input id="radio-259" type="radio" name="product" title="CashNCarry: Longterm investment. Requires full upfront margin." data-label="Longterm <span>CNC</span>" class="su-radio" value="CNC">
+                <label for="radio-259">Longterm <span>CNC</span></label>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="su-radio-group text-right order-type float-right">
-              <div aria-disabled="true" class="su-radio-wrap" tooltip-pos="down" aria-label="Buy at a preferred price with a stoploss" data-balloon-pos="down">
-                <input id="radio-215" type="radio" name="orderType" title="Buy at a preferred price with a stoploss" data-label="SL" class="su-radio" value="SL">
-                <label for="radio-215" class="su-radio-label">SL</label>
-              </div>
-              <div class="su-radio-wrap" tooltip-pos="down" aria-label="Buy at market price with stoploss" data-balloon-pos="down">
-                <input id="radio-216" type="radio" name="orderType" title="Buy at market price with stoploss" data-label="SL-M" class="su-radio" value="SL-M">
-                <label for="radio-216" class="su-radio-label">SL-M</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="collapse" class="row more">
-          <div class="col-md-8">
-            <div class="columns validity">
-              <label>Validity</label>
-              <div class="su-radio-group">
-                <div class="mr-3 checked" aria-label="Regular day order" data-balloon-pos="up">
-                  <input id="radio-273" type="radio" name="validity" title="Regular day order" value="0" checked="">
-                  <label>Day</label>
+          <div class="fields">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form2">
+                  <input type="text" id="userid" class="form__input" autocomplete="off" placeholder=" ">
+                  <label for="userid" class="form__label">Qty.</label>
                 </div>
-                <div class="su-radio-wrap " aria-label="Immediate or Cancel" data-balloon-pos="up">
-                  <input id="radio-274" type="radio" name="validity" title="Immediate or Cancel" value="1">
-                  <label for="radio-274">Immediate or Cancel <span>IOC</span></label>
+              </div>
+              <div class="col-md-4">
+                <div class="form2">
+                  <input type="text" id="userid" class="form__input" autocomplete="off" placeholder="" disabled>
+                  <label for="userid" class="form__label">Price</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form2">
+                  <input type="text" id="userid" class="form__input" autocomplete="off" placeholder=" " >
+                  <label for="userid" class="form__label">Trigger price</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <a href="#collapse" id="toggle" class="nav-toggle">Hide <img src="http://img.tecxlabs.com/images/orders/down-arrow-black.svg"></a>
+              </div>
+              <div class="col-md-4">
+                <div class="su-radio-group order-type">
+                  <div class="su-radio-wrap" tooltip-pos="down" aria-label="Buy at market price" data-balloon-pos="down">
+                    <input id="radio-212" type="radio" name="orderType" title="Buy at market price" data-label="Market" class="su-radio" value="MARKET">
+                    <label for="radio-212" class="su-radio-label">Market</label>
+                  </div>
+                  <div class="su-radio-wrap" tooltip-pos="down" aria-label="Buy at a preferred price" data-balloon-pos="down">
+                    <input id="radio-213" type="radio" name="orderType" title="Buy at a preferred price" data-label="Limit" class="su-radio" value="LIMIT" checked="">
+                    <label for="radio-213" class="su-radio-label">Limit</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="su-radio-group text-right order-type float-right">
+                  <div aria-disabled="true" class="su-radio-wrap" tooltip-pos="down" aria-label="Buy at a preferred price with a stoploss" data-balloon-pos="down">
+                    <input id="radio-215" type="radio" name="orderType" title="Buy at a preferred price with a stoploss" data-label="SL" class="su-radio" value="SL">
+                    <label for="radio-215" class="su-radio-label">SL</label>
+                  </div>
+                  <div class="su-radio-wrap" tooltip-pos="down" aria-label="Buy at market price with stoploss" data-balloon-pos="down">
+                    <input id="radio-216" type="radio" name="orderType" title="Buy at market price with stoploss" data-label="SL-M" class="su-radio" value="SL-M">
+                    <label for="radio-216" class="su-radio-label">SL-M</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="collapse" class="row more">
+              <div class="col-md-8">
+                <div class="columns validity">
+                  <label>Validity</label>
+                  <div class="su-radio-group">
+                    <div class="mr-3 checked" aria-label="Regular day order" data-balloon-pos="up">
+                      <input id="radio-273" type="radio" name="validity" title="Regular day order" value="0" checked="">
+                      <label for="radio-273">Day</label>
+                    </div>
+                    <div class="su-radio-wrap " aria-label="Immediate or Cancel" data-balloon-pos="up">
+                      <input id="radio-274" type="radio" name="validity" title="Immediate or Cancel" value="1">
+                      <label for="radio-274">Immediate or Cancel <span>IOC</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 float-right">
+                <div class="form2">
+                  <input type="text" id="userid" class="form__input" autocomplete="off" placeholder=" " >
+                  <label for="userid" class="form__label">Disclosed qty.</label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 float-right">
-            <div class="form">
-              <input type="text" id="userid" class="form__input" autocomplete="off" placeholder=" " >
-              <label for="userid" class="form__label">Disclosed qty.</label>
+        </div>
+        <div class="footer">
+          <div class="row pt-3">
+            <div class="col-md-6">
+              <div class="margins">
+                <p class="label">Margin required</p>
+                <p class="margin-value">₹299.95 <a href="" aria-label="Refresh" data-balloon-pos="up"><img src="http://img.tecxlabs.com/images/info.svg"></a></p>
+              </div>
+            </div>
+            <div class="col-md-6 actions text-right">
+              <button type="submit" class="btn btn-primary submitbtn">Buy</button>
+              <button id="closeModal" class="btn btn-primary submitbtn-no">Cancel</button>
             </div>
           </div>
         </div>
       </div>
+      <!-- Regular -->
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">gtt</div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">.cover</div>
     </div>
-    <div class="row pt-3">
-      <div class="col-md-6">
-        <div class="margins">
-          <span class="label">Margin required<a target="_blank" href="#" class="info" aria-label="Margin calculation explained" data-balloon-pos="up"><span class="icon icon-info"></span></a></span>
-          <span class="margin-value">₹299.95</span>
-          <a href="" aria-label="Refresh" data-balloon-pos="up"><span class="reload-margin icon icon-reload"></span></a>
-        </div>
-      </div>
-      <div class="col-md-6 actions text-right">
-        <button type="submit" class="btn btn-primary submitbtn">Buy</button>
-        <button id="closeModal" class="btn btn-primary submitbtn-no">Cancel</button>
-      </div>
-    </div>
-  </section>
+  </section>  
+  
 </form>
 
 <script>

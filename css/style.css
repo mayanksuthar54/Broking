@@ -1708,4 +1708,7 @@ svg:hover #tw { animation: tw .7s; }
   #ultabledata #watchlistinnertab .table-cell {min-width: 60px;}
   #ultabledata #watchlistinnertab2 .table-cell {min-width: 60px;}
   .plate-2 #watchlistinner-market.marketlive{padding: 0px 10px 0px 10px;}
+  #ultabledata .w-list .companyname{width: 72%;}
+  #ultabledata .leftblock{width: 67%;}
+  #ultabledata .rightblock{width: 31%;}
 }

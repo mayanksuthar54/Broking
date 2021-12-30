@@ -1,3 +1,7 @@
+#orders-tab li.nav-item a{padding: 10px 0px;color: #121212;background: none;margin-right: 30px;font-size: 14px;font-weight: 400;}
+#orders-tab li.nav-item a.active{border-bottom: 2px solid #6a4eee;border-radius: unset;font-weight: 500;}
+
+
 button,
 input,
 optgroup,
@@ -5,10 +9,14 @@ select,
 textarea {  color: inherit;font: inherit;margin: 0;}
 #popUpBox {box-shadow: 0 0 2px #8f8f8f;border-radius: 10px;position: fixed;left: 50%;transform: translate(-50%, 0%);z-index: 9999;display: none;bottom: 20px;}
 .fields .form {height: 3rem;}
-.order_window {background: #ffffff;  z-index: 99;top: auto;bottom: 0px;margin-top: 0em;width: 500px;position: fixed;left: calc(50% - 275px); /*padding: 20px;*/border: 1px solid #d2d0e1;}
+.order_window {background: #ffffff;  z-index: 99;top: auto;bottom: 0px;margin-top: 0em;width: 550px;position: fixed;left: calc(50% - 275px); /*padding: 20px;*/border: 1px solid #d2d0e1;}
 .submit {color: #fff;  min-width: 75px;}
 .order_window.buy .header {/*color: #fff;background-color: #4184f3;border-radius: 3px 3px 0 0;*/border-bottom: 1px solid #eeeeee;  background: #F0F2F6;color: #121212;padding: 12px 40px;border-radius: 10px 10px 0px 0px;}
 .order_window.sell .header {color: #ffffff;background-color: #f1524e;border-radius: 10px 10px 0px 0px;padding: 12px 40px;border-bottom: 1px solid #eeeeee;}
+
+.order_window.buy .footer {/*color: #fff;background-color: #4184f3;border-radius: 3px 3px 0 0;*/border-bottom: 1px solid #eeeeee;  background: #5762F7;color: #ffffff;padding: 12px 40px;border-radius: 0px 0px 10px 10px;font-weight: 400;}
+.order_window.sell .footer {color: #ffffff;background-color: #f1524e;border-radius: 0px 0px 10px 10px;padding: 12px 40px;border-bottom: 1px solid #eeeeee;font-weight: 400;}
+
 .transaction-type.buy {font-weight: 500;margin-right: 8px;background-color: #6a4eee;color: #fff;padding: 2px 4px;  border-radius: 3px;}
 .fields a {color: #121212;}
 .transaction-type.sell {font-weight: 500;margin-right: 8px;background-color: #f1524e;color: #fff;padding: 2px 4px;  border-radius: 3px;}
@@ -40,7 +48,7 @@ label {cursor: default;font-size: 14px;vertical-align: top;margin-left: 4px;}
 .order_window.buy .variety .su-radio-group .su-radio .su-radio-label:checked {color: #4184f3;border-bottom: 2px solid #4184f3;}
 .order_window.buy .variety .su-radio-group .su-radio:checked + .su-radio-label {color: #6a4eee;border-bottom: 2px solid #6a4eee;}
 .order_window .body .product {margin-bottom: 20px;}
-.order_window .body {padding: 20px 0px 15px 0px;}
+.order_window .body {padding: 20px;margin: 0;}
 .order_window .body .su-radio-label span {color: #a5a7a4;margin: 0 10px 0 5px;}
 label span {color: #a5a7a4;margin: 0 10px 0 5px;}
 .su-radio-group .su-radio-label {position: relative;border-bottom: 1px solid rgba(var(--color-border-4--rgb), 0);}
